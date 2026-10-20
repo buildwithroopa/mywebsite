@@ -44,6 +44,7 @@ Growth, retention, acquisition, partnerships, payments, and global markets
 
 SEO, growth, acquisition, A/B testing, and subscription modeling
 
+- Led engineering initiatives from planning through release across growth, acquisition, SEO, A/B testing, and subscription experiences.
 - Led Scrum ceremonies, sprint planning, and delivery coordination for product and engineering work.
 - Developed and maintained JavaScript and Selenium WebDriver automation for web and messaging systems.
 - Planned and executed end-to-end, functional, integration, regression, middleware, API, and backend testing.
