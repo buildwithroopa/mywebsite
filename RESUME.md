@@ -71,8 +71,8 @@ SEO, growth, acquisition, A/B testing, and subscription modeling
 
 **Venture 2 Impact — Skills-based volunteer**
 
-- **Viña del Mar, Chile:** Supported entrepreneurs rebuilding after the 2024 wildfires through practical business, digital skills, financial confidence, and mentorship sessions.
-- **Costa Rica:** Contributed to a Venture 2 Impact program through workshops, knowledge sharing, and one-to-one guidance for local entrepreneurs and community members.
+- **Viña del Mar, Chile:** Supported entrepreneurs rebuilding after the 2024 wildfires through business building, digital skills, financial confidence, mentorship, and applied AI for business.
+- **San José, Costa Rica:** Partnered with the University for Peace and 40 entrepreneurs, two thirds migrants and refugees from Nicaragua, Venezuela, and across the region. Contributed to 160 one-to-one sessions focused on financial systems, business strategy, digital marketing, AI-enabled operations, Google Business Profile, and Google Workspace; financial literacy knowledge increased by 60%.
 
 **Master of Science, Software Engineering** — Birla Institute of Technology and Science (BITS Pilani), Rajasthan, India
 
