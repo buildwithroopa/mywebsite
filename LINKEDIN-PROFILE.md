@@ -51,6 +51,7 @@ I joined as the first QA engineer on the team and helped establish how we tested
 
 I combined hands-on quality engineering with team delivery leadership across SEO, growth, acquisition, A/B testing, and subscription modeling.
 
+- Led engineering initiatives from planning through release across growth, acquisition, SEO, A/B testing, and subscription experiences.
 - Facilitated Scrum and sprint planning to keep engineering work moving toward release.
 - Developed JavaScript and Selenium WebDriver automation for web and messaging systems.
 - Reviewed requirements and technical designs, and led end-to-end, API, integration, regression, and backend testing.
