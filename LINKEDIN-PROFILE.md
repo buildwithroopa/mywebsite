@@ -83,7 +83,7 @@ Use the portfolio as the first item, then add a short write-up or demo for each 
 
 ### Venture 2 Impact — Skills-based volunteer
 
-I volunteered with Venture 2 Impact in Viña del Mar, Chile, supporting entrepreneurs rebuilding after the 2024 wildfires through practical business, digital skills, financial confidence, and mentorship sessions. I also contributed to a Panama City program supporting Indigenous entrepreneurs, especially women, through workshops and one-to-one guidance on business strategy, digital marketing, budgeting, and technology.
+I volunteered with Venture 2 Impact in Viña del Mar, Chile, supporting entrepreneurs rebuilding after the 2024 wildfires through practical business, digital skills, financial confidence, and mentorship sessions. I also contributed to a Costa Rica program through workshops, knowledge sharing, and one-to-one guidance for local entrepreneurs and community members.
 
 ## Skills to pin
 
