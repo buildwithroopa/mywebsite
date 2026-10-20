@@ -67,6 +67,13 @@ SEO, growth, acquisition, A/B testing, and subscription modeling
 
 ## Education
 
+## Volunteering
+
+**Venture 2 Impact — Skills-based volunteer**
+
+- **Viña del Mar, Chile:** Supported entrepreneurs rebuilding after the 2024 wildfires through practical business, digital skills, financial confidence, and mentorship sessions.
+- **Panama City, Panama:** Supported Indigenous entrepreneurs, especially women, through workshops and one-to-one guidance on business strategy, digital marketing, budgeting, and technology.
+
 **Master of Science, Software Engineering** — Birla Institute of Technology and Science (BITS Pilani), Rajasthan, India
 
 ## Certifications & Professional Development
