@@ -56,10 +56,10 @@ I combined hands-on quality engineering with team delivery leadership across SEO
 - Reviewed requirements and technical designs, and led end-to-end, API, integration, regression, and backend testing.
 - Tested product and marketing experiments and supported CI/CD and release management with Jenkins, Stash, and Git.
 
-### Wipro Technologies — Engineering Manager, QA Lead & Project Captain
+### Apple — Engineering Manager, QA Lead & Project Captain
 **September 2004–June 2014 · India, Japan, and United States**
 
-This is where I built my foundation across banking, insurance, SAP CRM, and B2B commerce—and learned to move between technical detail, client context, and team leadership.
+This is where I built my foundation across enterprise systems, SAP CRM, and B2B commerce—and learned to move between technical detail, client context, and team leadership.
 
 - Built and mentored a 17-person SAP CRM quality team and supervised multiple projects.
 - Led system integration and end-to-end testing for B2B e-commerce and enterprise applications.
