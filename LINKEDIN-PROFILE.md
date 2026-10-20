@@ -1,8 +1,8 @@
-# LinkedIn profile draft — Roopa Iyer
+ LinkedIn profile draft — Roopa Iyer
 
 ## Headline
 
-**Engineering & Quality Leader | Forward Deployed Engineering | AI-enabled Software Delivery | 22 Years Building Better Ways to Ship**
+**Engineering & Quality Leader | Forward Deployed Engineering | AI-enabled Software Delivery | Building Better Ways to Ship**
 
 Alternative, more technical:
 
@@ -10,7 +10,7 @@ Alternative, more technical:
 
 ## About
 
-I’ve spent 22 years learning how software gets built, where it breaks, and what helps teams deliver experiences people can trust.
+I’ve spent my career learning how software gets built, where it breaks, and what helps teams deliver experiences people can trust.
 
 My career began in hands-on testing and enterprise systems. At Apple, I grew into QA leadership, project delivery, and people management, including building and mentoring a 17-person SAP CRM quality team. At Amazon, I paired automation and release work with Scrum leadership across growth, acquisition, and subscription experiences. At Netflix, I’ve worked across messaging, growth, partnerships, payments, and global markets—helping teams move complex customer-facing initiatives from planning through launch.
 
@@ -22,9 +22,15 @@ The thread through every chapter is simple: understand the context, find the fri
 
 **Areas I work across:** forward deployed engineering · software quality · AI workflows · test automation · customer problem solving · engineering leadership · product delivery · A/B experimentation · web, mobile, and TV · cross-functional execution
 
+## Forward-deployed engineering story
+
+I work closest to the real problem: understand the operating context, find the data and workflow constraints, build a fit-for-purpose solution in the systems teams already use, and iterate with the people who will rely on it. That can mean shaping a launch plan, writing automation, connecting APIs and experiments, building an AI workflow, or creating a team-level plugin. The outcome is both the shipped software and the capability the team carries forward.
+
+**My leadership across the stack:** I connect product, design, data, software engineering, quality, and operations; make risk and tradeoffs visible; coach engineers; and turn lessons from delivery into better practices.
+
 ## Experience
 
-### Netflix — Senior Test Lead / Engineering Project Lead
+### Netflix — Senior Engineering Lead / Engineering Project Lead
 **March 2020–Present · Los Gatos, California**
 
 At Netflix I work across growth, retention, acquisition, partnerships, payments, and global markets. My role brings together quality leadership, technical program work, and cross-functional problem solving.
@@ -46,7 +52,7 @@ I joined as the first QA engineer on the team and helped establish how we tested
 - Tested experiments across audience, design, copy, timing, frequency, and channel.
 - Worked through issues that crossed multiple interconnected systems with product, design, and engineering partners.
 
-### Amazon — Quality Engineer & Scrum Master
+### Amazon — Senior Engineering Lead / Quality Engineer & Scrum Master
 **June 2014–June 2018 · San Francisco, California**
 
 I combined hands-on quality engineering with team delivery leadership across SEO, growth, acquisition, A/B testing, and subscription modeling.
@@ -62,7 +68,7 @@ I combined hands-on quality engineering with team delivery leadership across SEO
 
 This chapter focused on people leadership, delivery, and building strong operating practices across multiple initiatives.
 
-- Managed and mentored teams across 10+ projects.
+- Managed and mentored an engineering organization of 17 engineers across 10+ initiatives.
 - Partnered with engineering, product, and client stakeholders on scope, risk, feasibility, and delivery.
 - Built practices for quality, collaboration, team development, and continuous improvement.
 
