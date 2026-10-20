@@ -79,6 +79,12 @@ This is where I built my foundation across enterprise systems, SAP CRM, and B2B 
 
 Use the portfolio as the first item, then add a short write-up or demo for each real AI workflow/plugin you are comfortable sharing publicly. A useful format for each: **the user problem → the workflow/tool you built → how people used it → what improved**. Add only measured outcomes you can substantiate.
 
+## Volunteering
+
+### Venture 2 Impact — Skills-based volunteer
+
+I volunteered with Venture 2 Impact in Viña del Mar, Chile, supporting entrepreneurs rebuilding after the 2024 wildfires through practical business, digital skills, financial confidence, and mentorship sessions. I also contributed to a Panama City program supporting Indigenous entrepreneurs, especially women, through workshops and one-to-one guidance on business strategy, digital marketing, budgeting, and technology.
+
 ## Skills to pin
 
 Forward Deployed Engineering · Engineering Leadership · Software Quality · AI Workflows · Test Automation · JavaScript · Selenium WebDriver · API Testing · CI/CD · A/B Testing · Cross-functional Team Leadership · Agile Project Management · Data Analysis
