@@ -6,18 +6,19 @@ const experience = [
     role: 'Senior Test Lead · Growth, Partnerships & Payments',
     intro: 'I help teams turn complex, high-visibility launches into dependable customer experiences across markets, devices, and partner ecosystems.',
     details: [
-      'Lead quality and delivery across growth, retention, acquisition, partnerships, payments, and global market initiatives.',
+          'Lead engineering delivery across growth, retention, acquisition, partnerships, payments, messaging, and global market initiatives.',
       'Partner across product, design, data science, content, infrastructure, and engineering—sometimes coordinating work across 15 teams.',
       'Shape test strategy for web, mobile, TV, APIs, experiments, and end-to-end customer journeys; surface risk and release signals early.',
       'Build and apply AI workflows, AI-assisted testing approaches, and team-level plugins to improve how engineering teams work.',
-      'Serve as a project and engineering lead: clarify scope, align partners, unblock execution, and keep customer outcomes in view.'
+      'Serve as a project and engineering lead: clarify scope, align partners, unblock execution, and keep customer outcomes in view.',
+      'Champion Claude Code, Cursor, and AI-assisted workflows that make engineering and quality work more effective.'
     ],
     tags: ['AI workflows', 'A/B experimentation', 'Web · Mobile · TV', 'Cross-functional delivery']
   },
   {
     years: '2018 — 2020',
     company: 'Netflix',
-    role: 'Quality Engineering · Growth & Membership Messaging',
+    role: 'Senior Engineering Lead · Growth & Membership Messaging',
     intro: 'Joined as the first QA engineer on the team and helped establish the testing approach for messaging experiences.',
     details: [
       'Built a quality strategy for outbound and in-product messaging across email, push, SMS, voice, messaging apps, and notifications.',
@@ -29,7 +30,7 @@ const experience = [
   {
     years: '2014 — 2018',
     company: 'Amazon',
-    role: 'Quality Engineering · Growth, Acquisition & Subscriptions',
+    role: 'Senior Engineering Lead · Growth, Acquisition & Subscriptions',
     intro: 'Combined hands-on engineering with Scrum leadership to help growth teams move from requirements to reliable releases.',
     details: [
       'Led engineering initiatives across growth, acquisition, SEO, A/B testing, and subscription experiences from planning through release.',
@@ -54,7 +55,7 @@ const experience = [
   {
     years: '2004 — 2011',
     company: 'Wipro Technologies',
-    role: 'QA Lead · Project Captain · Test Engineer',
+    role: 'Senior Engineering Lead · Engineering Manager · QA Lead',
     intro: 'Built a broad engineering foundation across banking, insurance, SAP CRM, and B2B commerce in India, Japan, and the United States.',
     details: [
       'Led system integration and end-to-end testing for B2B e-commerce and enterprise applications.',
@@ -86,6 +87,13 @@ const volunteering = [
     topics: 'Business strategy · Digital marketing · Budgeting · AI-enabled operations · Google Business Profile · Google Workspace'
   }
 ];
+
+const fdeSteps = [
+  ['01', 'Understand the context', 'Start with the people, workflow, data, and constraints behind the request. Define the outcome before choosing the solution.'],
+  ['02', 'Build in the system', 'Connect product, engineering, quality, data, and AI workflows to make a fit-for-purpose solution inside the real environment.'],
+  ['03', 'Ship and learn', 'Prototype, test, demo, measure, and iterate with the people who will use the work. Keep feedback close to delivery.'],
+  ['04', 'Leave capability behind', 'Turn what works into reusable tooling, practices, and confidence that teams can carry forward.']
+];
 ---
 <!doctype html>
 <html lang="en">
@@ -93,7 +101,7 @@ const volunteering = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f6f4ef" />
-    <meta name="description" content="Roopa Iyer is an engineering and quality leader with 22 years of experience building better ways for teams to ship software." />
+    <meta name="description" content="Roopa Iyer is an engineering and quality leader who works close to real problems to build and ship software people trust." />
     <title>Roopa Iyer — Engineering, quality & delivery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,8 +121,9 @@ const volunteering = [
       .capabilities{padding:76px 0 62px}.section-head h2{font-size:38px}.cap-grid{grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}.cap{padding:26px 22px 28px 0}.cap+.cap{border-left:1px solid var(--line)}.cap h3{font-size:17px}.cap .num{color:var(--orange)}
       .work{padding:64px 0 86px}.timeline{border-top:2px solid var(--ink)}.job{grid-template-columns:145px 1fr;gap:52px;padding:38px 0;border-bottom:1px solid var(--line);transition:background .2s ease,padding-left .2s ease}.job:hover{background:var(--mint);padding-left:14px;transform:none}.job h3{font-size:32px}.job-intro{font-size:17px}.tag{border-radius:0;background:transparent}
       .volunteering{padding:12px 0 82px}.volunteer-grid{grid-template-columns:repeat(2,1fr)}.volunteer-card{border-radius:0;background:transparent;border:2px solid var(--ink);padding:28px}.volunteer-card:hover{transform:none;box-shadow:6px 6px 0 var(--green)}.volunteer-card h3{font-size:30px}
+      .fde{padding:70px 0 42px}.fde-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}.fde-card{padding:24px 22px 28px 0}.fde-card+.fde-card{border-left:1px solid var(--line);padding-left:20px}.fde-card .num{font:11px var(--mono);color:var(--orange)}.fde-card h3{font:700 18px var(--display);letter-spacing:-.04em;margin:18px 0 9px}.fde-card p{font-size:13px;color:var(--muted);margin:0}
       .foundation{padding:10px 0 78px}.foundation-card{background:var(--mint);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:35px 0;grid-template-columns:1fr 1fr}.contact{background:var(--green);padding:68px 0}.contact h2{font-size:clamp(34px,5vw,62px)}.footer{border-top:2px solid var(--ink);padding:20px 0}
-      @media(max-width:760px){.hero{grid-template-columns:1fr;gap:34px;padding:54px 0}.manifesto-grid{grid-template-columns:1fr;gap:20px}.cap-grid{grid-template-columns:1fr 1fr}.cap+.cap{border-left:0}.job{grid-template-columns:1fr;gap:9px}.volunteer-grid,.foundation-card{grid-template-columns:1fr}.foundation-card{padding:28px 0}}
+      @media(max-width:760px){.hero{grid-template-columns:1fr;gap:34px;padding:54px 0}.manifesto-grid{grid-template-columns:1fr;gap:20px}.cap-grid,.fde-grid{grid-template-columns:1fr 1fr}.cap+.cap,.fde-card+.fde-card{border-left:0}.job{grid-template-columns:1fr;gap:9px}.volunteer-grid,.foundation-card{grid-template-columns:1fr}.foundation-card{padding:28px 0}.fde-card{padding:20px 0}.fde-card+.fde-card{border-top:1px solid var(--line)}}
       @media print{body{background:white}.topbar,.buttons,.contact,.footer-links{display:none}.hero{padding:35px 0}.manifesto{padding:28px 0}.capabilities,.work{padding:35px 0}.job{break-inside:avoid}.wrap{width:100%}}
     </style>
   </head>
@@ -129,12 +138,13 @@ const volunteering = [
         <div>
           <div class="eyebrow">Building better ways to ship software</div>
           <h1>I lead teams that build<br /><span>and ship software people trust.</span></h1>
-          <p class="lede">I’m Roopa, an engineering and quality leader who works across <strong>product, people, and code</strong> to solve real customer problems—from early discovery through launch and learning.</p>
+          <p class="lede">I’m Roopa, an engineering and quality leader who works close to the real problem—across <strong>product, people, and code</strong>—from early discovery through launch and learning.</p>
           <div class="buttons"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="button" href="https://www.linkedin.com/in/roopaiyer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><button class="button" type="button" onclick="window.print()">Print / save as PDF</button></div>
         </div>
         <aside class="hero-side"><span class="label">My through line</span><strong>Find the friction.</strong>Bring the right people together, make risk visible, and improve the path from idea to a dependable release.</aside>
       </section>
-      <section class="manifesto" id="approach"><div class="wrap manifesto-grid"><div class="section-kicker">HOW I WORK</div><h2>Quality is a team capability. I build the <em>habits, tools, and feedback loops</em> that help teams learn quickly and deliver experiences people can trust.</h2></div></section>
+      <section class="manifesto" id="approach"><div class="wrap manifesto-grid"><div class="section-kicker">HOW I WORK</div><h2>I work close to the problem, build with the people who own it, and leave teams with <em>better software, tooling, and ways of working.</em></h2></div></section>
+      <section class="wrap fde" id="fde"><div class="section-head"><div><div class="section-kicker">FORWARD-DEPLOYED BY INSTINCT</div><h2>From context to capability.</h2></div><p>My approach is practical and embedded: understand the operating reality, build in the systems already in use, and stay with the work until it creates durable value.</p></div><div class="fde-grid">{fdeSteps.map(([number, title, description]) => <article class="fde-card"><span class="num">{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></section>
       <section class="wrap capabilities"><div class="section-head"><div><div class="section-kicker">WHERE I ADD VALUE</div><h2>From ambiguity to impact.</h2></div><p>My work sits at the intersection of customer context, technical execution, and software excellence.</p></div><div class="cap-grid">{capabilities.map(([title, description], i) => <article class="cap"><span class="num">0{i + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></section>
       <section class="wrap work" id="work"><div class="section-head"><div><div class="section-kicker">THE JOURNEY</div><h2>Experience built across the stack.</h2></div><p>From hands-on enterprise testing to leading global product programs and enabling engineering teams.</p></div><div class="timeline">{experience.map((job) => <article class="job"><div class="date">{job.years}</div><div><div class="job-head"><h3>{job.company}</h3><span class="role">{job.role}</span></div><p class="job-intro">{job.intro}</p><ul>{job.details.map((item) => <li>{item}</li>)}</ul><div class="tags">{job.tags.map((tag) => <span class="tag">{tag}</span>)}</div></div></article>)}</div></section>
       <section class="wrap volunteering" id="volunteering"><div class="section-head"><div><div class="section-kicker">VOLUNTEERING</div><h2>Sharing practical skills, locally.</h2></div><p>Skills-based volunteering is another way I work close to people, understand context, and make useful things easier to do.</p></div><div class="volunteer-grid">{volunteering.map((item) => <article class="volunteer-card"><div class="section-kicker">{item.time}</div><h3>{item.place}</h3><p>{item.text}</p><div class="volunteer-topics">{item.topics}</div></article>)}</div><p class="source-note">Program context: <a href="https://venture2impact.org/chile-2025-case-study">Chile case study ↗</a> · <a href="https://venture2impact.org/">Venture 2 Impact ↗</a></p></section>
