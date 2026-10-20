@@ -124,7 +124,7 @@ const strengths = [
       @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.job{transition:none}.button:hover,.job:hover{transform:none}.hero:before,.hero:after,.availability:before{animation:none}}
       /* Field-notes visual direction */
       :root{--paper:#f4f7fb;--ink:#12243a;--muted:#4b6174;--line:#c5d1dc;--green:#eef1f4;--mint:#e4eef5;--orange:#d95b3f}
-      body{background:var(--paper)}.topbar{padding:18px 0;border-bottom:2px solid var(--ink)}.brand{font-size:30px;letter-spacing:-.06em}.nav{font-size:12px;text-transform:uppercase;letter-spacing:.06em}.availability{color:var(--ink)}
+      body{background:var(--paper)}.topbar{padding:18px 0;border-bottom:2px solid var(--ink)}.brand{font-size:34px;letter-spacing:-.07em}.nav{font-size:12px;text-transform:uppercase;letter-spacing:.06em}.availability{color:var(--ink)}
       .hero{padding:74px 0 72px;grid-template-columns:minmax(0,1fr) 300px;gap:80px}.hero:before,.hero:after{display:none}.eyebrow,.section-kicker,.date,.label{font-size:10px;color:var(--orange);letter-spacing:.16em}.eyebrow,.section-kicker,.hero-side .label{font-size:15px}.hero .eyebrow,.section-kicker,.hero-side .label{display:inline-block;border-left:3px solid var(--orange);padding:6px 0 6px 12px;font-weight:700}.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.1;letter-spacing:-.065em;margin:22px 0 26px;max-width:760px}.hero h1 span,.hero h1 .headline-line,.hero h1 .headline-tail{display:inline;background:transparent;padding:0}.hero h1 .headline-tail{color:var(--orange)}.lede{font-size:20px;max-width:620px;color:var(--muted)}.hero-side{border:0;border-top:2px solid var(--ink);padding:16px 0 0;color:var(--muted)}.hero-side strong{font-size:30px}.button{border-radius:0;min-height:46px}.button.primary{background:var(--ink)}.button:hover,.button.primary:hover{background:var(--orange);color:white}
       .manifesto{background:var(--paper);color:var(--ink);padding:56px 0 26px}.manifesto-grid{display:block;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:18px 0 28px}.manifesto .section-kicker{color:var(--orange);margin-bottom:18px}.manifesto h2{font-size:clamp(28px,4vw,48px);line-height:1.1;max-width:820px;margin:0}.manifesto h2 em{color:inherit}
       .capabilities{padding:76px 0 62px}.section-head h2{font-size:38px}.cap-grid{grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}.cap{padding:26px 22px 28px 0}.cap+.cap{border-left:1px solid var(--line)}.cap h3{font-size:17px}.cap .num{color:var(--orange)}
@@ -144,6 +144,7 @@ const strengths = [
       .foundation-card{background:var(--paper)}.fde-card,.strength{background:transparent}
       .foundation-card{background:var(--paper);border:0;padding:0}.foundation-card>div:first-child{max-width:780px;margin-bottom:28px;border-top:2px solid var(--ink);padding-top:18px}.foundation-facts{grid-template-columns:repeat(2,1fr);gap:0 28px;border-top:2px solid var(--ink)}.foundation-card .fact{padding:15px 0 16px;border-bottom:1px solid var(--line)}.foundation-card .fact:nth-child(3){grid-column:1/-1}.foundation-card .toolkit-list{line-height:1.75}
       .hero .buttons .button{background:var(--ink);color:var(--orange);border-color:var(--ink)}
+.nav{gap:8px}.nav a{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:var(--orange);border:1px solid var(--ink);padding:9px 12px;font:600 12px var(--sans);text-transform:none;letter-spacing:0;transition:transform .2s ease,background .2s ease}.nav a:hover{background:var(--orange);color:white;transform:translateY(-2px)}
       .strength{background:var(--ink);color:var(--orange);border-color:var(--ink)}
       @media(max-width:760px){.hero{grid-template-columns:1fr;gap:34px;padding:54px 0}.manifesto-grid{grid-template-columns:1fr;gap:20px}.cap-grid{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:9px}.volunteer-grid,.foundation-card{grid-template-columns:1fr}.foundation-card{padding:28px 0}.fde-list{grid-template-columns:1fr 1fr}.fde-card{min-height:0}}
       @media print{body{background:white}.topbar,.buttons,.contact,.footer-links{display:none}.hero{padding:35px 0}.manifesto{padding:28px 0}.capabilities,.work{padding:35px 0}.job{break-inside:avoid}.wrap{width:100%}}
@@ -152,8 +153,8 @@ const strengths = [
   </head>
   <body>
     <header class="wrap topbar">
-      <a class="brand" href="#top">ROOPA IYER<span style="color:var(--orange)">.</span></a>
-      <nav class="nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#work">Experience</a><a href="#contact">Contact</a></nav>
+      <a class="brand" href="#top">ROOPA IYER</a>
+      <nav class="nav" aria-label="Main navigation"><a href="#approach"><span aria-hidden="true">✦</span> Approach</a><a href="#work"><span aria-hidden="true">↘</span> Experience</a><a href="#contact"><span aria-hidden="true">✉</span> Contact</a></nav>
       <span class="availability">AI Forward Thinking · Engineering · Leadership · Quality</span>
     </header>
     <main id="top">
