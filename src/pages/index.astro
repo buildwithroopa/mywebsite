@@ -165,7 +165,7 @@ const strengths = [
           <div class="eyebrow">Building better ways to ship software</div>
           <h1><span class="headline-line">Build with ownership, ship with confidence, and improve through continuous learning</span><span class="headline-tail"> - all grounded in a culture that puts people first.</span></h1>
           <p class="lede">Hello, I am Roopa - an engineering leader working at the intersection of <strong>AI, product, and engineering</strong>, helping teams turn complex problems into useful, reliable experiences through thoughtful building and continuous learning.</p>
-          <div class="buttons"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="button" href="https://www.linkedin.com/in/roopaiyer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><button class="button" type="button" onclick="window.print()">Print / save as PDF</button></div>
+          <div class="buttons"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="button" href="https://www.linkedin.com/in/roopaiyer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><button class="button" id="share-profile" type="button"><span aria-hidden="true">↗</span> Share my profile</button></div>
         </div>
         <aside class="hero-side"><span class="label">My Thought Philosophy</span><strong>Find the friction and resolve it.</strong>Bring the right people together, make risk visible, and improve the path from idea to a dependable release.</aside>
       </section>
@@ -180,6 +180,25 @@ const strengths = [
     </main>
     <footer class="wrap footer"><span>© {new Date().getFullYear()} Roopa Iyer</span><div class="footer-links"><a href="#top">Back to top ↑</a></div></footer>
     <script>
+      const shareButton = document.querySelector('#share-profile');
+      shareButton?.addEventListener('click', async () => {
+        const url = window.location.href.split('#')[0];
+        const shareData = { title: 'Roopa Iyer - Engineering leader', text: 'Roopa Iyer profile', url };
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+          } else {
+            await navigator.clipboard.writeText(url);
+            shareButton.innerHTML = '<span aria-hidden="true">✓</span> Link copied';
+            window.setTimeout(() => { shareButton.innerHTML = '<span aria-hidden="true">↗</span> Share my profile'; }, 2200);
+          }
+        } catch (error) {
+          if (error?.name !== 'AbortError') {
+            try { await navigator.clipboard.writeText(url); shareButton.innerHTML = '<span aria-hidden="true">✓</span> Link copied'; } catch {}
+          }
+        }
+      });
+
       const revealItems = document.querySelectorAll('main > section, .job');
       revealItems.forEach((item) => item.classList.add('scroll-reveal'));
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
