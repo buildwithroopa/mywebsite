@@ -148,7 +148,7 @@ const strengths = [
       .strength{background:var(--ink);color:var(--orange);border-color:var(--ink)}
       @media(max-width:760px){.hero{grid-template-columns:1fr;gap:34px;padding:54px 0}.manifesto-grid{grid-template-columns:1fr;gap:20px}.cap-grid{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:9px}.volunteer-grid,.foundation-card{grid-template-columns:1fr}.foundation-card{padding:28px 0}.fde-list{grid-template-columns:1fr 1fr}.fde-card{min-height:0}}
       @media print{body{background:white}.topbar,.buttons,.contact,.footer-links{display:none}.hero{padding:35px 0}.manifesto{padding:28px 0}.capabilities,.work{padding:35px 0}.job{break-inside:avoid}.wrap{width:100%}}
-      .scroll-reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.scroll-reveal.is-visible{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+      .scroll-reveal{content-visibility:auto;contain-intrinsic-size:360px;opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.scroll-reveal.is-visible{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
     </style>
   </head>
   <body>
@@ -190,7 +190,7 @@ const strengths = [
               currentObserver.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+        }, { threshold: 0.01, rootMargin: '0px' });
         revealItems.forEach((item) => observer.observe(item));
       }
     </script>
