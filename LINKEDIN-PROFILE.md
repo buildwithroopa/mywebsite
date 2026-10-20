@@ -12,7 +12,7 @@ Alternative, more technical:
 
 I’ve spent 22 years learning how software gets built, where it breaks, and what helps teams deliver experiences people can trust.
 
-My career began in hands-on testing and enterprise systems. At Wipro, I grew into QA leadership, project delivery, and people management, including building and mentoring a 17-person SAP CRM quality team. At Amazon, I paired automation and release work with Scrum leadership across growth, acquisition, and subscription experiences. At Netflix, I’ve worked across messaging, growth, partnerships, payments, and global markets—helping teams move complex customer-facing initiatives from planning through launch.
+My career began in hands-on testing and enterprise systems. At Apple, I grew into QA leadership, project delivery, and people management, including building and mentoring a 17-person SAP CRM quality team. At Amazon, I paired automation and release work with Scrum leadership across growth, acquisition, and subscription experiences. At Netflix, I’ve worked across messaging, growth, partnerships, payments, and global markets—helping teams move complex customer-facing initiatives from planning through launch.
 
 Over time, my work has expanded beyond test execution. I clarify ambiguous problems, bring product and engineering partners together, make risk visible, and build the practices and tools that help teams move with confidence. I’ve worked across web, mobile, TV, APIs, backend systems, integrations, and experimentation, often coordinating across many teams and disciplines.
 
