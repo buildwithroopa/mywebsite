@@ -178,7 +178,7 @@ const strengths = [
     </main>
     <footer class="wrap footer"><span>© {new Date().getFullYear()} Roopa Iyer</span><div class="footer-links"><a href="#top">Back to top ↑</a></div></footer>
     <script>
-      const revealItems = document.querySelectorAll('main > section');
+      const revealItems = document.querySelectorAll('main > section, .job');
       revealItems.forEach((item) => item.classList.add('scroll-reveal'));
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
         revealItems.forEach((item) => item.classList.add('is-visible'));
