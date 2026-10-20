@@ -50,16 +50,19 @@ SEO, growth, acquisition, A/B testing, and subscription modeling
 - Reviewed requirements and technical designs; tested A/B experiments and customer-facing product and marketing features.
 - Supported release management and CI/CD workflows using Jenkins, Stash, and Git.
 
-### Apple — Engineering Manager, QA Lead & Project Captain
-**India, Japan, and United States · September 2004–June 2014**
+### Apple — Engineering Manager
+**2011–2014**
 
-Enterprise systems, SAP CRM, and B2B commerce
+- Managed and mentored teams across 10+ projects, supporting delivery, performance, and team development.
+- Partnered with engineering, product, and client stakeholders to clarify scope, risks, feasibility, and execution plans.
+- Built operating practices for quality, delivery, collaboration, and continuous improvement.
 
-- Built and mentored a 17-person SAP CRM quality team while supervising multiple projects.
+### Wipro Technologies — QA Lead, Project Captain & Test Engineer
+**India, Japan, and United States · September 2004–2011**
+
 - Led system integration and end-to-end testing for B2B e-commerce, SAP CRM, sales force automation, retail quote management, and identity management systems.
-- Served across project management, QA leadership, project captain, client coordination, and hands-on testing responsibilities.
+- Worked across project management, QA leadership, client coordination, web, mobile, cross-browser, integration, regression, and automation testing.
 - Partnered directly with clients on delivery status, work breakdowns, feature suggestions, feasibility, and reporting.
-- Created test plans and scenarios and coordinated functional, web, mobile, cross-browser, integration, regression, and automation testing.
 
 ## Education
 
