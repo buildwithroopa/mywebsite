@@ -238,15 +238,15 @@
   ],
   "briefs": [
     {
-      "title": "OpenAI plans free AI workshops for caregivers",
-      "status": "Company program · Nov. 12",
+      "title": "OpenAI and nonprofits bring practical AI workshops to caregivers",
+      "status": "Program · Nov. 10",
       "publisher": "OpenAI",
-      "summary": "OpenAI announced workshops with nonprofit partners in five U.S. cities on using AI for scheduling, understanding health information, and finding community resources, alongside privacy and limitation guidance.",
+      "summary": "OpenAI Academy and three nonprofit partners are holding free workshops across five U.S. cities on using ChatGPT for caregiver schedules, plain-language resources, and community support, with guidance on privacy and limits.",
       "whyCare": "Caregiving is a practical high-stakes use case where helpful organization and unsafe medical reliance sit close together.",
       "sources": [
         {
           "title": "OpenAI",
-          "url": "https://openai.com/index/"
+          "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life/"
         }
       ]
     },
@@ -271,8 +271,8 @@
       "whyCare": "The gap points to a need for explicit teaching on verification, attribution, and appropriate use.",
       "sources": [
         {
-          "title": "The Neuron daily digest",
-          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+          "title": "OpenAI education report",
+          "url": "https://openai.com/index/closing-ai-guidance-gap-education/"
         }
       ]
     }
