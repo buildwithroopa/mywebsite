@@ -2,7 +2,10 @@ name: Publish Daily AI News
 
 on:
   schedule:
-    - cron: '15 15 * * *'
+    # Run at 13:00 and 14:00 UTC; the generator continues only at 6 a.m. America/Los_Angeles.
+    # This handles both daylight and standard time because GitHub cron uses UTC.
+    - cron: '0 13 * * *'
+    - cron: '0 14 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -24,21 +27,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Verify the OpenAI API key
-        id: api-key
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::OPENAI_API_KEY is missing. Add it under repository Settings → Secrets and variables → Actions."
-            exit 1
-          fi
       - uses: actions/setup-node@v4
         with:
           node-version: 24
       - name: Research and prepare the issue
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/generate-ainews.mjs
       - name: Publish issue to the site
         run: |
