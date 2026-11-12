@@ -25,6 +25,7 @@ const memeOffset = new Date(`${edition.editionDate}T12:00:00Z`).getUTCDate() % m
 const dailyMeme = memes[memeOffset];
 const memeSlots = briefs.length > 0 ? Math.min(memes.length, (4 - (briefs.length % 4)) % 4) : 0;
 const dailyMemes = Array.from({ length: memeSlots }, (_, index) => memes[(memeOffset + index) % memes.length]);
+const wireMeme = dailyMeme;
 ---
 <!doctype html>
 <html lang="en">
@@ -64,7 +65,7 @@ const dailyMemes = Array.from({ length: memeSlots }, (_, index) => memes[(memeOf
     <main class="sheet">
       <header class="utility">
         <span>AI News · Independent daily briefing</span>
-        <nav aria-label="Edition sections"><a href="#critical">Critical</a><a href="#one-idea">One idea</a><a href="#giggles">AI Giggles</a>{incidents.length > 0 && <a href="#incidents">Incident desk</a>}<a href="#newsroom">Newsroom</a>{memeSlots > 0 && <a href="#memes">Meme of the day</a>}<a href="#insights">Actionable insights</a><a href="#shareables">Takeaways</a><a href="/ainews/archive">Past editions</a></nav>
+        <nav aria-label="Edition sections"><a href="#critical">Critical</a><a href="#one-idea">One idea</a><a href="#giggles">AI Giggles</a>{incidents.length > 0 && <a href="#incidents">Incident desk</a>}<a href="#newsroom">Newsroom</a><a href="#giggles">Meme of the day</a><a href="#insights">Actionable insights</a><a href="#shareables">Takeaways</a><a href="/ainews/archive">Past editions</a></nav>
       </header>
       <header class="masthead">
         <div class="overline">The daily artificial intelligence briefing</div>
@@ -97,7 +98,7 @@ const dailyMemes = Array.from({ length: memeSlots }, (_, index) => memes[(memeOf
         {launches.length > 0 && <div class="wire-desk"><h3>Launchpad</h3><div class="wire-grid">{launches.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}</div></div>}
         {research.length > 0 && <div class="wire-desk"><h3>Research &amp; benchmarks</h3><div class="wire-grid">{research.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}</div></div>}
         {signals.length > 0 && <div class="wire-desk"><h3>Markets, policy &amp; work</h3><div class="wire-grid">{signals.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}</div></div>}
-        {briefs.length > 0 && <div class="wire-desk"><h3>Briefing wire</h3><div class="wire-grid compact">{briefs.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}{dailyMemes.map((meme, index) => <article class="wire-card meme-fill" id={index === 0 ? 'memes' : undefined}><img src={meme.image} alt={meme.alt} loading="lazy" decoding="async" /><div class="publisher">AI meme · {meme.topic}</div><h3>{meme.title}</h3><p>{meme.lesson}</p></article>)}</div></div>}
+        {briefs.length > 0 && <div class="wire-desk"><h3>Briefing wire</h3><div class="wire-grid compact">{briefs.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}<article class="wire-card meme-fill wire-meme"><img src={wireMeme.image} alt={wireMeme.alt} loading="lazy" decoding="async" /><div class="publisher">Wire-side AI cartoon · {wireMeme.topic}</div><h3>{wireMeme.title}</h3><p>{wireMeme.lesson}</p></article></div></div>}
       </section>}
 <section class="section" id="one-idea" aria-labelledby="one-idea-heading">
         <div class="section-title"><div><div class="flag">Our read · built from today’s reporting</div><h2 id="one-idea-heading">One idea</h2></div></div>
@@ -111,6 +112,7 @@ const dailyMemes = Array.from({ length: memeSlots }, (_, index) => memes[(memeOf
           <section class="desk-panel" id="giggles" aria-labelledby="giggles-heading">
             <div class="section-title"><div><div class="flag">The lighter side</div><h2 id="giggles-heading">AI Giggles</h2></div><p>Odd, amusing, and sourceable.</p></div>
             {giggles.length ? giggles.map((story) => <article class="story"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><p class="context"><strong>Why it’s funny (and relevant):</strong> {story.whyCare}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>) : <p class="empty">No verifiable giggle made today’s wire by this edition’s cutoff. We’ll keep the jokes in the headlines, not in the facts.</p>}
+            <article class="wire-card meme-fill" id="memes"><img src={dailyMeme.image} alt={dailyMeme.alt} loading="lazy" decoding="async" /><div class="publisher">AI meme · {dailyMeme.topic}</div><h3>{dailyMeme.title}</h3><p>{dailyMeme.lesson}</p></article>
           </section>
           {incidents.length > 0 && <section class="desk-panel incidents" id="incidents" aria-labelledby="incidents-heading">
             <div class="section-title"><div><div class="flag">Failures · accidents · harmful actions</div><h2 id="incidents-heading">Incident desk</h2></div><p>What went wrong, and what is confirmed?</p></div>
