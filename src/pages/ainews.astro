@@ -16,6 +16,13 @@ const insights = edition.insights ?? (edition.focus ?? []).map((item) => ({
   priority: item.kind, title: item.kind, context: 'The earlier edition did not include context for this focus item.',
   whyItMatters: item.text, action: item.text, watchFor: '', sources: []
 }));
+const memes = [
+  { image: '/images/ainews-meme-prompt.jpg', alt: 'A friendly AI robot makes a comically long scroll while an editor asks for a short answer.', topic: 'Prompting · Lesson 01', title: '“Keep it short,” said the prompt.', lesson: 'Specific constraints beat vague wishes. Name the audience, length, format, and an example to get a more useful first draft.' },
+  { image: '/images/ainews-meme-approval.jpg', alt: 'A cheerful AI agent pauses at a large red button while a human editor gives approval behind a safety rail.', topic: 'AI agents · Lesson 02', title: 'The agent found the big red button.', lesson: 'Give agents only the access they need. Require human approval before payments, publishing, or deleting anything.' },
+  { image: '/images/ainews-meme-benchmark.jpg', alt: 'A proud AI robot with a benchmark trophy compares its score with a researcher’s real-world task checklist.', topic: 'Evaluation · Lesson 03', title: 'First place on the benchmark. Now try Tuesday.', lesson: 'Benchmarks compare systems on a test set; your own task may differ. Evaluate with representative examples and human review.' }
+];
+const memeOffset = new Date(`${edition.editionDate}T12:00:00Z`).getUTCDate() % memes.length;
+const dayMemes = [...memes.slice(memeOffset), ...memes.slice(0, memeOffset)];
 ---
 <!doctype html>
 <html lang="en">
@@ -30,13 +37,13 @@ const insights = edition.insights ?? (edition.focus ?? []).map((item) => ({
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root{--paper:#ece7da;--sheet:#f8f5ed;--card:#fffdf7;--ink:#211e19;--muted:#625c52;--line:#c8bfaf;--red:#9e3025;--gold:#d6aa43;--sage:#e1e9d9;--mono:'DM Mono',monospace;--sans:'DM Sans',Arial,sans-serif;--serif:'Playfair Display',Georgia,serif}
-      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.45 var(--sans)}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--sans)}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
       .sheet{width:min(1660px,calc(100% - 18px));margin:9px auto;background:var(--sheet);padding:0 16px 16px;box-shadow:0 5px 26px rgba(33,30,25,.09)}
       .utility{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0;border-bottom:1px solid var(--line);font:10px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.utility nav{display:flex;gap:12px;flex-wrap:wrap}.utility a{text-decoration:none}.utility a:hover{color:var(--red);text-decoration:underline;text-underline-offset:3px}
-      .masthead{text-align:center;padding:12px 0 9px;border-bottom:5px double var(--ink)}.overline,.meta,.label,.stamp,.flag{font:10px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--red)}h1{font:800 clamp(42px,5.4vw,70px)/.9 var(--serif);letter-spacing:-.06em;margin:3px 0}.subtitle{font:italic 13px var(--serif);color:var(--muted);margin:0 auto;max-width:760px}.editionline{display:flex;justify-content:space-between;gap:10px;margin-top:9px;padding:6px 0 0;border-top:1px solid var(--line);font:10px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+      .masthead{text-align:center;padding:12px 0 9px;border-bottom:5px double var(--ink)}.overline,.meta,.label,.stamp,.flag{font:10px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--red)}h1{font:800 clamp(42px,5.4vw,70px)/.9 var(--serif);letter-spacing:-.06em;margin:3px 0}.subtitle{font:italic 15px var(--serif);color:var(--muted);margin:0 auto;max-width:760px}.editionline{display:flex;justify-content:space-between;gap:10px;margin-top:9px;padding:6px 0 0;border-top:1px solid var(--line);font:10px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
       .front-grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(260px,.85fr);gap:9px;padding:9px 0 5px}.lead,.side-digest,.digest-item,.section,.desk-panel,.idea-box,.story,.wire-card,.insight,.learning{background:var(--card);border:1px solid var(--line);box-shadow:0 2px 6px rgba(33,30,25,.045)}
       .lead{padding:12px 15px;border-top:5px solid var(--red)}.lead h2{font:700 clamp(27px,3.1vw,42px)/1.05 var(--serif);letter-spacing:-.04em;margin:5px 0 8px}.lead p{margin:6px 0;color:var(--muted)}.lead .why{color:var(--ink);border-left:3px solid var(--red);padding:2px 0 2px 9px}.side-digest{padding:10px;background:#f0ebdf}.side-digest h2{font:700 20px/1.1 var(--serif);margin:3px 0 8px}.digest-item{padding:7px;margin:5px 0;font-size:12px}.digest-item p{margin:3px 0 0}.source-links{display:flex;gap:5px 11px;flex-wrap:wrap;margin-top:auto;padding-top:8px;font:9px var(--mono)}.source-links a{text-decoration:underline;text-underline-offset:3px}.source-links a:hover{color:var(--red)}
-      .section{padding:9px 10px 11px;margin:5px 0 9px;background:transparent;border:0;border-top:2px solid var(--ink);box-shadow:none}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding-bottom:5px;margin-bottom:7px;border-bottom:1px solid var(--line)}.section-title h2{font:700 clamp(22px,2.5vw,31px)/1.05 var(--serif);letter-spacing:-.035em;margin:1px 0}.section-title p{font:10px var(--mono);color:var(--muted);margin:0;text-align:right}
+      .section{padding:9px 10px 11px;margin:5px 0 9px;background:transparent;border:0;border-top:2px solid var(--ink);box-shadow:none}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding-bottom:5px;margin-bottom:7px;border-bottom:1px solid var(--line)}.section-title h2{font:700 clamp(22px,2.5vw,31px)/1.05 var(--serif);letter-spacing:-.035em;margin:1px 0}.section-title p{font:11px var(--mono);color:var(--muted);margin:0;text-align:right}
       .critical-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.story{display:flex;flex-direction:column;min-width:0;padding:9px 10px;border-top:3px solid var(--line)}.story h3{font:700 17px/1.16 var(--serif);letter-spacing:-.02em;margin:5px 0}.story p{margin:4px 0;color:var(--muted);font-size:12px}.story .context,.story .why{color:var(--ink)}.story .why{padding-top:5px;border-top:1px dotted var(--line)}.story .publisher{font:9px var(--mono);letter-spacing:.055em;text-transform:uppercase;color:var(--muted)}
       .desk{display:grid;grid-template-columns:1fr 1fr;gap:9px}.desk-panel{padding:10px;background:#f3edde;border-top:4px solid var(--gold)}.desk-panel.incidents{background:#f5e9e3;border-top-color:var(--red)}.desk-panel .section-title{display:block;margin-bottom:6px}.desk-panel .section-title h2{margin:2px 0}.desk-panel .story{margin-top:6px}
       .wire-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.wire-card{display:flex;flex-direction:column;min-width:0;width:auto;margin:0;padding:9px;border-top:3px solid var(--line);break-inside:avoid}.wire-card h3{font:700 16px/1.16 var(--serif);margin:4px 0}.wire-card p{font-size:12px;color:var(--muted);margin:5px 0}.wire-card .publisher{font:9px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}.wire-desk{margin:9px 0}.wire-desk>h3{font:700 19px var(--serif);margin:0 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line)}.wire-grid.compact{grid-template-columns:repeat(5,minmax(0,1fr))}
@@ -54,13 +61,13 @@ const insights = edition.insights ?? (edition.focus ?? []).map((item) => ({
     <main class="sheet">
       <header class="utility">
         <span>AI News · Independent daily briefing</span>
-        <nav aria-label="Edition sections"><a href="#critical">Critical</a><a href="#one-idea">One idea</a><a href="#giggles">AI Giggles</a>{incidents.length > 0 && <a href="#incidents">Incident desk</a>}<a href="#newsroom">Newsroom</a><a href="#insights">Actionable insights</a><a href="#shareables">Takeaways</a><a href="/ainews/archive">Past editions</a></nav>
+        <nav aria-label="Edition sections"><a href="#critical">Critical</a><a href="#one-idea">One idea</a><a href="#giggles">AI Giggles</a>{incidents.length > 0 && <a href="#incidents">Incident desk</a>}<a href="#newsroom">Newsroom</a><a href="#memes">Meme of the day</a><a href="#insights">Actionable insights</a><a href="#shareables">Takeaways</a><a href="/ainews/archive">Past editions</a></nav>
       </header>
       <header class="masthead">
         <div class="overline">The daily artificial intelligence briefing</div>
         <h1>AI News</h1>
         <p class="subtitle">The day’s consequential developments, curious moments, failures, and useful next steps. A little wit in the margins; receipts in every column.</p>
-        <div class="editionline"><span>{dateLabel} · {edition.cutoff}</span><span>{edition.editionLabel}</span><span>{edition.timezone}</span></div>
+        <div class="editionline"><span>{dateLabel}</span></div>
       </header>
       <section class="front-grid" aria-label="Front page">
         <article class="lead">
@@ -76,6 +83,11 @@ const insights = edition.insights ?? (edition.focus ?? []).map((item) => ({
           {critical.slice(0, 3).map((story, index) => <article class="digest-item"><div class="publisher">{String(index + 1).padStart(2, '0')} · {story.status}</div><p><a href="#critical">{story.title}</a></p></article>)}
         </aside>
       </section>
+      <section class="section" id="memes" aria-labelledby="memes-heading">
+        <div class="section-title"><div><div class="flag">A laugh with a lesson</div><h2 id="memes-heading">AI Memes of the Day</h2></div><p>Original cartoons · practical takeaways</p></div>
+        <div class="meme-grid">{dayMemes.map((meme, index) => <article class="wire-card meme-card"><img src={meme.image} alt={meme.alt} loading="lazy" decoding="async" /><div class="meme-copy">{index === 0 && <span class="daily-pick">Today’s pick</span>}<div class="publisher">{meme.topic}</div><h3>{meme.title}</h3><p>{meme.lesson}</p></div></article>)}</div>
+      </section>
+
       <section class="section" id="one-idea" aria-labelledby="one-idea-heading">
         <div class="section-title"><div><div class="flag">Our read · built from today’s reporting</div><h2 id="one-idea-heading">One idea</h2></div></div>
         <article class="idea-box">
