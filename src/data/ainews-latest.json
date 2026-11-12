@@ -54,7 +54,6 @@
     }
   ],
   "incidents": [],
-  "incidentNote": "No independently verified AI accident, outage, harmful bot action, or model failure appeared in the sources checked for this sample cutoff. The desk stays open for the next edition.",
   "insights": [
     {
       "priority": "Try today",
@@ -108,11 +107,7 @@
     "body": "A closed-set decision model chooses among options you define ahead of time—such as “valid,” “invalid,” or “needs review”—instead of generating an open-ended answer. It can make repetitive classification easier to validate. If the right option is missing or the input is ambiguous, the model can still choose confidently and be wrong.",
     "tryThis": "Take ten recent support requests. Define a small label set, ask a model to classify them, and have a person review the result. Count disagreements and cases where the correct label was missing."
   },
-  "notes": [
-    "This is a curated morning snapshot from the sources searched, not an exhaustive list of every AI article published worldwide.",
-    "The incident desk is omitted because no verified incident was included in this edition.",
-    "Coverage is curated from sources checked through the stated cutoff. Company claims and early reporting are labeled; this is not an exhaustive index."
-  ],
+  "notes": [],
   "launches": [
     {
       "title": "Google’s Decisions API gives models a multiple-choice job",
