@@ -92,6 +92,7 @@ const fetched = await Promise.all(feeds.map(async (feed) => {
 }));
 
 const items = [];
+const skipped = { title: 0, url: 0, date: 0, old: 0 };
 for (const result of fetched) {
   for (const block of result.blocks) {
     const title = readTag(block, ['title']);
@@ -99,7 +100,10 @@ for (const result of fetched) {
     const description = readTag(block, ['description', 'summary', 'content:encoded', 'content']);
     const rawDate = readTag(block, ['pubDate', 'published', 'updated', 'date']);
     const published = new Date(rawDate);
-    if (!title || !url || !Number.isFinite(published.getTime()) || published.getTime() < windowStart) continue;
+    if (!title) { skipped.title++; continue; }
+    if (!url) { skipped.url++; continue; }
+    if (!Number.isFinite(published.getTime())) { skipped.date++; continue; }
+    if (published.getTime() < windowStart) { skipped.old++; continue; }
     const normalizedTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
     if (!items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url)) continue;
     items.push({
@@ -112,7 +116,8 @@ for (const result of fetched) {
 items.sort((a, b) => b.date - a.date);
 if (!items.length) {
   const errors = fetched.filter((result) => result.error).map((result) => result.feed.publisher + ': ' + result.error);
-  throw new Error('No fresh dated stories were available from the RSS feeds. The existing edition was left untouched. Feed errors: ' + errors.join('; '));
+  const feedCounts = fetched.map((result) => result.feed.publisher + '=' + result.blocks.length).join(', ');
+  throw new Error('No fresh dated stories were available from the RSS feeds. Parsed feed entries: ' + feedCounts + '. Skipped entries: ' + JSON.stringify(skipped) + '. Feed errors: ' + errors.join('; '));
 }
 
 const patterns = {
