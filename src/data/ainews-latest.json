@@ -2,30 +2,30 @@
   "editionDate": "2026-11-12",
   "timezone": "America/Los_Angeles",
   "cutoff": "Morning snapshot · 5:53 AM PT",
-  "editionLabel": "Sample edition",
+  "editionLabel": "No. 01 · Sample issue",
   "lead": {
-    "title": "Google gives AI a multiple-choice test and asks it to stop writing essays",
-    "status": "Confirmed · announced Nov. 11",
-    "summary": "Google introduced Gemini Decisions API, a service for structured, closed-set judgments such as classifying an image or scoring answers against a rubric. Google's announcement says it can process up to 1,000 questions in one request across text, images, audio, video and PDFs. This is a product announcement and Google's own description of its capabilities, not independent performance validation.",
-    "whyCare": "For workflows that need labels or decisions at scale, a purpose-built endpoint may be easier to evaluate than asking a general chatbot to explain itself 1,000 times.",
+    "title": "The AI market wakes up to a leadership question",
+    "status": "Reported · Nov. 12",
+    "summary": "Axios and the Associated Press report that questions around Nvidia CEO Jensen Huang are weighing on AI-related shares. At this morning's cutoff, the board situation was developing; this edition does not treat a reported meeting as a final decision.",
+    "whyCare": "Nvidia sits near the center of the AI compute supply chain. Leadership uncertainty can affect customers, investors, and policy debates even before chip availability or product plans change.",
     "sources": [
       {
-        "title": "Google announcement",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        "title": "Axios",
+        "url": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board"
       },
       {
-        "title": "The Decoder coverage",
-        "url": "https://www.the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/"
+        "title": "Associated Press",
+        "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
       }
     ]
   },
-  "news": [
+  "critical": [
     {
-      "title": "The AI market’s Jensen-shaped question mark",
-      "status": "Reported · Nov. 12",
+      "title": "Nvidia leadership uncertainty rattles the AI trade",
+      "status": "Reported · developing",
       "publisher": "Axios / AP",
-      "summary": "Axios and the Associated Press report that Nvidia leadership questions and concerns around the wider AI investment boom are weighing on AI-related stocks. The coverage describes developing corporate and market uncertainty; it does not establish a final board decision about CEO Jensen Huang.",
-      "whyCare": "AI's supply chain and investor confidence are concentrated around a small number of firms. Leadership risk can move markets before it changes a model roadmap.",
+      "summary": "Reports describe board discussions about Jensen Huang's future following allegations that are also drawing national-security scrutiny. No final board decision was confirmed at this edition's cutoff.",
+      "whyCare": "The AI economy is concentrated around a small number of chip and infrastructure suppliers, so leadership and export-policy questions can ripple well beyond one company.",
       "sources": [
         {
           "title": "Axios",
@@ -38,14 +38,79 @@
       ]
     },
     {
-      "title": "The paper pile grows; evaluation gets a useful reality check",
-      "status": "Research roundup · Nov. 12 · preprints",
-      "publisher": "NHỊP",
-      "summary": "Today's roundup highlights research on compute-matched evaluation, sparse model edits, and coding-agent benchmarks. One useful lesson across the papers: a method that wins per training step may lose when compared at equal compute. These are preprint claims summarized by a third-party digest, not settled findings.",
-      "whyCare": "When comparing AI research, ask whether methods were tested with the same compute budget. A win per training step can disappear when the full cost is counted.",
+      "title": "Google launches a purpose-built model for bounded decisions",
+      "status": "Confirmed · announced Nov. 11",
+      "publisher": "Google",
+      "summary": "Google introduced Gemini Decisions API for closed-set judgments such as yes/no checks, choices, and rubric scores. The company says requests can contain up to 1,000 questions across text, images, audio, video, and PDFs; those performance claims are Google's.",
+      "whyCare": "A narrow decision endpoint could simplify repetitive classification and model routing, but teams still need to measure accuracy and cost on their own data.",
       "sources": [
         {
-          "title": "NHỊP paper roundup",
+          "title": "Google announcement",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ]
+    }
+  ],
+  "giggles": [
+    {
+      "title": "The AI gets a new job: pick a checkbox and spare us the TED Talk",
+      "status": "Confirmed product news · Nov. 11",
+      "publisher": "Google",
+      "summary": "Google's new Decisions API is designed to choose among fixed options instead of generating a long answer. The joke is in the job description: after years of prompting chatbots to be concise, one product is now purpose-built to not write the essay.",
+      "whyCare": "Humor aside, this reflects a practical shift toward smaller, measurable model tasks rather than using a general chatbot for every workflow.",
+      "sources": [
+        {
+          "title": "Google announcement",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ]
+    }
+  ],
+  "incidents": [],
+  "incidentNote": "No independently verified AI accident, outage, harmful bot action, or model failure appeared in the sources checked for this sample cutoff. The desk stays open for the next edition.",
+  "insights": [
+    {
+      "priority": "Try today",
+      "title": "Pilot a bounded decision on a small, reviewed sample",
+      "context": "Google announced an API for yes/no, multiple-choice, and rubric-scoring decisions across multimodal inputs.",
+      "whyItMatters": "A model that returns a probability for options you define can be easier to route and audit than open-ended prose, but confidence is not proof of correctness.",
+      "action": "Choose one low-risk classification task, label 30–50 examples by hand, compare the API and your current method, then review every disagreement before expanding.",
+      "watchFor": "Measure error types, abstentions, human-review rate, latency, and total cost. Keep sensitive or high-impact decisions human-reviewed.",
+      "sources": [
+        {
+          "title": "Google announcement",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Track the Nvidia story as a supply-chain and policy signal",
+      "context": "Multiple outlets report market concern and ongoing questions around Nvidia's leadership; the situation was unresolved at this edition's cutoff.",
+      "whyItMatters": "Leadership uncertainty may influence customer confidence, export-policy scrutiny, and expectations for the industry's compute buildout.",
+      "action": "Wait for a company statement or corroborated follow-up before updating plans. Separate verified board actions from market reaction and allegation.",
+      "watchFor": "A confirmed board decision, operational changes, export-control announcements, or changes to public customer commitments.",
+      "sources": [
+        {
+          "title": "Axios",
+          "url": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board"
+        },
+        {
+          "title": "Associated Press",
+          "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
+        }
+      ]
+    },
+    {
+      "priority": "Read",
+      "title": "Compare AI research at equal compute, not just equal steps",
+      "context": "Today's paper roundup highlights a preprint reporting that some dense-reward methods lose their apparent advantage when compute is matched.",
+      "whyItMatters": "A benchmark win can hide extra model calls or training tokens; equal-compute comparisons help show whether a method is actually more efficient.",
+      "action": "When a paper reports a gain, check token/compute budgets, baselines, and failed variants before deciding whether the result transfers to your work.",
+      "watchFor": "Independent replication and the original paper's full evaluation protocol.",
+      "sources": [
+        {
+          "title": "NHỊP research roundup",
           "url": "https://nhip.verai.vn/en/papers/2026-11-12"
         }
       ]
@@ -53,25 +118,11 @@
   ],
   "learning": {
     "title": "Closed-set decisions",
-    "body": "A closed-set decision model chooses among options you define ahead of time—say, “invoice valid / invalid / needs review”—instead of generating an open-ended answer. This makes outputs easier to validate and can make repetitive classification cheaper. It also means the model cannot give a good answer if the right option is missing or the question itself is ambiguous.",
-    "tryThis": "Take ten recent support requests. Write a small fixed label set, then ask a model to assign each request a label plus confidence. Count human disagreements and cases where the right label was missing."
+    "body": "A closed-set decision model chooses among options you define ahead of time—such as “valid,” “invalid,” or “needs review”—instead of generating an open-ended answer. It can make repetitive classification easier to validate. If the right option is missing or the input is ambiguous, the model can still choose confidently and be wrong.",
+    "tryThis": "Take ten recent support requests. Define a small label set, ask a model to classify them, and have a person review the result. Count disagreements and cases where the correct label was missing."
   },
-  "focus": [
-    {
-      "kind": "Do",
-      "text": "If you run high-volume classification, compare a structured decision endpoint with your current prompt on a small, human-reviewed sample before changing production."
-    },
-    {
-      "kind": "Watch",
-      "text": "Look for primary confirmation of any Nvidia board or leadership decision; early market coverage is not a resolved corporate event."
-    },
-    {
-      "kind": "Skip",
-      "text": "Don’t infer broad AI capability from a leaderboard number or roundup blurb. Read the evaluation setup."
-    }
-  ],
   "notes": [
-    "Search results for today's AI news included conflicting claims and duplicate summaries. Uncorroborated items were excluded from this sample.",
-    "This is a curated snapshot based on sources searched, not an exhaustive index of every article worldwide."
+    "No independently verified AI incident appeared in the sources checked for this sample cutoff. The incident desk stays open rather than inventing a failure.",
+    "This is a curated morning snapshot from the sources searched, not an exhaustive list of every AI article published worldwide."
   ]
 }
