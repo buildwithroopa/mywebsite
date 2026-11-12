@@ -1,8 +1,8 @@
 {
   "editionDate": "2026-11-12",
   "timezone": "America/Los_Angeles",
-  "cutoff": "Morning snapshot · 5:53 AM PT",
-  "editionLabel": "No. 01 · Sample issue",
+  "cutoff": "Morning edition · 6:44 AM PT",
+  "editionLabel": "Daily issue · Expanded",
   "lead": {
     "title": "The AI market wakes up to a leadership question",
     "status": "Reported · Nov. 12",
@@ -34,19 +34,6 @@
         {
           "title": "Associated Press",
           "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
-        }
-      ]
-    },
-    {
-      "title": "Google launches a purpose-built model for bounded decisions",
-      "status": "Confirmed · announced Nov. 11",
-      "publisher": "Google",
-      "summary": "Google introduced Gemini Decisions API for closed-set judgments such as yes/no checks, choices, and rubric scores. The company says requests can contain up to 1,000 questions across text, images, audio, video, and PDFs; those performance claims are Google's.",
-      "whyCare": "A narrow decision endpoint could simplify repetitive classification and model routing, but teams still need to measure accuracy and cost on their own data.",
-      "sources": [
-        {
-          "title": "Google announcement",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
         }
       ]
     }
@@ -122,7 +109,172 @@
     "tryThis": "Take ten recent support requests. Define a small label set, ask a model to classify them, and have a person review the result. Count disagreements and cases where the correct label was missing."
   },
   "notes": [
-    "No independently verified AI incident appeared in the sources checked for this sample cutoff. The incident desk stays open rather than inventing a failure.",
-    "This is a curated morning snapshot from the sources searched, not an exhaustive list of every AI article published worldwide."
+    "This is a curated morning snapshot from the sources searched, not an exhaustive list of every AI article published worldwide.",
+    "The incident desk is omitted because no verified incident was included in this edition.",
+    "Coverage is curated from sources checked through the stated cutoff. Company claims and early reporting are labeled; this is not an exhaustive index."
+  ],
+  "launches": [
+    {
+      "title": "Google’s Decisions API gives models a multiple-choice job",
+      "status": "Announced · Nov. 11",
+      "publisher": "Google",
+      "summary": "Google introduced an API for yes/no, multiple-choice, and rubric-scoring decisions. It accepts multimodal inputs and returns confidence scores; the capabilities and pricing are company claims.",
+      "whyCare": "A constrained output can be easier to evaluate than free-form text, but it still needs testing against your own labeled examples.",
+      "sources": [
+        {
+          "title": "Google announcement",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ]
+    },
+    {
+      "title": "Databricks makes Genie an always-on business assistant",
+      "status": "Announced · Nov. 11",
+      "publisher": "Databricks / Fortune",
+      "summary": "Databricks introduced an always-on version of Genie for longer-running workplace tasks, with new capabilities moving into preview and beta programs.",
+      "whyCare": "It pushes business assistants from answering prompts toward background work over company information; access controls and review matter more as autonomy increases.",
+      "sources": [
+        {
+          "title": "Fortune",
+          "url": "https://fortune.com/2026/11/11/databricks/"
+        }
+      ]
+    },
+    {
+      "title": "Qwen4-Max-Preview arrives for developers",
+      "status": "Preview · Nov. 11",
+      "publisher": "QwenCloud",
+      "summary": "Alibaba’s Qwen4-Max-Preview supports text generation, image and video understanding, reasoning, and tool use. The preview is offered through QwenCloud’s Token Plan through Nov. 25.",
+      "whyCare": "A new model option is useful only if its access terms, latency, and task quality fit the workload; preview status means interfaces may change.",
+      "sources": [
+        {
+          "title": "QwenCloud model guide",
+          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+        }
+      ]
+    },
+    {
+      "title": "AWS Emulator offers a local stand-in for cloud services",
+      "status": "Tool release · Nov. 11",
+      "publisher": "AWS / GeekWire",
+      "summary": "Amazon released a free local testing tool that simulates more than 200 AWS services. Amazon says AI agents wrote and maintain its code; the emulator does not reproduce every outage or service restriction.",
+      "whyCare": "Local simulation could shorten development loops, but it does not replace cloud integration tests for behaviors the emulator cannot model.",
+      "sources": [
+        {
+          "title": "GeekWire",
+          "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "title": "AlphaGenome 2 targets cell-specific effects of genetic variants",
+      "status": "Research tool · Nov. 12",
+      "publisher": "Google DeepMind",
+      "summary": "DeepMind says AlphaGenome 2 predicts how genetic variants affect specific cell types using a large collection of cell profiles. It is offered for noncommercial research and is not approved for clinical diagnosis.",
+      "whyCare": "The model may help researchers prioritize hypotheses, but its predictions are research inputs rather than medical advice or validated diagnoses.",
+      "sources": [
+        {
+          "title": "Google DeepMind",
+          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "title": "United blocks unauthorized AI agents from completing flight bookings",
+      "status": "Reported · Nov. 11",
+      "publisher": "The Verge",
+      "summary": "United will let personal AI assistants display flight options but not complete purchases. The airline cited privacy, accidental bookings, and passenger declarations required by aviation rules; it says it may reconsider as safeguards improve.",
+      "whyCare": "This is an early boundary for agent commerce: sensitive actions may require a human to confirm identity, declarations, and payment.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+        }
+      ]
+    },
+    {
+      "title": "Fed official warns AI investment could amplify a market correction",
+      "status": "Reported · Nov. 11",
+      "publisher": "Semafor",
+      "summary": "Federal Reserve Governor Michelle Bowman raised concern that debt and elevated AI-related valuations could worsen a correction if expected returns fail to arrive. The warning is a risk assessment, not a forecast that a correction is imminent.",
+      "whyCare": "AI infrastructure spending is increasingly financed and valued on expectations; track realized demand and cash flows alongside announcements.",
+      "sources": [
+        {
+          "title": "Semafor",
+          "url": "https://www.semafor.com/article/11/11/2026/anthropic-ipo-could-lead-to-large-correction-in-markets-fed-official-says"
+        }
+      ]
+    },
+    {
+      "title": "Draft bill would require federal permission to train advanced AI models",
+      "status": "Proposal · Nov. 11",
+      "publisher": "Futurism",
+      "summary": "Democratic lawmakers are considering a bill that would create a federal AI department and require permission for some advanced-model training. The proposal’s support and chance of passage remain uncertain.",
+      "whyCare": "If enacted, training approvals could reshape compliance costs and research access; for now, treat this as a policy proposal rather than a rule.",
+      "sources": [
+        {
+          "title": "Futurism",
+          "url": "https://futurism.com/artificial-intelligence/democrats-federal-permit-train-ai-model"
+        }
+      ]
+    },
+    {
+      "title": "CoreWeave turns to customer prepayments to finance AI infrastructure",
+      "status": "Reported · Nov. 11",
+      "publisher": "TechCrunch",
+      "summary": "CoreWeave is seeking customer prepayments and shorter contracts as it funds rapid infrastructure growth. The company reported rising revenue alongside a substantial quarterly net loss.",
+      "whyCare": "Prepayments can help finance expansion while shifting commitment and financing risk across providers and customers; compare utilization and contract terms, not just revenue growth.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "title": "OpenAI plans free AI workshops for caregivers",
+      "status": "Company program · Nov. 12",
+      "publisher": "OpenAI",
+      "summary": "OpenAI announced workshops with nonprofit partners in five U.S. cities on using AI for scheduling, understanding health information, and finding community resources, alongside privacy and limitation guidance.",
+      "whyCare": "Caregiving is a practical high-stakes use case where helpful organization and unsafe medical reliance sit close together.",
+      "sources": [
+        {
+          "title": "OpenAI",
+          "url": "https://openai.com/index/"
+        }
+      ]
+    },
+    {
+      "title": "A new AI-first phone bets on voice as the interface",
+      "status": "Founder announcement · Nov. 12",
+      "publisher": "The Neuron",
+      "summary": "A startup called Blue says its phone assistant can act across apps, handle notifications, and complete tasks by voice. The product claims and early preference figures are founder-reported.",
+      "whyCare": "The pitch tests whether users will delegate cross-app tasks to an assistant rather than navigate apps themselves.",
+      "sources": [
+        {
+          "title": "The Neuron daily digest",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Student AI use still outpaces instruction on how to use it",
+      "status": "Survey · Nov. 10",
+      "publisher": "OpenAI / ThinkYoung",
+      "summary": "A report using ThinkYoung survey data says 79% of students use AI for schoolwork while 47% say they have been shown how to use it. These are survey results, not a census of all students.",
+      "whyCare": "The gap points to a need for explicit teaching on verification, attribution, and appropriate use.",
+      "sources": [
+        {
+          "title": "The Neuron daily digest",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        }
+      ]
+    }
   ]
 }
