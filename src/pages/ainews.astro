@@ -135,7 +135,7 @@ const giggleMemes = [
       <section class="section" id="shareables" aria-labelledby="shareables-heading">
         <div class="section-title"><div><div class="flag">Save it · send it · bring it to a meeting</div><h2 id="shareables-heading">Worth passing along</h2></div><p>Short, original takeaways with sources attached.</p></div>
         <div class="wire-grid share-cards">
-          {takeaways.map((item) => <article class="wire-card"><h3>{item.title}</h3><p>{item.summary}</p><div class="source-links">{item.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div><button type="button" class="share-button" data-copy={`${item.title} — ${item.summary}`}>Copy takeaway</button></article>)}
+          {takeaways.map((item) => <article class="wire-card"><h3>{item.title}</h3><p>{item.summary}</p><div class="source-links">{item.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div><button type="button" class="share-button" data-copy={`${item.title}: ${item.summary}`}>Copy takeaway</button></article>)}
         </div>
       </section>
             <section class="section" id="learn" aria-labelledby="learn-heading">
