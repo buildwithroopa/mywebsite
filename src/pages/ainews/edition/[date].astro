@@ -1,0 +1,49 @@
+---
+export function getStaticPaths() {
+  const files = import.meta.glob('../../../data/ainews-archive/*.json', { eager: true, import: 'default' });
+  return Object.values(files).map((edition) => ({
+    params: { date: edition.editionDate },
+    props: { edition }
+  }));
+}
+const { edition } = Astro.props;
+const dateLabel = new Date(`${edition.editionDate}T12:00:00`).toLocaleDateString('en-US', {
+  weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: edition.timezone
+});
+const desks = [
+  ['Important & critical', edition.critical],
+  ['Launchpad', edition.launches],
+  ['Research & benchmarks', edition.research],
+  ['Markets, policy & work', edition.signals],
+  ['Briefing wire', edition.briefs],
+  ['AI Giggles', edition.giggles],
+  ['Incident desk', edition.incidents]
+].filter(([, items]) => items?.length);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3efe5" />
+    <title>{dateLabel} · AI News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{--paper:#f3efe5;--sheet:#fbf9f2;--ink:#201d19;--muted:#625d54;--line:#b8b0a1;--red:#a43124;--mono:'DM Mono',monospace;--sans:'DM Sans',Arial,sans-serif;--serif:'Playfair Display',Georgia,serif}
+      *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--sans)}a{color:inherit}.sheet{width:min(1200px,calc(100% - 24px));margin:auto;background:var(--sheet);padding:18px 28px 28px}.utility{display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--line);font:10px var(--mono);text-transform:uppercase;color:var(--muted)}.masthead{text-align:center;padding:16px 0;border-bottom:4px double var(--ink)}.flag{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}h1{font:800 clamp(40px,6vw,66px)/1 var(--serif);letter-spacing:-.06em;margin:5px 0}.subtitle{font:italic 15px var(--serif);color:var(--muted);margin:0}.idea{padding:14px 0;border-bottom:2px solid var(--ink)}.idea h2{font:700 26px/1.2 var(--serif);margin:5px 0}.idea p{margin:6px 0;color:var(--muted)}.desk{padding:12px 0;border-bottom:1px solid var(--line)}.desk h2{font:700 24px var(--serif);margin:0 0 5px;border-bottom:2px solid var(--ink);padding-bottom:5px}.story{display:grid;grid-template-columns:200px 1fr;gap:15px;padding:9px 0;border-bottom:1px solid #ded7cb}.story h3{font:700 18px/1.2 var(--serif);margin:0}.publisher{font:10px var(--mono);color:var(--muted);text-transform:uppercase}.story p{font-size:13px;color:var(--muted);margin:4px 0}.story .sources{font:10px var(--mono)}.story .sources a{margin-right:10px}.learn{padding:14px 0}.learn h2{font:700 23px var(--serif);margin:4px 0}.button{display:inline-block;margin-top:8px;padding:6px 9px;border:1px solid var(--ink);font:10px var(--mono);text-decoration:none;text-transform:uppercase}@media(max-width:640px){.sheet{width:100%;padding:14px 18px}.story{grid-template-columns:1fr;gap:3px}.utility{gap:10px;flex-direction:column}}
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="utility"><a href="/ainews/archive">← All editions</a><span>AI News · Archive issue</span><a href="/ainews">Latest edition →</a></header>
+      <header class="masthead"><div class="flag">Daily issue</div><h1>AI News</h1><p class="subtitle">{dateLabel} · {edition.cutoff} · {edition.timezone}</p></header>
+      <section class="idea"><div class="flag">One idea</div><h2>{edition.oneIdea?.title ?? edition.lead.title}</h2><p>{edition.oneIdea?.summary ?? edition.lead.summary}</p>{edition.oneIdea?.whyNow && <p><strong>Why now:</strong> {edition.oneIdea.whyNow}</p>}</section>
+      <section class="desk"><h2>Lead story</h2><article class="story" id={edition.lead.title}><div class="publisher">{edition.lead.status}</div><div><h3>{edition.lead.title}</h3><p>{edition.lead.summary}</p><p><strong>Why it matters:</strong> {edition.lead.whyCare}</p><div class="sources">{edition.lead.sources.map((source) => <a href={source.url}>{source.title} ↗</a>)}</div></div></article></section>
+      {desks.map(([name, items]) => <section class="desk"><h2>{name}</h2>{items.map((item) => <article class="story" id={item.title}><div class="publisher">{item.status}{item.publisher ? ` · ${item.publisher}` : ''}</div><div><h3>{item.title}</h3><p>{item.summary}</p>{item.whyCare && <p><strong>Why it matters:</strong> {item.whyCare}</p>}<div class="sources">{item.sources.map((source) => <a href={source.url}>{source.title} ↗</a>)}</div></div></article>)}</section>)}
+      <section class="learn"><div class="flag">Understand one thing</div><h2>{edition.learning.title}</h2><p>{edition.learning.body}</p><p><strong>Try this:</strong> {edition.learning.tryThis}</p></section>
+      <footer class="utility"><a href="/ainews/archive">← All editions</a><a href="/ainews">Return to today’s edition</a></footer>
+    </main>
+  </body>
+</html>
