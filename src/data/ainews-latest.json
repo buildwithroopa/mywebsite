@@ -66,11 +66,11 @@
       ]
     },
     {
-      "title": "AI agents wrote a cloud emulator—now the emulator tests the cloud",
+      "title": "AI agents built a practice cloud. Real AWS still gets the final test.",
       "status": "Tool release · Nov. 11",
       "publisher": "AWS / GeekWire",
-      "summary": "Amazon released a local tool that simulates more than 200 AWS services and says AI agents wrote and maintain its code. It is a pleasingly recursive setup: bots help build a pretend cloud so developers can test cloud-shaped things on their laptop.",
-      "whyCare": "The local loop may save time, but a simulator cannot reproduce every outage or service restriction. Keep real-cloud integration checks for behavior the emulator does not model.",
+      "summary": "Amazon released a local emulator for more than 200 AWS services. The company says AI agents wrote and maintain it. Developers can test some workflows on a laptop, but the tool cannot reproduce every outage or service limit.",
+      "whyCare": "Use it to speed up local tests, then check anything the emulator cannot model against real AWS.",
       "sources": [
         {
           "title": "GeekWire",
@@ -143,7 +143,7 @@
   ],
   "learning": {
     "title": "Closed-set decisions",
-    "body": "A closed-set decision model chooses among options you define ahead of time—such as “valid,” “invalid,” or “needs review”—instead of generating an open-ended answer. It can make repetitive classification easier to validate. If the right option is missing or the input is ambiguous, the model can still choose confidently and be wrong.",
+    "body": "A closed-set decision model picks from options you set in advance, such as “valid,” “invalid,” or “needs review.” It does not write an open-ended reply. That can make repeated classifications easier to check. But if the right option is missing, or the question is unclear, it can still pick the wrong answer with confidence.",
     "tryThis": "Take ten recent support requests. Define a small label set, ask a model to classify them, and have a person review the result. Count disagreements and cases where the correct label was missing."
   },
   "notes": [],

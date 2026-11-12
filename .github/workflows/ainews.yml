@@ -2,8 +2,8 @@ name: Publish Daily AI News
 
 on:
   schedule:
-    # Run at 13:00 and 14:00 UTC; the generator continues only at 6 a.m. America/Los_Angeles.
-    # This handles both daylight and standard time because GitHub cron uses UTC.
+    # Run at 13:00 and 14:00 UTC; automatic runs publish only at 6 a.m. America/Los_Angeles.
+    # This covers daylight and standard time. Manual dispatch can run on demand.
     - cron: '0 13 * * *'
     - cron: '0 14 * * *'
   workflow_dispatch:

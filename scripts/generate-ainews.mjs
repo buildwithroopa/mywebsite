@@ -5,8 +5,8 @@ const now = new Date();
 const localParts = new Intl.DateTimeFormat('en-US', {
   timeZone: zone, hour: '2-digit', hourCycle: 'h23'
 }).format(now);
-if (localParts !== '06' && process.env.GITHUB_EVENT_NAME === 'schedule') {
-  console.log('Outside the 6 a.m. Pacific publication window; skipping this UTC schedule.');
+if (localParts !== '06' && ['schedule', 'push'].includes(process.env.GITHUB_EVENT_NAME)) {
+  console.log('Outside the 6 a.m. Pacific publication window; skipping this automatic run.');
   process.exit(0);
 }
 
@@ -54,7 +54,7 @@ function decodeXml(value) {
 function readTag(block, names) {
   for (const name of names) {
     const escaped = name.replace(':', '[:]');
-    const match = block.match(new RegExp('<(?:[\\w.-]+:)?' + escaped + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/(?:[\\w.-]+:)?' + escaped + '\\s*>', 'i'));
+    const match = block.match(new RegExp('<(?:[\\w.-]+:)?' + escaped + '(?:\s[^>]*)?>([\s\\S]*?)<\\/(?:[\\w.-]+:)?' + escaped + '\s*>', 'i'));
     if (match) return decodeXml(match[1]);
   }
   return '';
@@ -72,6 +72,9 @@ function cleanUrl(value) {
     url.hash = '';
     return url.href;
   } catch { return ''; }
+}
+function noEmDashes(value) {
+  return value.replace(/\s*—\s*/g, ': ').replace(/\s+/g, ' ').trim();
 }
 function shorten(value, max = 420) {
   if (value.length <= max) return value;
@@ -97,9 +100,9 @@ const items = [];
 const skipped = { title: 0, url: 0, date: 0, old: 0 };
 for (const result of fetched) {
   for (const block of result.blocks) {
-    const title = readTag(block, ['title']);
+    const title = noEmDashes(readTag(block, ['title']));
     const url = cleanUrl(readLink(block));
-    const description = readTag(block, ['description', 'summary', 'content:encoded', 'content']);
+    const description = noEmDashes(readTag(block, ['description', 'summary', 'content:encoded', 'content']));
     const rawDate = readTag(block, ['pubDate', 'published', 'updated', 'date']);
     const published = new Date(rawDate);
     if (!title) { skipped.title++; continue; }
@@ -137,7 +140,7 @@ function story(item) {
     status: 'RSS report · ' + publishedLabel,
     publisher: item.publisher,
     summary: item.summary,
-    whyCare: 'The feed excerpt points to a development worth checking against the original report before making a decision.',
+    whyCare: 'The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.',
     sources: [{ title: item.publisher + ' · original report', url: item.url }]
   };
 }

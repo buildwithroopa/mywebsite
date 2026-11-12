@@ -104,7 +104,7 @@
   ],
   "learning": {
     "title": "Closed-set decisions",
-    "body": "A closed-set decision model chooses among options you define ahead of time—such as “valid,” “invalid,” or “needs review”—instead of generating an open-ended answer. It can make repetitive classification easier to validate. If the right option is missing or the input is ambiguous, the model can still choose confidently and be wrong.",
+    "body": "A closed-set decision model picks from options you set in advance, such as “valid,” “invalid,” or “needs review.” It does not write an open-ended reply. That can make repeated classifications easier to check. But if the right option is missing, or the question is unclear, it can still pick the wrong answer with confidence.",
     "tryThis": "Take ten recent support requests. Define a small label set, ask a model to classify them, and have a person review the result. Count disagreements and cases where the correct label was missing."
   },
   "notes": [],
