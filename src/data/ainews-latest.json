@@ -51,6 +51,32 @@
           "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
         }
       ]
+    },
+    {
+      "title": "The office chatbot gets an always-on shift",
+      "status": "Announced · Nov. 11",
+      "publisher": "Databricks / Fortune",
+      "summary": "Databricks introduced an always-on version of its Genie business assistant for longer-running workplace tasks. The newsroom joke writes itself: the assistant just got the shift nobody wants on the rota.",
+      "whyCare": "The amusing premise also signals a real product shift from answering prompts to working in the background, which makes permissions and review important.",
+      "sources": [
+        {
+          "title": "Fortune",
+          "url": "https://fortune.com/2026/11/11/databricks/"
+        }
+      ]
+    },
+    {
+      "title": "AI agents wrote a cloud emulator—now the emulator tests the cloud",
+      "status": "Tool release · Nov. 11",
+      "publisher": "AWS / GeekWire",
+      "summary": "Amazon released a local tool that simulates more than 200 AWS services and says AI agents wrote and maintain its code. It is a pleasingly recursive setup: bots help build a pretend cloud so developers can test cloud-shaped things on their laptop.",
+      "whyCare": "The local loop may save time, but a simulator cannot reproduce every outage or service restriction. Keep real-cloud integration checks for behavior the emulator does not model.",
+      "sources": [
+        {
+          "title": "GeekWire",
+          "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/"
+        }
+      ]
     }
   ],
   "incidents": [],
