@@ -1,0 +1,39 @@
+name: Publish Daily AI Gazette
+
+on:
+  schedule:
+    - cron: '15 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ainews-edition
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Generate and verify the edition
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/generate-ainews.mjs
+      - name: Publish edition to the site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/ainews-latest.json
+          if git diff --cached --quiet; then
+            echo "The edition is unchanged; nothing to publish."
+            exit 0
+          fi
+          git commit -m "Publish Daily AI Gazette edition"
+          git push origin HEAD:main
