@@ -271,5 +271,70 @@
         }
       ]
     }
+  ],
+  "oneIdea": {
+    "title": "The AI race is shifting from model quality to control over compute and action",
+    "summary": "Today’s stories tie together a concentrated compute supply chain, new products competing for developer attention, and companies deciding how much authority an AI agent gets. The practical question is becoming who can access the capability, under what terms, and which actions still require a person.",
+    "whyNow": "Nvidia and CoreWeave illustrate the infrastructure stakes; Qwen and Google illustrate changing model access; United’s booking rule shows the boundary around real-world transactions.",
+    "sources": [
+      {
+        "title": "Associated Press on Nvidia",
+        "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
+      },
+      {
+        "title": "TechCrunch on CoreWeave",
+        "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+      },
+      {
+        "title": "The Verge on AI agents and airline bookings",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+      }
+    ]
+  },
+  "takeaways": [
+    {
+      "title": "Agent capability does not equal permission",
+      "summary": "An assistant may be able to find and fill a booking, while a company still requires a person to confirm the purchase and required declarations. Treat each delegated action as a separate permission decision.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+        }
+      ]
+    },
+    {
+      "title": "Measure the full cost of an AI task",
+      "summary": "Token price is only one part of cost; retries, long reasoning, human review, and infrastructure commitments matter too. Compare total cost and useful outcomes before switching models or providers.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+        },
+        {
+          "title": "Semafor",
+          "url": "https://www.semafor.com/article/11/11/2026/anthropic-ipo-could-lead-to-large-correction-in-markets-fed-official-says"
+        }
+      ]
+    },
+    {
+      "title": "Use a model that returns the kind of answer you can evaluate",
+      "summary": "For classification or rubric scoring, a fixed set of choices may be easier to check than a paragraph. Test it against hand-labeled examples and inspect errors before trusting confidence scores.",
+      "sources": [
+        {
+          "title": "Google Decisions API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ]
+    },
+    {
+      "title": "Availability belongs next to benchmark claims",
+      "summary": "A model’s ranking matters less if your team cannot access it, or if it is only available under preview terms. Track access, limits, and performance together when comparing options.",
+      "sources": [
+        {
+          "title": "QwenCloud model guide",
+          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+        }
+      ]
+    }
   ]
 }
