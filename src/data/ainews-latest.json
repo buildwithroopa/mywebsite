@@ -1,0 +1,77 @@
+{
+  "editionDate": "2026-11-12",
+  "timezone": "America/Los_Angeles",
+  "cutoff": "Morning snapshot · 5:53 AM PT",
+  "editionLabel": "Sample edition",
+  "lead": {
+    "title": "Google gives AI a multiple-choice test and asks it to stop writing essays",
+    "status": "Confirmed · announced Nov. 11",
+    "summary": "Google introduced Gemini Decisions API, a service for structured, closed-set judgments such as classifying an image or scoring answers against a rubric. Google's announcement says it can process up to 1,000 questions in one request across text, images, audio, video and PDFs. This is a product announcement and Google's own description of its capabilities, not independent performance validation.",
+    "whyCare": "For workflows that need labels or decisions at scale, a purpose-built endpoint may be easier to evaluate than asking a general chatbot to explain itself 1,000 times.",
+    "sources": [
+      {
+        "title": "Google announcement",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      },
+      {
+        "title": "The Decoder coverage",
+        "url": "https://www.the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/"
+      }
+    ]
+  },
+  "news": [
+    {
+      "title": "The AI market’s Jensen-shaped question mark",
+      "status": "Reported · Nov. 12",
+      "publisher": "Axios / AP",
+      "summary": "Axios and the Associated Press report that Nvidia leadership questions and concerns around the wider AI investment boom are weighing on AI-related stocks. The coverage describes developing corporate and market uncertainty; it does not establish a final board decision about CEO Jensen Huang.",
+      "whyCare": "AI's supply chain and investor confidence are concentrated around a small number of firms. Leadership risk can move markets before it changes a model roadmap.",
+      "sources": [
+        {
+          "title": "Axios",
+          "url": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board"
+        },
+        {
+          "title": "Associated Press",
+          "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
+        }
+      ]
+    },
+    {
+      "title": "The paper pile grows; evaluation gets a useful reality check",
+      "status": "Research roundup · Nov. 12 · preprints",
+      "publisher": "NHỊP",
+      "summary": "Today's roundup highlights research on compute-matched evaluation, sparse model edits, and coding-agent benchmarks. One useful lesson across the papers: a method that wins per training step may lose when compared at equal compute. These are preprint claims summarized by a third-party digest, not settled findings.",
+      "whyCare": "When comparing AI research, ask whether methods were tested with the same compute budget. A win per training step can disappear when the full cost is counted.",
+      "sources": [
+        {
+          "title": "NHỊP paper roundup",
+          "url": "https://nhip.verai.vn/en/papers/2026-11-12"
+        }
+      ]
+    }
+  ],
+  "learning": {
+    "title": "Closed-set decisions",
+    "body": "A closed-set decision model chooses among options you define ahead of time—say, “invoice valid / invalid / needs review”—instead of generating an open-ended answer. This makes outputs easier to validate and can make repetitive classification cheaper. It also means the model cannot give a good answer if the right option is missing or the question itself is ambiguous.",
+    "tryThis": "Take ten recent support requests. Write a small fixed label set, then ask a model to assign each request a label plus confidence. Count human disagreements and cases where the right label was missing."
+  },
+  "focus": [
+    {
+      "kind": "Do",
+      "text": "If you run high-volume classification, compare a structured decision endpoint with your current prompt on a small, human-reviewed sample before changing production."
+    },
+    {
+      "kind": "Watch",
+      "text": "Look for primary confirmation of any Nvidia board or leadership decision; early market coverage is not a resolved corporate event."
+    },
+    {
+      "kind": "Skip",
+      "text": "Don’t infer broad AI capability from a leaderboard number or roundup blurb. Read the evaluation setup."
+    }
+  ],
+  "notes": [
+    "Search results for today's AI news included conflicting claims and duplicate summaries. Uncorroborated items were excluded from this sample.",
+    "This is a curated snapshot based on sources searched, not an exhaustive index of every article worldwide."
+  ]
+}
