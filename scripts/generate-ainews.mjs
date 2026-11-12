@@ -1,5 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
+if (!process.env.OPENAI_API_KEY) throw new Error('Add OPENAI_API_KEY under GitHub repository Settings → Secrets and variables → Actions.');
+
 const zone = 'America/Los_Angeles';
 const now = new Date();
 const date = new Intl.DateTimeFormat('en-CA', { timeZone: zone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
