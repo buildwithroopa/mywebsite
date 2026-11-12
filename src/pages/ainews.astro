@@ -1,6 +1,9 @@
 ---
 import edition from '../data/ainews-latest.json';
 
+const archivedEditions = Object.values(import.meta.glob('../data/ainews-archive/*.json', { eager: true, import: 'default' })).sort((a, b) => a.editionDate.localeCompare(b.editionDate));
+const previousEdition = archivedEditions.filter((item) => item.editionDate < edition.editionDate).at(-1);
+const nextEdition = archivedEditions.find((item) => item.editionDate > edition.editionDate);
 const dateLabel = new Date(`${edition.editionDate}T12:00:00`).toLocaleDateString('en-US', {
   weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: edition.timezone
 });
@@ -47,7 +50,7 @@ const giggleMemes = [
       *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--sans)}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
       .sheet{width:min(1660px,calc(100% - 18px));margin:9px auto;background:var(--sheet);padding:0 16px 16px;box-shadow:0 5px 26px rgba(33,30,25,.09)}
       .utility{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0;border-bottom:1px solid var(--line);font:10px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.utility nav{display:flex;gap:12px;flex-wrap:wrap}.utility a{text-decoration:none}.utility a:hover{color:var(--red);text-decoration:underline;text-underline-offset:3px}
-      .masthead{text-align:center;padding:12px 0 9px;border-bottom:5px double var(--ink)}.overline,.meta,.label,.stamp,.flag{font:11px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--red)}h1{font:800 clamp(50px,6vw,80px)/.9 var(--serif);letter-spacing:-.06em;margin:3px 0}.subtitle{font:italic 15px var(--serif);color:var(--muted);margin:0 auto;max-width:760px}.editionline{display:flex;justify-content:space-between;gap:10px;margin-top:9px;padding:6px 0 0;border-top:1px solid var(--line);font:12px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+      .masthead{text-align:center;padding:12px 0 9px;border-bottom:5px double var(--ink)}.overline,.meta,.label,.stamp,.flag{font:11px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--red)}h1{font:800 clamp(50px,6vw,80px)/.9 var(--serif);letter-spacing:-.06em;margin:3px 0}.subtitle{font:italic 15px var(--serif);color:var(--muted);margin:0 auto;max-width:760px}.editionline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:9px;padding:6px 0 0;border-top:1px solid var(--line);font:12px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}.editionline a{text-decoration:none;border-bottom:1px solid var(--line)}.editionline a:hover{color:var(--red)}
       .front-grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(260px,.85fr);gap:9px;padding:9px 0 5px}.lead,.side-digest,.digest-item,.section,.desk-panel,.idea-box,.story,.wire-card,.insight,.learning{background:var(--card);border:1px solid var(--line);box-shadow:none}
       .lead{padding:12px 15px;border-top:5px solid var(--red)}.lead h2{font:700 clamp(33px,3.8vw,52px)/1.05 var(--serif);letter-spacing:-.04em;margin:5px 0 8px}.lead p{margin:6px 0;color:var(--muted)}.lead .why{color:var(--ink);border-left:3px solid var(--red);padding:2px 0 2px 9px}.side-digest{padding:10px;background:#f0f0ee}.side-digest h2{font:700 24px/1.1 var(--serif);margin:3px 0 8px}.digest-item{padding:7px;margin:5px 0;font-size:15px}.digest-item p{margin:3px 0 0}.source-links{display:flex;gap:5px 11px;flex-wrap:wrap;margin-top:auto;padding-top:8px;font:11px var(--mono)}.source-links a{text-decoration:underline;text-underline-offset:3px}.source-links a:hover{color:var(--red)}
       .section{padding:9px 10px 11px;margin:5px 0 9px;background:transparent;border:0;border-top:2px solid var(--ink);box-shadow:none}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding-bottom:5px;margin-bottom:7px;border-bottom:1px solid var(--line)}.section-title h2{font:700 clamp(27px,3vw,38px)/1.05 var(--serif);letter-spacing:-.035em;margin:1px 0}.section-title p{font:13px var(--mono);color:var(--muted);margin:0;text-align:right}
@@ -75,7 +78,7 @@ const giggleMemes = [
         <div class="overline">The daily artificial intelligence briefing</div>
         <h1>AI News</h1>
         <p class="subtitle">The day’s consequential developments, curious moments, failures, and useful next steps. A little wit in the margins; receipts in every column.</p>
-        <div class="editionline"><span>{dateLabel}</span></div>
+        <div class="editionline"><span>{previousEdition ? <a href={`/ainews/edition/${previousEdition.editionDate}/`}>← Previous edition</a> : ''}</span><span>{dateLabel}</span><span>{nextEdition ? <a href={`/ainews/edition/${nextEdition.editionDate}/`}>Next edition →</a> : ''}</span></div>
       </header>
       <section class="front-grid" aria-label="Front page">
         <article class="lead">
