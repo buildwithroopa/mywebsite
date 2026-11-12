@@ -58,7 +58,6 @@ const response = await fetch('https://api.openai.com/v1/responses', {
     model: 'gpt-6-astra',
     reasoning: { effort: 'high' },
     tools: [{ type: 'web_search', search_context_size: 'high' }],
-    text: { format: { type: 'json_object' } },
     input: prompt,
     store: false
   })
@@ -66,7 +65,11 @@ const response = await fetch('https://api.openai.com/v1/responses', {
 if (!response.ok) throw new Error(`OpenAI Responses API failed (${response.status}): ${await response.text()}`);
 const result = await response.json();
 if (!result.output_text) throw new Error('The model returned no edition text.');
-const edition = JSON.parse(result.output_text);
+const outputText = result.output_text.trim();
+const jsonStart = outputText.indexOf('{');
+const jsonEnd = outputText.lastIndexOf('}');
+if (jsonStart < 0 || jsonEnd <= jsonStart) throw new Error('The model did not return a JSON edition.');
+const edition = JSON.parse(outputText.slice(jsonStart, jsonEnd + 1));
 
 const storyLists = [edition.critical, edition.launches, edition.research, edition.signals, edition.briefs, edition.giggles, edition.incidents];
 if (edition.editionDate !== date || edition.timezone !== zone || !edition.lead?.title ||
