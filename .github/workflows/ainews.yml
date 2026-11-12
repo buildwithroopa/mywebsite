@@ -1,4 +1,4 @@
-name: Publish Daily AI Gazette
+name: Publish Daily AI News
 
 on:
   schedule:
@@ -19,14 +19,28 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Check for the OpenAI API key
+        id: api-key
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -n "$OPENAI_API_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice title=AI News not generated::Add OPENAI_API_KEY under repository Settings → Secrets and variables → Actions."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.api-key.outputs.configured == 'true'
         with:
           node-version: 24
-      - name: Generate and verify the edition
+      - name: Research and prepare the issue
+        if: steps.api-key.outputs.configured == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/generate-ainews.mjs
-      - name: Publish edition to the site
+      - name: Publish issue to the site
+        if: steps.api-key.outputs.configured == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -35,5 +49,8 @@ jobs:
             echo "The edition is unchanged; nothing to publish."
             exit 0
           fi
-          git commit -m "Publish Daily AI Gazette edition"
+          git commit -m "Publish AI News daily edition"
           git push origin HEAD:main
+      - name: Explain the skipped issue
+        if: steps.api-key.outputs.configured != 'true'
+        run: echo "Add the OPENAI_API_KEY repository secret to enable daily research. The existing issue remains published."
