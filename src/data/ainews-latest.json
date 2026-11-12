@@ -77,6 +77,19 @@
           "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/"
         }
       ]
+    },
+    {
+      "title": "Qwen4-Max-Preview brings a name with its own changelog",
+      "status": "Preview · Nov. 11",
+      "publisher": "QwenCloud",
+      "summary": "Alibaba’s Qwen4-Max-Preview offers text generation, image and video understanding, reasoning, and tool use. The name has so many version cues it sounds like the release notes need a release note.",
+      "whyCare": "The launch is a reminder that a preview is still a moving target: check access terms, limits, and task quality before treating it as a stable production choice.",
+      "sources": [
+        {
+          "title": "QwenCloud model guide",
+          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+        }
+      ]
     }
   ],
   "incidents": [],
