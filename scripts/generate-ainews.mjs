@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 if (!process.env.OPENAI_API_KEY) throw new Error('Add OPENAI_API_KEY under GitHub repository Settings → Secrets and variables → Actions.');
 
@@ -7,12 +7,16 @@ const now = new Date();
 const date = new Intl.DateTimeFormat('en-CA', { timeZone: zone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
 const prettyTime = new Intl.DateTimeFormat('en-US', { timeZone: zone, hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }).format(now);
 const previous = JSON.parse(await readFile('src/data/ainews-latest.json', 'utf8'));
+const archiveDir = 'src/data/ainews-archive';
+await mkdir(archiveDir, { recursive: true });
 
 const prompt = `Write today's AI News newspaper edition for ${date}, with a research cutoff of ${prettyTime} (${zone}). The previous edition date was ${previous.editionDate}; cover developments published since its cutoff (use the last 24 hours on a first run).
 
 Search broadly across model and product releases, research papers and benchmarks, agents, compute/chips, business and markets, policy, safety, labor, education, and practical tools. Use live web search in several passes, inspect a mix of primary sources and independent reporting, group duplicate coverage into distinct underlying events, and verify dates, claims, and links. Aim for 12–20 distinct useful storylines across the whole issue when the news supports it; do not pad with duplicates or stale items. Include a concise briefing wire for additional verified items so the front page is not limited to only the biggest stories. Prefer primary sources plus independent reporting. Do not say you found “all” articles. Label allegations, early reports, research preprints, forecasts, and company claims clearly. Do not invent facts, sources, quotes, failures, or comedy. A quiet section is acceptable; return an empty list and let the site explain no verified item made the edition.
 
 Organize the issue for a newspaper:
+- oneIdea: a short editorial thesis connecting the day's developments. Distinguish interpretation from reported facts and link the supporting stories; this is analysis, not another news item.
+- takeaways: 3–5 concise, original, useful lines drawn from verified reporting. Each needs a clear title, a two-sentence takeaway, and source links. Keep them understandable and shareable without using other publications' wording.
 - lead: the single most consequential verified/developing story
 - critical: 3–6 high-impact distinct stories; do not repeat the lead
 - launches: 2–5 distinct model, product, tool, or availability launches; prioritize what is newly available and note access/pricing limits
@@ -31,6 +35,8 @@ Return ONLY valid JSON with these exact top-level keys and field shapes:
   "timezone":"America/Los_Angeles",
   "cutoff":"Morning edition · local time",
   "editionLabel":"Daily issue",
+  "oneIdea":{"title":"...","summary":"...","whyNow":"...","sources":[{"title":"...","url":"https://..."}]},
+  "takeaways":[{"title":"...","summary":"...","sources":[{"title":"...","url":"https://..."}]}],
   "lead":{"title":"...","status":"Confirmed/Reported/Research · date","summary":"...","whyCare":"...","sources":[{"title":"...","url":"https://..."}]},
   "critical":[{"title":"...","status":"...","publisher":"...","summary":"...","whyCare":"...","sources":[{"title":"...","url":"https://..."}]}],
   "launches":[{"title":"...","status":"...","publisher":"...","summary":"...","sources":[{"title":"...","url":"https://..."}]}],
@@ -64,11 +70,13 @@ const edition = JSON.parse(result.output_text);
 
 const storyLists = [edition.critical, edition.launches, edition.research, edition.signals, edition.briefs, edition.giggles, edition.incidents];
 if (edition.editionDate !== date || edition.timezone !== zone || !edition.lead?.title ||
+    !edition.oneIdea?.title || !edition.oneIdea?.summary || !Array.isArray(edition.oneIdea.sources) ||
+    !Array.isArray(edition.takeaways) || edition.takeaways.length < 3 ||
     storyLists.some((list) => !Array.isArray(list)) || !Array.isArray(edition.insights) ||
     !edition.learning?.title || !Array.isArray(edition.notes)) {
   throw new Error('The edition is missing required fields or has the wrong date/timezone.');
 }
-const sourcedItems = [edition.lead, ...storyLists.flat(), ...edition.insights];
+const sourcedItems = [edition.oneIdea, ...edition.takeaways, edition.lead, ...storyLists.flat(), ...edition.insights];
 for (const item of sourcedItems) {
   if (!item.title || (!item.summary && !item.context) || !Array.isArray(item.sources) || item.sources.length < 1) {
     throw new Error(`A lead, story, or insight is missing text or sources: ${item.title ?? 'untitled'}`);
@@ -85,5 +93,11 @@ for (const item of edition.insights) {
 
 edition.cutoff = `Morning edition · ${prettyTime}`;
 edition.editionLabel = 'Daily issue';
+const archivePath = `${archiveDir}/${edition.editionDate}.json`;
+if (previous.editionDate !== date) {
+  const previousArchive = `${archiveDir}/${previous.editionDate}.json`;
+  await writeFile(previousArchive, `${JSON.stringify(previous, null, 2)}\n`);
+}
+await writeFile(archivePath, `${JSON.stringify(edition, null, 2)}\n`);
 await writeFile('src/data/ainews-latest.json', `${JSON.stringify(edition, null, 2)}\n`);
 console.log(`Wrote AI News for ${date}: ${[edition.lead,...storyLists.flat()].length} sourced story items, ${edition.insights.length} actionable insights.`);
