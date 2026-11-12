@@ -81,7 +81,7 @@ const insights = edition.insights ?? (edition.focus ?? []).map((item) => ({
         {signals.length > 0 && <div class="wire-desk"><h3>Markets, policy &amp; work</h3><div class="wire-grid">{signals.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}</div></div>}
         {briefs.length > 0 && <div class="wire-desk"><h3>Briefing wire</h3><div class="wire-grid compact">{briefs.map((story) => <article class="wire-card"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}</div></div>}
       </section>}
-      <section class="section" aria-label="AI Giggles{incidents.length ? ' and Incidents' : ''}">
+      <section class="section" aria-label={incidents.length ? 'AI Giggles and Incidents' : 'AI Giggles'}>
         <div class="desk" style={incidents.length ? undefined : 'grid-template-columns:1fr'}>
           <section class="desk-panel" id="giggles" aria-labelledby="giggles-heading">
             <div class="section-title"><div><div class="flag">The lighter side</div><h2 id="giggles-heading">AI Giggles</h2></div><p>Odd, amusing, and sourceable.</p></div>
