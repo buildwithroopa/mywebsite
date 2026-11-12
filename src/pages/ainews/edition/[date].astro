@@ -1,15 +1,12 @@
 ---
-const editions = Object.values(import.meta.glob('../../../data/ainews-archive/*.json', { eager: true, import: 'default' })).sort((a, b) => a.editionDate.localeCompare(b.editionDate));
 export function getStaticPaths() {
-  return editions.map((edition) => ({
+  const editions = Object.values(import.meta.glob('../../../data/ainews-archive/*.json', { eager: true, import: 'default' })).sort((a, b) => a.editionDate.localeCompare(b.editionDate));
+  return editions.map((edition, index) => ({
     params: { date: edition.editionDate },
-    props: { edition }
+    props: { edition, previousEdition: editions[index - 1], nextEdition: editions[index + 1] }
   }));
 }
-const { edition } = Astro.props;
-const editionIndex = editions.findIndex((item) => item.editionDate === edition.editionDate);
-const previousEdition = editions[editionIndex - 1];
-const nextEdition = editions[editionIndex + 1];
+const { edition, previousEdition, nextEdition } = Astro.props;
 const dateLabel = new Date(`${edition.editionDate}T12:00:00`).toLocaleDateString('en-US', {
   weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: edition.timezone
 });
