@@ -1,19 +1,19 @@
-# Roopa Iyer — Portfolio & Daily AI Gazette
+# AI News — Roopa Iyer’s Portfolio
 
 A personal portfolio and printable resume, with a sourced, humorous daily newspaper covering AI news, learning concepts, and practical priorities.
 
 ## Live site
 
 - Portfolio: [roopaiyer.net](https://roopaiyer.net/)
-- Daily AI Gazette: [roopaiyer.net/ainews](https://roopaiyer.net/ainews)
+- AI News: [roopaiyer.net/ainews](https://roopaiyer.net/ainews)
 
 ## Preview
 
-Visit the [portfolio homepage](https://roopaiyer.net/) or open the [AI Gazette edition](https://roopaiyer.net/ainews) to see the live site.
+Visit the [portfolio homepage](https://roopaiyer.net/) or open the [AI News edition](https://roopaiyer.net/ainews) to see the live site.
 
 ## Overview
 
-The site presents Roopa Iyer’s engineering leadership experience, approach, projects, mentoring, and volunteering. The AI Gazette extends the portfolio with a daily, newspaper-style brief: important AI developments, one concept to learn, and a short list of things to do, watch, or ignore. Headlines can be playful; reporting stays sourced and careful about uncertainty.
+The site presents Roopa Iyer’s engineering leadership experience, approach, projects, mentoring, and volunteering. The AI News extends the portfolio with a daily, newspaper-style brief: important AI developments, one concept to learn, and a short list of things to do, watch, or ignore. Headlines can be playful; reporting stays sourced and careful about uncertainty.
 
 ## Tech stack
 
@@ -28,7 +28,7 @@ The site presents Roopa Iyer’s engineering leadership experience, approach, pr
 
 - Responsive portfolio and experience timeline
 - Printable resume
-- Daily AI Gazette with linked sources, research/news labels, a learning concept, and a focus list
+- AI News with linked sources, research/news labels, a learning concept, and a focus list
 - Daily issue generation workflow with source validation
 - Manual workflow dispatch for publishing an edition
 - Reduced-motion and keyboard-focus support
@@ -51,7 +51,7 @@ npm run build
 npm run preview
 ```
 
-## Daily AI Gazette setup
+## AI News setup
 
 The GitHub Actions workflow runs daily at 15:15 UTC (7:15 AM Pacific Standard Time / 8:15 AM Pacific Daylight Time). It writes the new edition data to `src/data/ainews-latest.json`; the existing GitHub-to-Vercel integration deploys the update.
 
@@ -60,7 +60,7 @@ To enable generation, add an OpenAI API key to the repository as an Actions secr
 1. Open **Settings → Secrets and variables → Actions**.
 2. Select **New repository secret**.
 3. Set the name to `OPENAI_API_KEY`, paste the key as its value, and save.
-4. Run **Actions → Publish Daily AI Gazette → Run workflow** to publish the first refreshed issue.
+4. Run **Actions → Publish AI News → Run workflow** to publish the first refreshed issue.
 
 No Vercel environment variable is needed. Keep the API key in GitHub Secrets; never commit it or expose it in browser code.
 
@@ -71,7 +71,7 @@ src/
   data/ainews-latest.json     Current Gazette issue
   pages/
     index.astro               Portfolio homepage
-    ainews.astro              Daily AI Gazette
+    ainews.astro              AI News
 scripts/
   generate-ainews.mjs         Research, validate, and write the daily issue
 .github/
