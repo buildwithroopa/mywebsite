@@ -309,6 +309,19 @@
           "url": "https://openai.com/index/closing-ai-guidance-gap-education/"
         }
       ]
+    },
+    {
+      "title": "Tether releases an 800M-parameter model for on-device AI agents",
+      "status": "Announced · Nov. 11",
+      "publisher": "Tether AI Research",
+      "summary": "Tether AI Research announced QVAC BotPsy-0.8B, an open-weight model designed for tool use and everyday agent tasks on personal devices. The company reports strong results across six agent benchmarks; those comparisons are company-run evaluations.",
+      "whyCare": "A compact model could make local agent use more practical, but the release’s benchmark claims need independent replication and real-device testing.",
+      "sources": [
+        {
+          "title": "Tether AI Research",
+          "url": "https://tether.io/news/tethers-800m-ai-agent-beats-models-2-5x-its-size-on-everyday-phone-tasks/"
+        }
+      ]
     }
   ],
   "oneIdea": {
