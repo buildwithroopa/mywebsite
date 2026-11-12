@@ -1,0 +1,39 @@
+---
+const archiveFiles = import.meta.glob('../../data/ainews-archive/*.json', { eager: true, import: 'default' });
+const editions = Object.values(archiveFiles)
+  .sort((a, b) => b.editionDate.localeCompare(a.editionDate));
+const dateLabel = (date) => new Date(`${date}T12:00:00`).toLocaleDateString('en-US', {
+  weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+});
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3efe5" />
+    <title>Past Editions · AI News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{--paper:#f3efe5;--sheet:#fbf9f2;--ink:#201d19;--muted:#625d54;--line:#b8b0a1;--red:#a43124;--mono:'DM Mono',monospace;--sans:'DM Sans',Arial,sans-serif;--serif:'Playfair Display',Georgia,serif}
+      *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--sans)}a{color:inherit}.sheet{width:min(1100px,calc(100% - 24px));margin:auto;background:var(--sheet);padding:18px 24px 28px}.utility{display:flex;justify-content:space-between;gap:12px;padding-bottom:8px;border-bottom:1px solid var(--line);font:10px var(--mono);text-transform:uppercase;color:var(--muted)}.masthead{text-align:center;padding:16px 0;border-bottom:4px double var(--ink)}.flag{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}h1{font:800 clamp(40px,6vw,66px)/1 var(--serif);letter-spacing:-.06em;margin:5px 0}.subtitle{color:var(--muted);font:italic 15px var(--serif);margin:0}.edition{padding:15px 0;border-bottom:1px solid var(--line)}.edition h2{font:700 26px/1.2 var(--serif);margin:4px 0}.edition p{margin:5px 0;color:var(--muted)}.items{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0;font-size:12px}.items a{text-decoration:underline;text-underline-offset:3px}.button{display:inline-block;padding:6px 9px;border:1px solid var(--ink);font:10px var(--mono);text-decoration:none;text-transform:uppercase}.empty{padding:25px 0;color:var(--muted)}@media(max-width:600px){.sheet{width:100%;padding:14px 18px}.utility{flex-direction:column}.edition h2{font-size:22px}}
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="utility"><span>AI News · Edition archive</span><a href="/ainews">Back to latest</a></header>
+      <header class="masthead"><div class="flag">Filed editions</div><h1>Past editions</h1><p class="subtitle">Browse previous AI News issues by date.</p></header>
+      {editions.length ? editions.map((edition) => <article class="edition">
+        <div class="flag">{dateLabel(edition.editionDate)} · {edition.cutoff}</div>
+        <h2>{edition.oneIdea?.title ?? edition.lead.title}</h2>
+        <p>{edition.oneIdea?.summary ?? edition.lead.summary}</p>
+        <div class="items">{[edition.lead, ...(edition.critical ?? []), ...(edition.launches ?? []), ...(edition.research ?? []), ...(edition.signals ?? []), ...(edition.briefs ?? [])]
+          .filter((item, index, all) => item?.title && all.findIndex((other) => other?.title === item.title) === index)
+          .slice(0, 8).map((item) => <a href={`/ainews/edition/${edition.editionDate}/#${encodeURIComponent(item.title)}`}>{item.title}</a>)}</div>
+        <a class="button" href={`/ainews/edition/${edition.editionDate}/`}>Read edition →</a>
+      </article>) : <p class="empty">No past editions have been filed yet.</p>}
+    </main>
+  </body>
+</html>
