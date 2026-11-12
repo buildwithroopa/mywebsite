@@ -28,8 +28,10 @@ const feeds = [
   { publisher: 'The Decoder', url: 'https://the-decoder.com/feed/' },
   { publisher: 'MarkTechPost', url: 'https://www.marktechpost.com/feed/' },
   { publisher: 'OpenAI', url: 'https://openai.com/news/rss.xml' },
-  { publisher: 'Anthropic', url: 'https://www.anthropic.com/rss.xml' },
   { publisher: 'Google DeepMind', url: 'https://deepmind.google/blog/rss.xml' },
+  { publisher: 'Google News · AI', url: 'https://news.google.com/rss/search?q=AI+OR+artificial+intelligence+when%3A1d&hl=en-US&gl=US&ceid=US:en' },
+  { publisher: 'Google News · AI agents', url: 'https://news.google.com/rss/search?q=AI+agents+OR+artificial+intelligence+agents+when%3A1d&hl=en-US&gl=US&ceid=US:en' },
+  { publisher: 'Google News · AI research and policy', url: 'https://news.google.com/rss/search?q=AI+research+OR+AI+policy+OR+AI+chips+when%3A1d&hl=en-US&gl=US&ceid=US:en' },
   { publisher: 'arXiv · Artificial Intelligence', url: 'https://export.arxiv.org/rss/cs.AI' },
   { publisher: 'arXiv · Computation and Language', url: 'https://export.arxiv.org/rss/cs.CL' },
   { publisher: 'arXiv · Machine Learning', url: 'https://export.arxiv.org/rss/cs.LG' }
@@ -109,7 +111,7 @@ for (const result of fetched) {
     items.push({
       title: shorten(title, 180),
       summary: shorten(description || title, 440),
-      url, date: published, publisher: result.feed.publisher, normalizedTitle
+      url, date: published, publisher: readTag(block, ['source']) || result.feed.publisher, normalizedTitle
     });
   }
 }
