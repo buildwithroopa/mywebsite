@@ -5,7 +5,7 @@ const now = new Date();
 const localParts = new Intl.DateTimeFormat('en-US', {
   timeZone: zone, hour: '2-digit', hourCycle: 'h23'
 }).format(now);
-if (localParts !== '06') {
+if (localParts !== '06' && process.env.GITHUB_EVENT_NAME === 'schedule') {
   console.log('Outside the 6 a.m. Pacific publication window; skipping this UTC schedule.');
   process.exit(0);
 }
@@ -155,10 +155,16 @@ const briefsRaw = [...unused].slice(0, 16);
 for (const item of briefsRaw) unused.delete(item);
 
 const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...briefsRaw];
-const leadRaw = [...incidentsRaw, ...launchesRaw, ...signalsRaw, ...researchRaw, ...briefsRaw][0] ?? items[0];
-const criticalRaw = allChosen.filter((item) => item !== leadRaw && (patterns.signal.test(item.title + ' ' + item.summary) || patterns.incident.test(item.title + ' ' + item.summary))).slice(0, 6);
+const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
+const criticalRaw = signalsRaw.filter((item) => item !== leadRaw).slice(0, 6);
 const sourceFields = (raw) => raw.map(story);
 const leadStory = story(leadRaw);
+const remainingLaunches = launchesRaw.filter((item) => item !== leadRaw);
+const remainingResearch = researchRaw.filter((item) => item !== leadRaw);
+const remainingSignals = signalsRaw.filter((item) => item !== leadRaw && !criticalRaw.includes(item));
+const remainingIncidents = incidentsRaw.filter((item) => item !== leadRaw);
+const remainingGiggles = gigglesRaw.filter((item) => item !== leadRaw);
+const remainingBriefs = briefsRaw.filter((item) => item !== leadRaw);
 
 const edition = {
   editionDate: date,
@@ -167,12 +173,12 @@ const edition = {
   editionLabel: 'Daily issue · RSS edition',
   lead: leadStory,
   critical: sourceFields(criticalRaw),
-  launches: sourceFields(launchesRaw),
-  research: sourceFields(researchRaw),
-  signals: sourceFields(signalsRaw),
-  briefs: sourceFields(briefsRaw),
-  giggles: sourceFields(gigglesRaw).map((item) => ({ ...item, whyCare: 'A small reminder that AI news has a blooper reel as well as a roadmap.' })),
-  incidents: sourceFields(incidentsRaw).map((item) => ({ ...item, whyCare: 'The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.' })),
+  launches: sourceFields(remainingLaunches),
+  research: sourceFields(remainingResearch),
+  signals: sourceFields(remainingSignals),
+  briefs: sourceFields(remainingBriefs),
+  giggles: sourceFields(remainingGiggles).map((item) => ({ ...item, whyCare: 'A small reminder that AI news has a blooper reel as well as a roadmap.' })),
+  incidents: sourceFields(remainingIncidents).map((item) => ({ ...item, whyCare: 'The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.' })),
   oneIdea: {
     title: 'Today’s lead: ' + leadRaw.title,
     summary: leadRaw.summary,
