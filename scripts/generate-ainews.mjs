@@ -119,7 +119,8 @@ items.sort((a, b) => b.date - a.date);
 if (!items.length) {
   const errors = fetched.filter((result) => result.error).map((result) => result.feed.publisher + ': ' + result.error);
   const feedCounts = fetched.map((result) => result.feed.publisher + '=' + result.blocks.length).join(', ');
-  throw new Error('No fresh dated stories were available from the RSS feeds. Parsed feed entries: ' + feedCounts + '. Skipped entries: ' + JSON.stringify(skipped) + '. Feed errors: ' + errors.join('; '));
+  console.log('No fresh dated stories were found within 36 hours; keeping the last published edition. Parsed entries: ' + feedCounts + '. Skipped: ' + JSON.stringify(skipped) + '. Feed errors: ' + errors.join('; '));
+  process.exit(0);
 }
 
 const patterns = {
