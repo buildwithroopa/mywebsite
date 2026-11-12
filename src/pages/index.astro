@@ -196,6 +196,23 @@ const strengths = [
       @media print{body{background:white}.topbar,.buttons,.contact,.footer-links{display:none}.hero{padding:35px 0}.manifesto{padding:28px 0}.capabilities,.work{padding:35px 0}.job{break-inside:avoid}.wrap{width:100%}}
       @media print{body{font-size:11px;line-height:1.4}.hero{padding:20px 0}.hero h1{font-size:28px;margin:10px 0 12px}.lede{font-size:12px}.manifesto{padding:18px 0 10px}.manifesto h2{font-size:22px}.fde{padding:18px 0 10px}.fde-copy h2{font-size:24px}.fde-card{padding:12px;min-height:0}.fde-card h3{font-size:14px}.fde-card p,.job li,.section-head p,.foundation-card p,.foundation-card .fact span{font-size:10px}.capabilities,.work{padding:18px 0}.section-head h2{font-size:22px}.job{padding:18px 0;gap:20px}.job h3{font-size:20px}.job-intro{font-size:11px;margin:5px 0 8px}.volunteering,.strengths,.foundation{padding:12px 0 18px}.volunteer-card{padding:14px}.volunteer-card h3{font-size:20px}.contact{display:none}.footer{padding:10px 0}.strength{font-size:9px;padding:5px 7px}}
       .subroles{border-top:1px solid var(--line);margin-top:16px}.subrole{padding:15px 0;border-bottom:1px solid var(--line)}.subrole-head{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}.subrole-title{font:400 16px var(--sans);color:var(--muted)}.subrole-years{font:11px var(--mono);color:var(--muted)}.subrole ul{margin-top:7px}.subrole .tags{margin-top:10px}.scroll-reveal{content-visibility:auto;contain-intrinsic-size:360px;opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.scroll-reveal.is-visible{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+          /* Keep the desktop masthead inside its container and make navigation read as links. */
+      .topbar{min-width:0}
+      .brand{white-space:nowrap}
+      .nav{min-width:0}
+      .nav a{background:transparent!important;color:var(--ink)!important;border:0!important;padding:7px 0!important;min-height:40px!important;white-space:nowrap}
+      .nav a:hover{background:transparent!important;color:var(--orange)!important;transform:none!important;text-decoration:underline;text-underline-offset:6px}
+      @media(min-width:1101px){
+        .topbar{grid-template-columns:max-content minmax(0,1fr) max-content;gap:clamp(12px,1.4vw,20px)}
+        .brand{font-size:clamp(25px,2.35vw,30px)}
+        .nav{flex-wrap:nowrap;gap:clamp(10px,1.1vw,17px);justify-content:center}
+        .availability{transform:none!important;font-size:clamp(8px,.72vw,10px)!important;letter-spacing:.07em}
+      }
+      @media(min-width:761px) and (max-width:1100px){
+        .topbar{grid-template-columns:max-content minmax(0,1fr);gap:8px 20px}
+        .availability{grid-column:1/-1;text-align:right;transform:none!important}
+        .nav{flex-wrap:nowrap;gap:clamp(10px,1.6vw,18px)}
+      }
     </style>
   </head>
   <body>
