@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#e8e8e3"/>
+<path d="M54 82H1146M54 95H1146" stroke="#151515" stroke-width="4"/>
+<text x="58" y="62" font-family="monospace" font-size="24" letter-spacing="4" fill="#b62e34">AI GIGGLES · DAILY DOODLE</text>
+<text x="1140" y="62" text-anchor="end" font-family="monospace" font-size="20" fill="#555">NOV 13</text>
+<path d="M84 510H1114" stroke="#151515" stroke-width="10"/>
+<g stroke="#151515" stroke-width="8">
+<rect x="145" y="269" width="270" height="230" rx="12" fill="#fff"/>
+<path d="M195 325h170M195 368h140M195 411h152" stroke="#b62e34" stroke-width="10" stroke-linecap="round"/>
+<path d="M195 454h95" stroke="#151515" stroke-width="9"/>
+<rect x="489" y="282" width="190" height="149" rx="48" fill="#fff"/>
+<path d="M584 282v-43" fill="none"/><circle cx="584" cy="228" r="17" fill="#b62e34"/>
+<circle cx="543" cy="342" r="10" fill="#151515"/><circle cx="625" cy="342" r="10" fill="#151515"/>
+<path d="M548 379q36 27 72 0" fill="none"/>
+<rect x="532" y="424" width="104" height="96" rx="20" fill="#b62e34"/>
+<path d="M508 454l-64 24M659 454l55 26" stroke="#151515" stroke-width="17" stroke-linecap="round"/>
+</g>
+<text x="280" y="224" text-anchor="middle" font-family="monospace" font-size="24" fill="#151515">AI SUMMIT</text>
+<path d="M738 401l100-104 98 104z" fill="#b62e34" stroke="#151515" stroke-width="8"/>
+<path d="M786 399v-56M838 399v-80M890 399v-56" stroke="#fff" stroke-width="12"/>
+<rect x="760" y="420" width="226" height="75" rx="12" fill="#fff" stroke="#151515" stroke-width="8"/>
+<text x="873" y="467" text-anchor="middle" font-family="monospace" font-size="22" fill="#151515">NEXT STEPS?</text>
+<path d="M54 567H1146" stroke="#151515" stroke-width="8"/>
+<text x="600" y="620" text-anchor="middle" font-family="monospace" font-size="22" letter-spacing="3" fill="#151515">FRESH FROM TODAY'S AI NEWS</text>
+</svg>
