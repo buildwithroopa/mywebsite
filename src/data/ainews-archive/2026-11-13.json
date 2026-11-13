@@ -1,0 +1,248 @@
+{
+  "editionDate": "2026-11-13",
+  "timezone": "America/Los_Angeles",
+  "cutoff": "Morning edition",
+  "editionLabel": "Daily issue · Verified overnight reporting",
+  "lead": {
+    "title": "Europe puts AI ambition and guardrails on the same summit agenda",
+    "status": "Reported · Nov. 13",
+    "publisher": "Reuters",
+    "summary": "EU leaders are meeting in Dublin for the bloc’s first summit focused on AI. The agenda includes competitiveness, funding, guardrails, and why Europe’s chip and AI-compute plans have moved slowly.",
+    "whyCare": "The discussion joins three practical questions: where AI infrastructure will be built, who pays for it, and what rules should govern its use.",
+    "sources": [
+      {
+        "title": "Reuters",
+        "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+      }
+    ]
+  },
+  "critical": [
+    {
+      "title": "AI vendors are now part of the customer data perimeter",
+      "status": "Security incident · Nov. 12",
+      "publisher": "TechCrunch",
+      "summary": "Notion said hackers accessed some customer chat transcripts through a breach at AI provider Fireworks. The report says fewer than 1% of Notion workspaces were affected; the exact exposure varies by workspace.",
+      "whyCare": "Sending company data to an AI provider adds another place where access controls, retention, and incident response matter. Check what data your own tools send and how vendors notify you.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    },
+    {
+      "title": "Nonprofits ask a court to pause frontier model development",
+      "status": "Lawsuit filed · Nov. 12",
+      "publisher": "Reuters",
+      "summary": "A coalition sued OpenAI, Google, Anthropic, Meta, and SpaceX, seeking a halt to development of models beyond the companies’ current systems. The request is a claim before the court, not a ruling or a change to current products.",
+      "whyCare": "The case could test how courts treat claims about catastrophic AI risk and what remedies judges can order. For now, it is a legal challenge, not a new regulation.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/"
+        }
+      ]
+    },
+    {
+      "title": "AI shopping assistants sometimes point to risky storefronts",
+      "status": "Investigation · Nov. 12",
+      "publisher": "The Verge",
+      "summary": "A brand-protection firm’s tests found questionable retail sites among recommendations from Perplexity, ChatGPT, and Gemini. The figures come from one firm’s test and should not be read as universal error rates.",
+      "whyCare": "A polished answer can still send someone to a bad destination. When an assistant recommends a seller, verify the domain and merchant before entering payment details.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+        }
+      ]
+    }
+  ],
+  "giggles": [],
+  "incidents": [
+    {
+      "title": "Fireworks breach exposed some Notion customer chat transcripts",
+      "status": "Reported · Nov. 12",
+      "publisher": "TechCrunch",
+      "summary": "Hackers accessed some customer chat transcripts through AI provider Fireworks. Notion said fewer than 1% of workspaces were affected, and many exposed chats could not be tied to a particular user or workspace.",
+      "whyCare": "The immediate lesson is boring in the way security lessons often are: check vendor access, data retention, and incident notifications before sending sensitive conversations through an AI feature.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    }
+  ],
+  "launches": [
+    {
+      "title": "SpaceX plans more than $74 billion for two AI computing campuses",
+      "status": "Plan announced · Nov. 12",
+      "publisher": "Reuters",
+      "summary": "SpaceX said it plans to spend more than $74 billion on supercomputing sites in Texas and Arizona. The Arizona project still needs county approval and faces local opposition.",
+      "whyCare": "The announcement highlights how AI compute plans depend on electricity, permits, financing, and community support as much as chips.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-invest-over-74-billion-supercompute-facilities-texas-arizona-2026-11-12/"
+        }
+      ]
+    }
+  ],
+  "research": [],
+  "signals": [
+    {
+      "title": "EU leaders meet to discuss AI competitiveness and guardrails",
+      "status": "Summit · Nov. 13",
+      "publisher": "Reuters",
+      "summary": "Leaders are weighing how Europe can compete with the United States and China while addressing funding, regulation, and slow progress on chip and data-center plans.",
+      "whyCare": "Policy and infrastructure choices will shape where AI services can be built and what obligations providers face.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+        }
+      ]
+    },
+    {
+      "title": "A new political group is preparing for AI to become an election issue",
+      "status": "Reported · Nov. 13",
+      "publisher": "Associated Press",
+      "summary": "Tomorrow Together is starting a research effort on how voters think about AI. The group says it wants to prepare for public concerns as companies build more capable systems.",
+      "whyCare": "Expect more public debate about AI policy, data centers, and the risks people associate with the technology as campaigns take shape.",
+      "sources": [
+        {
+          "title": "Associated Press",
+          "url": "https://apnews.com/article/ai-democrats-midterms-trump-257d420d3a99f3fee65d2f6087a8b6b9"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "title": "Hugging Face says it will keep advocating for open AI",
+      "status": "Reported · Nov. 12",
+      "publisher": "TechCrunch",
+      "summary": "Hugging Face CEO Clément Delangue said the company will continue advocating for open-source AI after Nvidia CEO Jensen Huang’s departure. Nvidia’s planned acquisition of Hugging Face is still expected to close in 2027, according to the report.",
+      "whyCare": "The statement puts a spotlight on whether a change in leadership could shift the priorities around an important model distribution platform.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/"
+        }
+      ]
+    }
+  ],
+  "oneIdea": {
+    "title": "The AI stack has a lot of doors",
+    "summary": "Today’s reports touch several layers of the same system: data sent to an AI vendor, links surfaced by shopping assistants, infrastructure built to run models, and legal rules that may govern development.",
+    "whyNow": "A model is only one part of the risk picture. Vendors, data access, real-world actions, electricity, and regulation all affect what happens after someone presses enter.",
+    "sources": [
+      {
+        "title": "TechCrunch on the Fireworks breach",
+        "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+      },
+      {
+        "title": "The Verge on AI shopping results",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+      },
+      {
+        "title": "Reuters on the EU summit",
+        "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+      }
+    ]
+  },
+  "takeaways": [
+    {
+      "title": "Treat AI vendors as part of your data perimeter",
+      "summary": "Review which conversations or files leave your systems, how long providers retain them, and how they report security incidents.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    },
+    {
+      "title": "Verify the destination, not just the recommendation",
+      "summary": "Before buying from a link an AI assistant suggests, check the domain and confirm the seller through a trusted route.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+        }
+      ]
+    },
+    {
+      "title": "Big compute plans need more than a big number",
+      "summary": "A campus announcement is only a plan until permits, power, financing, and construction line up.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-invest-over-74-billion-supercompute-facilities-texas-arizona-2026-11-12/"
+        }
+      ]
+    },
+    {
+      "title": "A lawsuit is not a ruling",
+      "summary": "The frontier-model case asks a court for action. Watch for filings and decisions before treating it as a change in law.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "priority": "Check today",
+      "title": "Map where sensitive prompts go",
+      "context": "A breach at an AI provider exposed some customer chat transcripts through a connected product.",
+      "whyItMatters": "Vendor integrations can carry data beyond the system where a team first entered it.",
+      "action": "List the AI features used by your team, identify what data each sends, and confirm retention and incident-notification terms for the providers involved.",
+      "watchFor": "Vendor notices, retention changes, and whether admins can disable chat history or sensitive-data sharing.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    },
+    {
+      "priority": "Use a quick check",
+      "title": "Verify AI shopping links before paying",
+      "context": "A firm’s test found questionable retail sites among several AI assistants’ shopping recommendations.",
+      "whyItMatters": "Search ranking and fluent explanations do not establish that a seller is legitimate.",
+      "action": "Open the retailer’s official site directly, check the exact domain, and avoid entering payment details after following an unfamiliar AI-suggested link.",
+      "watchFor": "Whether the assistant identifies the source and whether that source is the real merchant.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Follow the EU’s infrastructure and policy decisions",
+      "context": "EU leaders are discussing AI competitiveness, compute capacity, funding, and guardrails at a dedicated summit.",
+      "whyItMatters": "Permits, public investment, energy plans, and rules can shape where AI infrastructure is built and how services operate.",
+      "action": "If your work depends on European AI services, track announcements on compute investment and implementation timelines rather than relying on summit headlines alone.",
+      "watchFor": "Specific commitments, funding decisions, and follow-up dates.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+        }
+      ]
+    }
+  ],
+  "learning": {
+    "title": "Citation is not verification",
+    "body": "A citation shows where an answer says it got a claim. It does not prove that the page is trustworthy, current, or the right source. For shopping, safety, or money decisions, check the domain and confirm the claim on the seller’s own site or another reliable source.",
+    "tryThis": "Take one AI recommendation and follow its link. Check who owns the domain, whether the page is current, and whether a trusted source confirms the key claim."
+  },
+  "notes": [
+    "Compiled from dated reporting available for this morning’s edition. Claims and figures are attributed to the linked reports; source excerpts can omit context."
+  ]
+}
