@@ -1,392 +1,248 @@
 {
-  "editionDate": "2026-11-12",
+  "editionDate": "2026-11-13",
   "timezone": "America/Los_Angeles",
-  "cutoff": "Morning edition · 6:44 AM PT",
-  "editionLabel": "Daily issue · Expanded",
+  "cutoff": "Morning edition",
+  "editionLabel": "Daily issue · Verified overnight reporting",
   "lead": {
-    "title": "The AI market wakes up to a leadership question",
-    "status": "Reported · Nov. 12",
-    "summary": "Axios and the Associated Press report that questions around Nvidia CEO Jensen Huang are weighing on AI-related shares. At this morning's cutoff, the board situation was developing; this edition does not treat a reported meeting as a final decision.",
-    "whyCare": "Nvidia sits near the center of the AI compute supply chain. Leadership uncertainty can affect customers, investors, and policy debates even before chip availability or product plans change.",
+    "title": "Europe puts AI ambition and guardrails on the same summit agenda",
+    "status": "Reported · Nov. 13",
+    "publisher": "Reuters",
+    "summary": "EU leaders are meeting in Dublin for the bloc’s first summit focused on AI. The agenda includes competitiveness, funding, guardrails, and why Europe’s chip and AI-compute plans have moved slowly.",
+    "whyCare": "The discussion joins three practical questions: where AI infrastructure will be built, who pays for it, and what rules should govern its use.",
     "sources": [
       {
-        "title": "Axios",
-        "url": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board"
-      },
-      {
-        "title": "Associated Press",
-        "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
+        "title": "Reuters",
+        "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
       }
     ]
   },
   "critical": [
     {
-      "title": "Nvidia leadership uncertainty rattles the AI trade",
-      "status": "Reported · developing",
-      "publisher": "Axios / AP",
-      "summary": "Reports describe board discussions about Jensen Huang's future following allegations that are also drawing national-security scrutiny. No final board decision was confirmed at this edition's cutoff.",
-      "whyCare": "The AI economy is concentrated around a small number of chip and infrastructure suppliers, so leadership and export-policy questions can ripple well beyond one company.",
-      "sources": [
-        {
-          "title": "Axios",
-          "url": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board"
-        },
-        {
-          "title": "Associated Press",
-          "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
-        }
-      ]
-    }
-  ],
-  "giggles": [
-    {
-      "title": "The AI gets a new job: pick a checkbox and spare us the TED Talk",
-      "status": "Confirmed product news · Nov. 11",
-      "publisher": "Google",
-      "summary": "Google's new Decisions API is designed to choose among fixed options instead of generating a long answer. The joke is in the job description: after years of prompting chatbots to be concise, one product is now purpose-built to not write the essay.",
-      "whyCare": "Humor aside, this reflects a practical shift toward smaller, measurable model tasks rather than using a general chatbot for every workflow.",
-      "sources": [
-        {
-          "title": "Google announcement",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
-        }
-      ]
-    },
-    {
-      "title": "The office chatbot gets an always-on shift",
-      "status": "Announced · Nov. 11",
-      "publisher": "Databricks / Fortune",
-      "summary": "Databricks introduced an always-on version of its Genie business assistant for longer-running workplace tasks. The newsroom joke writes itself: the assistant just got the shift nobody wants on the rota.",
-      "whyCare": "The amusing premise also signals a real product shift from answering prompts to working in the background, which makes permissions and review important.",
-      "sources": [
-        {
-          "title": "Fortune",
-          "url": "https://fortune.com/2026/11/11/databricks/"
-        }
-      ]
-    },
-    {
-      "title": "AI agents built a practice cloud. Real AWS still gets the final test.",
-      "status": "Tool release · Nov. 11",
-      "publisher": "AWS / GeekWire",
-      "summary": "Amazon released a local emulator for more than 200 AWS services. The company says AI agents wrote and maintain it. Developers can test some workflows on a laptop, but the tool cannot reproduce every outage or service limit.",
-      "whyCare": "Use it to speed up local tests, then check anything the emulator cannot model against real AWS.",
-      "sources": [
-        {
-          "title": "GeekWire",
-          "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/"
-        }
-      ]
-    },
-    {
-      "title": "Qwen4-Max-Preview brings a name with its own changelog",
-      "status": "Preview · Nov. 11",
-      "publisher": "QwenCloud",
-      "summary": "Alibaba’s Qwen4-Max-Preview offers text generation, image and video understanding, reasoning, and tool use. The name has so many version cues it sounds like the release notes need a release note.",
-      "whyCare": "The launch is a reminder that a preview is still a moving target: check access terms, limits, and task quality before treating it as a stable production choice.",
-      "sources": [
-        {
-          "title": "QwenCloud model guide",
-          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
-        }
-      ]
-    }
-  ],
-  "incidents": [],
-  "insights": [
-    {
-      "priority": "Try today",
-      "title": "Pilot a bounded decision on a small, reviewed sample",
-      "context": "Google announced an API for yes/no, multiple-choice, and rubric-scoring decisions across multimodal inputs.",
-      "whyItMatters": "A model that returns a probability for options you define can be easier to route and audit than open-ended prose, but confidence is not proof of correctness.",
-      "action": "Choose one low-risk classification task, label 30–50 examples by hand, compare the API and your current method, then review every disagreement before expanding.",
-      "watchFor": "Measure error types, abstentions, human-review rate, latency, and total cost. Keep sensitive or high-impact decisions human-reviewed.",
-      "sources": [
-        {
-          "title": "Google announcement",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
-        }
-      ]
-    },
-    {
-      "priority": "Monitor",
-      "title": "Track the Nvidia story as a supply-chain and policy signal",
-      "context": "Multiple outlets report market concern and ongoing questions around Nvidia's leadership; the situation was unresolved at this edition's cutoff.",
-      "whyItMatters": "Leadership uncertainty may influence customer confidence, export-policy scrutiny, and expectations for the industry's compute buildout.",
-      "action": "Wait for a company statement or corroborated follow-up before updating plans. Separate verified board actions from market reaction and allegation.",
-      "watchFor": "A confirmed board decision, operational changes, export-control announcements, or changes to public customer commitments.",
-      "sources": [
-        {
-          "title": "Axios",
-          "url": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board"
-        },
-        {
-          "title": "Associated Press",
-          "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
-        }
-      ]
-    },
-    {
-      "priority": "Read",
-      "title": "Compare AI research at equal compute, not just equal steps",
-      "context": "Today's paper roundup highlights a preprint reporting that some dense-reward methods lose their apparent advantage when compute is matched.",
-      "whyItMatters": "A benchmark win can hide extra model calls or training tokens; equal-compute comparisons help show whether a method is actually more efficient.",
-      "action": "When a paper reports a gain, check token/compute budgets, baselines, and failed variants before deciding whether the result transfers to your work.",
-      "watchFor": "Independent replication and the original paper's full evaluation protocol.",
-      "sources": [
-        {
-          "title": "NHỊP research roundup",
-          "url": "https://nhip.verai.vn/en/papers/2026-11-12"
-        }
-      ]
-    }
-  ],
-  "learning": {
-    "title": "Closed-set decisions",
-    "body": "A closed-set decision model picks from options you set in advance, such as “valid,” “invalid,” or “needs review.” It does not write an open-ended reply. That can make repeated classifications easier to check. But if the right option is missing, or the question is unclear, it can still pick the wrong answer with confidence.",
-    "tryThis": "Take ten recent support requests. Define a small label set, ask a model to classify them, and have a person review the result. Count disagreements and cases where the correct label was missing."
-  },
-  "notes": [],
-  "launches": [
-    {
-      "title": "Google’s Decisions API gives models a multiple-choice job",
-      "status": "Announced · Nov. 11",
-      "publisher": "Google",
-      "summary": "Google introduced an API for yes/no, multiple-choice, and rubric-scoring decisions. It accepts multimodal inputs and returns confidence scores; the capabilities and pricing are company claims.",
-      "whyCare": "A constrained output can be easier to evaluate than free-form text, but it still needs testing against your own labeled examples.",
-      "sources": [
-        {
-          "title": "Google announcement",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
-        }
-      ]
-    },
-    {
-      "title": "Databricks makes Genie an always-on business assistant",
-      "status": "Announced · Nov. 11",
-      "publisher": "Databricks / Fortune",
-      "summary": "Databricks introduced an always-on version of Genie for longer-running workplace tasks, with new capabilities moving into preview and beta programs.",
-      "whyCare": "It pushes business assistants from answering prompts toward background work over company information; access controls and review matter more as autonomy increases.",
-      "sources": [
-        {
-          "title": "Fortune",
-          "url": "https://fortune.com/2026/11/11/databricks/"
-        }
-      ]
-    },
-    {
-      "title": "Qwen4-Max-Preview arrives for developers",
-      "status": "Preview · Nov. 11",
-      "publisher": "QwenCloud",
-      "summary": "Alibaba’s Qwen4-Max-Preview supports text generation, image and video understanding, reasoning, and tool use. The preview is offered through QwenCloud’s Token Plan through Nov. 25.",
-      "whyCare": "A new model option is useful only if its access terms, latency, and task quality fit the workload; preview status means interfaces may change.",
-      "sources": [
-        {
-          "title": "QwenCloud model guide",
-          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
-        }
-      ]
-    },
-    {
-      "title": "AWS Emulator offers a local stand-in for cloud services",
-      "status": "Tool release · Nov. 11",
-      "publisher": "AWS / GeekWire",
-      "summary": "Amazon released a free local testing tool that simulates more than 200 AWS services. Amazon says AI agents wrote and maintain its code; the emulator does not reproduce every outage or service restriction.",
-      "whyCare": "Local simulation could shorten development loops, but it does not replace cloud integration tests for behaviors the emulator cannot model.",
-      "sources": [
-        {
-          "title": "GeekWire",
-          "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/"
-        }
-      ]
-    }
-  ],
-  "research": [
-    {
-      "title": "AlphaGenome 2 targets cell-specific effects of genetic variants",
-      "status": "Research tool · Nov. 12",
-      "publisher": "Google DeepMind",
-      "summary": "DeepMind says AlphaGenome 2 predicts how genetic variants affect specific cell types using a large collection of cell profiles. It is offered for noncommercial research and is not approved for clinical diagnosis.",
-      "whyCare": "The model may help researchers prioritize hypotheses, but its predictions are research inputs rather than medical advice or validated diagnoses.",
-      "sources": [
-        {
-          "title": "Google DeepMind",
-          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
-        }
-      ]
-    }
-  ],
-  "signals": [
-    {
-      "title": "United blocks unauthorized AI agents from completing flight bookings",
-      "status": "Reported · Nov. 11",
-      "publisher": "The Verge",
-      "summary": "United will let personal AI assistants display flight options but not complete purchases. The airline cited privacy, accidental bookings, and passenger declarations required by aviation rules; it says it may reconsider as safeguards improve.",
-      "whyCare": "This is an early boundary for agent commerce: sensitive actions may require a human to confirm identity, declarations, and payment.",
-      "sources": [
-        {
-          "title": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
-        }
-      ]
-    },
-    {
-      "title": "Fed official warns AI investment could amplify a market correction",
-      "status": "Reported · Nov. 11",
-      "publisher": "Semafor",
-      "summary": "Federal Reserve Governor Michelle Bowman raised concern that debt and elevated AI-related valuations could worsen a correction if expected returns fail to arrive. The warning is a risk assessment, not a forecast that a correction is imminent.",
-      "whyCare": "AI infrastructure spending is increasingly financed and valued on expectations; track realized demand and cash flows alongside announcements.",
-      "sources": [
-        {
-          "title": "Semafor",
-          "url": "https://www.semafor.com/article/11/11/2026/anthropic-ipo-could-lead-to-large-correction-in-markets-fed-official-says"
-        }
-      ]
-    },
-    {
-      "title": "Draft bill would require federal permission to train advanced AI models",
-      "status": "Proposal · Nov. 11",
-      "publisher": "Futurism",
-      "summary": "Democratic lawmakers are considering a bill that would create a federal AI department and require permission for some advanced-model training. The proposal’s support and chance of passage remain uncertain.",
-      "whyCare": "If enacted, training approvals could reshape compliance costs and research access; for now, treat this as a policy proposal rather than a rule.",
-      "sources": [
-        {
-          "title": "Futurism",
-          "url": "https://futurism.com/artificial-intelligence/democrats-federal-permit-train-ai-model"
-        }
-      ]
-    },
-    {
-      "title": "CoreWeave turns to customer prepayments to finance AI infrastructure",
-      "status": "Reported · Nov. 11",
+      "title": "AI vendors are now part of the customer data perimeter",
+      "status": "Security incident · Nov. 12",
       "publisher": "TechCrunch",
-      "summary": "CoreWeave is seeking customer prepayments and shorter contracts as it funds rapid infrastructure growth. The company reported rising revenue alongside a substantial quarterly net loss.",
-      "whyCare": "Prepayments can help finance expansion while shifting commitment and financing risk across providers and customers; compare utilization and contract terms, not just revenue growth.",
+      "summary": "Notion said hackers accessed some customer chat transcripts through a breach at AI provider Fireworks. The report says fewer than 1% of Notion workspaces were affected; the exact exposure varies by workspace.",
+      "whyCare": "Sending company data to an AI provider adds another place where access controls, retention, and incident response matter. Check what data your own tools send and how vendors notify you.",
       "sources": [
         {
           "title": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    },
+    {
+      "title": "Nonprofits ask a court to pause frontier model development",
+      "status": "Lawsuit filed · Nov. 12",
+      "publisher": "Reuters",
+      "summary": "A coalition sued OpenAI, Google, Anthropic, Meta, and SpaceX, seeking a halt to development of models beyond the companies’ current systems. The request is a claim before the court, not a ruling or a change to current products.",
+      "whyCare": "The case could test how courts treat claims about catastrophic AI risk and what remedies judges can order. For now, it is a legal challenge, not a new regulation.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/"
+        }
+      ]
+    },
+    {
+      "title": "AI shopping assistants sometimes point to risky storefronts",
+      "status": "Investigation · Nov. 12",
+      "publisher": "The Verge",
+      "summary": "A brand-protection firm’s tests found questionable retail sites among recommendations from Perplexity, ChatGPT, and Gemini. The figures come from one firm’s test and should not be read as universal error rates.",
+      "whyCare": "A polished answer can still send someone to a bad destination. When an assistant recommends a seller, verify the domain and merchant before entering payment details.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+        }
+      ]
+    }
+  ],
+  "giggles": [],
+  "incidents": [
+    {
+      "title": "Fireworks breach exposed some Notion customer chat transcripts",
+      "status": "Reported · Nov. 12",
+      "publisher": "TechCrunch",
+      "summary": "Hackers accessed some customer chat transcripts through AI provider Fireworks. Notion said fewer than 1% of workspaces were affected, and many exposed chats could not be tied to a particular user or workspace.",
+      "whyCare": "The immediate lesson is boring in the way security lessons often are: check vendor access, data retention, and incident notifications before sending sensitive conversations through an AI feature.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    }
+  ],
+  "launches": [
+    {
+      "title": "SpaceX plans more than $74 billion for two AI computing campuses",
+      "status": "Plan announced · Nov. 12",
+      "publisher": "Reuters",
+      "summary": "SpaceX said it plans to spend more than $74 billion on supercomputing sites in Texas and Arizona. The Arizona project still needs county approval and faces local opposition.",
+      "whyCare": "The announcement highlights how AI compute plans depend on electricity, permits, financing, and community support as much as chips.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-invest-over-74-billion-supercompute-facilities-texas-arizona-2026-11-12/"
+        }
+      ]
+    }
+  ],
+  "research": [],
+  "signals": [
+    {
+      "title": "EU leaders meet to discuss AI competitiveness and guardrails",
+      "status": "Summit · Nov. 13",
+      "publisher": "Reuters",
+      "summary": "Leaders are weighing how Europe can compete with the United States and China while addressing funding, regulation, and slow progress on chip and data-center plans.",
+      "whyCare": "Policy and infrastructure choices will shape where AI services can be built and what obligations providers face.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+        }
+      ]
+    },
+    {
+      "title": "A new political group is preparing for AI to become an election issue",
+      "status": "Reported · Nov. 13",
+      "publisher": "Associated Press",
+      "summary": "Tomorrow Together is starting a research effort on how voters think about AI. The group says it wants to prepare for public concerns as companies build more capable systems.",
+      "whyCare": "Expect more public debate about AI policy, data centers, and the risks people associate with the technology as campaigns take shape.",
+      "sources": [
+        {
+          "title": "Associated Press",
+          "url": "https://apnews.com/article/ai-democrats-midterms-trump-257d420d3a99f3fee65d2f6087a8b6b9"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "OpenAI and nonprofits bring practical AI workshops to caregivers",
-      "status": "Program · Nov. 10",
-      "publisher": "OpenAI",
-      "summary": "OpenAI Academy and three nonprofit partners are holding free workshops across five U.S. cities on using ChatGPT for caregiver schedules, plain-language resources, and community support, with guidance on privacy and limits.",
-      "whyCare": "Caregiving is a practical high-stakes use case where helpful organization and unsafe medical reliance sit close together.",
+      "title": "Hugging Face says it will keep advocating for open AI",
+      "status": "Reported · Nov. 12",
+      "publisher": "TechCrunch",
+      "summary": "Hugging Face CEO Clément Delangue said the company will continue advocating for open-source AI after Nvidia CEO Jensen Huang’s departure. Nvidia’s planned acquisition of Hugging Face is still expected to close in 2027, according to the report.",
+      "whyCare": "The statement puts a spotlight on whether a change in leadership could shift the priorities around an important model distribution platform.",
       "sources": [
         {
-          "title": "OpenAI",
-          "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life/"
-        }
-      ]
-    },
-    {
-      "title": "A new AI-first phone bets on voice as the interface",
-      "status": "Founder announcement · Nov. 12",
-      "publisher": "The Neuron",
-      "summary": "A startup called Blue says its phone assistant can act across apps, handle notifications, and complete tasks by voice. The product claims and early preference figures are founder-reported.",
-      "whyCare": "The pitch tests whether users will delegate cross-app tasks to an assistant rather than navigate apps themselves.",
-      "sources": [
-        {
-          "title": "The Neuron daily digest",
-          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
-        }
-      ]
-    },
-    {
-      "title": "Student AI use still outpaces instruction on how to use it",
-      "status": "Survey · Nov. 10",
-      "publisher": "OpenAI / ThinkYoung",
-      "summary": "A report using ThinkYoung survey data says 79% of students use AI for schoolwork while 47% say they have been shown how to use it. These are survey results, not a census of all students.",
-      "whyCare": "The gap points to a need for explicit teaching on verification, attribution, and appropriate use.",
-      "sources": [
-        {
-          "title": "OpenAI education report",
-          "url": "https://openai.com/index/closing-ai-guidance-gap-education/"
-        }
-      ]
-    },
-    {
-      "title": "Tether releases an 800M-parameter model for on-device AI agents",
-      "status": "Announced · Nov. 11",
-      "publisher": "Tether AI Research",
-      "summary": "Tether AI Research announced QVAC BotPsy-0.8B, an open-weight model designed for tool use and everyday agent tasks on personal devices. The company reports strong results across six agent benchmarks; those comparisons are company-run evaluations.",
-      "whyCare": "A compact model could make local agent use more practical, but the release’s benchmark claims need independent replication and real-device testing.",
-      "sources": [
-        {
-          "title": "Tether AI Research",
-          "url": "https://tether.io/news/tethers-800m-ai-agent-beats-models-2-5x-its-size-on-everyday-phone-tasks/"
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/"
         }
       ]
     }
   ],
   "oneIdea": {
-    "title": "The AI race is shifting from model quality to control over compute and action",
-    "summary": "Today’s stories tie together a concentrated compute supply chain, new products competing for developer attention, and companies deciding how much authority an AI agent gets. The practical question is becoming who can access the capability, under what terms, and which actions still require a person.",
-    "whyNow": "Nvidia and CoreWeave illustrate the infrastructure stakes; Qwen and Google illustrate changing model access; United’s booking rule shows the boundary around real-world transactions.",
+    "title": "The AI stack has a lot of doors",
+    "summary": "Today’s reports touch several layers of the same system: data sent to an AI vendor, links surfaced by shopping assistants, infrastructure built to run models, and legal rules that may govern development.",
+    "whyNow": "A model is only one part of the risk picture. Vendors, data access, real-world actions, electricity, and regulation all affect what happens after someone presses enter.",
     "sources": [
       {
-        "title": "Associated Press on Nvidia",
-        "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
+        "title": "TechCrunch on the Fireworks breach",
+        "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
       },
       {
-        "title": "TechCrunch on CoreWeave",
-        "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+        "title": "The Verge on AI shopping results",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
       },
       {
-        "title": "The Verge on AI agents and airline bookings",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+        "title": "Reuters on the EU summit",
+        "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
       }
     ]
   },
   "takeaways": [
     {
-      "title": "Agent capability does not equal permission",
-      "summary": "An assistant may be able to find and fill a booking, while a company still requires a person to confirm the purchase and required declarations. Treat each delegated action as a separate permission decision.",
-      "sources": [
-        {
-          "title": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
-        }
-      ]
-    },
-    {
-      "title": "Measure the full cost of an AI task",
-      "summary": "Token price is only one part of cost; retries, long reasoning, human review, and infrastructure commitments matter too. Compare total cost and useful outcomes before switching models or providers.",
+      "title": "Treat AI vendors as part of your data perimeter",
+      "summary": "Review which conversations or files leave your systems, how long providers retain them, and how they report security incidents.",
       "sources": [
         {
           "title": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
-        },
-        {
-          "title": "Semafor",
-          "url": "https://www.semafor.com/article/11/11/2026/anthropic-ipo-could-lead-to-large-correction-in-markets-fed-official-says"
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
         }
       ]
     },
     {
-      "title": "Use a model that returns the kind of answer you can evaluate",
-      "summary": "For classification or rubric scoring, a fixed set of choices may be easier to check than a paragraph. Test it against hand-labeled examples and inspect errors before trusting confidence scores.",
+      "title": "Verify the destination, not just the recommendation",
+      "summary": "Before buying from a link an AI assistant suggests, check the domain and confirm the seller through a trusted route.",
       "sources": [
         {
-          "title": "Google Decisions API",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
         }
       ]
     },
     {
-      "title": "Availability belongs next to benchmark claims",
-      "summary": "A model’s ranking matters less if your team cannot access it, or if it is only available under preview terms. Track access, limits, and performance together when comparing options.",
+      "title": "Big compute plans need more than a big number",
+      "summary": "A campus announcement is only a plan until permits, power, financing, and construction line up.",
       "sources": [
         {
-          "title": "QwenCloud model guide",
-          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-invest-over-74-billion-supercompute-facilities-texas-arizona-2026-11-12/"
+        }
+      ]
+    },
+    {
+      "title": "A lawsuit is not a ruling",
+      "summary": "The frontier-model case asks a court for action. Watch for filings and decisions before treating it as a change in law.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/"
         }
       ]
     }
+  ],
+  "insights": [
+    {
+      "priority": "Check today",
+      "title": "Map where sensitive prompts go",
+      "context": "A breach at an AI provider exposed some customer chat transcripts through a connected product.",
+      "whyItMatters": "Vendor integrations can carry data beyond the system where a team first entered it.",
+      "action": "List the AI features used by your team, identify what data each sends, and confirm retention and incident-notification terms for the providers involved.",
+      "watchFor": "Vendor notices, retention changes, and whether admins can disable chat history or sensitive-data sharing.",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ]
+    },
+    {
+      "priority": "Use a quick check",
+      "title": "Verify AI shopping links before paying",
+      "context": "A firm’s test found questionable retail sites among several AI assistants’ shopping recommendations.",
+      "whyItMatters": "Search ranking and fluent explanations do not establish that a seller is legitimate.",
+      "action": "Open the retailer’s official site directly, check the exact domain, and avoid entering payment details after following an unfamiliar AI-suggested link.",
+      "watchFor": "Whether the assistant identifies the source and whether that source is the real merchant.",
+      "sources": [
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Follow the EU’s infrastructure and policy decisions",
+      "context": "EU leaders are discussing AI competitiveness, compute capacity, funding, and guardrails at a dedicated summit.",
+      "whyItMatters": "Permits, public investment, energy plans, and rules can shape where AI infrastructure is built and how services operate.",
+      "action": "If your work depends on European AI services, track announcements on compute investment and implementation timelines rather than relying on summit headlines alone.",
+      "watchFor": "Specific commitments, funding decisions, and follow-up dates.",
+      "sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+        }
+      ]
+    }
+  ],
+  "learning": {
+    "title": "Citation is not verification",
+    "body": "A citation shows where an answer says it got a claim. It does not prove that the page is trustworthy, current, or the right source. For shopping, safety, or money decisions, check the domain and confirm the claim on the seller’s own site or another reliable source.",
+    "tryThis": "Take one AI recommendation and follow its link. Check who owns the domain, whether the page is current, and whether a trusted source confirms the key claim."
+  },
+  "notes": [
+    "Compiled from dated reporting available for this morning’s edition. Claims and figures are attributed to the linked reports; source excerpts can omit context."
   ]
 }
