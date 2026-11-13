@@ -244,5 +244,21 @@
   },
   "notes": [
     "Compiled from dated reporting available for this morning’s edition. Claims and figures are attributed to the linked reports; source excerpts can omit context."
+  ],
+  "giggleMemes": [
+    {
+      "image": "/images/ainews-giggle-2026-11-13-1.svg",
+      "alt": "A friendly robot passes a chat through a winding route to a vendor's lockbox.",
+      "topic": "Data boundaries",
+      "title": "The chat had one stop. The data took a scenic route.",
+      "lesson": "Check which providers receive prompts and how long they keep them."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-13-2.svg",
+      "alt": "A robot sits beneath an oversized AI summit agenda beside a chart labeled next steps.",
+      "topic": "AI policy",
+      "title": "The AI summit agenda needs its own agenda.",
+      "lesson": "A policy headline is not a policy change. Watch for specific commitments and dates."
+    }
   ]
 }
