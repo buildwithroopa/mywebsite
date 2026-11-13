@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 
 const zone = 'America/Los_Angeles';
 const now = new Date();
@@ -19,6 +19,27 @@ const prettyTime = new Intl.DateTimeFormat('en-US', {
 const previous = JSON.parse(await readFile('src/data/ainews-latest.json', 'utf8'));
 const archiveDir = 'src/data/ainews-archive';
 await mkdir(archiveDir, { recursive: true });
+function collectUrls(value, urls = new Set()) {
+  if (Array.isArray(value)) {
+    for (const entry of value) collectUrls(entry, urls);
+  } else if (value && typeof value === 'object') {
+    if (typeof value.url === 'string' && value.url.startsWith('https://')) urls.add(value.url);
+    for (const entry of Object.values(value)) collectUrls(entry, urls);
+  }
+  return urls;
+}
+const previouslyPublishedUrls = new Set(
+  previous.editionDate < date ? collectUrls(previous) : []
+);
+for (const filename of await readdir(archiveDir)) {
+  if (!/^\\d{4}-\\d{2}-\\d{2}\\.json$/.test(filename) || filename.slice(0, 10) >= date) continue;
+  try {
+    const archived = JSON.parse(await readFile(archiveDir + '/' + filename, 'utf8'));
+    for (const url of collectUrls(archived)) previouslyPublishedUrls.add(url);
+  } catch (error) {
+    console.warn('Could not read archive ' + filename + ': ' + error.message);
+  }
+}
 
 const feeds = [
   { publisher: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/' },
@@ -26,17 +47,19 @@ const feeds = [
   { publisher: 'VentureBeat · AI', url: 'https://venturebeat.com/category/ai/feed/' },
   { publisher: 'Hugging Face', url: 'https://huggingface.co/blog/feed.xml' },
   { publisher: 'The Decoder', url: 'https://the-decoder.com/feed/' },
+  { publisher: 'The Neuron', url: 'https://www.theneuron.ai/feed/' },
+  { publisher: 'MIT News · AI', url: 'https://news.mit.edu/rss/topic/artificial-intelligence2' },
   { publisher: 'MarkTechPost', url: 'https://www.marktechpost.com/feed/' },
   { publisher: 'OpenAI', url: 'https://openai.com/news/rss.xml' },
   { publisher: 'Google DeepMind', url: 'https://deepmind.google/blog/rss.xml' },
-  { publisher: 'Google News · AI', url: 'https://news.google.com/rss/search?q=AI+OR+artificial+intelligence+when%3A1d&hl=en-US&gl=US&ceid=US:en' },
-  { publisher: 'Google News · AI agents', url: 'https://news.google.com/rss/search?q=AI+agents+OR+artificial+intelligence+agents+when%3A1d&hl=en-US&gl=US&ceid=US:en' },
-  { publisher: 'Google News · AI research and policy', url: 'https://news.google.com/rss/search?q=AI+research+OR+AI+policy+OR+AI+chips+when%3A1d&hl=en-US&gl=US&ceid=US:en' },
+  { publisher: 'Google News · AI', url: 'https://news.google.com/rss/search?q=AI+OR+artificial+intelligence+when%3A3d&hl=en-US&gl=US&ceid=US:en' },
+  { publisher: 'Google News · AI agents', url: 'https://news.google.com/rss/search?q=AI+agents+OR+artificial+intelligence+agents+when%3A3d&hl=en-US&gl=US&ceid=US:en' },
+  { publisher: 'Google News · AI research and policy', url: 'https://news.google.com/rss/search?q=AI+research+OR+AI+policy+OR+AI+chips+when%3A3d&hl=en-US&gl=US&ceid=US:en' },
   { publisher: 'arXiv · Artificial Intelligence', url: 'https://export.arxiv.org/rss/cs.AI' },
   { publisher: 'arXiv · Computation and Language', url: 'https://export.arxiv.org/rss/cs.CL' },
   { publisher: 'arXiv · Machine Learning', url: 'https://export.arxiv.org/rss/cs.LG' }
 ];
-const windowStart = now.getTime() - 36 * 60 * 60 * 1000;
+const windowStart = now.getTime() - 72 * 60 * 60 * 1000;
 
 function decodeXml(value) {
   return value
@@ -184,7 +207,7 @@ const fetched = await Promise.all(feeds.map(async (feed) => {
 }));
 
 const items = [];
-const skipped = { title: 0, url: 0, date: 0, old: 0 };
+const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0 };
 for (const result of fetched) {
   for (const block of result.blocks) {
     const title = noEmDashes(readTag(block, ['title']));
@@ -196,6 +219,7 @@ for (const result of fetched) {
     if (!url) { skipped.url++; continue; }
     if (!Number.isFinite(published.getTime())) { skipped.date++; continue; }
     if (published.getTime() < windowStart) { skipped.old++; continue; }
+    if (previouslyPublishedUrls.has(url)) { skipped.repeated++; continue; }
     const normalizedTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
     if (!items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url)) continue;
     items.push({
@@ -313,7 +337,7 @@ const edition = {
   },
   notes: [
     'Compiled from public RSS feeds. Feed excerpts are publisher-supplied and have not been independently verified; open the linked original before relying on a claim.',
-    'This is a curated scan of the feeds listed in the generator, not an exhaustive index of all AI coverage. Items are limited to dated posts from the last 36 hours.'
+    'This is a curated scan of the feeds listed in the generator, not an exhaustive index of all AI coverage. Items are limited to dated posts from the last 72 hours; links already used in earlier editions are skipped.'
   ]
 };
 if (fetched.some((result) => result.error)) {
@@ -326,4 +350,4 @@ if (previous.editionDate !== date) {
 }
 await writeFile(archivePath, JSON.stringify(edition, null, 2) + '\n');
 await writeFile('src/data/ainews-latest.json', JSON.stringify(edition, null, 2) + '\n');
-console.log('Wrote RSS AI News for ' + date + ': ' + allChosen.length + ' distinct feed items (' + fetched.filter((result) => !result.error).length + '/' + feeds.length + ' feeds reachable).');
+console.log('Wrote RSS AI News for ' + date + ': ' + allChosen.length + ' distinct, previously unpublished feed items (' + fetched.filter((result) => !result.error).length + '/' + feeds.length + ' feeds reachable).');
