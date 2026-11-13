@@ -81,9 +81,6 @@ function shorten(value, max = 420) {
   if (value.length <= max) return value;
   return value.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
 }
-function escapeSvg(value) {
-  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
-}
 function createDailyMeme(item, index, previousTitles) {
   const subject = (item.title + ' ' + item.summary).toLowerCase();
   let kind = 'workflow';
@@ -256,6 +253,7 @@ const briefsRaw = [...unused].slice(0, 16);
 for (const item of briefsRaw) unused.delete(item);
 
 const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...briefsRaw];
+const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
 const previousMemeTitles = new Set((previous.giggleMemes ?? []).map((meme) => meme.title));
 const memeSources = [leadRaw, ...allChosen.filter((item) => item !== leadRaw)].slice(0, 2);
 const generatedMemes = memeSources.map((item, index) => createDailyMeme(item, index, previousMemeTitles));
@@ -264,7 +262,6 @@ for (const meme of generatedMemes) {
   await writeFile('public' + meme.image, meme.svg + '\n');
 }
 const giggleMemes = generatedMemes.map(({ svg, ...meme }) => meme);
-const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
 const criticalRaw = signalsRaw.filter((item) => item !== leadRaw).slice(0, 6);
 const sourceFields = (raw) => raw.map(story);
 const leadStory = story(leadRaw);
