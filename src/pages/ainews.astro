@@ -24,15 +24,13 @@ const memes = [
   { image: '/images/ainews-meme-approval.jpg', alt: 'A cheerful AI agent pauses at a large red button while a human editor gives approval behind a safety rail.', topic: 'AI agents · Lesson 02', title: 'The agent found the big red button.', lesson: 'Give agents only the access they need. Require human approval before payments, publishing, or deleting anything.' },
   { image: '/images/ainews-meme-benchmark.jpg', alt: 'A proud AI robot with a benchmark trophy compares its score with a researcher’s real-world task checklist.', topic: 'Evaluation · Lesson 03', title: 'First place on the benchmark. Now try Tuesday.', lesson: 'Benchmarks compare systems on a test set; your own task may differ. Evaluate with representative examples and human review.' }
 ];
-const memeOffset = new Date(`${edition.editionDate}T12:00:00Z`).getUTCDate() % memes.length;
-const dailyMeme = memes[memeOffset];
 const memeSlots = briefs.length > 0 ? Math.min(memes.length, (4 - (briefs.length % 4)) % 4) : 0;
 const dailyMemes = Array.from({ length: memeSlots }, (_, index) => memes[(memeOffset + index) % memes.length]);
-const giggleMemes = [
+const giggleMemes = edition.giggleMemes ?? [
   { image: '/images/ainews-giggle-genie.png', alt: 'An always-on workplace AI assistant keeps answering a ringing desk phone after the office has gone home.', topic: 'Workplace AI', title: 'The assistant is still online.', lesson: 'Always-on assistants need clear working boundaries, access controls, and human review.' },
   { image: '/images/ainews-giggle-emulator.png', alt: 'A robot builds a miniature cardboard cloud to test cloud services while an engineer holds a checklist.', topic: 'AI-built tools', title: 'Cloud testing, now in tabletop size.', lesson: 'A local emulator speeds up tests, but it cannot reproduce every behavior of the real cloud.' },
   { image: '/images/ainews-giggle-modelname.png', alt: 'A friendly AI robot stands beside a reporter holding an absurdly long blank name badge unrolling across the floor.', topic: 'Model previews', title: 'This model name needs its own changelog.', lesson: 'Preview releases are moving targets; check availability and limits before you put them into production.' }
-];
+]
 ---
 <!doctype html>
 <html lang="en">
@@ -117,8 +115,8 @@ const giggleMemes = [
             <section class="section" aria-label={incidents.length ? 'AI Giggles and Incidents' : 'AI Giggles'}>
         <div class="desk" style={incidents.length ? undefined : 'grid-template-columns:1fr'}>
           <section class="desk-panel" id="giggles" aria-labelledby="giggles-heading">
-            <div class="section-title"><div><div class="flag">The lighter side</div><h2 id="giggles-heading">AI Giggles</h2></div><p>Odd, amusing, and sourceable.</p></div>
-            {giggles.length ? <div class="giggle-grid">{giggles.map((story, index) => <div class="giggle-pair" style="display:contents"><article class="story"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><p class="context"><strong>Why it’s funny (and relevant):</strong> {story.whyCare}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>{index === 0 && <article class="wire-card meme-fill" id="memes"><img src={dailyMeme.image} alt={dailyMeme.alt} loading="lazy" decoding="async" /><div class="publisher">AI meme · {dailyMeme.topic}</div><h3>{dailyMeme.title}</h3><p>{dailyMeme.lesson}</p></article>}{index > 0 && index <= giggleMemes.length && <article class="wire-card meme-fill"><img src={giggleMemes[index - 1].image} alt={giggleMemes[index - 1].alt} loading="lazy" decoding="async" /><div class="publisher">AI meme · {giggleMemes[index - 1].topic}</div><h3>{giggleMemes[index - 1].title}</h3><p>{giggleMemes[index - 1].lesson}</p></article>}</div>)}</div> : <div><p class="empty">No verified AI Giggles story made this edition. Here are two evergreen newsroom cartoons, with a useful lesson in each.</p><div class="giggle-grid">{giggleMemes.slice(0, 2).map((meme) => <article class="wire-card meme-fill"><img src={meme.image} alt={meme.alt} loading="lazy" decoding="async" /><div class="publisher">AI meme · {meme.topic}</div><h3>{meme.title}</h3><p>{meme.lesson}</p></article>)}</div></div>}
+            <div class="section-title"><div><div class="flag">The lighter side</div><h2 id="giggles-heading">AI Giggles</h2></div><p>Fresh cartoons from today’s AI headlines, with the lesson left in.</p></div>
+            {<div class="giggle-grid">{giggles.map((story) => <article class="story"><div class="publisher">{story.status}{story.publisher ? ` · ${story.publisher}` : ''}</div><h3>{story.title}</h3><p>{story.summary}</p><p class="context"><strong>Why it’s funny (and relevant):</strong> {story.whyCare}</p><div class="source-links">{story.sources.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div></article>)}{giggleMemes.slice(0, 2).map((meme) => <article class="wire-card meme-fill"><img src={meme.image} alt={meme.alt} loading="eager" decoding="async" /><div class="publisher">AI meme · {meme.topic}</div><h3>{meme.title}</h3><p>{meme.lesson}</p></article>)}</div>
           </section>
           {incidents.length > 0 && <section class="desk-panel incidents" id="incidents" aria-labelledby="incidents-heading">
             <div class="section-title"><div><div class="flag">Failures · accidents · harmful actions</div><h2 id="incidents-heading">Incident desk</h2></div><p>What went wrong, and what is confirmed?</p></div>
