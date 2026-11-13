@@ -53,8 +53,9 @@ function decodeXml(value) {
 }
 function readTag(block, names) {
   for (const name of names) {
-    const escaped = name.replace(':', '[:]');
-    const match = block.match(new RegExp('<(?:[\\w.-]+:)?' + escaped + '(?:\s[^>]*)?>([\s\\S]*?)<\\/(?:[\\w.-]+:)?' + escaped + '\s*>', 'i'));
+    const localName = name.split(':').at(-1);
+    const pattern = new RegExp('<(?:[A-Za-z0-9_.-]+:)?' + localName + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/(?:[A-Za-z0-9_.-]+:)?' + localName + '\\s*>', 'i');
+    const match = block.match(pattern);
     if (match) return decodeXml(match[1]);
   }
   return '';
@@ -122,8 +123,8 @@ items.sort((a, b) => b.date - a.date);
 if (!items.length) {
   const errors = fetched.filter((result) => result.error).map((result) => result.feed.publisher + ': ' + result.error);
   const feedCounts = fetched.map((result) => result.feed.publisher + '=' + result.blocks.length).join(', ');
-  console.log('No fresh dated stories were found within 36 hours; keeping the last published edition. Parsed entries: ' + feedCounts + '. Skipped: ' + JSON.stringify(skipped) + '. Feed errors: ' + errors.join('; '));
-  process.exit(0);
+  console.error('No fresh dated stories were parsed. Refusing to publish yesterday as today. Parsed entries: ' + feedCounts + '. Skipped: ' + JSON.stringify(skipped) + '. Feed errors: ' + errors.join('; '));
+  process.exit(1);
 }
 
 const patterns = {
@@ -180,7 +181,7 @@ const remainingBriefs = briefsRaw.filter((item) => item !== leadRaw);
 const edition = {
   editionDate: date,
   timezone: zone,
-  cutoff: 'Morning edition · ' + prettyTime,
+  cutoff: 'Morning edition',
   editionLabel: 'Daily issue · RSS edition',
   lead: leadStory,
   critical: sourceFields(criticalRaw),
