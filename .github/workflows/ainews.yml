@@ -7,11 +7,6 @@ on:
     - cron: '0 13 * * *'
     - cron: '0 14 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/generate-ainews.mjs'
-      - '.github/workflows/ainews.yml'
 
 permissions:
   contents: write
