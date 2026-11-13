@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#f3ecdf"/>
+<path d="M54 82H1146M54 95H1146" stroke="#151515" stroke-width="4"/>
+<text x="58" y="62" font-family="monospace" font-size="24" letter-spacing="4" fill="#b62e34">AI GIGGLES · DAILY DOODLE</text>
+<text x="1140" y="62" text-anchor="end" font-family="monospace" font-size="20" fill="#555">NOV 13</text>
+<rect x="90" y="166" width="260" height="235" rx="18" fill="#fff" stroke="#151515" stroke-width="8"/>
+<text x="220" y="211" text-anchor="middle" font-family="monospace" font-size="23" fill="#151515">MY CHAT</text>
+<path d="M130 250h170M130 286h138M130 322h158" stroke="#b62e34" stroke-width="10" stroke-linecap="round"/>
+<path d="M350 285C460 285 460 218 555 218S650 355 748 355 820 272 900 272" fill="none" stroke="#b62e34" stroke-width="12" stroke-dasharray="19 16"/>
+<g stroke="#151515" stroke-width="9">
+<rect x="470" y="305" width="190" height="179" rx="48" fill="#fff"/>
+<path d="M565 305v-54" fill="none"/><circle cx="565" cy="238" r="18" fill="#b62e34"/>
+<circle cx="520" cy="370" r="10" fill="#151515"/><circle cx="609" cy="370" r="10" fill="#151515"/>
+<path d="M530 411q35 30 70 0" fill="none"/>
+<rect x="515" y="476" width="100" height="74" rx="22" fill="#b62e34"/>
+</g>
+<path d="M660 380l84-25" stroke="#151515" stroke-width="17" stroke-linecap="round"/>
+<g transform="translate(856 169)">
+<path d="M44 80v-27a38 38 0 0 1 76 0v27" fill="none" stroke="#151515" stroke-width="11"/>
+<rect x="26" y="77" width="112" height="103" rx="18" fill="#b62e34" stroke="#151515" stroke-width="9"/>
+<circle cx="82" cy="122" r="10" fill="#fff"/>
+<path d="M82 131v21" stroke="#fff" stroke-width="9"/>
+<text x="82" y="220" text-anchor="middle" font-family="monospace" font-size="20" fill="#151515">VENDOR</text>
+</g>
+<path d="M54 567H1146" stroke="#151515" stroke-width="8"/>
+<text x="600" y="620" text-anchor="middle" font-family="monospace" font-size="22" letter-spacing="3" fill="#151515">FRESH FROM TODAY'S AI NEWS</text>
+</svg>
