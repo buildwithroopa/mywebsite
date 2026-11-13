@@ -81,6 +81,95 @@ function shorten(value, max = 420) {
   if (value.length <= max) return value;
   return value.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
 }
+function escapeSvg(value) {
+  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
+function createDailyMeme(item, index, previousTitles) {
+  const subject = (item.title + ' ' + item.summary).toLowerCase();
+  let kind = 'workflow';
+  if (/breach|security|privacy|data|leak/.test(subject)) kind = 'data';
+  else if (/shop|retail|fake|fraud|merchant|link/.test(subject)) kind = 'shopping';
+  else if (/energy|compute|chip|campus|data cent|server/.test(subject)) kind = 'compute';
+  else if (/agent|booking|assistant|automation|task/.test(subject)) kind = 'agent';
+  else if (/research|study|benchmark|evaluation|paper/.test(subject)) kind = 'research';
+
+  const copy = {
+    data: [
+      ['The chat had one stop. The data took a scenic route.', 'Check which providers receive prompts and how long they keep them.', 'Data boundaries', 'A cheerful robot sends a chat bubble through a door marked VENDOR, while a tiny checklist asks who else can see it.'],
+      ['My prompt brought a plus-one: the vendor integration.', 'Check data access, retention, and incident notices before sharing sensitive text.', 'Vendor access', 'A friendly robot notices an extra guest following a message bubble into a cloud-shaped doorway.']
+    ],
+    shopping: [
+      ['The assistant found a shop. My browser asked for ID.', 'Verify the exact domain and seller before entering payment details.', 'AI shopping', 'A robot shopper compares a suspicious web address with a trusted store sign.'],
+      ['The link looked official. The URL had other plans.', 'A fluent recommendation is not proof that a retailer is legitimate.', 'Link checking', 'A robot uses a magnifying glass on a wobbly storefront sign and a long web address.']
+    ],
+    compute: [
+      ['The prompt was tiny. The server room had other plans.', 'Compute plans also depend on power, permits, and financing.', 'AI infrastructure', 'A small robot stands beside a comically large server rack and an electricity meter.'],
+      ['The model asked for one more GPU. The power bill joined the meeting.', 'Track energy and infrastructure alongside model performance.', 'Compute costs', 'A robot presents a server rack to a very unimpressed electricity meter.']
+    ],
+    agent: [
+      ['The bot can click. The human can still say no.', 'Keep a person in the loop for purchases and other consequential actions.', 'AI agents', 'A robot pauses at a large red button while a human holds a simple approval card.'],
+      ['One click away, and still waiting for approval.', 'Give an agent only the access needed for its task.', 'Human review', 'A robot reaches toward a button while a small approval light stays red.']
+    ],
+    research: [
+      ['Top benchmark score. Tuesday test still pending.', 'Check whether a benchmark matches the work you need done.', 'AI evaluation', 'A proud robot holds a trophy beside a practical checklist and a calendar marked Tuesday.'],
+      ['The leaderboard is not the customer.', 'Test models on representative examples from your own workflow.', 'Real-world tests', 'A robot poses with a leaderboard while a human points to a real-world task list.']
+    ],
+    workflow: [
+      ['The AI called it a quick task. The checklist disagreed.', 'Break a broad request into steps you can review.', 'AI workflows', 'A robot opens a tiny task card that unfolds into an unexpectedly long checklist.'],
+      ['One click, said the demo. Fourteen tabs, said the browser.', 'Try a workflow end to end before handing it to an agent.', 'Agent testing', 'A smiling robot sits in front of a laptop surrounded by a few oversized browser tabs.']
+    ]
+  }[kind];
+
+  const dateSeed = [...date].reduce((sum, digit) => sum + Number(digit), 0);
+  let variant = (dateSeed + index) % copy.length;
+  if (previousTitles.has(copy[variant][0])) variant = (variant + 1) % copy.length;
+  const [title, lesson, topic, alt] = copy[variant];
+  const paper = ['#f2eadb', '#e9e7df', '#f4eee4', '#e5e7e3'][(dateSeed + index) % 4];
+  const red = ['#c92b34', '#b7332c', '#ba3f2b', '#a92c35'][(dateSeed + index * 2) % 4];
+  const prop = kind === 'data'
+    ? '<rect x="846" y="245" width="180" height="172" rx="18" fill="#fff" stroke="#171717" stroke-width="7"/><path d="M901 311v-18a35 35 0 0 1 70 0v18" fill="none" stroke="' + red + '" stroke-width="13"/><rect x="887" y="307" width="98" height="75" rx="14" fill="' + red + '"/><circle cx="936" cy="342" r="8" fill="#fff"/>'
+    : kind === 'shopping'
+      ? '<rect x="840" y="245" width="205" height="156" rx="14" fill="#fff" stroke="#171717" stroke-width="7"/><path d="M840 281h205" stroke="#171717" stroke-width="7"/><circle cx="863" cy="264" r="6" fill="' + red + '"/><text x="865" y="337" font-family="monospace" font-size="26" fill="' + red + '">shop?</text><path d="M1011 358l-26-8 43-54 16 12z" fill="#171717"/>'
+      : kind === 'compute'
+        ? '<rect x="855" y="238" width="150" height="58" rx="9" fill="#fff" stroke="#171717" stroke-width="7"/><rect x="855" y="313" width="150" height="58" rx="9" fill="#fff" stroke="#171717" stroke-width="7"/><circle cx="884" cy="267" r="8" fill="' + red + '"/><circle cx="884" cy="342" r="8" fill="' + red + '"/><path d="M958 238l-17 41h22l-14 38 42-52h-25l15-27z" fill="' + red + '"/>'
+        : kind === 'agent'
+          ? '<circle cx="940" cy="326" r="96" fill="' + red + '" stroke="#171717" stroke-width="8"/><circle cx="940" cy="326" r="61" fill="#f2eadb" stroke="#171717" stroke-width="7"/><text x="940" y="337" text-anchor="middle" font-family="monospace" font-size="24" fill="#171717">WAIT</text>'
+          : kind === 'research'
+            ? '<path d="M850 393h200v-36H850z" fill="' + red + '" stroke="#171717" stroke-width="7"/><path d="M875 357v-76h46v76M932 357v-120h46v120M989 357v-54h46v54" fill="#fff" stroke="#171717" stroke-width="7"/><text x="955" y="224" text-anchor="middle" font-family="monospace" font-size="22" fill="' + red + '">TEST</text>'
+            : '<rect x="850" y="233" width="185" height="183" rx="16" fill="#fff" stroke="#171717" stroke-width="7"/><path d="M882 283l11 11 22-26M882 335l11 11 22-26M882 387l11 11 22-26" fill="none" stroke="' + red + '" stroke-width="8"/><path d="M932 281h70M932 333h70M932 385h70" stroke="#171717" stroke-width="8"/>';
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+    <rect width="1200" height="675" fill="${paper}"/>
+    <path d="M0 536H1200" stroke="#171717" stroke-width="9"/>
+    <path d="M0 553H1200" stroke="${red}" stroke-width="4"/>
+    <path d="M60 76H1140" stroke="#171717" stroke-width="3"/>
+    <text x="62" y="58" font-family="monospace" font-size="25" letter-spacing="4" fill="${red}">AI GIGGLES · DAILY DOODLE</text>
+    <text x="1138" y="58" text-anchor="end" font-family="monospace" font-size="20" fill="#555">${date}</text>
+    <g stroke="#171717" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M0 487h1200v49H0z" fill="#ded8ca"/>
+      <rect x="135" y="372" width="230" height="136" rx="18" fill="#fff"/>
+      <rect x="159" y="393" width="183" height="88" rx="10" fill="#ecebe5"/>
+      <path d="M197 476l27-35 25 22 26-32 37 45" fill="none"/>
+      <path d="M204 375v-36a54 54 0 0 1 108 0v36" fill="none" stroke="${red}" stroke-width="12"/>
+      <rect x="190" y="369" width="135" height="124" rx="20" fill="#fff"/>
+      <path d="M212 411h91M212 438h72" fill="none" stroke-width="7"/>
+      <rect x="501" y="265" width="194" height="154" rx="52" fill="#fff"/>
+      <path d="M598 265v-46" fill="none" stroke-width="9"/>
+      <circle cx="598" cy="204" r="18" fill="${red}"/>
+      <circle cx="552" cy="329" r="11" fill="#171717" stroke="none"/>
+      <circle cx="643" cy="329" r="11" fill="#171717" stroke="none"/>
+      <path d="M567 371q30 29 60 0" fill="none" stroke-width="8"/>
+      <rect x="531" y="411" width="133" height="115" rx="22" fill="${red}"/>
+      <path d="M531 438l-78 39M664 438l91 29" fill="none" stroke-width="18"/>
+      <circle cx="454" cy="478" r="16" fill="#fff"/>
+      <circle cx="754" cy="467" r="16" fill="#fff"/>
+      <path d="M557 526l-31 11M637 526l31 11" fill="none" stroke-width="18"/>
+      ${prop}
+    </g>
+    <rect x="367" y="594" width="466" height="45" rx="22" fill="#171717"/>
+    <text x="600" y="624" text-anchor="middle" font-family="monospace" font-size="21" letter-spacing="3" fill="#fff">FRESH FROM TODAY'S AI NEWS</text>
+  </svg>`;
+  return { image: '/images/ainews-giggle-' + date + '-' + (index + 1) + '.svg', alt, topic, title, lesson, svg };
+}
 
 const fetched = await Promise.all(feeds.map(async (feed) => {
   try {
@@ -167,6 +256,14 @@ const briefsRaw = [...unused].slice(0, 16);
 for (const item of briefsRaw) unused.delete(item);
 
 const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...briefsRaw];
+const previousMemeTitles = new Set((previous.giggleMemes ?? []).map((meme) => meme.title));
+const memeSources = [leadRaw, ...allChosen.filter((item) => item !== leadRaw)].slice(0, 2);
+const generatedMemes = memeSources.map((item, index) => createDailyMeme(item, index, previousMemeTitles));
+await mkdir('public/images', { recursive: true });
+for (const meme of generatedMemes) {
+  await writeFile('public' + meme.image, meme.svg + '\n');
+}
+const giggleMemes = generatedMemes.map(({ svg, ...meme }) => meme);
 const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
 const criticalRaw = signalsRaw.filter((item) => item !== leadRaw).slice(0, 6);
 const sourceFields = (raw) => raw.map(story);
@@ -190,6 +287,7 @@ const edition = {
   signals: sourceFields(remainingSignals),
   briefs: sourceFields(remainingBriefs),
   giggles: sourceFields(remainingGiggles).map((item) => ({ ...item, whyCare: 'A small reminder that AI news has a blooper reel as well as a roadmap.' })),
+  giggleMemes,
   incidents: sourceFields(remainingIncidents).map((item) => ({ ...item, whyCare: 'The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.' })),
   oneIdea: {
     title: 'Today’s lead: ' + leadRaw.title,
