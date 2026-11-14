@@ -5,8 +5,8 @@ const now = new Date();
 const localParts = new Intl.DateTimeFormat('en-US', {
   timeZone: zone, hour: '2-digit', hourCycle: 'h23'
 }).format(now);
-if (localParts !== '06' && ['schedule', 'push'].includes(process.env.GITHUB_EVENT_NAME)) {
-  console.log('Outside the 6 a.m. Pacific publication window; skipping this automatic run.');
+if (Number(localParts) < 6 && process.env.GITHUB_EVENT_NAME === 'schedule') {
+  console.log('Before 6 a.m. Pacific; waiting for the next scheduled run.');
   process.exit(0);
 }
 
@@ -17,6 +17,10 @@ const prettyTime = new Intl.DateTimeFormat('en-US', {
   timeZone: zone, hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
 }).format(now);
 const previous = JSON.parse(await readFile('src/data/ainews-latest.json', 'utf8'));
+if (process.env.GITHUB_EVENT_NAME === 'schedule' && previous.editionDate === date) {
+  console.log('Edition for ' + date + ' is already published; skipping duplicate scheduled run.');
+  process.exit(0);
+}
 const archiveDir = 'src/data/ainews-archive';
 await mkdir(archiveDir, { recursive: true });
 function collectUrls(value, urls = new Set()) {
@@ -32,7 +36,7 @@ const previouslyPublishedUrls = new Set(
   previous.editionDate < date ? collectUrls(previous) : []
 );
 for (const filename of await readdir(archiveDir)) {
-  if (!/^\\d{4}-\\d{2}-\\d{2}\\.json$/.test(filename) || filename.slice(0, 10) >= date) continue;
+  if (!/^\d{4}-\d{2}-\d{2}\.json$/.test(filename) || filename.slice(0, 10) >= date) continue;
   try {
     const archived = JSON.parse(await readFile(archiveDir + '/' + filename, 'utf8'));
     for (const url of collectUrls(archived)) previouslyPublishedUrls.add(url);
@@ -221,7 +225,7 @@ for (const result of fetched) {
     if (published.getTime() < windowStart) { skipped.old++; continue; }
     if (previouslyPublishedUrls.has(url)) { skipped.repeated++; continue; }
     const normalizedTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-    if (!items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url)) continue;
+    if (items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url)) continue;
     items.push({
       title: shorten(title, 180),
       summary: shorten(description || title, 440),
