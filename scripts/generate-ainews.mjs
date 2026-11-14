@@ -66,17 +66,21 @@ const feeds = [
 const windowStart = now.getTime() - 72 * 60 * 60 * 1000;
 
 function decodeXml(value) {
-  return value
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (_, code) => {
+  // RSS descriptions can contain HTML encoded once or twice (notably Google News).
+  // Decode entities before stripping tags so encoded anchors never appear as text.
+  let text = value.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1');
+  for (let pass = 0; pass < 3; pass++) {
+    const decoded = text.replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (_, code) => {
       if (code[0] === '#') {
         const n = code[1].toLowerCase() === 'x' ? parseInt(code.slice(2), 16) : parseInt(code.slice(1), 10);
-        return Number.isFinite(n) ? String.fromCodePoint(n) : ' ';
+        return Number.isFinite(n) && n >= 0 && n <= 0x10ffff ? String.fromCodePoint(n) : ' ';
       }
       return ({ amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' })[code.toLowerCase()] ?? ' ';
-    })
-    .replace(/\s+/g, ' ').trim();
+    });
+    text = decoded.replace(/<[^>]*>/g, ' ');
+    if (decoded === text && !/&(?:amp|lt|gt|#)/i.test(text)) break;
+  }
+  return text.replace(/\s+/g, ' ').trim();
 }
 function readTag(block, names) {
   for (const name of names) {
