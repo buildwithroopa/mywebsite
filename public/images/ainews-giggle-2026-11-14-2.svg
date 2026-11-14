@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+    <rect width="1200" height="675" fill="#f4eee4"/>
+    <path d="M0 536H1200" stroke="#171717" stroke-width="9"/>
+    <path d="M0 553H1200" stroke="#a92c35" stroke-width="4"/>
+    <path d="M60 76H1140" stroke="#171717" stroke-width="3"/>
+    <text x="62" y="58" font-family="monospace" font-size="25" letter-spacing="4" fill="#a92c35">AI GIGGLES · DAILY DOODLE</text>
+    <text x="1138" y="58" text-anchor="end" font-family="monospace" font-size="20" fill="#555">2026-11-14</text>
+    <g stroke="#171717" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M0 487h1200v49H0z" fill="#ded8ca"/>
+      <rect x="135" y="372" width="230" height="136" rx="18" fill="#fff"/>
+      <rect x="159" y="393" width="183" height="88" rx="10" fill="#ecebe5"/>
+      <path d="M197 476l27-35 25 22 26-32 37 45" fill="none"/>
+      <path d="M204 375v-36a54 54 0 0 1 108 0v36" fill="none" stroke="#a92c35" stroke-width="12"/>
+      <rect x="190" y="369" width="135" height="124" rx="20" fill="#fff"/>
+      <path d="M212 411h91M212 438h72" fill="none" stroke-width="7"/>
+      <rect x="501" y="265" width="194" height="154" rx="52" fill="#fff"/>
+      <path d="M598 265v-46" fill="none" stroke-width="9"/>
+      <circle cx="598" cy="204" r="18" fill="#a92c35"/>
+      <circle cx="552" cy="329" r="11" fill="#171717" stroke="none"/>
+      <circle cx="643" cy="329" r="11" fill="#171717" stroke="none"/>
+      <path d="M567 371q30 29 60 0" fill="none" stroke-width="8"/>
+      <rect x="531" y="411" width="133" height="115" rx="22" fill="#a92c35"/>
+      <path d="M531 438l-78 39M664 438l91 29" fill="none" stroke-width="18"/>
+      <circle cx="454" cy="478" r="16" fill="#fff"/>
+      <circle cx="754" cy="467" r="16" fill="#fff"/>
+      <path d="M557 526l-31 11M637 526l31 11" fill="none" stroke-width="18"/>
+      <rect x="855" y="238" width="150" height="58" rx="9" fill="#fff" stroke="#171717" stroke-width="7"/><rect x="855" y="313" width="150" height="58" rx="9" fill="#fff" stroke="#171717" stroke-width="7"/><circle cx="884" cy="267" r="8" fill="#a92c35"/><circle cx="884" cy="342" r="8" fill="#a92c35"/><path d="M958 238l-17 41h22l-14 38 42-52h-25l15-27z" fill="#a92c35"/>
+    </g>
+    <rect x="367" y="594" width="466" height="45" rx="22" fill="#171717"/>
+    <text x="600" y="624" text-anchor="middle" font-family="monospace" font-size="21" letter-spacing="3" fill="#fff">FRESH FROM TODAY'S AI NEWS</text>
+  </svg>
