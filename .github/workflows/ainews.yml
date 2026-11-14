@@ -2,10 +2,9 @@ name: Publish Daily AI News
 
 on:
   schedule:
-    # Run at 13:00 and 14:00 UTC; automatic runs publish only at 6 a.m. America/Los_Angeles.
-    # This covers daylight and standard time. Manual dispatch can run on demand.
-    - cron: '0 13 * * *'
-    - cron: '0 14 * * *'
+    # 6 a.m. Pacific target with retries for delayed or failed runs, across DST.
+    # The generator skips runs before 6 a.m. and editions already published today.
+    - cron: '0 13-16 * * *'
   workflow_dispatch:
 
 permissions:
@@ -20,14 +19,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 24
       - name: Research and prepare the issue
         run: node scripts/generate-ainews.mjs
+      - name: Validate Astro build
+        run: |
+          npm install --no-package-lock
+          npm run build
       - name: Publish issue to the site
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
