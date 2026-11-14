@@ -144,7 +144,7 @@ function createDailyMeme(item, index, previousTitles) {
     ]
   }[kind];
 
-  const dateSeed = [...date].reduce((sum, digit) => sum + Number(digit), 0);
+  const dateSeed = [...date].reduce((sum, digit) => sum + (Number(digit) || 0), 0);
   let variant = (dateSeed + index) % copy.length;
   if (previousTitles.has(copy[variant][0])) variant = (variant + 1) % copy.length;
   const [title, lesson, topic, alt] = copy[variant];
