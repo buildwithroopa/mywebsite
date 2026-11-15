@@ -1,0 +1,583 @@
+{
+  "editionDate": "2026-11-15",
+  "timezone": "America/Los_Angeles",
+  "cutoff": "Morning edition",
+  "editionLabel": "Daily issue · RSS edition",
+  "lead": {
+    "title": "Broadcom Stock Jumps as Nvidia’s Leadership Crisis Raises a Billion-Dollar Opportunity for Its AI Chip Business - Barchart.com",
+    "status": "RSS report · Nov 15",
+    "publisher": "Barchart.com",
+    "summary": "Broadcom Stock Jumps as Nvidia’s Leadership Crisis Raises a Billion-Dollar Opportunity for Its AI Chip Business Barchart.com",
+    "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+    "sources": [
+      {
+        "title": "Barchart.com · original report",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOakJ6UHRvMjNXS2RoaXRvdWdYUXJmMmdEYnM1aGZOWTJGNlpITEVmcU1SdjNVZDlONHB6eDZxazdla1VVYUNvRzQzY1M4eXM2dzBEaTNCQXRyRDNaYUdjNmo3al9PanBJRXQzN2dOWnk2cG1fUHpqT09nR3pGSGJWdWRrMm9ySWk0eWhCU1NHbm5OTzdISzJXeVVJZDVKSVR3SEQxY0E1VUx2RDBfZ3FpLXRaWU9sNGVIQ25uMjJYcDlkYmphUVdGazVTWVQ0OXI2b2kwYjluVFh6S0FMU3lfOXdudzRqTjVhbVE?oc=5"
+      }
+    ]
+  },
+  "critical": [
+    {
+      "title": "Nvidia Scandal Fuels Bipartisan Push for AI Chip Export Curbs - Yahoo",
+      "status": "RSS report · Nov 15",
+      "publisher": "Yahoo",
+      "summary": "Nvidia Scandal Fuels Bipartisan Push for AI Chip Export Curbs Yahoo",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Yahoo · original report",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWEFPcHA1Y040bnJ6UUh5bnNORFFLcU5vNWZIZW5OLTRPZ0xNU09FajUyOEk0OUxwSFhZQ2N6bE43Tmh3TUhnZFFyUGpfUExwY2JiNmd3c25RNE95UkhQRGYtNEdnd0ZpZWFrSHE5SG9rTk1kS3VQWlJYQW9lSVpwcnZ0SVk3aGJSeXdyREsxdnZDclllUmpBMnZXaTI?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Congress moves toward tighter AI chip export rules after the Nvidia scandal, FT reports - MLQ.ai",
+      "status": "RSS report · Nov 15",
+      "publisher": "MLQ.ai",
+      "summary": "Congress moves toward tighter AI chip export rules after the Nvidia scandal, FT reports MLQ.ai",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "MLQ.ai · original report",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS3JvcVAzVnNBNXNhLV9CVk41Slp0bGVFczVMRUZsSGZ3S3VfOEdsdTJpVVM3XzVpQ0ZtUGVrMDRKbk43THc5WEh5M2o2Tklrdm5mSkQwVjJuWWxQSU5rOFpNWDZSOF9aclBYWE9oV1ZDaHB5cFhyOEdDTWNKMmdMdG5IeHhsX1FRVDZBUWJDNHoxN2VtWGhMWVIwTlI3N1ZxWEFiRloyVG5tOVk?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Speaker Johnson Backs AI Chip Export Bills for the FY2027 NDAA - CASRAI",
+      "status": "RSS report · Nov 15",
+      "publisher": "CASRAI",
+      "summary": "Speaker Johnson Backs AI Chip Export Bills for the FY2027 NDAA CASRAI",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "CASRAI · original report",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaUNuS2syRUxQd2xFaXlSNS1qSGFHZXJVYmRXNGJXS2RzbFdDT01Rb1NyTFROdmRJbmk2YmdOR0FrUVZEdmJrSE1weWhTOVpHYVhvb3ZsTUVCTEVLQ3ZPMEF0M1B1T2o1U2w3bm1JWWxCSE85dnhIS3ZOeVUwZ2dNb0c4TQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Nvidia Chip Loophole: 240,000 GPUs, $7.5B Claim Unproven - shattered.io",
+      "status": "RSS report · Nov 15",
+      "publisher": "shattered.io",
+      "summary": "Nvidia Chip Loophole: 240,000 GPUs, $7.5B Claim Unproven shattered.io",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "shattered.io · original report",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQUJjTmhlVUIxUjZja0Qycktoa0VNeUExYVlLdnZsX3lqWGE0VDRyZEFtZ2JlYlpPcl85RkEyS3NqM0NOWXlPQ0F2T2pDa0ZZNHhZUUtNd25kWmZsN01oU1pNMEI3TUxBb2V6SURJM0FjcjNkdjB1YWdFQlVYeTVqSWd6cmF5dFJnRXZnOTMxTnlrV25RRi04Z3FTQQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "launches": [
+    {
+      "title": "Australia's central bank finds AI hitting young workers first, especially in software and customer service",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Decoder",
+      "summary": "Australia's central bank sees early signs that AI is hitting young entry-level workers in highly exposed jobs like software development and customer service. Since ChatGPT launched, job postings and employment among 15- to 24-year-olds in those fields have dropped more sharply than among older workers. Author Mike Major cautions against jumping to conclusions, however, noting that business cycle shifts and remote work trends could…",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/"
+        }
+      ]
+    },
+    {
+      "title": "Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls",
+      "status": "RSS report · Nov 15",
+      "publisher": "MarkTechPost",
+      "summary": "Bland has released Tofu-1, a full-duplex speech-to-speech model for noisy, high-stakes phone calls. It is in enterprise research preview, with no published benchmarks, size or pricing yet. The post Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls appeared first on MarkTechPost .",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "MarkTechPost · original report",
+          "url": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/"
+        }
+      ]
+    },
+    {
+      "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Decoder",
+      "summary": "Meituan has released the weights for LongCat-2.5, a 1.6-trillion-parameter model built for AI agents and trained entirely on Chinese hardware. On Terminal Bench, it scores 88.4 points, landing just behind Claude Opus 5. The sample deployment runs on 194 Huawei Ascend chips, and Meituan makes no mention of Nvidia GPUs. The article Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU appeared first on…",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence Reconstructs Damaged Ships to Rapidly Evaluate Seaworthiness in Emergencies - Bioengineer.org",
+      "status": "RSS report · Nov 14",
+      "publisher": "Bioengineer.org",
+      "summary": "Artificial Intelligence Reconstructs Damaged Ships to Rapidly Evaluate Seaworthiness in Emergencies Bioengineer.org",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Bioengineer.org · original report",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSFZmcU1jNVlTOFBITnA2M0FWckllY3ByUzRxU2JQSGEwLTZaTWdOTWh5dHF1UzkycVBQVk5SRUlic3JNaVRqVXR0dkxkZDVzakFfYlRHcVNxODRNM25qZFVub2ZIUkxHQ3luT25ldEhBZjYtT2xLdWRMTjJRMHlKS29tU2Y3T0RRS1BWZVItUjc1NkJQS1cyNnFWMDRHN1RzM1F3aTkzc3hyUWI2eG9mZGotYVBFUEVncWtCVW02QmFZdw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "status": "RSS report · Nov 14",
+      "publisher": "TechCrunch AI",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "title": "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Decoder",
+      "summary": "Megaspeed, the firm owned by ousted Nvidia CEO Jensen Huang's former lover Alice Huang, arranged nearly $12 billion in Nvidia chip orders for Chinese companies between 2024 and 2025, according to the WSJ. Short seller Culper Research estimates Nvidia's actual China revenue share exceeds 20 percent, far above the officially reported 7 percent. The article Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in…",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/"
+        }
+      ]
+    },
+    {
+      "title": "Meet the research firm that shorted Nvidia for ‘a significant China problem' six months ago - Fortune",
+      "status": "RSS report · Nov 15",
+      "publisher": "Fortune",
+      "summary": "Meet the research firm that shorted Nvidia for ‘a significant China problem' six months ago Fortune",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Fortune · original report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON2pyTTZsWWxEeTlfb3NHZ1U3Nld6ekpmb3RoX0xYb3c2dXVPaENJSW5ESWRMZXVTNHhaWVhrMEliTHpTVXZMNUdKcUhWbGZxSXo4LWZ0QUxnSGlxV3ZvcEctbEZObVptUFZZdnhkV19hSmgzUXJoZDJSYXZnd2NMdU5TUm02TTczMUk3TjhmQ2NMWXpYdFF1TDVNaGxPdw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Artificial Intelligence into Neuroscience Accelerates Brain Research and Model Training - Bioengineer.org",
+      "status": "RSS report · Nov 14",
+      "publisher": "Bioengineer.org",
+      "summary": "Integrating Artificial Intelligence into Neuroscience Accelerates Brain Research and Model Training Bioengineer.org",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Bioengineer.org · original report",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbjVTUHdLYnhaTnR3el9rQmN5aVQ1aGJudlB1b0JrSUx4YUw1eXBodXpBV25fdlVjVnJ6NGUwR0doUjR4UDlycHZDX2RSYlBYRzRJRjFwME8xYktBLWQxLVJTYk9yeWxCc28xZHN5Zm1VYXFVaFhxRi03Ny1USk52RThhRExfalZpaGs1cFhvOVh6YmlId0g1anRYUjBDd1JpTU5VWGlkdGxOSXlnRHN2d25iOThfMEg3bWlibXRqOHh1UQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Using AI to accelerate neuroscience research - Medical Xpress",
+      "status": "RSS report · Nov 14",
+      "publisher": "Medical Xpress",
+      "summary": "Using AI to accelerate neuroscience research Medical Xpress",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Medical Xpress · original report",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pNjdkbTNTaU8wM1hIQkJYUElOMXR3SVNhNDhGd19Lak9ZelpCWUp0aXdHNm5IMjJaT0psUUJRalpUUGpvQ0JHaDNSenZOOUJIc1Znb2RxRXduU09HM0MzNWRWNEM2ODJ6X2ZZ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+      "status": "RSS report · Nov 14",
+      "publisher": "The Decoder",
+      "summary": "For the first time in a while, no OpenAI model leads the MathArena AI math benchmark. Google's Gemini 4 Carbon and Anthropic's Fable 5.2 have knocked GPT-6.1 Sol from the top, though both cost significantly more. Gemini ignored the time limit in testing and almost never gave up on a task. The article Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol appeared first on The Decoder .",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/"
+        }
+      ]
+    }
+  ],
+  "signals": [],
+  "briefs": [
+    {
+      "title": "Why the Nvidia scandal is bad news for Europe’s AI ambitions - France 24",
+      "status": "RSS report · Nov 15",
+      "publisher": "France 24",
+      "summary": "Why the Nvidia scandal is bad news for Europe’s AI ambitions France 24",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "France 24 · original report",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSFZJVzZyTzVPRUVMZnA1dVFOa003aUhsdlhvWm1GV0RBS19xUnlMYnJHeU1MVTVCNjVCSUtDUmJ1TU5FeEctaUFnd0N5OXJCeFZGSEFFckF6Ty05ZndiQmU5RkpLNWZ2SFRPZG5QNHAwZmlHaXNOUEsxd056Q0hLWm5CTEltWXo1c1l4UTZUTHk1LWE3WG9DemxUZmdlOTlXeVpNdlNsNllDRzYwRkVsQWdrYmo?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Why Did Google Pixels Stop Using Snapdragon Chips? - Engadget",
+      "status": "RSS report · Nov 15",
+      "publisher": "Engadget",
+      "summary": "Why Did Google Pixels Stop Using Snapdragon Chips? Engadget",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Engadget · original report",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9DS1ZhaTd3Tnc5VlFqSHVxcS1DT3lIcjhFSDdtUnBOU09IZS1IYjg5cHYzUV9vOXE5YUpHZWh5eDUxWHBNZ2tSTWl5Y1VZSEJzZ0J4TC1jT0VKMUl5MW5HdlpaV3UzVzJVT3dLRi1vQ25abXpvRWpDZl9kY1c?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Bipartisan Efforts To Restrict Chinese Access To Advanced AI Tech In Wake Of Nvidia Scandal Are Growing: Report - Yahoo",
+      "status": "RSS report · Nov 15",
+      "publisher": "Yahoo",
+      "summary": "Bipartisan Efforts To Restrict Chinese Access To Advanced AI Tech In Wake Of Nvidia Scandal Are Growing: Report Yahoo",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Yahoo · original report",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObS1IcUNOV2N1SXpkbmxrWGx0RUw1NHBQbENJWDhVNXk5dUdkZ2cwNm9PVlB6NFNhMFBpX2xPT292U25YT004dUpjMnRJWHFUaFdaQkNzakhCV0tVUlp1NUhqdV94cFctWUhJYlIxQ3RlZngzNGQ3aU9BWFotNk82MmVKeUg1Sk04cFF5bWNfU2hBbm0za2ptNFRkYU1fWGJCdFVheA?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "'Sovereign AI agents' could evade every kill switch and threaten national security, report warns - TyN Magazine",
+      "status": "RSS report · Nov 15",
+      "publisher": "TyN Magazine",
+      "summary": "'Sovereign AI agents' could evade every kill switch and threaten national security, report warns TyN Magazine",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "TyN Magazine · original report",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTWFDT3Utcnc3R0tlU1hyVWZLUWgwRkFzY21LNF8zMERoeVpRanAzNjlQMHZIVUdDeVI2V3VpU18wV1NtcUpTZHBPQ3llZk1kU0lEZWFzcnpadHk1ZXgzQXpKN0VtRlg3UUZSSko1blZiU2s4ZXdxV05jcEhUb1NReHpYTnBRUi1nUG83alFLQ3EzdTNGMldXUUdzOVFHMW9qYk9NSmFac0JQdndHeTB6TnRQZzNiUnJqWmc?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence and the Limits of Private Power in a Democracy - tovima.com",
+      "status": "RSS report · Nov 15",
+      "publisher": "tovima.com",
+      "summary": "Artificial Intelligence and the Limits of Private Power in a Democracy tovima.com",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "tovima.com · original report",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNamRZNmRrWTFkLXdyZ1BNdDhtY3k1ZS0yZWZERWNuLTg2T3pVOXlzenlHUTZ4em5IUG92dUs3YzBFcXd3VTZ6ZC1OemMycEVwSXJVNmFadlZWMVNqVndoUjFhZm04TEFHSFN4VVNSbVdIZXZnWFZCb2NJbXVPenlZVi1KWGZlanpHaTRnVzVDeWZRdlR1N0owXzV4Z1RhZFQ1UC00UlJn?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "The Evidence Is Piling Up: AMD Could Be the Best Artificial Intelligence (AI) Stock to Buy Amid the Sell-Off - The Globe and Mail",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Globe and Mail",
+      "summary": "The Evidence Is Piling Up: AMD Could Be the Best Artificial Intelligence (AI) Stock to Buy Amid the Sell-Off The Globe and Mail",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Globe and Mail · original report",
+          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOMS1feXRUdDVJZ19NYkZkMU5saGU2TnpBRGZaeEZNRWUyaEJEdmNWczVIZWFpMjBsOXdWMWVDVDZiTG5kSDZJSDJsUnp3Vk1LSkRIdW1HQTFDRTdiNXVGS1BmZGE0SmtjT2M1YmNsSjFrLUdnZkJkY0lmenpCX3ZuTlg2NndsR3JmbUQ2N1ROYjhkYjZueTk3OXdzb1FLZVFTVzVFcURmNE05bnZzZDlOUkR1WE5pZnJfMko0RUV3Z3dQdHZlRExoRkVZeUJaRjY5U1Z4dkFMMEJsVnJ5dGRkeTdFQ0RXUS1mVHFIaEd0MVBnTjlWODhUVzBZWVUzNjF0blJtOFliRVpIS004M2VnNFhOU283dko4?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Credo Technology outpaces Broadcom in AI networking growth - Crypto Briefing",
+      "status": "RSS report · Nov 15",
+      "publisher": "Crypto Briefing",
+      "summary": "Credo Technology outpaces Broadcom in AI networking growth Crypto Briefing",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Crypto Briefing · original report",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZGIxdjFiUU1FT3pNYk42bWlsSWl5V1lndkh5aHBwcXVHVGRMT2N6WlFEeVhLN2RRTlE2RmV2V0hZY2VnaTZLM2FpbklLUlNYZjg3SDkyb3VIZFdaRWE3WXd2bXFEQ3g3Y1otbC1zNWxDVmNuYmtrN3pmU1hhOGxIb0NR?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "The Gulf Needs a Playbook for AI Incidents That Cross Borders - Middle East Council on Global Affairs",
+      "status": "RSS report · Nov 15",
+      "publisher": "Middle East Council on Global Affairs",
+      "summary": "The Gulf Needs a Playbook for AI Incidents That Cross Borders Middle East Council on Global Affairs",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Middle East Council on Global Affairs · original report",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVGFVaDRQWHdPSUYyRTlaYUZZQjNYN3J3TkhtZTdBSEdzNFlOTjlFM2tZbjlUWkcteVRwNVEyMFUxRjRTdEFEV0FfNm5xNjZjdUl2YjZSWFBCTUFPMlE5Q1pOSFlaLVFaSEtQUzY2dDdkV3hSX1RrZ1ZoS1dlcENvcDI3VjZqUUpnZkFNSktqWHlLOW1QSW84NV9kMA?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AMD lands a key role in Google’s new TPU 8tx AI system - Crypto Briefing",
+      "status": "RSS report · Nov 15",
+      "publisher": "Crypto Briefing",
+      "summary": "AMD lands a key role in Google’s new TPU 8tx AI system Crypto Briefing",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "Crypto Briefing · original report",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9lcS1KQ1RWcEhCeDZHWElZNnpYeGpaakdIcnNvR0V1T19CenBaSGRLMUx3ZWdXM2JiZjA3NGxxLTlldEs5bk1acW5lY0h2U3JNMHRsZ0JYOUtZeFk5Sk1TVUFVSmRmTTV4cTk0S01nUTU?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "The Evidence Is Piling Up: AMD Could Be the Best Artificial Intelligence (AI) Stock to Buy Amid the Sell-Off - The Motley Fool",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Motley Fool",
+      "summary": "The Evidence Is Piling Up: AMD Could Be the Best Artificial Intelligence (AI) Stock to Buy Amid the Sell-Off The Motley Fool",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Motley Fool · original report",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV212VERNUTlDS3VueEZDd19WaG12V3FseS0ydmZITFhmWi1kcEpsQVVOSE43cXYyWWJUbllDUzltNGZyTWk1VWRzS2JnVE13bkNRamFTQ0hWMkZNY3NITHl6VmlUMk10cWFsODJrWGtGMjNLSEpsN3VuMzNwNi1UMEg3TEEyRkRSWi1rcTJMaHZvNFU3ODRwMFZxVmhIMzQxeFJLeHZtcGFQaWxSakZBblY0eHY2SkE2TF9TT21zYURrbDNEOWRtV1dVV29qSTBsQUEyeU91WDhwYTg4c01hdHFn?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Earnings Week Ahead: NVDA, WMT, TGT, DIS, BABA, BIDU, HD, and more - TradingView",
+      "status": "RSS report · Nov 15",
+      "publisher": "TradingView",
+      "summary": "Earnings Week Ahead: NVDA, WMT, TGT, DIS, BABA, BIDU, HD, and more TradingView",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "TradingView · original report",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQllKYUN2RnJnblZTcjhsdnFTSEdfakJ1STE2dld1T1hQdEFmVmdleVVxUG45X0E0ZEdCSW5FWE5na1Z4M09ERmxCWl9adnpIRjE4djNIWG1zUzkzYVBfaUZ3UTNUSWZCVXozSnh0Mm1wWUdpWVZRTWxEMF9OU2Q5eVVnNGlrOGx6YUcyWThKaTE0UXppR3daMnBfR3V6bFd4UkhoaGkyOXlKWEVDVXJpb0s3YjY1QTBydFFCcy1B?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "An overview of Jensen Huang’s messy days",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Verge · AI",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started On October […]",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Verge · AI · original report",
+          "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation"
+        }
+      ]
+    },
+    {
+      "title": "An overview of Jensen Huang’s messy days - The Verge",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Verge",
+      "summary": "An overview of Jensen Huang’s messy days The Verge",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Verge · original report",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMXZoUkQwa3FZTndBcmMyTGhFV243RUJhbGJkOFVqWWlpTHJqSEdNNXBpVVg1dVVrc0VmUU5qNS1vM3BtLWF0anFqQ0hTUFBhR1RkRlhvb2hoRW5pWG5kcjFJZ2lQT042Um1jZjlTdGtZSzVaeUJZZmw4d2dfMnh1Y2FhOWVXcVFyTzBlSGd2cUJURGJmazBZ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Korea October 2026 ICT Exports: AI Chips Surge - CASRAI",
+      "status": "RSS report · Nov 15",
+      "publisher": "CASRAI",
+      "summary": "Korea October 2026 ICT Exports: AI Chips Surge CASRAI",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "CASRAI · original report",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9MajR2TkVINkprT0dFMUpHbTRPUVBYVFpibHNjWmdEelZ2SU8tbDJUTjdPSUVUelpnQXlxQU9rQTEtNW9qMzk0R25DR083N0hrZ1hDQmNIek04WHpsNUE2bVNucEduanFRZTlIdnJXY3lJVFhoQ1lDYndiUm9IZw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick - The Guardian",
+      "status": "RSS report · Nov 15",
+      "publisher": "The Guardian",
+      "summary": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick The Guardian",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Guardian · original report",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNDk2Z1htajVLenRVR2tqcWdOaHVDQ3JpeEgwOWx2THpNU3pwRGFrblRsVnJvVWoyZ21lbHY0WXlabFI2cm1ENWRwcXQ2anQ1akpMdkM0V0Y5Mkw1U1VHdkJwMjRkSGllV2xhcGNjODRZQ05HOFJsMnExZmx6QmJXemZrTW4tNENNUzVzRHFzb3M?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Pentagon Renames CDAO ‘Super Intelligence Office’ - SecurityWeek",
+      "status": "RSS report · Nov 15",
+      "publisher": "SecurityWeek",
+      "summary": "Pentagon Renames CDAO ‘Super Intelligence Office’ SecurityWeek",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "SecurityWeek · original report",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU25JdFE2amt1U2tZaUc3RzJFYU9hSkVydG84ekRXVldXNnk4c180TFVfZDk4dzdDbV9aeDhrbVpVUFNUMUN5MXBzV1RPZm5RUVZVVDlOa29YcVU0LXFRLTBqQ0NCYTFER3dPTlZMUHZ1VzVab3hTLUI4bDl2SG1feFItVQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "giggles": [],
+  "giggleMemes": [
+    {
+      "image": "/images/ainews-giggle-2026-11-15-1.svg",
+      "alt": "A robot presents a server rack to a very unimpressed electricity meter.",
+      "topic": "Compute costs",
+      "title": "The model asked for one more GPU. The power bill joined the meeting.",
+      "lesson": "Track energy and infrastructure alongside model performance."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-15-2.svg",
+      "alt": "A cheerful robot sends a chat bubble through a door marked VENDOR, while a tiny checklist asks who else can see it.",
+      "topic": "Data boundaries",
+      "title": "The chat had one stop. The data took a scenic route.",
+      "lesson": "Check which providers receive prompts and how long they keep them."
+    }
+  ],
+  "incidents": [
+    {
+      "title": "'Is this a cyberattack?' Grounded flights, a Microsoft outage and AI chaos fuel cybersecurity fears - France 24",
+      "status": "RSS report · Nov 14",
+      "publisher": "France 24",
+      "summary": "'Is this a cyberattack?' Grounded flights, a Microsoft outage and AI chaos fuel cybersecurity fears France 24",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "France 24 · original report",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZzVkMWRTZnoxeVZBby1YM1I3bXVZam82eVRqODZhZlJ0T2ZYbGtMd0JmTDRDOEMxVDgtY2NxZVJqWk1xbXlES21yRkZUTXVsdUxNTWo1R094ckpJTnVuX3FjNTZBOXkxR213OC1QWmk4ZVFIS1ZMbGpveXpzTXhET3RjaTFHRl9Zc0JubnVzYWx0Qy14RWxvb1VmU0NFNUQ4RTViYVBQVE9HNzZRRkljZTdsQzNkd2VFY0lNMmRaTVNkbzNXaE85SHhod044WTlLWmMxQnRNWDFkSDQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Where was Nvidia’s security team?",
+      "status": "RSS report · Nov 14",
+      "publisher": "TechCrunch AI",
+      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
+        }
+      ]
+    },
+    {
+      "title": "Everything That Happened in AI Today (Friday, November 13, 2026)",
+      "status": "RSS report · Nov 12",
+      "publisher": "The Neuron",
+      "summary": "Jensen Huang resigned as Nvidia CEO; SpaceX planned $74 billion in AI campuses; nonprofits sued five AI developers; a Fireworks breach exposed Notion chats; and Google released Gemini 4 Hydrogen.",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "The Neuron · original report",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/"
+        }
+      ]
+    }
+  ],
+  "oneIdea": {
+    "title": "Today’s lead: Broadcom Stock Jumps as Nvidia’s Leadership Crisis Raises a Billion-Dollar Opportunity for Its AI Chip Business - Barchart.com",
+    "summary": "Broadcom Stock Jumps as Nvidia’s Leadership Crisis Raises a Billion-Dollar Opportunity for Its AI Chip Business Barchart.com",
+    "whyNow": "This edition is a dated scan of public AI news feeds; this headline is the lead because it appeared among the latest source items.",
+    "sources": [
+      {
+        "title": "Barchart.com · original report",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOakJ6UHRvMjNXS2RoaXRvdWdYUXJmMmdEYnM1aGZOWTJGNlpITEVmcU1SdjNVZDlONHB6eDZxazdla1VVYUNvRzQzY1M4eXM2dzBEaTNCQXRyRDNaYUdjNmo3al9PanBJRXQzN2dOWnk2cG1fUHpqT09nR3pGSGJWdWRrMm9ySWk0eWhCU1NHbm5OTzdISzJXeVVJZDVKSVR3SEQxY0E1VUx2RDBfZ3FpLXRaWU9sNGVIQ25uMjJYcDlkYmphUVdGazVTWVQ0OXI2b2kwYjluVFh6S0FMU3lfOXdudzRqTjVhbVE?oc=5"
+      }
+    ]
+  },
+  "takeaways": [
+    {
+      "title": "'Is this a cyberattack?' Grounded flights, a Microsoft outage and AI chaos fuel cybersecurity fears - France 24",
+      "summary": "'Is this a cyberattack?' Grounded flights, a Microsoft outage and AI chaos fuel cybersecurity fears France 24",
+      "sources": [
+        {
+          "title": "France 24 · original report",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZzVkMWRTZnoxeVZBby1YM1I3bXVZam82eVRqODZhZlJ0T2ZYbGtMd0JmTDRDOEMxVDgtY2NxZVJqWk1xbXlES21yRkZUTXVsdUxNTWo1R094ckpJTnVuX3FjNTZBOXkxR213OC1QWmk4ZVFIS1ZMbGpveXpzTXhET3RjaTFHRl9Zc0JubnVzYWx0Qy14RWxvb1VmU0NFNUQ4RTViYVBQVE9HNzZRRkljZTdsQzNkd2VFY0lNMmRaTVNkbzNXaE85SHhod044WTlLWmMxQnRNWDFkSDQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Where was Nvidia’s security team?",
+      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
+        }
+      ]
+    },
+    {
+      "title": "Everything That Happened in AI Today (Friday, November 13, 2026)",
+      "summary": "Jensen Huang resigned as Nvidia CEO; SpaceX planned $74 billion in AI campuses; nonprofits sued five AI developers; a Fireworks breach exposed Notion chats; and Google released Gemini 4 Hydrogen.",
+      "sources": [
+        {
+          "title": "The Neuron · original report",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Australia's central bank finds AI hitting young workers first, especially in software and customer service",
+      "summary": "Australia's central bank sees early signs that AI is hitting young entry-level workers in highly exposed jobs like software development and customer service. Since ChatGPT launched, job postings and employment among 15- to 24-year-olds in those fields have dropped more sharply than among older workers. Author Mike Major cautions against jumping to conclusions, however, noting that business cycle shifts and remote work trends could…",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "priority": "Read today",
+      "title": "Check the source behind: 'Is this a cyberattack?' Grounded flights, a Microsoft outage and AI chaos fuel cybersecurity fears - France 24",
+      "context": "'Is this a cyberattack?' Grounded flights, a Microsoft outage and AI chaos fuel cybersecurity fears France 24",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "France 24 · original report",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZzVkMWRTZnoxeVZBby1YM1I3bXVZam82eVRqODZhZlJ0T2ZYbGtMd0JmTDRDOEMxVDgtY2NxZVJqWk1xbXlES21yRkZUTXVsdUxNTWo1R094ckpJTnVuX3FjNTZBOXkxR213OC1QWmk4ZVFIS1ZMbGpveXpzTXhET3RjaTFHRl9Zc0JubnVzYWx0Qy14RWxvb1VmU0NFNUQ4RTViYVBQVE9HNzZRRkljZTdsQzNkd2VFY0lNMmRaTVNkbzNXaE85SHhod044WTlLWmMxQnRNWDFkSDQ?oc=5"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Check the source behind: Where was Nvidia’s security team?",
+      "context": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Check the source behind: Everything That Happened in AI Today (Friday, November 13, 2026)",
+      "context": "Jensen Huang resigned as Nvidia CEO; SpaceX planned $74 billion in AI campuses; nonprofits sued five AI developers; a Fireworks breach exposed Notion chats; and Google released Gemini 4 Hydrogen.",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "The Neuron · original report",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/"
+        }
+      ]
+    }
+  ],
+  "learning": {
+    "title": "RSS feeds and source verification",
+    "body": "An RSS feed is a publisher’s machine-readable list of recent articles. It helps collect headlines in one place, but a feed excerpt is not independent verification and may omit important context.",
+    "tryThis": "Pick one item in this edition. Compare its feed excerpt with the linked article, note what context is missing, and look for a primary source before sharing a strong claim."
+  },
+  "notes": [
+    "Compiled from public RSS feeds. Feed excerpts are publisher-supplied and have not been independently verified; open the linked original before relying on a claim.",
+    "This is a curated scan of the feeds listed in the generator, not an exhaustive index of all AI coverage. Items are limited to dated posts from the last 72 hours; links already used in earlier editions are skipped.",
+    "Some configured feeds were unavailable at generation time; coverage may be thinner than usual."
+  ]
+}
