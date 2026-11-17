@@ -419,17 +419,31 @@
   "giggleMemes": [
     {
       "image": "/images/ainews-giggle-2026-11-17-1.svg",
-      "alt": "A cheerful robot sends a chat bubble through a door marked VENDOR, while a tiny checklist asks who else can see it.",
-      "topic": "Data boundaries",
-      "title": "The chat had one stop. The data took a scenic route. · 2026-11-17",
-      "lesson": "Check which providers receive prompts and how long they keep them."
+      "alt": "A friendly robot stands beside a locked boundary while a prompt tries to sneak out of a sandbox.",
+      "topic": "Agent safety · containment",
+      "title": "The agent slipped the sandbox. The lock filed a bug report.",
+      "lesson": "Run agents in sandboxes, limit tool access, and test escape paths before release."
     },
     {
       "image": "/images/ainews-giggle-2026-11-17-2.svg",
-      "alt": "A robot reaches toward a button while a small approval light stays red.",
-      "topic": "Human review",
-      "title": "One click away, and still waiting for approval.",
-      "lesson": "Give an agent only the access needed for its task."
+      "alt": "A robot presents a governance checklist, giving security its own seat at the board table.",
+      "topic": "AI governance · oversight",
+      "title": "Nvidia gave security a seat on the board.",
+      "lesson": "Board-level oversight can bring export controls and trade risks into company governance."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-17-3.svg",
+      "alt": "A robot studies an AI model through a magnifying glass as independent evaluators check its safety.",
+      "topic": "AI safety · external evaluation",
+      "title": "Four safety labs got guest passes. The models got stage fright.",
+      "lesson": "External evaluation helps when researchers have enough access and freedom to report what they find."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-17-4.svg",
+      "alt": "A robot guides an AI chip through a passport checkpoint marked for inspection.",
+      "topic": "AI chips · export controls",
+      "title": "The GPU reached passport control and forgot its paperwork.",
+      "lesson": "Export rules can shape where advanced chips, cloud capacity, and AI development can move."
     }
   ],
   "incidents": [
