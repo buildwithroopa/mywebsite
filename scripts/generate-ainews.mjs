@@ -178,9 +178,9 @@ function createDailyMeme(item, index, previousTitles) {
   }
   const [baseTitle, lesson, topic, alt] = copy[variant];
   const headlineTopic = item.title
-    .replace(/^(commentary|analysis|opinion|news|report):\\s*/i, '')
-    .replace(/\\s+[-|]\\s+[^-|]+$/, '')
-    .split(/\\s+/).slice(0, 4).join(' ');
+    .replace(/^(commentary|analysis|opinion|news|report):\s*/i, '')
+    .replace(/\s+[-|]\s+[^-|]+$/, '')
+    .split(/\s+/).slice(0, 4).join(' ');
   const tailoredCaptions = {
     data: '“' + headlineTopic + '” asked who else could read the prompt.',
     shopping: '“' + headlineTopic + '” found a deal. The URL asked for ID.',
