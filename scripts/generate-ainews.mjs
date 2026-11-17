@@ -127,14 +127,17 @@ function headlineEcho(title, summary) {
   const shared = [...summaryWords].filter((word) => titleWords.has(word)).length;
   return shared / Math.min(titleWords.size || 1, summaryWords.size) >= 0.82;
 }
-function createDailyMeme(item, index, previousTitles) {
+function memeKind(item) {
   const subject = (item.title + ' ' + item.summary).toLowerCase();
-  let kind = 'workflow';
-  if (/breach|security|privacy|data|leak/.test(subject)) kind = 'data';
-  else if (/shop|retail|fake|fraud|merchant|link/.test(subject)) kind = 'shopping';
-  else if (/energy|compute|chip|campus|data cent|server/.test(subject)) kind = 'compute';
-  else if (/agent|booking|assistant|automation|task/.test(subject)) kind = 'agent';
-  else if (/research|study|benchmark|evaluation|paper/.test(subject)) kind = 'research';
+  if (/breach|security|privacy|data|leak/.test(subject)) return 'data';
+  if (/shop|retail|fake|fraud|merchant|link/.test(subject)) return 'shopping';
+  if (/energy|compute|chip|campus|data cent|server/.test(subject)) return 'compute';
+  if (/agent|booking|assistant|automation|task/.test(subject)) return 'agent';
+  if (/research|study|benchmark|evaluation|paper/.test(subject)) return 'research';
+  return 'workflow';
+}
+function createDailyMeme(item, index, previousTitles) {
+  const kind = memeKind(item);
 
   const copy = {
     data: [
@@ -174,7 +177,19 @@ function createDailyMeme(item, index, previousTitles) {
     }
   }
   const [baseTitle, lesson, topic, alt] = copy[variant];
-  const title = previousTitles.has(baseTitle) ? baseTitle + ' · ' + date : baseTitle;
+  const headlineTopic = item.title
+    .replace(/^(commentary|analysis|opinion|news|report):\\s*/i, '')
+    .replace(/\\s+[-|]\\s+[^-|]+$/, '')
+    .split(/\\s+/).slice(0, 4).join(' ');
+  const tailoredCaptions = {
+    data: '“' + headlineTopic + '” asked who else could read the prompt.',
+    shopping: '“' + headlineTopic + '” found a deal. The URL asked for ID.',
+    compute: '“' + headlineTopic + '” invited the power meter to the meeting.',
+    agent: '“' + headlineTopic + '” reached the button. A human kept the final click.',
+    research: '“' + headlineTopic + '” passed the benchmark. Real life asked for a demo.',
+    workflow: '“' + headlineTopic + '” looked like one click. The checklist disagreed.'
+  };
+  const title = previousTitles.has(baseTitle) ? tailoredCaptions[kind] : baseTitle;
   previousTitles.add(title);
   const paper = ['#f2eadb', '#e9e7df', '#f4eee4', '#e5e7e3'][(dateSeed + index) % 4];
   const red = ['#c92b34', '#b7332c', '#ba3f2b', '#a92c35'][(dateSeed + index * 2) % 4];
@@ -325,7 +340,20 @@ for (const item of briefsRaw) unused.delete(item);
 const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...briefsRaw];
 const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
 const usedMemeTitles = new Set(previousMemeTitles);
-const memeSources = [leadRaw, ...allChosen.filter((item) => item !== leadRaw)].slice(0, 2);
+const memeCandidates = [leadRaw, ...allChosen.filter((item) => item !== leadRaw)];
+const memeSources = [];
+const memeKinds = new Set();
+for (const item of memeCandidates) {
+  const kind = memeKind(item);
+  if (memeKinds.has(kind)) continue;
+  memeSources.push(item);
+  memeKinds.add(kind);
+  if (memeSources.length === 4) break;
+}
+for (const item of memeCandidates) {
+  if (memeSources.length === 4) break;
+  if (!memeSources.includes(item)) memeSources.push(item);
+}
 const generatedMemes = memeSources.map((item, index) => createDailyMeme(item, index, usedMemeTitles));
 await mkdir('public/images', { recursive: true });
 for (const meme of generatedMemes) {
