@@ -32,6 +32,9 @@ function collectUrls(value, urls = new Set()) {
   }
   return urls;
 }
+const previousMemeTitles = new Set(
+  previous.editionDate < date ? (previous.giggleMemes ?? []).map((meme) => meme.title) : []
+);
 const previouslyPublishedUrls = new Set(
   previous.editionDate < date ? collectUrls(previous) : []
 );
@@ -40,6 +43,9 @@ for (const filename of await readdir(archiveDir)) {
   try {
     const archived = JSON.parse(await readFile(archiveDir + '/' + filename, 'utf8'));
     for (const url of collectUrls(archived)) previouslyPublishedUrls.add(url);
+    for (const meme of archived.giggleMemes ?? []) {
+      if (meme.title) previousMemeTitles.add(meme.title);
+    }
   } catch (error) {
     console.warn('Could not read archive ' + filename + ': ' + error.message);
   }
@@ -112,6 +118,15 @@ function shorten(value, max = 420) {
   if (value.length <= max) return value;
   return value.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
 }
+function headlineEcho(title, summary) {
+  const stop = new Set(['a','an','and','are','as','at','be','by','for','from','how','in','is','it','of','on','or','the','to','was','were','whether','with']);
+  const words = (value) => new Set(value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter((word) => word.length > 2 && !stop.has(word)));
+  const titleWords = words(title);
+  const summaryWords = words(summary);
+  if (!summaryWords.size) return true;
+  const shared = [...summaryWords].filter((word) => titleWords.has(word)).length;
+  return shared / Math.min(titleWords.size || 1, summaryWords.size) >= 0.82;
+}
 function createDailyMeme(item, index, previousTitles) {
   const subject = (item.title + ' ' + item.summary).toLowerCase();
   let kind = 'workflow';
@@ -149,12 +164,21 @@ function createDailyMeme(item, index, previousTitles) {
   }[kind];
 
   const dateSeed = [...date].reduce((sum, digit) => sum + (Number(digit) || 0), 0);
-  let variant = (dateSeed + index) % copy.length;
-  if (previousTitles.has(copy[variant][0])) variant = (variant + 1) % copy.length;
-  const [title, lesson, topic, alt] = copy[variant];
+  const firstChoice = (dateSeed + index) % copy.length;
+  let variant = firstChoice;
+  for (let offset = 0; offset < copy.length; offset++) {
+    const candidate = (firstChoice + offset) % copy.length;
+    if (!previousTitles.has(copy[candidate][0])) {
+      variant = candidate;
+      break;
+    }
+  }
+  const [baseTitle, lesson, topic, alt] = copy[variant];
+  const title = previousTitles.has(baseTitle) ? baseTitle + ' · ' + date : baseTitle;
+  previousTitles.add(title);
   const paper = ['#f2eadb', '#e9e7df', '#f4eee4', '#e5e7e3'][(dateSeed + index) % 4];
   const red = ['#c92b34', '#b7332c', '#ba3f2b', '#a92c35'][(dateSeed + index * 2) % 4];
-  const prop = kind === 'data'
+  const standardProp = kind === 'data'
     ? '<rect x="846" y="245" width="180" height="172" rx="18" fill="#fff" stroke="#171717" stroke-width="7"/><path d="M901 311v-18a35 35 0 0 1 70 0v18" fill="none" stroke="' + red + '" stroke-width="13"/><rect x="887" y="307" width="98" height="75" rx="14" fill="' + red + '"/><circle cx="936" cy="342" r="8" fill="#fff"/>'
     : kind === 'shopping'
       ? '<rect x="840" y="245" width="205" height="156" rx="14" fill="#fff" stroke="#171717" stroke-width="7"/><path d="M840 281h205" stroke="#171717" stroke-width="7"/><circle cx="863" cy="264" r="6" fill="' + red + '"/><text x="865" y="337" font-family="monospace" font-size="26" fill="' + red + '">shop?</text><path d="M1011 358l-26-8 43-54 16 12z" fill="#171717"/>'
@@ -165,6 +189,15 @@ function createDailyMeme(item, index, previousTitles) {
           : kind === 'research'
             ? '<path d="M850 393h200v-36H850z" fill="' + red + '" stroke="#171717" stroke-width="7"/><path d="M875 357v-76h46v76M932 357v-120h46v120M989 357v-54h46v54" fill="#fff" stroke="#171717" stroke-width="7"/><text x="955" y="224" text-anchor="middle" font-family="monospace" font-size="22" fill="' + red + '">TEST</text>'
             : '<rect x="850" y="233" width="185" height="183" rx="16" fill="#fff" stroke="#171717" stroke-width="7"/><path d="M882 283l11 11 22-26M882 335l11 11 22-26M882 387l11 11 22-26" fill="none" stroke="' + red + '" stroke-width="8"/><path d="M932 281h70M932 333h70M932 385h70" stroke="#171717" stroke-width="8"/>';
+  const alternateProps = {
+    data: '<path d="M844 284h222l-24 168H868z" fill="#fff" stroke="#171717" stroke-width="8"/><path d="M884 325h133M884 356h92" stroke="#171717" stroke-width="8"/><circle cx="1007" cy="403" r="25" fill="' + red + '"/><path d="M995 403l9 9 17-21" fill="none" stroke="#fff" stroke-width="7"/>',
+    shopping: '<path d="M858 278h42l27 138h124" fill="none" stroke="#171717" stroke-width="10"/><path d="M915 311h149l-17 76H929z" fill="#fff" stroke="#171717" stroke-width="8"/><circle cx="947" cy="424" r="13" fill="' + red + '"/><circle cx="1023" cy="424" r="13" fill="' + red + '"/><path d="M935 335h103M942 360h89" stroke="#171717" stroke-width="7"/>',
+    compute: '<rect x="850" y="232" width="202" height="208" rx="10" fill="#fff" stroke="#171717" stroke-width="8"/><path d="M881 279h137M881 312h92M881 363l14 14 29-34" fill="none" stroke="' + red + '" stroke-width="9"/><text x="950" y="421" text-anchor="middle" font-family="monospace" font-size="23" fill="#171717">PERMIT</text>',
+    agent: '<rect x="843" y="260" width="220" height="150" rx="12" fill="#fff" stroke="#171717" stroke-width="8"/><path d="M873 305h160M873 340h72M873 375h110" stroke="#171717" stroke-width="8"/><circle cx="1010" cy="375" r="20" fill="' + red + '"/>',
+    research: '<path d="M850 273h205v153H850z" fill="#fff" stroke="#171717" stroke-width="8"/><path d="M880 317h145M880 350h90M880 383h123" stroke="#171717" stroke-width="8"/><path d="M1005 250l12 23 26 4-19 18 5 26-24-12-23 12 4-26-18-18 26-4z" fill="' + red + '" stroke="#171717" stroke-width="5"/>',
+    workflow: '<rect x="845" y="255" width="210" height="165" rx="10" fill="#fff" stroke="#171717" stroke-width="8"/><path d="M845 291h210M881 256v35M949 256v35M1017 256v35" stroke="#171717" stroke-width="8"/><rect x="876" y="324" width="52" height="65" fill="' + red + '"/><rect x="944" y="324" width="80" height="17" fill="#171717"/><rect x="944" y="356" width="62" height="17" fill="#171717"/>'
+  };
+  const prop = index % 2 === 1 ? alternateProps[kind] : standardProp;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
     <rect width="1200" height="675" fill="${paper}"/>
     <path d="M0 536H1200" stroke="#171717" stroke-width="9"/>
@@ -215,7 +248,7 @@ const fetched = await Promise.all(feeds.map(async (feed) => {
 }));
 
 const items = [];
-const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0 };
+const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0 };
 for (const result of fetched) {
   for (const block of result.blocks) {
     const title = noEmDashes(readTag(block, ['title']));
@@ -228,12 +261,17 @@ for (const result of fetched) {
     if (!Number.isFinite(published.getTime())) { skipped.date++; continue; }
     if (published.getTime() < windowStart) { skipped.old++; continue; }
     if (previouslyPublishedUrls.has(url)) { skipped.repeated++; continue; }
+    const publisher = readTag(block, ['source']) || result.feed.publisher;
+    if (/\b(ein presswire|pr newswire|business wire|globe newswire|accesswire|press release)\b/i.test(publisher + ' ' + title)) {
+      skipped.promotional++;
+      continue;
+    }
     const normalizedTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
     if (items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url)) continue;
     items.push({
       title: shorten(title, 180),
-      summary: shorten(description || title, 440),
-      url, date: published, publisher: readTag(block, ['source']) || result.feed.publisher, normalizedTitle
+      summary: headlineEcho(title, description) ? '' : shorten(description, 440),
+      url, date: published, publisher, normalizedTitle
     });
   }
 }
@@ -259,7 +297,7 @@ function story(item) {
     status: 'RSS report · ' + publishedLabel,
     publisher: item.publisher,
     summary: item.summary,
-    whyCare: 'The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.',
+    whyCare: item.summary ? 'The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.' : 'The feed listed a headline without an added summary. Open the original report for its details.',
     sources: [{ title: item.publisher + ' · original report', url: item.url }]
   };
 }
@@ -286,9 +324,9 @@ for (const item of briefsRaw) unused.delete(item);
 
 const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...briefsRaw];
 const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
-const previousMemeTitles = new Set((previous.giggleMemes ?? []).map((meme) => meme.title));
+const usedMemeTitles = new Set(previousMemeTitles);
 const memeSources = [leadRaw, ...allChosen.filter((item) => item !== leadRaw)].slice(0, 2);
-const generatedMemes = memeSources.map((item, index) => createDailyMeme(item, index, previousMemeTitles));
+const generatedMemes = memeSources.map((item, index) => createDailyMeme(item, index, usedMemeTitles));
 await mkdir('public/images', { recursive: true });
 for (const meme of generatedMemes) {
   await writeFile('public' + meme.image, meme.svg + '\n');
