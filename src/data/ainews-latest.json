@@ -1,205 +1,205 @@
 {
-  "editionDate": "2026-11-17",
+  "editionDate": "2026-11-18",
   "timezone": "America/Los_Angeles",
   "cutoff": "Morning edition",
   "editionLabel": "Daily issue · RSS edition",
   "lead": {
-    "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
-    "status": "RSS report · Nov 17",
-    "publisher": "TechCrunch AI",
-    "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
-    "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+    "title": "Nvidia says it will stop selling some AI data center chips to China - CBS News",
+    "status": "RSS report · Nov 18",
+    "publisher": "CBS News",
+    "summary": "",
+    "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
     "sources": [
       {
-        "title": "TechCrunch AI · original report",
-        "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/"
+        "title": "CBS News · original report",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pcU9Qa0hCUlBBZlRaNlNiYk90WjB1NlRKaDNFSFA1VFhKNzVmS3VleFNDbDNibXNuZ1NyLWM0aTRsRlU4cF8zVEZad240cFFWQ2VfdUFpZC1NN3FaWlhtWEhwWmdid1pIellBcTU4LTBOd2pFZkZUVlNR?oc=5"
       }
     ]
   },
   "critical": [
     {
-      "title": "AMD and Google Chip Away at Nvidia as Huang Exit Shakes Customers - The Information",
-      "status": "RSS report · Nov 17",
-      "publisher": "The Information",
+      "title": "Tencent says new US chip curbs won't hurt cloud revenue, may slow model training - Reuters",
+      "status": "RSS report · Nov 18",
+      "publisher": "Reuters",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "The Information · original report",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWi01Y1lhbTVWSUhieWlsQ3c1eV9NUXBtcWNNNHc2TVJNMnBxVXc2NTloSXRTYlg2eU12cElub3dEZXhFVzhoZnJPMWsyVF9Ud3V4NVBrblV0aE5hcGE1WXJqWFBMd3N6Zzk2VFhPOHZISUt0SWxpdWMwWDNQVzQzLTdGdlM0NHlnMXhWOHF0YzVJVF9Xc0pHR05oUQ?oc=5"
+          "title": "Reuters · original report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUVM2YW9xWTExLUNSRGlEWGZCZDRlU01hRVdwRE9FRE85WE5VSDFXVGdYSDRuTGxadjVvV0pYZWNEek9oYWw5MExjTTZVUXNJM1ZNdHdmTTNhNE1FeWVhYURGVVM5N004RUpDODMxWWRVRkk5dXhVdFBRZndVU2dYZHdYMHJWRWF4b25Kbk5GT0xIbVBNM0ktaktnaThvZw?oc=5"
         }
       ]
     },
     {
-      "title": "Carlos Gimenez warns lax AI chip export controls threaten US national security - Fox Business",
-      "status": "RSS report · Nov 17",
-      "publisher": "Fox Business",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Fox Business · original report",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsNGdoZ2VEekpIdkFEX1BUdGxJVjR3SkdpeEJidUF5QUR6bEhHZU40QWxlS2UzV0VCOXpiRG91blpqckNyd215TG5KdGdvSmExa3BnelpsTmhVNzQ?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "MountAIn Secures €7.3 Million in Seed Funding to Run Advanced AI on Chips Costing Less Than $10 - markets.businessinsider.com",
-      "status": "RSS report · Nov 17",
-      "publisher": "markets.businessinsider.com",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "markets.businessinsider.com · original report",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNNkF5VDVYaGhZdkZRV1JhejNIQ2F6U0RwVk9XVzBFWFNHZFdHcHBlR0Q1SnpjeTllSE1Wd2l6LVhBUlY0RHVFQmhkNTBLZXZaeVhyZDZmWnV2S2tMRC1sRHF0OUVjTGFUdGtsMGlrOVYxVEUtczExRUFMZTFBY3JLSmtxcVMzdVlzNkNfd25jSzhHOTNKdjJpN2tMeHgwVnRUUmZYSVoxSVAzRm9aUTRHblZ1eC1MRkhKMkowZG1fZUdYc194Y25ESjJacHVUSHIwenVOVktrbUQ3enNvWmlrMFBQbEV4cnc?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "US Chip Curbs Force Xi to Weigh Response Before Trump Summit - Bloomberg.com",
-      "status": "RSS report · Nov 17",
-      "publisher": "Bloomberg.com",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Bloomberg.com · original report",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYUhkejBaZ0NfSVBiLU9FdUxRZ3NMUTBZdUhLLTVKRjg5QVdDVVpQal9LaThWNjJjMEJNRkcwTEFJVm1HOG51amxfRk1XNnVvcmtzTDNNS2g3TVN4THo5V0h0bTlWYWRZQ3d4N3JlU3JyNnctc2FucnZ5U0dXb0tDeG9OSFVjMVd0d0NySzVkWVVoc01mRVRMVE16TjVTcXFnTE5wZWhTZEU0cnZlanloYg?oc=5"
-        }
-      ]
-    }
-  ],
-  "launches": [
-    {
-      "title": "Google Finds Hackers Using AI Agents To Launch Attacks With No Human Involvement - ETV Bharat",
-      "status": "RSS report · Nov 17",
-      "publisher": "ETV Bharat",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "ETV Bharat · original report",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNGotU2pKZUxvdWZsWXUyUzlMVlpjYm5MZXh2QnFfWjBOOV9wYjdMV2ZnYmFHZVdKNHpnWkIzczZ5N3pyX1N1THpVcnNuUTc5d3dycmg1WFpYd3pUR2lCb1o1dVNXRm9LWDJ6UklzTFlLRmh5RnVmLTRZSWxuMU96RnRuYUctYnBpWkVHWVZUdGp5eElWQUwyYkRsSW1ZNzd2T19lOURQdUFYVDVuMEVNUGJ4QjlKRU0xX25wbE80RldrU1RSZ19mU0RFRG5pNUN0TnfSAdcBQVVfeXFMTW5xVXdrd0pPRGFVd3hTU3NOVUdkR1p3WUZpZV9kb2Yza0NydVJ2YlNXZWl0ZkFuRFA4bGtYTFZyc2dSdEpsb0g1Uk01WFFPRlc4N2lfQkFDQk5DNTNKVy1uUVJyLUw1emY3QVI1ajNTZEhMbjNJaWNJdlR6M2gweFNSX3VYRXhWemk4QXdRdXBTNVBaOTZEM180NHVOTTQ3QzFVbnlRN3lWNHpqcHYtTHZISzRDMVpxQ3lNSk9Xa1RmNnpvaElTQ0poX01PRUhBdGk5a1laYTA?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Napster Gives Every Employee a Crew of AI Agents with Latest App Release - GlobeNewswire",
-      "status": "RSS report · Nov 17",
-      "publisher": "GlobeNewswire",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "GlobeNewswire · original report",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZmRqM19OV3ZzZF9xNFlTS29vMDVvU0Rxc2lWTU5FMjlyblAxVzQzd1Q1Nk4zMnJJRzAtR1NWWXd4aHZ1UTlGTktDRE01cFdYc3FzMmpPcThWTTRpdkhGdjQzLXdZQnRIbFhXM25CU05jdkhMZ3BzTWV4cjg0blJtTmtHaUpUc2tSNTdiZjA1Qk5rN20zS2pDbWRrc196TnV3QVdDNUdZRTZTTDJXQnE3RThfRm9qN012TkFWMmd6dExQbVBwNGFjM1ZkbnN1MmhqdFNiN0puVWZEX2tr?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Singapore defends status as a ‘trusted business hub’ after the U.S. rolls out new AI chip controls - Fortune",
-      "status": "RSS report · Nov 17",
-      "publisher": "Fortune",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Fortune · original report",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE95VzhkMDdVdVJ4THFwQW03ZEQtUGh4UnZ3ZmJEM1hGWWxjZUNqZmhLSlpoYV93YlpTTGY0Ul94MWRRTVVsUzU5R1NqMHVRMFRYSHFqQlc0aEVhdmNtWXY2S0tUSmp6OHFHVG01RTBjbUotWWtCLURRcQ?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Trump admin. unveils new rule to deny China's access to U.S. AI chips - upi",
-      "status": "RSS report · Nov 17",
-      "publisher": "upi",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "upi · original report",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNDd6b0JzNnQ4ZXNGMTFpNnFVUGV4U0tqZGhzajVROUZCQ1V4cWFib3VVd2FndzFYa3hzd2NWNVhpbHB4VVFudWVPVFFKaGozTXBKM0g0cUpoY1J4RHJtNERQSWJqTVRaUTlKYVBRdlZqdUxFTG14U0J2X2lOdlN2NWtrNUljLXFVdm9SVHA2cF9yU2Q3QmfSAZsBQVVfeXFMTmNGa3c0RzUyWkQyV1pmYUtRUFVMVHNRXzl4aWN2N3FYRUtjdEFJTy1HRnJrMmduNHp6Y0RLREZMNTg0V1BRT3dBUmRfa0dDX2kwcFA2SDVvU0hmc1FFYkdQOU1Yako5R2tFdi03WTZPVjA5R3MwUXVvcUhueTBNSGJra2RxdFFjRGN5OUpQcEpxWFBqT1dqZVpjaFE?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Liquid AI Releases d1.2 and d1.2-ultra: Omnimodal Decision Models That Top the AA Decision Index",
-      "status": "RSS report · Nov 17",
-      "publisher": "MarkTechPost",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "MarkTechPost · original report",
-          "url": "https://www.marktechpost.com/2026/11/17/liquid-ai-d1-2-omnimodal-decision-models/"
-        }
-      ]
-    }
-  ],
-  "research": [
-    {
-      "title": "Academic librarians \"see artificial intelligence as biggest driver of change\" - Research Information",
-      "status": "RSS report · Nov 17",
-      "publisher": "Research Information",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Research Information · original report",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSjkwemxvbkp0QWp5SnhKQkY3TExidWl6ajQ5UHBXNUdneWJkMThuQW1EQ19uSHFhZjljQl9HenBkaHFxeV9tekQ3WlJ5SHJKZVZWS2JIVzJGX0szQ3AwdVlJbzgweUdUM093WTZRRVY0RkNWLTFtUVUtaHF1SHl4Z2pBUUVZMV9pc1NGSkJtSHVvY2QtZ0J2S1VuaTh0MU9fcWxTQkc3a2ZKVG9IeENQbkFhYkJGUDNxLXc?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "OpenAI Wants Outsiders to Catch AI Deception. Will They?",
-      "status": "RSS report · Nov 16",
-      "publisher": "The Neuron",
-      "summary": "OpenAI is giving four independent research organizations access to its internal AI models and safety systems to investigate deceptive behavior. But researchers face restrictions on what they can examine and disclose. Will these investigations reveal whether OpenAI's safeguards actually work?",
-      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
-      "sources": [
-        {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/news/openai-outsiders-catch-ai-deception/"
-        }
-      ]
-    },
-    {
-      "title": "Global Study Charts Forty Years of Artificial Intelligence Research in Echocardiography - Bioengineer.org",
-      "status": "RSS report · Nov 16",
-      "publisher": "Bioengineer.org",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Bioengineer.org · original report",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPa1REdnlVQzFFZTdRd3dYaVIwRTlKU2MtOEpHMWh3MF9EWEQweFhqNlIySnpUT08xZ1hDR285RTlfamFGbEhkanlHZ1V0MmxFV1lqV014SWw2T29JR3NuUTZPV0x6N2V1RFBoM21XZDFpSm1RYWNoaEgwYkFJeHRjOVNDb3hfaE1NX0ZqaEt6dXc1a0RSb1hYV01Sem1DTWlISDcwNExObmExOWp5SGc1VEJR?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "US data centers now burn more electricity than a midsized country",
-      "status": "RSS report · Nov 16",
-      "publisher": "The Verge · AI",
-      "summary": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively than many countries do, resulting in a serious amount of greenhouse gas emissions. The study homes in on hyperscale facilities - the […]",
-      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
-      "sources": [
-        {
-          "title": "The Verge · AI · original report",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard"
-        }
-      ]
-    },
-    {
-      "title": "Moonshot AI pivots Kimi models from coding to science as benchmark gains flatten",
-      "status": "RSS report · Nov 16",
+      "title": "SEC probes Nvidia over undisclosed chip sales tied to China",
+      "status": "RSS report · Nov 18",
       "publisher": "The Decoder",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
           "title": "The Decoder · original report",
-          "url": "https://the-decoder.com/moonshot-ai-pivots-kimi-models-from-coding-to-science-as-benchmark-gains-flatten/"
+          "url": "https://the-decoder.com/sec-probes-nvidia-over-undisclosed-chip-sales-tied-to-china/"
+        }
+      ]
+    },
+    {
+      "title": "Tencent Says US Chip Curbs to Slow Chinese AI in the Short Run - Bloomberg.com",
+      "status": "RSS report · Nov 18",
+      "publisher": "Bloomberg.com",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Bloomberg.com · original report",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQN1JDVHRXUVhzeVFpMF9HZnZWMmtFcjhqZE9OYjZ0V2l5XzlyUmdOX1hIYzBwU1JDaURmVThPdWFBWGJNWmpFN25LWWh2ME5yZUFOTDNCcndOQ3hvRlc4NEFTTmt5MG4wbE1LR3pKcndBSzE5cUYwSmc0VkJFUldteW50Q1IxS2JkWnlXX1A4N1g3cDc1LWhKTWNDVlZrYXpTa1A4N1g3N1VaRk93U3BmTEpldw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "CPRIT funding fuels AI-powered cancer discovery at UT San Antonio - UT Health San Antonio",
+      "status": "RSS report · Nov 18",
+      "publisher": "UT Health San Antonio",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "UT Health San Antonio · original report",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdnZzM2MyLUhuaERTVVc5aTlvTHltYjRMRERIcHplN2hsOF9SbmdQZDRZeUtxUEF5Q2FNa0lCLUt0V1QyR1JVTFRYclJwMk1MNHZxdlZTUktqYURiS3VGdFBJOEl1U2hHVzJxQVZPemhGYmQ1bVNWbEhvc2IzZEdFQll2M2k1TVFUNGIyZUwzWDltclNBckE?oc=5"
+        }
+      ]
+    }
+  ],
+  "launches": [
+    {
+      "title": "Napster introduces Pulse, AI agents that hold a real conversation with every customer, employee, and partner - GlobeNewswire",
+      "status": "RSS report · Nov 18",
+      "publisher": "GlobeNewswire",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "GlobeNewswire · original report",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOMmw4RUxWLUJHSTgzR0p6dEFmYno1ckVSSVpOYnZlbjFEV0pwRUw1YkNfZXJkS1JvLWJiYXA4QlZBT2lDeTROYmNGQkpmTmZ3OFpoTi1DZExCUGhzTjJGOXVfNlpMNUo5WUVzRDBOOERGMzRXSW5panpXNmtlXzJwcUlScUZhbEhrNTJmbGhjRVpsUFlyeVRYbGFWV25RYks3azh5ZFg5ZEpvSTNQME0wajBGd0l6MU9UWXFxR0V2aWFTemJSa1hXX1hNR0hBY0NBMVRaTFc3Zi1SdF9EakpxclNvTlByLUZuaEh5cDFPWHNrWXpnSUUyYUE1dnl2dWZvdnllNXYtUWs?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI agents in the workplace: Appian unveils a dashboard to monitor costs and results - Il Sole 24 ORE",
+      "status": "RSS report · Nov 18",
+      "publisher": "Il Sole 24 ORE",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Il Sole 24 ORE · original report",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVmR4aUlnbUZkdTdpbl94M0xYVWJxa2Y0V3pHdmR0RU1tT3FyVXlwMG5Hc1dQMnVGS1RlZHhUVHNqbTU3aEw2aWgzVW43RGpGSDVzNWk5bkhHVXBaaVdjQ0gyS2hVaXU1WDlnMk80TlRQbjJpRm0xVTU2YUR0Q19xWTJkU2VKZnFqRV9GTjdMM1lmN1VOQ3lkY2ltREd5WXhoYXA4N1NPSVVTZXNySVR6OTVGY284dGpLTXFsUzRYdGMwajcxbWc?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Oracle Introduces AI Agents to Coordinate Clinical Trial Operations - Unite.AI",
+      "status": "RSS report · Nov 18",
+      "publisher": "Unite.AI",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Unite.AI · original report",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSmJSZW1ENzZiOVB0NzBENEhpcEl1VmtYMXZEaVBmdlpXUTN4S3V2cTMtY283WHdYdFNOaTRYQ29RcmwzT21DOHFaQ0FwczIxNlpSUzJ4WEdzNkFBNTBaM1BUbDZidDlmSTZ0akczYnpwVkpYU1ZOQmFNeUFUOUJiLW1vc3Zkc3A5MlBlVTNLUUJKM0U?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Workday Announces Intent to Acquire Honeydew, a Semantic Layer for AI and Business Intelligence - HRTech Series",
+      "status": "RSS report · Nov 18",
+      "publisher": "HRTech Series",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "HRTech Series · original report",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNUxic2syTGdpMlplbW40VVBrOUl6ZjNYQ0NfX1VlVUVHZkNYbzlkOE15cnY2OF9sak52NmdJb0JpcVNDQzhuWGF5S3UtYjFvOFdJa1lUREdINUJDRzh0cllybUJ2RnZwRDJYSGZfbjEtUi1oSnFLOXFHX2lZOGp1OHNWSE40VTFLTl9CUWc4OXU1SXRQeEpZQndWYkVUcTFOOGhnSm5hN0UtRG5YbERUamJORFZlR2l0MVgyTjEydUt4aHlHaFZlT2kyQWVzR2NtMkw1T1hR?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Suno now lets you make AI videos for your AI music",
+      "status": "RSS report · Nov 18",
+      "publisher": "The Verge · AI",
+      "summary": "Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called \"Visuals,\" allows users to turn Suno songs into AI-generated video clips that automatically lipsync to lyrics, or make images via prompt descriptions that can be used as thumbnails and album artwork. Visuals […]",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Verge · AI · original report",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "title": "UT San Antonio researchers explore AI to improve care for veterans with mild brain injuries - UT Health San Antonio",
+      "status": "RSS report · Nov 18",
+      "publisher": "UT Health San Antonio",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "UT Health San Antonio · original report",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaW94dk1Ca1BybkhGdGc0MjBnZ0R2cUxEYm5xazdmQ2Y4dkRlWUI0ZTZSdnZ4ZWlxLXVqZ0pBVTZSQzV4bWF1QWFFanZGdjdpSVA0V3JyRjBRbXhnSEx0UlE2eTQwVGRCeTEyQ1RVUlZRVkx2YXIxLUtjNmtxX1JxTnFGdzZVZF9DUTg2VWZKMmFMNFZqUW5rNU5fTllFX1JDNmdPZ3FzWU1iNGpIbm9tMk91eHhuaExT?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI agents could take over travel bookings and payments by 2032, finds study - Fast Company Middle East",
+      "status": "RSS report · Nov 18",
+      "publisher": "Fast Company Middle East",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Fast Company Middle East · original report",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSzhWczVtT2wzZmJvVWNmdDZ5NS1pSmJycDFYQTl0LXZuUFlyelVBMDZ4WE90eFZDZnVmY2Y1aktMd1Q5X25LeDdrLTE2Y3RtTFBOd25NbG5MZ2llYkFlNEt4cGJKUGszeGtZVVlLdDRNYllkdTZ4dXF5LUhpZnFwb2tObmtRSUFucndJSFhCc21OckRrTW5SVER0akNjLWFrekF2SVBmb2lpUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "A Lifecycle Framework for Artificial Intelligence in Sustainable Construction Research - AZoCleantech",
+      "status": "RSS report · Nov 18",
+      "publisher": "AZoCleantech",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "AZoCleantech · original report",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9IQjNRSi1SYzM3X051Z2w4VFNuSFE5VkpjM3ZjNzNaLWxJOXNSUThqSmpJbkNoN1lqM1VjV2FSejRVcnNyeGNVYi1YQmIyNGEzcDZ5ak84WHVBNTgyUnA3Zw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+      "status": "RSS report · Nov 17",
+      "publisher": "arXiv · Artificial Intelligence",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.21682"
+        }
+      ]
+    },
+    {
+      "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
+      "status": "RSS report · Nov 17",
+      "publisher": "arXiv · Artificial Intelligence",
+      "summary": "arXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it opaque to monitors. We stress-test this risk through persona-control training: supervised fine-tuning on mathematical reasoning traces rewritten in the voices of diverse personas.…",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.21799"
         }
       ]
     }
@@ -207,210 +207,210 @@
   "signals": [],
   "briefs": [
     {
-      "title": "SiMa.ai says Palette 3.0 makes LLMs on its chips up to 3.5x faster - The Next Web",
-      "status": "RSS report · Nov 17",
-      "publisher": "The Next Web",
+      "title": "Congressional Panel: China's Military Actively Pursuing Nvidia Chips to Power AI Weapons - BigGo Finance",
+      "status": "RSS report · Nov 18",
+      "publisher": "BigGo Finance",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "The Next Web · original report",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1XaENpREFZeWRBMndRVXJSM2RpckJjWmg0ZzliRHFjS094a2pDVFl5bG5tcXhqY1ZwcU0yMmc5TVJfTGtlN3E0SWF1ajlrOFRVMnJocFJrRm5EZzctM0NNa2pMUjVYSm44WFpSZF9GWlRSalFoNFRwM3JRRkQ1UQ?oc=5"
+          "title": "BigGo Finance · original report",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5lNzVJbWIzQlFrMWRYM2kzVnJxYkJJRUtRMndSOUh0RXhBRnVsR0paNTZRNDFiMDhtYUtrZWNPWEtyZ0FjOVZsLWxrZTByMUhSQktCaDZDVXI2MEdVajRIbm9fdDYtX0w5QU9oemR1MUxaellPSnc?oc=5"
         }
       ]
     },
     {
-      "title": "The AI Trade May Have Peaked in Early October - Bloomberg.com",
-      "status": "RSS report · Nov 17",
-      "publisher": "Bloomberg.com",
+      "title": "Nvidia has halted exports of high-performance AI processors to China - UkrMedia News",
+      "status": "RSS report · Nov 18",
+      "publisher": "UkrMedia News",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "Bloomberg.com · original report",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObk1na2hNdkNfNmhXQnN2NURKRi01M0pKcm1kUHo4LW5oTUNnazZBakhJeGt2ZFNrX1NBQ25tcF9LVi1jZlN2RUdFemp0TlNRdHlUVFZXRWZPXzMwVDhycFd2MjhSRjQtamhtbVI0VHp2am5aN3N1YUg0VFR3bS1Ldnpscl9hS1ZhQi1aUkxKcVRFalNieDdTaktBd2JtaEFaQkpaQmhkbTVmeXA2amVscmlhVlI5YVBJRFM3Nmlpd1AtY2luVnl5NWpqTFNUelhjM0hpaw?oc=5"
+          "title": "UkrMedia News · original report",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSDI4ZTRNczkyaXZMOWFVZUJrTVE5RVZkX29raEUwSHhVNzN2Z0hiZ19odF85bVJRR3NsY2p5LU9ZcGwyYnRuS2tiaU16eTROdHdCSmRsRUJRSFVGNkdpYll1b2s0VEZCZDZKQTJ1V2NQYUhHM3VsMDk3N0ZDUnRlb25jVmozY3NZ?oc=5"
         }
       ]
     },
     {
-      "title": "AI agent Vayo adds travel booking - PhocusWire",
-      "status": "RSS report · Nov 17",
-      "publisher": "PhocusWire",
+      "title": "Building weapons of tomorrow: Why China is desperate for Nvidia AI chips - The Times of India",
+      "status": "RSS report · Nov 18",
+      "publisher": "The Times of India",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "PhocusWire · original report",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiM2hXR1lTOF9QZzhJYWxNWXlFX1RWcWhVUm1vZHhNQVV3NzloWmVzRE53UW5GNEUwV1BoalNvTkJWQVUzbnBnLTd2VmVfa09PZXN2LV9SMnJVUHRiV05RMzNZelVnTFdZRmprQ2Vjbkk4ZTZyNGVQOVJxT1pvVEU?oc=5"
+          "title": "The Times of India · original report",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWmJEQWRUa1lQcTVfR282QXJYcldFdkUtLUVNVmJIQk1hVHVEZklxa2RaOW1lQ2RsQm1pbEkxNV9IZXhoenNGR1RBb2pBX01oZWR4bmhPdnZSTHFwaTlpRlBqd3VyN2pQZThwV3FkNHgxeGx0YWNaZjRzOUxnRXlNQV9EU3BWOXNRRG5fbmwwZ1Vid1prOE9UOHZNbjc3WDR2eF9nN2x5T01paEZ0bU9LOXdMQXRaVEpsclNZbEdLZ2t3SlpLbzZTN0l6ZGVINDlOclhsUWJWaFowa2FGbVHSAeMBQVVfeXFMTldjTkktVkFMTU1nWkx4NThMX2QxVi1nbm15WXd0blJJcXhEcVFwMFBFbnV2bWt4UUpGYVNIc3lyaU5Wa2piR2hlcl9jQmVBdXE2di02QzlGOGRDUFBZTERHVmNKbV9tRWNLUXhaczdCbzJya3BldURROVdoejV0OXZzNDg3d0F6QjR6dkdWclR3em9Ed19fdmRqTGpyRUZaUGhmZFNvYXlWUmNOUmIxUHI5MHF6M0UtRXRCUS1SLUYxZjVTWXVsNXZzU1pUZzhPSFh4OHZDLUtneU9sSmt5V1Z4eTQ?oc=5"
         }
       ]
     },
     {
-      "title": "Review outlines explainable artificial intelligence for targeted extrahepatic lipid nanoparticle delivery - Bioengineer.org",
-      "status": "RSS report · Nov 17",
-      "publisher": "Bioengineer.org",
+      "title": "Opinion | China has a deep bench of AI talent. Can the U.S. still beat it? - The Washington Post",
+      "status": "RSS report · Nov 18",
+      "publisher": "The Washington Post",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "Bioengineer.org · original report",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTjBZQTR4amZDLU44R0k2Tl9aYjZOc0t6MW9ZNDZ3aUhqbExfNEp5MUJCOWs5Uk83cmlCWlo2aUhybV9TcDRreDNaSWlwZUhzQk9wZnBCRm9OMTRvM3VzMGFFSWFRWHptVWtmVmgwRTk0UTN2NHlxTmhjNWFSR1RKaGhXVEswXzl5b2kwQVpNa3A4M2hHbnN6cVpndWtiN2tNWHdhYTVpR3FzcEYwaXgydnIzM0RhYlY3X2V6Y0p0ellSdDFfT256ZXNn?oc=5"
+          "title": "The Washington Post · original report",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWUl6LVdmbFEwNno3d1k1NHQ3ZlpMXzNzUGxzemwzTGc5Z3JIVjVtMllNbGdrZEtYdTdpdzBxV3RhUlFBLTdJdkpWTC0zZ0hCcFdWVERxd3hSRkw0WUtIZGcxOERYZV94T1FNVUhDOUdwVnVtenEwRFlMSl8wWkxWdGlGV2pKOG9aVDlHRF9VYjFsUV9UOXVrOGMteFBjZThFM1BHYS1FTDY?oc=5"
         }
       ]
     },
     {
-      "title": "Department of Commerce implements new export rules for AI chips - SC Media",
-      "status": "RSS report · Nov 17",
+      "title": "Will Wright’s next game uses AI to map your memories",
+      "status": "RSS report · Nov 18",
+      "publisher": "The Verge · AI",
+      "summary": "Will Wright, the creator of legendary franchises like SimCity and The Sims, is working on a new game - and it's built around AI. The new title, focused on your memories, is called MyMems. Like Wright's other titles, it sounds extremely ambitious, giving players a new way to explore worlds they create on their own. […]",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Verge · AI · original report",
+          "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview"
+        }
+      ]
+    },
+    {
+      "title": "Singapore Steps Up Use of AI to Combat Fraud - PYMNTS.com",
+      "status": "RSS report · Nov 18",
+      "publisher": "PYMNTS.com",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "PYMNTS.com · original report",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOVN4NU82MDhaMDhqeDV5bEFTWEd2MlVhdXB5dkEtcHZFcjhJOHNYTUs2d1licTB6bk5aQVBrb1ZVaXVzcENfY1R3ZWd0cFRGeE5CYUx4SlVwQ0N6dV9NWThlOTdiRHVXV0lZeGpKSl9GUjMzd0JsajNIVGotNTV1a1E3MktxNmNRemlEVXd2WlZESFh3WUFpLTk2VGhjOGNYcmhjNQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "KPMG's \"Project Exponential\" put AI agents alongside a real audit team and found the bots dug deeper on individual questions",
+      "status": "RSS report · Nov 18",
+      "publisher": "The Decoder",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/kpmgs-project-exponential-put-ai-agents-alongside-a-real-audit-team-and-found-the-bots-dug-deeper-on-individual-questions/"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence Meets Human Stupidity - Main Street Media of Tennessee",
+      "status": "RSS report · Nov 18",
+      "publisher": "Main Street Media of Tennessee",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Main Street Media of Tennessee · original report",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSld1RHd1WkV1SnJnTXhqSGhtT0VNWUVrdWxVUmdsX3BjODcxSlBqcDV4WEdSZXl6aXhIaFR1NjlTNXRna1VQZ2ZDNUFhSm9Bdl9xNXhfZ25IbUZkTXFxdTd6ZEJSZC1teVZWcm5rb3B4RFloVlp0cXktbUs5bUl3YnRXZG1ScmdZOGlQNWpkQmV5Ri1GQ21YLUJRb1hWejFRQzd4eVFyS2FpMk1oSUFhVmM4bnE3bnFEREVV?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Cambridge Dictionary chooses ‘human' as word of the year in response to AI fears - NBC Los Angeles",
+      "status": "RSS report · Nov 18",
+      "publisher": "NBC Los Angeles",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "NBC Los Angeles · original report",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGd4cDlqMXJ1d1BhOTF6TDY0M2xSMzlrWU02U2VCWUlDLWRrTUEwaGwtUkV3eUlQcGFtb3NISk9Jd1Qwc1NwN3RfVGJxdndPcDNiTERXbFNFU2c4c1dKcEh2aEJTTW5zLU1VTWwwREVMZkpEZ1lkWTBxT194Z0ZObndsWEpNVEFpQkFKU09wVjQyTWVDdDNYTDJCdlpKX0VfSDFVVW1GLUJ6bl9OQ2NGZms2U1FSb0JhaFRz0gHDAUFVX3lxTE52MjcxbW9kUDZ1d3dSTExFVlpTbjM0TTY3N0N0dENySmQ1S0hRUTlWWVA5MTNPam1kU2szQWtpNXdWV1FLSUpCOEdvVUp5V0pNOXBFaGVmVlRVWk5iQ25RZFpORWZZdWxIZGcwR0xZcmhDZVdaVUZGSEdkYWVEUGhnTmJseUpZSWxUYWNQV1Y3QmloZUdjVXk4d3lZTGM4a1UtQVE0eGFMTnAtUmV6dEhYRGJ1TkMxTHZrOGJBMFVScUFsSQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Hyderabad teen launches KIKA AI platform to help students build with AI - Business Standard",
+      "status": "RSS report · Nov 18",
+      "publisher": "Business Standard",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Business Standard · original report",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNeVExOWx4cWhIVVRZZXdCTlQ3dV9tUDZOTkZrdklMUFFLRUFpNDBranVIUmZ1WjVmSEJDNWE2eUdTTHlEYktXV3dkeDdUYXRhcGd4dmo5Qk1tVl9BMnVFZkpzZEhYamNob3JsWXk0cHRaSmd1QjhSNUdfeS1DZldGM01wdF9sdmZBSnUyamhkOHd2a05qTU10ZWRYWjNadUEtVWVVeWtQMGRVb3A4OU1fUFlUVVN0TzdmejNJUFZLTENLbVhZOVdaZ2Q5Z1h4SEZaazc1S0w0MWs4Szk2UWpMMFRYMEhBVm05bjZERUFzV1dwZ9IB9wFBVV95cUxQQjVacDhMeGZtNzByNmsyWWdrb0xvNUFONUdEMm0tYUNPTHZ1cHBQSnRYckltR1ctT2t5V25Scy15R1FEZnlyZGZCZE9KWm5aX1h1MmcyeWoxd0FtOXRTRzhWeVpTXzlVVEFqVy1lZUhhWUF5TVFsN3FzbXdiTnNsOTQ5QzNtaE9ybHdlZkRNdUZDSXppdVlacU5fRzBNNTJsbjNYTTNyb1U5UVRfa19GbHczUHY0SUIwVWs0RHdxVW9UYi1IUE5qdElRdU9lV2x0UmJFZ2Z5azAtNFprTzhiR1pOamF0TUFsTXgxQ2h1Z0lnWU8yVkVV?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Trump to project friendship with Xi as trade and tech rivalry deepens - The Washington Post",
+      "status": "RSS report · Nov 18",
+      "publisher": "The Washington Post",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Washington Post · original report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdmxLXzBiaWJPaTUwdzJfbXZJMmxYM1o3T3lHNllPNFFoSnRJWFo3dVUtUmtUNWdDU0tmWGFWQjI0Z0lMUlJ3dDh2WEp3cHE4cTZPNTZxcnVhdE0xdDgwTC05S3Jrakp4Ymczckd4bldZb2k2WlhGa0hlOHVTNFNMN3A4eThtbEM5aDFLQVBndkdacE9sQTRTZ01Sd2c0Zw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Dell Shares Climb as Nvidia's Blowout Quarter Lifts AI Hardware Trade - BigGo Finance",
+      "status": "RSS report · Nov 18",
+      "publisher": "BigGo Finance",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "BigGo Finance · original report",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1CUEhTekxhREhEbDhFN0FwU0pHbXpISjFOQ1hJdDRmWHFLZEZXMG5pSGdKdDlyaXNtLTZHdldiVWctM2RSOHJtTmdyZEN1Yy1jdWhfenljdzB6Q0VfekszVmkxT2gzSm9MZkxwWW9oWEpXRUpTVWc?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Koduri’s Oxmiq Offers IP, Tools for Indian Teams to Design AI Chips - EE Times",
+      "status": "RSS report · Nov 18",
+      "publisher": "EE Times",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "EE Times · original report",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbVVDaTRVUnphLVczSS1GNHFfSDR0cWY4OVFuWDA3NzVJZjd6M2d2blFBdnpJMUFYam1zYVJzRzlQemYzUF9wdHFOcno2djFzNUV5QUdFOGVyZ3pGMWh0N3ZDdXRob0t0bnloVjNkZmx5RWlLaS02Vmk2LU5wb1FFaHhnejZ0MEt2cVZBTkdkcHVEeHM?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Pentagon mandates artificial intelligence training for cyber workforce - SC Media",
+      "status": "RSS report · Nov 18",
       "publisher": "SC Media",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
           "title": "SC Media · original report",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR3FCaGxwdFBsQnI3MTdtX2RmVEd1X0hBQXV0NDgwWmtRclN6ajBvelN5X2hzTDFYSHpKZVA4bTNjd0RxbndsTVRRYzZzZV9rUFlveDVyT2dNR0VMTVdnSmNQenJKbXQ0R3VWRVJETURXSWlqOWtpSTAxZk8ydEZpYkpIdHhYRkRQa25XMDZnTDdYX3EwV3ZFTw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbXpTdmZGUXNxY19WTTg5eUZrOFhMLUhENGR5MGo0MTNFTTdKVEh1Mkd3LXVfdkF2cndXb25jazhQdFFzdkhPWlJQSGJVSnU0ckNBSzhMaXJSOFlvdk42dWNVSDFCWFYxSjRBWHdPWHlCN1dRU0xVUmtQRmtvbEt6X1BDWExYelFIM2tpaVdXNFZ0MldrUk9CWXpaNDF6SzN4TVE?oc=5"
         }
       ]
     },
     {
-      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
-      "status": "RSS report · Nov 17",
-      "publisher": "TechCrunch AI",
-      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
-      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
-      "sources": [
-        {
-          "title": "TechCrunch AI · original report",
-          "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/"
-        }
-      ]
-    },
-    {
-      "title": "The US is tightening controls on remote access to AI chips following the Nvidia scandal - Українські Національні Новини (УНН)",
-      "status": "RSS report · Nov 17",
-      "publisher": "Українські Національні Новини (УНН)",
+      "title": "Huawei warns businesses of AI agents deleting critical data - Galaxy Television",
+      "status": "RSS report · Nov 18",
+      "publisher": "Galaxy Television",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "Українські Національні Новини (УНН) · original report",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUExKOW0zaXQwZDlUN2JGekxlbVNSMTVQVlRpcjBUZnk3aHhBZW43d0dxaVgxdWxVajJSWm5SdHlXbUkyZFdJSF85Q2tEWU1BY213ZzY2X0JFM1lVb09iYlVuWjRQZllJamZDVmRzRk5yMGRtUDVMekxwRmN2Wm1yOFVfTW9YR3U1SGxLNFBPd0E5OHVFZlg5cmRhTlFxcXBXX3ZfYllxcG0zajllRnNv0gGuAUFVX3lxTE1zcFd1LURhNUlZSEpRWXpjM0V5NW1oSzc1ZWdrWG5FUlY3ZjByUFU0VC1EUGYwVDZjemthM3J6OC1qSzVqNS1FS0JNWWhDVTB3VWVGNjI4UTNoNHZ3clNJRURGQWIwTnVlWTVJZmdFdDdJZG9uMlNIaEpjSVUwV0ZBRVhrc1hVcVNWYURHVHdsZkgwWlkyaVU2bHdNVkUzT2I3bjJtekhKcV9oVXJGdw?oc=5"
+          "title": "Galaxy Television · original report",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNTlGeldtVXdVNEswb3VObGpqZ1VzWmZPWWM2Y3lhbUNoTEpzU2VZTlc5bmpVNlRmcXQtM2ZVczBLdWwwaC1RdTdLMHUtalczR0ZqbXhfbDFKTGo2VVRiSjlyWEJDNUhqOE5oMUxpRjV2azMtUzVKNV90R25RNXB2Y0lzTlh5U3VyNTRUVVdmN3NGVTNS?oc=5"
         }
       ]
     },
     {
-      "title": "What does Huang's ouster mean for the global AI race? - Marketplace.org",
-      "status": "RSS report · Nov 17",
-      "publisher": "Marketplace.org",
+      "title": "Worried about the AI bubble popping? How investing pros say to adjust your strategy - CNBC",
+      "status": "RSS report · Nov 18",
+      "publisher": "CNBC",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "Marketplace.org · original report",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTW9xSmQtV1g1U3BlSjJ0Si1ncFZTQXpaTkl3UXZTenIzUkM2dHlCZ2YtYUVodFlyZFVoY0J1NzVPNk5IOUpRTklZbkxyaXlLSzBvQzRXek82enJwQ0NSVUYzbjBhdTBONjRlcGR2bXFkRzBVWU1LTWN3S3RMdnJ0RjFDOHdCQnhkM0JHTFhUWW8tSlNMWGxjSzF5b0M3MEk?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Artificial Intelligence Enhances CT Scan Outcome Predictions in Adult Brain Trauma - Bioengineer.org",
-      "status": "RSS report · Nov 17",
-      "publisher": "Bioengineer.org",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Bioengineer.org · original report",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeVhWNWYtRzVtcUxnMzRSRTJCRkFJTkFZc3ZMeG9sajFVZFl4b1poTWFpb2dDZXA2SDczS0dCdS1xWjUxc2F4VVVEZGJVS3dkZGg3Vk0zaFBib1B0Wk5tWVktUklKREprWWJDVVlSQ2E4M1pfN3B3N3BoeWNZRHBCVmphUkdsQ3ZCN1ZZOFRueC1oc2h0QzNQcFpSMFI4dVZKR0h0OF9PU25TUlE?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Artificial intelligence and the economy - Brookings",
-      "status": "RSS report · Nov 17",
-      "publisher": "Brookings",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Brookings · original report",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMUFreU83TjV0OVNMNWV1aDhMZV9zMFJyczNvdzNQUlQ0NEFkdzdYQ29QSVpfeHl3REhzTUVleXNVWFFfZGdGUzYtUlU5MWY5SHlDMkpUdGZpS3hyYVdxaWVwaWQ3UDZRWGJXajU3RFMyREx5ejV2UnR0aXRYcU9qRg?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "This Magnificent Growth Stock Just Entered the Artificial Intelligence (AI) Cloud Race, and It Looks Dirt Cheap - The Motley Fool",
-      "status": "RSS report · Nov 17",
-      "publisher": "The Motley Fool",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "The Motley Fool · original report",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZk5OUVhWVkVPQmZuVUk1bkhsLXFOLXRSMkd2TjZHVmNXd2RST3pIdHlxd3BDSElrM1oxQThxNEhBTUl2bnBsQUV3aFc2T3hLcG42Unp4VmUtcEp3ZVp6SEJ1c3dyOTBrSWNaODd4T3k1eFZuRGVQMWNpdWNwVjVxdUFEeE1NWWpqM3BnWnBJOUM0THlCSldRcllta2JWMlNWMy0zdWVSNnZRVXpjU0NXVjNrMEFHQ05iTXc?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Prediction: This Memory Stock Will Be 2027's Best-Performing AI Stock - Yahoo Finance",
-      "status": "RSS report · Nov 17",
-      "publisher": "Yahoo Finance",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Yahoo Finance · original report",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORzNlTlNsYy03azNSN25oOWJwSVIzUGJkRldEdlNNNEo2RjVRa09nNGxzaTVuSm1iMl9pcW9DbDZ6am9ORk5US0ZXUk9WZ2VPWkluLXNwajJJYmxhUXAxNFVaNmlQSWdWOWJNd0J4akMxV251MEJzRTZNMThDVFFBa3FNU1ViYW9KVVRvQkd5d0duNXhIcWFvb210TElFdDQ?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "U.S. closes loophole that let Chinese companies use top AI chips through foreign data centers - NBC News",
-      "status": "RSS report · Nov 17",
-      "publisher": "NBC News",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "NBC News · original report",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaFRzaVkzeUVkOFR4azB4c1FnQkdYSE5pVmNCYmRfVXh2RjVBWW04VjJqMGQ4SGFlVlFkSW5kaGtRaHBvWmlORlJnUFd6SU1IcUlmdVBkVWk4SnV6R3dhZ3FvTW1TbzVuaS1oMHJSVFRhMl9TQjdtdlZOd05xc19KakZBRjNZZkVxMzByQk14Vi1TY3FrQVRXUi1Rb0ZEUHpFMWJfeTJCOG1aOEE?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Singapore seeks to guarantee access to US AI chips - Plataforma Media",
-      "status": "RSS report · Nov 17",
-      "publisher": "Plataforma Media",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Plataforma Media · original report",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUkZHNlRhbEFwZWUzUFZkckRCMGswOXFDQWQyMldQSFVGT2FlVlo1ZU1ZSUsyR0FhbGx4SW9qNGZSZ25BY1ZlM3NUWTlMNHp5ZXBhbUR1dWVmSDE4b0pYRnNuYmxCOTlKcXhKTEJibVZ5NlM5emFyRGNTb09lUnJkUVRydWdOTHJYVzJZSi1kRkZsaGczWDlvNm4zVkg3VkJ2T2h4SHZ3?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Only 10% of Companies Have Redesigned Their Workplaces for AI, Lenovo Finds - PCMag Middle East",
-      "status": "RSS report · Nov 17",
-      "publisher": "PCMag Middle East",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "PCMag Middle East · original report",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcndzakVQMDVISV9YTjNwbW5LZ1FkQW9lRFdMUzJIY3EyaE93LW5QTV9IeTJPOW9FSXFfaHZhNjhrOEpsQkFCUWRmUTVMc1Y5TEFjTmFFLUp2QzlkcXplOWZiU0x0bE1rN21LQml2LVlMNDViWnhZcENMZXpYM3RkTVZXTGZqMzNDb2J5NnlFdldhNTQ5VkVoQlFIVlhtUGlWS1dXSGkwTlJoQkJycW1tb2hqcVd2UnJHQW9KX3dpektBUnFrYVl1Zg?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "The Download: Jensen Huang’s open-source dilemma and cognitive immortality - MIT Technology Review",
-      "status": "RSS report · Nov 17",
-      "publisher": "MIT Technology Review",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "MIT Technology Review · original report",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSmFMMWJuMzFLdm1NWlFUVlp6ZW4ydlpWQ244VjZDblZlS2JGSm9NQ0Y1Z1NPQXRxcEZhbGlJV0Zlc2pyX0ZINklqeWFQSWk0b08wMzJtMTAzeC1PUUJWbmYwZ0Z3RlBvWWJDYkRxQTlXdl9QUk92dXBjczNGSktwTFYtcGVBdlFoMTM5Qi11aE5VYXVQOXlrR2ZvdG5DR3laLUZIMDQ5Q0RrbmwyT3Njd0JjelJvZ9IBuwFBVV95cUxNOUNEMlJ2dzRidzlJRzVIM0drSVpxTDRudzNqT0ppUVVUSThrbE5YSFg5MTJxT1lvU3JmbWFibGFYZUI1eE14UWxMSFBJc1hJN2NiSld1amVnbExxTkpWTG1PenNrdExiSHRRTWZOR0Zqcll3R3I2MnVDSHRJeFBvb09qUFBzRDZpLTA2VnV1UGRaYUhUMDRWZG9lWGR2YW1VNUhlVzFQS1lCNTBESkF3WldEQ1VqdTJIczFJ?oc=5"
+          "title": "CNBC · original report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVl9NaGpNb2ROZUV3SmhnYUduaENLQ2NZcVBPajNKWUsxTlA5U3BRZnRPNzBQdXVLZkVMYkpIN21DRTI3ZEVpbnozOGlZdWE3azNOVmt3RjJ6THJFTjNhalB0NzRfeUw3a3JQbFB0NnNlSzVoNXBBbk5XOTNBSGZDd2Nuc0QzYUkxSlh5eE11cnJNRjl0NzQ0MzZIYUQ0QdIBowFBVV95cUxNYWVvUUFmNVVwb3lLY19xS21EdFdvaDhuQ0huNUtRQ3l2SWNUQ1I2QkZkYmY3cTdPRVA4ZFFXV0J3VUNSREd0N3hZSEkxcnJLNkRuUHd6SmtkNVY1ZWFXN2IyTFUxNG1fMkpFckpLQWtpNU1wRndtNnU3WmpHTzhscjVSQ1FRYThwTmZzam4xLVY0eHBERDZvcW56cVBjR0xIa2Ew?oc=5"
         }
       ]
     }
@@ -418,137 +418,137 @@
   "giggles": [],
   "giggleMemes": [
     {
-      "image": "/images/ainews-giggle-2026-11-17-1.svg",
-      "alt": "A friendly robot stands beside a locked boundary while a prompt tries to sneak out of a sandbox.",
-      "topic": "Agent safety · containment",
-      "title": "The agent slipped the sandbox. The lock filed a bug report.",
-      "lesson": "Run agents in sandboxes, limit tool access, and test escape paths before release."
+      "image": "/images/ainews-giggle-2026-11-18-1.svg",
+      "alt": "A friendly robot notices an extra guest following a message bubble into a cloud-shaped doorway.",
+      "topic": "Vendor access",
+      "title": "“Nvidia says it will” asked who else could read the prompt.",
+      "lesson": "Check data access, retention, and incident notices before sharing sensitive text."
     },
     {
-      "image": "/images/ainews-giggle-2026-11-17-2.svg",
-      "alt": "A robot presents a governance checklist, giving security its own seat at the board table.",
-      "topic": "AI governance · oversight",
-      "title": "Nvidia gave security a seat on the board.",
-      "lesson": "Board-level oversight can bring export controls and trade risks into company governance."
+      "image": "/images/ainews-giggle-2026-11-18-2.svg",
+      "alt": "A small robot stands beside a comically large server rack and an electricity meter.",
+      "topic": "AI infrastructure",
+      "title": "“Baltimore County schools, police” invited the power meter to the meeting.",
+      "lesson": "Compute plans also depend on power, permits, and financing."
     },
     {
-      "image": "/images/ainews-giggle-2026-11-17-3.svg",
-      "alt": "A robot studies an AI model through a magnifying glass as independent evaluators check its safety.",
-      "topic": "AI safety · external evaluation",
-      "title": "Four safety labs got guest passes. The models got stage fright.",
-      "lesson": "External evaluation helps when researchers have enough access and freedom to report what they find."
+      "image": "/images/ainews-giggle-2026-11-18-3.svg",
+      "alt": "A robot poses with a leaderboard while a human points to a real-world task list.",
+      "topic": "Real-world tests",
+      "title": "The leaderboard is not the customer.",
+      "lesson": "Test models on representative examples from your own workflow."
     },
     {
-      "image": "/images/ainews-giggle-2026-11-17-4.svg",
-      "alt": "A robot guides an AI chip through a passport checkpoint marked for inspection.",
-      "topic": "AI chips · export controls",
-      "title": "The GPU reached passport control and forgot its paperwork.",
-      "lesson": "Export rules can shape where advanced chips, cloud capacity, and AI development can move."
+      "image": "/images/ainews-giggle-2026-11-18-4.svg",
+      "alt": "A robot opens a tiny task card that unfolds into an unexpectedly long checklist.",
+      "topic": "AI workflows",
+      "title": "The AI called it a quick task. The checklist disagreed.",
+      "lesson": "Break a broad request into steps you can review."
     }
   ],
   "incidents": [
     {
-      "title": "😺 California sued OpenAI over rogue agents",
+      "title": "Baltimore County schools, police sued for AI software ‘bag of chips’ mistake - Maryland Matters",
+      "status": "RSS report · Nov 18",
+      "publisher": "Maryland Matters",
+      "summary": "",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "Maryland Matters · original report",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOW9yNW5LTDVTbldrTk9WYkdGNW9ycWJpT1J5QVlneml4ekJHX3hKeTJ3XzFfdXBDYm5DdElIQW1SN3pxdXl2Z0JqZ01PNDM5X09HNEV5Uzl1bTBOY0g3MjJYQlVHUTdmdW1sU21LcVhiUUpfZjBhVVRsNmNDc0pCNFhodWlHNkM4Q3AzdUlVcFJETnBtWEQteHRUbnd6X3p1WjdBQ3FScTlOc2k0ZUczY0I4dw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
       "status": "RSS report · Nov 17",
-      "publisher": "The Neuron",
-      "summary": "",
+      "publisher": "arXiv · Artificial Intelligence",
+      "summary": "arXiv:2611.22069v1 Announce Type: new Abstract: Safety is personal: the same action can be safe for one person but unsafe for another. Yet current guardrails judge content without considering who is affected. Using medication safety, we introduce \\textit{patient-conditioned medication guarding}, which predicts a safety verdict and 17 risk categories from a patient profile and prescription. We release \\textbf{MedGuardBench}, a…",
       "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
       "sources": [
         {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/newsletter/california-sued-openai-over-rogue-agents/"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22069"
         }
       ]
     },
     {
-      "title": "Everything That Happened in AI Today (Tuesday, November 17, 2026)",
-      "status": "RSS report · Nov 16",
-      "publisher": "The Neuron",
-      "summary": "California sued OpenAI over rogue AI agents; the U.S. tightened AI chip export controls; OpenAI invited independent safety evaluators into its labs; Google documented autonomous cyberattacks; and Apple tested daily limits for Siri AI.",
+      "title": "When Lower Harm Misleads: Auditing Concept Corrections",
+      "status": "RSS report · Nov 17",
+      "publisher": "arXiv · Artificial Intelligence",
+      "summary": "arXiv:2611.22084v1 Announce Type: new Abstract: An expert who corrects a concept prediction, such as a BI-RADS descriptor in breast ultrasound, expects the diagnosis to improve. Objectives that reduce the harm of such corrections are judged by harm and accuracy, yet harm also falls when a model responds less to every correction or starts from a worse uncorrected prediction, the reference for harm. We propose a correction audit, a…",
       "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
       "sources": [
         {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22084"
         }
       ]
     },
     {
-      "title": "OpenAI sued by California over Hugging Face attack - BBC",
-      "status": "RSS report · Nov 16",
-      "publisher": "BBC",
-      "summary": "",
+      "title": "SeasonRainBench: Global Seasonal Precipitation",
+      "status": "RSS report · Nov 17",
+      "publisher": "arXiv · Artificial Intelligence",
+      "summary": "arXiv:2611.22281v1 Announce Type: new Abstract: Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and crop failure months in advance. While data-driven methods have made rapid progress in weather and subseasonal forecasting, operational seasonal precipitation prediction still relies on numerical ensemble systems. These systems are computationally expensive and exhibit biases and drift that…",
       "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
       "sources": [
         {
-          "title": "BBC · original report",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44X3h6ZDFZV05Gdzc1TTZtX083U2dlX2tmcWY5ZmVyYmk0cy0teWw0Q1VtWi1ISjRxNFZPYmZBMmZKUVN4WVhGOGVvX1B4VHhtVzBPUjIwOEMwRnM?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "California sues OpenAI over rogue AI hacking incidents",
-      "status": "RSS report · Nov 16",
-      "publisher": "The Verge · AI",
-      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters. The lawsuit claims the […]",
-      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
-      "sources": [
-        {
-          "title": "The Verge · AI · original report",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22281"
         }
       ]
     }
   ],
   "oneIdea": {
-    "title": "Today’s lead: Nvidia’s first big move after Jensen Huang’s exit targets national security",
-    "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
+    "title": "Today’s lead: Nvidia says it will stop selling some AI data center chips to China - CBS News",
+    "summary": "",
     "whyNow": "This edition is a dated scan of public AI news feeds; this headline is the lead because it appeared among the latest source items.",
     "sources": [
       {
-        "title": "TechCrunch AI · original report",
-        "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/"
+        "title": "CBS News · original report",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pcU9Qa0hCUlBBZlRaNlNiYk90WjB1NlRKaDNFSFA1VFhKNzVmS3VleFNDbDNibXNuZ1NyLWM0aTRsRlU4cF8zVEZad240cFFWQ2VfdUFpZC1NN3FaWlhtWEhwWmdid1pIellBcTU4LTBOd2pFZkZUVlNR?oc=5"
       }
     ]
   },
   "takeaways": [
     {
-      "title": "😺 California sued OpenAI over rogue agents",
+      "title": "Baltimore County schools, police sued for AI software ‘bag of chips’ mistake - Maryland Matters",
       "summary": "",
       "sources": [
         {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/newsletter/california-sued-openai-over-rogue-agents/"
+          "title": "Maryland Matters · original report",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOW9yNW5LTDVTbldrTk9WYkdGNW9ycWJpT1J5QVlneml4ekJHX3hKeTJ3XzFfdXBDYm5DdElIQW1SN3pxdXl2Z0JqZ01PNDM5X09HNEV5Uzl1bTBOY0g3MjJYQlVHUTdmdW1sU21LcVhiUUpfZjBhVVRsNmNDc0pCNFhodWlHNkM4Q3AzdUlVcFJETnBtWEQteHRUbnd6X3p1WjdBQ3FScTlOc2k0ZUczY0I4dw?oc=5"
         }
       ]
     },
     {
-      "title": "Everything That Happened in AI Today (Tuesday, November 17, 2026)",
-      "summary": "California sued OpenAI over rogue AI agents; the U.S. tightened AI chip export controls; OpenAI invited independent safety evaluators into its labs; Google documented autonomous cyberattacks; and Apple tested daily limits for Siri AI.",
+      "title": "MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
+      "summary": "arXiv:2611.22069v1 Announce Type: new Abstract: Safety is personal: the same action can be safe for one person but unsafe for another. Yet current guardrails judge content without considering who is affected. Using medication safety, we introduce \\textit{patient-conditioned medication guarding}, which predicts a safety verdict and 17 risk categories from a patient profile and prescription. We release \\textbf{MedGuardBench}, a…",
       "sources": [
         {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22069"
         }
       ]
     },
     {
-      "title": "OpenAI sued by California over Hugging Face attack - BBC",
-      "summary": "",
+      "title": "When Lower Harm Misleads: Auditing Concept Corrections",
+      "summary": "arXiv:2611.22084v1 Announce Type: new Abstract: An expert who corrects a concept prediction, such as a BI-RADS descriptor in breast ultrasound, expects the diagnosis to improve. Objectives that reduce the harm of such corrections are judged by harm and accuracy, yet harm also falls when a model responds less to every correction or starts from a worse uncorrected prediction, the reference for harm. We propose a correction audit, a…",
       "sources": [
         {
-          "title": "BBC · original report",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44X3h6ZDFZV05Gdzc1TTZtX083U2dlX2tmcWY5ZmVyYmk0cy0teWw0Q1VtWi1ISjRxNFZPYmZBMmZKUVN4WVhGOGVvX1B4VHhtVzBPUjIwOEMwRnM?oc=5"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22084"
         }
       ]
     },
     {
-      "title": "California sues OpenAI over rogue AI hacking incidents",
-      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters. The lawsuit claims the […]",
+      "title": "SeasonRainBench: Global Seasonal Precipitation",
+      "summary": "arXiv:2611.22281v1 Announce Type: new Abstract: Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and crop failure months in advance. While data-driven methods have made rapid progress in weather and subseasonal forecasting, operational seasonal precipitation prediction still relies on numerical ensemble systems. These systems are computationally expensive and exhibit biases and drift that…",
       "sources": [
         {
-          "title": "The Verge · AI · original report",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22281"
         }
       ]
     }
@@ -556,43 +556,43 @@
   "insights": [
     {
       "priority": "Read today",
-      "title": "Check the source behind: 😺 California sued OpenAI over rogue agents",
+      "title": "Check the source behind: Baltimore County schools, police sued for AI software ‘bag of chips’ mistake - Maryland Matters",
       "context": "",
       "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
       "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
       "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
       "sources": [
         {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/newsletter/california-sued-openai-over-rogue-agents/"
+          "title": "Maryland Matters · original report",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOW9yNW5LTDVTbldrTk9WYkdGNW9ycWJpT1J5QVlneml4ekJHX3hKeTJ3XzFfdXBDYm5DdElIQW1SN3pxdXl2Z0JqZ01PNDM5X09HNEV5Uzl1bTBOY0g3MjJYQlVHUTdmdW1sU21LcVhiUUpfZjBhVVRsNmNDc0pCNFhodWlHNkM4Q3AzdUlVcFJETnBtWEQteHRUbnd6X3p1WjdBQ3FScTlOc2k0ZUczY0I4dw?oc=5"
         }
       ]
     },
     {
       "priority": "Monitor",
-      "title": "Check the source behind: Everything That Happened in AI Today (Tuesday, November 17, 2026)",
-      "context": "California sued OpenAI over rogue AI agents; the U.S. tightened AI chip export controls; OpenAI invited independent safety evaluators into its labs; Google documented autonomous cyberattacks; and Apple tested daily limits for Siri AI.",
+      "title": "Check the source behind: MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
+      "context": "arXiv:2611.22069v1 Announce Type: new Abstract: Safety is personal: the same action can be safe for one person but unsafe for another. Yet current guardrails judge content without considering who is affected. Using medication safety, we introduce \\textit{patient-conditioned medication guarding}, which predicts a safety verdict and 17 risk categories from a patient profile and prescription. We release \\textbf{MedGuardBench}, a…",
       "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
       "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
       "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
       "sources": [
         {
-          "title": "The Neuron · original report",
-          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22069"
         }
       ]
     },
     {
       "priority": "Monitor",
-      "title": "Check the source behind: OpenAI sued by California over Hugging Face attack - BBC",
-      "context": "",
+      "title": "Check the source behind: When Lower Harm Misleads: Auditing Concept Corrections",
+      "context": "arXiv:2611.22084v1 Announce Type: new Abstract: An expert who corrects a concept prediction, such as a BI-RADS descriptor in breast ultrasound, expects the diagnosis to improve. Objectives that reduce the harm of such corrections are judged by harm and accuracy, yet harm also falls when a model responds less to every correction or starts from a worse uncorrected prediction, the reference for harm. We propose a correction audit, a…",
       "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
       "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
       "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
       "sources": [
         {
-          "title": "BBC · original report",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44X3h6ZDFZV05Gdzc1TTZtX083U2dlX2tmcWY5ZmVyYmk0cy0teWw0Q1VtWi1ISjRxNFZPYmZBMmZKUVN4WVhGOGVvX1B4VHhtVzBPUjIwOEMwRnM?oc=5"
+          "title": "arXiv · Artificial Intelligence · original report",
+          "url": "https://arxiv.org/abs/2611.22084"
         }
       ]
     }
