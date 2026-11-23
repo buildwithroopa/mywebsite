@@ -2,15 +2,10 @@ name: Publish Daily AI News
 
 on:
   schedule:
-    # 6 a.m. Pacific target with retries for delayed or failed runs, across DST.
-    # Run off the hour to avoid GitHub's documented schedule congestion.
+    # 6 a.m. Pacific target with off-the-hour retries through the morning, across DST.
     # The generator skips runs before 6 a.m. and editions already published today.
     - cron: '17 13-17 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/ainews.yml'
 
 permissions:
   contents: write
@@ -27,6 +22,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Check edition date and retry decision
+        run: |
+          CURRENT_DATE=$(TZ=America/Los_Angeles date +%F)
+          CURRENT_TIME=$(TZ=America/Los_Angeles date '+%A %H:%M %Z')
+          PUBLISHED_DATE=$(node -p "require('./src/data/ainews-latest.json').editionDate")
+          echo "Pacific time: $CURRENT_TIME"
+          echo "Expected edition: $CURRENT_DATE"
+          echo "Currently published: $PUBLISHED_DATE"
+          if [ "$PUBLISHED_DATE" = "$CURRENT_DATE" ]; then
+            echo "Today's edition is already published; this retry will verify and skip duplicates."
+          else
+            echo "Today's edition is missing; this run is an automatic retry."
+          fi
       - name: Research and prepare the issue
         run: node scripts/generate-ainews.mjs
       - name: Validate Astro build
@@ -45,3 +53,17 @@ jobs:
           fi
           git commit -m "Publish AI News daily edition"
           git push origin HEAD:main
+      - name: Record final edition status
+        if: always()
+        run: |
+          CURRENT_DATE=$(TZ=America/Los_Angeles date +%F)
+          PUBLISHED_DATE=$(node -p "require('./src/data/ainews-latest.json').editionDate")
+          echo "Job result: ${{ job.status }}"
+          echo "Expected edition: $CURRENT_DATE"
+          echo "Published edition: $PUBLISHED_DATE"
+          {
+            echo "### AI News publication check"
+            echo "- Job result: ${{ job.status }}"
+            echo "- Expected edition: $CURRENT_DATE"
+            echo "- Published edition: $PUBLISHED_DATE"
+          } >> "$GITHUB_STEP_SUMMARY"
