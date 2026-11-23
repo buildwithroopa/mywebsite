@@ -3,8 +3,9 @@ name: Publish Daily AI News
 on:
   schedule:
     # 6 a.m. Pacific target with retries for delayed or failed runs, across DST.
+    # Run off the hour to avoid GitHub's documented schedule congestion.
     # The generator skips runs before 6 a.m. and editions already published today.
-    - cron: '0 13-16 * * *'
+    - cron: '17 13-17 * * *'
   workflow_dispatch:
 
 permissions:
