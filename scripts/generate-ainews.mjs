@@ -316,7 +316,14 @@ for (const result of fetched) {
       summary: headlineEcho(title, description) ? '' : shorten(description, 440),
       url, date: published, publisher, normalizedTitle
     };
-    if (items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url || sameStoryline(item, candidate))) {
+    const duplicate = items.find((item) => item.normalizedTitle === normalizedTitle || item.url === url || sameStoryline(item, candidate));
+    if (duplicate) {
+      if (duplicate.url !== url) {
+        duplicate.relatedSources ??= [];
+        if (!duplicate.relatedSources.some((source) => source.url === url)) {
+          duplicate.relatedSources.push({ title: publisher + ' · related coverage', url });
+        }
+      }
       skipped.repeated++;
       continue;
     }
@@ -346,7 +353,10 @@ function story(item) {
     publisher: item.publisher,
     summary: item.summary,
     whyCare: item.summary ? 'The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.' : 'The feed listed a headline without an added summary. Open the original report for its details.',
-    sources: [{ title: item.publisher + ' · original report', url: item.url }]
+    sources: [
+      { title: item.publisher + ' · original report', url: item.url },
+      ...(item.relatedSources ?? []).slice(0, 3)
+    ]
   };
 }
 const unused = new Set(items);
