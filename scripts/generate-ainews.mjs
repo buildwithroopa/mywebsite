@@ -266,6 +266,8 @@ const items = [];
 const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0, political: 0, financial: 0 };
 const marketNoisePattern = /\b(stock market|stocks?|share prices?|shares|market wrap|market risks?|market rally|market crash|gdp|economy|economic growth|ai boom|portfolios?|etfs?|investors?|trading|housing surge)\b/i;
 const technicalSignalPattern = /\b(chips?|gpus?|semiconductors?|servers?|data cent(?:er|re)s?|models?|llms?|agents?|robots?|neural|compute|research|launch(?:es|ed)?|security|software|apis?|benchmarks?|datasets?|tools?|products?|training|inference|architecture|algorithms?|cloud)\b/i;
+const stockStoryPattern = /\b(stocks?|stock market|shares|share prices?|investors?|billionaire|etf|trading|rally|portfolio)\b/i;
+const concreteTechnicalEventPattern = /\b(launch(?:es|ed)?|release[sd]?|unveil(?:s|ed)?|introduc(?:es|ed)|research|study|benchmark|product|software|integration|api|platform|service|fund(?:s|ing)?|rais(?:es|ed) \$|announc(?:es|ed)|ships?|tool|model|inference|architecture|dataset)\b/i;
 const headlineNoise = new Set([
   'the','and','for','from','with','that','this','into','after','over','under','via','its','their','they','how','what','why','who','when','where','are','was','were','be','is','not','but','an','of','on','at','to','in','as','by','a','new','more','less','about','says','said','according','reported','reportedly','report','news','latest','update','updates','release','announces','announced','announcement','first','major','just','artificial','intelligence','ai'
 ]);
@@ -309,6 +311,10 @@ for (const result of fetched) {
       continue;
     }
     if (marketNoisePattern.test(title + ' ' + description) && !technicalSignalPattern.test(title + ' ' + description)) {
+      skipped.financial++;
+      continue;
+    }
+    if (stockStoryPattern.test(title) && !concreteTechnicalEventPattern.test(title)) {
       skipped.financial++;
       continue;
     }
