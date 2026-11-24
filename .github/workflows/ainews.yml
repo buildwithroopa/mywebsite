@@ -6,10 +6,6 @@ on:
     # The generator skips runs before 6 a.m. and editions already published today.
     - cron: '17 13-17 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/generate-ainews.mjs'
 
 permissions:
   contents: write
@@ -56,18 +52,33 @@ jobs:
             exit 0
           fi
           git commit -m "Publish AI News daily edition"
-          git push origin HEAD:main
+          CURRENT_DATE=$(TZ=America/Los_Angeles date +%F)
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt lost a race or hit a transient error; fetching main."
+            git fetch origin main
+            REMOTE_DATE=$(git show origin/main:src/data/ainews-latest.json | node -e "let data=''; process.stdin.on('data', chunk => data += chunk).on('end', () => console.log(JSON.parse(data).editionDate))")
+            if [ "$REMOTE_DATE" = "$CURRENT_DATE" ]; then
+              echo "Today's edition is already on main; another run published it."
+              exit 0
+            fi
+            git rebase origin/main
+          done
+          echo "Could not publish after three attempts."
+          exit 1
       - name: Record final edition status
         if: always()
         run: |
           CURRENT_DATE=$(TZ=America/Los_Angeles date +%F)
           PUBLISHED_DATE=$(node -p "require('./src/data/ainews-latest.json').editionDate")
-          echo "Job result: \${{ job.status }}"
+          echo "Job result: ${{ job.status }}"
           echo "Expected edition: $CURRENT_DATE"
           echo "Published edition: $PUBLISHED_DATE"
           {
             echo "### AI News publication check"
-            echo "- Job result: \${{ job.status }}"
+            echo "- Job result: ${{ job.status }}"
             echo "- Expected edition: $CURRENT_DATE"
             echo "- Published edition: $PUBLISHED_DATE"
           } >> "$GITHUB_STEP_SUMMARY"
