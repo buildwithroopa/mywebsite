@@ -18,15 +18,15 @@
   },
   "critical": [
     {
-      "title": "AI server buyers face surprise price hikes after signing contracts as chip prices rise - Korea JoongAng Daily",
+      "title": "Van Hollen calls for mandatory AI evaluations and tighter chip-export controls - Superpower Daily",
       "status": "RSS report · Nov 23",
-      "publisher": "Korea JoongAng Daily",
+      "publisher": "Superpower Daily",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "Korea JoongAng Daily · original report",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYUdMVFdqUWdRYzcyYnVSWUwwczZlMGhSdGpMQzZzMjh1VzhXNW4wWE5GT3BpSkl2T2dVbm5rdERBSld2NmdUMDA1YmE3SVMwc0ZDaFNoYXNVU3JEVmhjanJ5eTN5YVNSUF9wSEExQURZdkw5U0UtVUROUHJDTzNOXzIyZ085OFoteE05WXVxN1RvWFVTak1WQlg3Rmp5b2hjVTRIelhKZTc4aWRtSEJ3UFdoSmtMSGd5bm5EZUtQazZiY2pRVVpuRGRaOWZjbWxMVmU5V2xB?oc=5"
+          "title": "Superpower Daily · original report",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeFVrck1HdTA3cXJKVlpSUTRlT3NxMEFZR183WjNUNV9nX2dZNk5sXzRUWWNrODVwR3YtMnVZV2FzMXIzdFQ3UmNXUXNxVTZzZHQxT28tcktUc29HRXpvcGQwd041YzFLT2diVjFlUV9reHFFcXlxYW9DNUxWQnpZeGNNaVJEclA0VDJnYVlaYjRLT0NlYjIxMDJOeXhyeld2ZXFjSTVsYmNrNmQydkVHMEh3?oc=5"
         }
       ]
     },
@@ -57,15 +57,15 @@
       ]
     },
     {
-      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "title": "U.S. Chip Restrictions Amplify Shell Company Headaches in AI Ecosystem - WSJ",
       "status": "RSS report · Nov 23",
-      "publisher": "The Verge · AI",
-      "summary": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]",
-      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "publisher": "WSJ",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "The Verge · AI · original report",
-          "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit"
+          "title": "WSJ · original report",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZXY5SG9HaHlvRGE4NHZFZ0xUR0FXcENtRjI3WE0xRlcxYXUtVXlSVWI2b2htNGhvOHBKalE0cU1QVkhlZnRpYzN5WFNVWGExY2tuanVaSnp3V2pWaFFwcGlNaEd1LVlFSlJBN1RpNlRNMjN6VHoydW5zQ0s3Y0VPaWViQ1pUcVp2Yzd0TzAzbFZ4bE9TNTNpYWVabWVlSURIa3o3X0hraWYzUQ?oc=5"
         }
       ]
     }
@@ -122,19 +122,6 @@
           "url": "https://arxiv.org/abs/2611.26875"
         }
       ]
-    },
-    {
-      "title": "Correct Precedents Induce Policy Violations in On-Device LLM Agents",
-      "status": "RSS report · Nov 22",
-      "publisher": "arXiv · Computation and Language",
-      "summary": "arXiv:2611.27216v1 Announce Type: new Abstract: Local-cloud agent systems pair a cloud model with a small on-device agent that acts on private data, often as the last check before an irreversible action. We identify, for the first time, a failure in which such an agent is led into a violation by its own correct decisions within a session. After it correctly releases an item whose restriction was lifted, it becomes more likely to…",
-      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
-      "sources": [
-        {
-          "title": "arXiv · Computation and Language · original report",
-          "url": "https://arxiv.org/abs/2611.27216"
-        }
-      ]
     }
   ],
   "research": [
@@ -178,19 +165,6 @@
       ]
     },
     {
-      "title": "How Artificial Intelligence Is Transforming Medical Debt, Insurance Disputes, and Financial Recovery After Serious Injuries - Rebellion Research",
-      "status": "RSS report · Nov 23",
-      "publisher": "Rebellion Research",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Rebellion Research · original report",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeGxROTJLWGZhekJ4bXA5WFhiZnlSUGRZYVlqWkhtcHplTjdOZVN3Y1Ywd1l5bm9WSnhqclhGQm5uMmtUVU9xZVRRZ2RNOUNxVVhzNmUtT1VIUkJLNnFJYWhDcFV5NG8wTTZodzl1cmNFQm9hdlRSazcyT2dsU2FoSV85dUFWazJ1aWJ1cnU5R3pGenoySnVlUnRpX3lVSlhOYVF1XzJpaFlfTnZUbU8zQ0wzR0ZhX0VhMzRYRWd5SFN5dXFSOEo5YW5KS3I0M1YzYjRZMW5oUy1PSXVPWGUxUGlTdHY3b29rSE9r?oc=5"
-        }
-      ]
-    },
-    {
       "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
       "status": "RSS report · Nov 23",
       "publisher": "TechCrunch AI",
@@ -214,62 +188,23 @@
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hSmFaemUzUldRaWhTb3diNE4wU2dQb29ab2FXLS16UzcwdFU1a2tjUVh5Y2t0WEJweGREQ1JIMVczYXhmZGRQT3pXa0FUU0xFZWEzVGpnT2Q4MUdhWEVFMWhmRkNyZXVNbkdqa2xpdW03QWFT0gF6QVVfeXFMTjg2VVVOYlVHWHJaNUhWUHZMNjFQQ2Q5MmptU1JiektEbXNWMUN4SzR6OWxRSjVUTFZuakcwSEtHUjU4MUluQi1QUXQtc2xvWnhSY0NXNm9SUXZraElHZ290VTlUMlloSXhBSVRGbEhBcmVRYXZreFdjc2c?oc=5"
         }
       ]
+    },
+    {
+      "title": "New Mizzou research seeks to streamline focus group data using artificial intelligence - KBIA",
+      "status": "RSS report · Nov 23",
+      "publisher": "KBIA",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "KBIA · original report",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVFdyVzF2MGZPeXl6anUwdFJnNkF3YktEczAteGNwTUI5SjluT2hOVWVaaGR5X2FQVE4wYkpHcUgwcGttUHZCaFVFdDZDNGZOOVdwOEtMcTBZRmQzQllxcl8wYXZfRkwzMkZPNVFoNVZJYTJ1NjRFNjdfSXV3am5rZ3VraXpISmF0Q1Y3QlgwV2NTMkNieUxzSEs0TXcyTXhobUJ5Y25jRFI5Zy1DLUZMZkxienh0OEFKN0hTY0R1Wm1ZVWFSS3lz?oc=5"
+        }
+      ]
     }
   ],
   "signals": [],
   "briefs": [
-    {
-      "title": "OpenAI shares internal AI scores and calls for common limits - The Rundown AI",
-      "status": "RSS report · Nov 23",
-      "publisher": "The Rundown AI",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "The Rundown AI · original report",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yVEJJOENtbU4weE85N3lZbVhENDhDeHpzemZnQmNhNnJXUnNoM2tUSEFvNGlrQmRPemVWQTU3Z2RJZ3h0eE9MelowVndiLWcxM0FsVDR2WnQtTW1kVkl6NTVfZnJPVF9iZ0hVd0RWSWZuWkhaWUhPbnZ3?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Niall Ferguson: Jensen Huang and the Great Man Theory of AI - The Free Press",
-      "status": "RSS report · Nov 23",
-      "publisher": "The Free Press",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "The Free Press · original report",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRTVPRVJBWGswWU5mY2w1a0hLbG1Teno2bVN2LW5sMG51UjNSWVZueXZpQWd1SlcyaVAzTVZwclVIczRsMXIyNDVYWEw0eWhYYnhyUnFIUFFNRzQ1NDNyVm5kUlpNQXVhSDBjbHZZT3JVVEZrUlpicVJSaXB1ckFybA?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "China leverages AI to accelerate power sector's intelligent transformation - China Daily",
-      "status": "RSS report · Nov 23",
-      "publisher": "China Daily",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "China Daily · original report",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9kdXNRaDF2SWg4djhvLUt3cnRweDQyTndMT1RtRkRyYWdfX1NieFFaQlZZZTBranp5bzNwY1diWlZwejNfd21ad0NraUk2dHJvbnE4UklTRjhoWnZEN3RMaEIwNjdkY3hyWVBMdHUwNEJld1NyNkgxVV9qdjdZdw?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Reported 45% AI Server Price Hike on Signed Deals - shattered.io",
-      "status": "RSS report · Nov 23",
-      "publisher": "shattered.io",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "shattered.io · original report",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONG5ackxPLXRpT1lQZVZPbGljaW96enJKcEMycVNQZlRJTHFuQktyTWNPWV9BeFZobXcxdXJHSEJTSk9RUW1ybEJ2eU5ZRk1UckpZSG1SVzN5aF9GTE4zNlZqR01OQmdYeERHRnU3NmxvWThtYzE2eXRzVGVxb0h1alZrdlJUamI4RklGa1ltR3VudTE3bTZjRi15SW5ad0lTVXc?oc=5"
-        }
-      ]
-    },
     {
       "title": "Nvidia's Huang Return: What It Means for the AI Boom and the U.S. Economy - Around Prague",
       "status": "RSS report · Nov 23",
@@ -280,10 +215,6 @@
         {
           "title": "Around Prague · original report",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY1ozWUUtZWRRbXo2OHQ2YnlLa2hoaGxqT002cnhuTGlsQS1sZUdOTG85aDN1bjZLaWVIM1V0azJzNkZrTHg2SUZtcUt1dmtCZDZOWVJfbnpONFFqcndXa1F6MHI5MnJWTkl6ZlRoZFRYQ2M4VG90amh6d0tENUFyTTBZS2hFY2Z1UlR3X3RWUTFacnVGWGZUZFRLV3dZUjBWcjVUZVRsaGc4dw?oc=5"
-        },
-        {
-          "title": "Yahoo Finance · related coverage",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUV8xQS1Xa09sWUwzZlR6YzZyQTBlRk1jRWJNNWFROHY1ZDdicFNhLXkwRWIyV3YtM2NJSXRJY05mTHhyU3JHTFRndEdmQlZEYXJlMVJzMmhmTGdXOFAzZERRdmduRjZXSmpBLWVWQjBxUWNIVDdHZ0M0VXdja3EyZ2xzWGhSVXc0d0VIczl5Y2UyMDlzTzdBbw?oc=5"
         }
       ]
     },
@@ -297,6 +228,10 @@
         {
           "title": "Scripps News · original report",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWU1uODU0UjJTS3ZJZ2x1MWdscEduRHI3MGNfaHYwbzIxQWlHU3h2dlU0bm5iVDladnpQY1oxTVA1eHQxRF9NQU9XUkY2czlWVUxiSG42VkEycmgxSm52N0FVSzNUckZLc0dIT1p2NTk3dE9TWFBkWl85VjNGUDFNc1dqZmJ2N2xIblZsQjNLNVpfQU8wX3QyaE9nUGhTLTVQVUcwam5kZmpVYmlzcTAxdUJWWGRWUHFoQjVjWkc3THJWWk1qUTQ4Ukd1V1E?oc=5"
+        },
+        {
+          "title": "KJRH · related coverage",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcG5oeFVucnpxSnhTRTZDRVFXQmIydzY3WWZUTjhvakhJSXlhWHpZZEYyU09mTkJNV2dhQ241SnRoVHNQbVdIYU9Gay1ORnVBVlNtVVFzel9IMTVMaWFOLVI4N3hHZVBBZkEzN25KVTFSanJZV3NIaHJjWWZ1VzhTcjNiWTZZQjJfNGlaTF9keGdoQ1FESHFzbmY2OXdDT2t2SzBnam5hN1pJTzVMT3lid0dOWFBQbUtneXA5ejZmalJoY3M?oc=5"
         }
       ]
     },
@@ -314,19 +249,6 @@
       ]
     },
     {
-      "title": "Singapore Raises GDP Growth Outlook to ‘Around 6%’ on AI Boom - Bloomberg.com",
-      "status": "RSS report · Nov 23",
-      "publisher": "Bloomberg.com",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Bloomberg.com · original report",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaFpBRDNkTk81ZHpHaWxhQTJPb0Q2dEVONl9USmxFbl9uaDBsVEtrdkg1RFVUcTNSbWpuR3hSZVhKWHRDdzdaR09uYlN6djQ5SWh4OW1NRTNaZ25QS25IRHVGaWZXUzhSeS04SXlmbW1iNUVBakpsa0xIbnlhRGlPLWdMVEg0cWZFUG9JUFRNSUFQRVRkM0N1NXZ4LUtWRUM2cXNUTk1hVThCNTVSc2c?oc=5"
-        }
-      ]
-    },
-    {
       "title": "AI Agents Could Make Big Tech Bigger - Countercurrents",
       "status": "RSS report · Nov 23",
       "publisher": "Countercurrents",
@@ -336,32 +258,6 @@
         {
           "title": "Countercurrents · original report",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04S0IxZ24zUlR2ZUdzVTZPTkJjNmt1Y0pfTWVPc0s3ZkZVVVZXdEY3d3Z0ekJoWGI1clRXZm5ZMzlEUFBjY2R1MWtHekJsejhiMkxCdHFZbFhnX3hlY0VPakxFSWZFdE8tUTVmMGE4Ym5fRmxZUGh5Y3V2WGp6UQ?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Big Tech Intensifies NVIDIA Challenge in AI Semiconductor Race - 조선일보",
-      "status": "RSS report · Nov 23",
-      "publisher": "조선일보",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "조선일보 · original report",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOc1dOdVdHay1Pdmh3ZGZrZHRHMzF2bkFxcTc4dC1TZEJUdEtrX2EzZFJDWnVlbjNzQml6OHdzS1JQQ2x0cjZ3RS1rMXNjaC1URDkzVWlnRHltM2tWQmNwTU1UWXFOdDhLeFNyZjRITVRibDk1aEtVZ0FORTBnWG10M3F5aW8wMzVL?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Samsung Asset Management's KODEX US AI Agents ETF Holds 19.4% Anthropic Stake Right After Listing - BigGo Finance",
-      "status": "RSS report · Nov 23",
-      "publisher": "BigGo Finance",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "BigGo Finance · original report",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lN0N1cGlOVHVCM3NuWm01TFZGZElaemJHUUhwcEdCLWNRQ2wwN0NKdWp2dFRFQWY4NDNWNGd3UGpkN1FFc3JfVGtVYTNwcjJSY1M3ZXF1OE1HeFN4dlNqLU1NT1NrSUFldmZmZmFOejdvTm1vR3c?oc=5"
         }
       ]
     },
@@ -429,6 +325,97 @@
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQW5sQmszYmt1UXQ2QUZTOVBYZ0hZRHFBT2xsT3MyTnYwSnZzOEswYlZKNHhpQjZUbEE0MUV6WVFvRURQSTRrWTRkQXJ2X3NmajNIWFlvc0VkMHUyRXQ5MFdpUzRNc2w2VkxpWTRFVHl5WHVwN3JlN0twQlE5X3hXMThwWW9oV0ZRYlJuTzF4blYyWnZpUFE2YVJMRVl6bExMUXRZdWNDZk5KSDE3MmlDUUhmZnB5Q3VLLWJWZmJFMzZoT0E?oc=5"
         }
       ]
+    },
+    {
+      "title": "China Smart Glasses Shipments Rise 14.3% in Q3; Edge AI Chips Poised for Volume Ramp Next Year - BigGo Finance",
+      "status": "RSS report · Nov 23",
+      "publisher": "BigGo Finance",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "BigGo Finance · original report",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9felRiSE5KbTdUM3N6SGs0ZGVVTzcxSjlPSTlwRHhxOGFKTmk1ajl1T3lyYlVwRG1zVjhiWXZPaFFJWUlPTDZWR09CXzNYWHltZGFFR1VEa0ZLRjVNZFRYUTBWT3Q0Wk90V0haSjE0ZWtKMlVQVWc?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Google Tried to Patent Personalized AI-Generated TV Shows, Filing Reveals - Gizmodo",
+      "status": "RSS report · Nov 23",
+      "publisher": "Gizmodo",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Gizmodo · original report",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT1gyclRreTZoWUw1aXEzMEJrSFpZWWZNNkduZ3dIckdkbkh1MTFzTnZFeUpsRWlvRHFENUhfVzBuNUwxaDJiQVFaZ3FqSGxDMnAwanR0MkdCTGVuOFZnNW91ZGQ1NElYZGtuNEZYWlVQODJvbndHN19GYnVxTFh5cDNB?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AWS adds AI tools to partner sales & revenue system - IT Brief New Zealand",
+      "status": "RSS report · Nov 23",
+      "publisher": "IT Brief New Zealand",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "IT Brief New Zealand · original report",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU1pueHpLYmh1cE1rUlVjdW5qUC1LLVVhLUJyUUF6MURHTUpaQmJ3Rl8tVFlUaEJBX05OamRaUTdQOU9rU3FFRGJSTWNiN0U1cTR1c2VwZkF5UXZuM1ZsQWtNZnhkaDZHWUlKeTNMS2JUaklXWFFiQWRZdUhnWlozZFRpOA?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Elon Musk Warns AI Firms Could Face a Cash Crisis in 2027 - Yahoo Finance",
+      "status": "RSS report · Nov 23",
+      "publisher": "Yahoo Finance",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Yahoo Finance · original report",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRlg1bERRR25TUTcwOUx6SjRVSktoUEY2LVlfczFlLVVXVHhRZ0d2RXJHRzFfWVZ1cXdjalVRcUV0NldTSlBLcVNyR2IyRTBPNXJxVkJtSFNodjgxN29rZE9YanFpaWt6WmFtcldEcFVjdmp1VXYyYWk4bEZFSjF4azdvdUh3ZFJDZ1N4ME1nSUdiZw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Don’t ask students if they used AI – ask if they did the thinking - Times Higher Education",
+      "status": "RSS report · Nov 23",
+      "publisher": "Times Higher Education",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Times Higher Education · original report",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLVBfZG9yZXp3QTA4VV9MR1ZaUFpIbDdaMk9RT2M1dUhLMjBSNmU1UW9wRHdlUE5tZmlJWnUwV1R1VmZGSGJEaUtqanFuU3ZxNzVZaXplZFdQNE0xMjBOSm1KaEtqT2hYQmZHNTU0V3ZnZFJtUjU4OHBXMmhWSmE4TFdlX2IteG9VUHF6dHhab3ZfRUdsekRrZjlWWkFGY2tCMUZaaQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "The New Rules for Co-Existing With Artificial Intelligence - Next Big Idea Club",
+      "status": "RSS report · Nov 23",
+      "publisher": "Next Big Idea Club",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Next Big Idea Club · original report",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbl92dlpTcGlfZFFyV2dPWS14RVF6UzI0ZXBQMjRhc0Q2S0JSM2JPVE5GNWRSOWd1a0o3UC1pREZPNWpDcERZN09FeHlYbTlXaDJTMHhEWWJ0VzJxaU5fZlRNcVZxUU5XeXNHdDlJbVlYZXJIc0VoaGpGUDJNdG9XczVORi0tYWJMQTcyWkxYSF9HN184VEZ5Rm10QVFSbWPSAaQBQVVfeXFMUElIYWFvRXBEUHphdThzT2dBQklvaXZmbWxvYUtMVkd6S0tmRXhka0Exbk1ZQXFkSG1wdVBMblpLbzhpdHE0UGtubERPeXJ0T1lfWlJoN1RVbGE0ZDZVX1hVOTdaVS1Oa2tNY054c0Jtb2RzZHlra1ktVUhCYVZaWkptZEZra1hqZWhFRmxHYkZhWlRMTnVwUFdudjV2RHVMeFF4dE4?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "New AI rule marks a first for US federal appeals courts - Reuters",
+      "status": "RSS report · Nov 23",
+      "publisher": "Reuters",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Reuters · original report",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMFpmUkVHc2JjTWYtenpNaDMtVUhVNHBRS1ExTFhJRnFMNU9vWHYwSFlvZmoxcmZXUXhieGl0UGRqdzdJXy1pUGY1Ul90QW93OTBET21hWkRDd1pOWUlhTWQtcGdwZE9fOTAtTmVjYU11VWZTOGpMQXhiUlg4bzh6bEtVOHhBWEFFZGJxLVdveUd3MEdMOU1RU2JjTktnSU1UYTNTVzlCTkJBdUVGUF8tblk0RQ?oc=5"
+        }
+      ]
     }
   ],
   "giggles": [],
@@ -437,29 +424,29 @@
       "image": "/images/ainews-giggle-2026-11-23-1.svg",
       "alt": "A smiling robot sits in front of a laptop surrounded by a few oversized browser tabs.",
       "topic": "Agent testing",
-      "title": "“Sunway Group Accelerates Secure” looked like one click. The checklist disagreed.",
+      "title": "“Niall Ferguson: Jensen Huang” looked like one click. The checklist disagreed.",
       "lesson": "Try a workflow end to end before handing it to an agent."
     },
     {
       "image": "/images/ainews-giggle-2026-11-23-2.svg",
-      "alt": "A small robot stands beside a comically large server rack and an electricity meter.",
-      "topic": "AI infrastructure",
-      "title": "“Singapore working with US” invited the power meter to the meeting.",
-      "lesson": "Compute plans also depend on power, permits, and financing."
+      "alt": "A robot pauses at a large red button while a human holds a simple approval card.",
+      "topic": "AI agents",
+      "title": "“Levenza Takes Personal AI” reached the button. A human kept the final click.",
+      "lesson": "Keep a person in the loop for purchases and other consequential actions."
     },
     {
       "image": "/images/ainews-giggle-2026-11-23-3.svg",
-      "alt": "A robot reaches toward a button while a small approval light stays red.",
-      "topic": "Human review",
-      "title": "“Levenza Takes Personal AI” reached the button. A human kept the final click.",
-      "lesson": "Give an agent only the access needed for its task."
+      "alt": "A robot presents a server rack to a very unimpressed electricity meter.",
+      "topic": "Compute costs",
+      "title": "“Reported 45% AI Server” invited the power meter to the meeting.",
+      "lesson": "Track energy and infrastructure alongside model performance."
     },
     {
       "image": "/images/ainews-giggle-2026-11-23-4.svg",
-      "alt": "A cheerful robot sends a chat bubble through a door marked VENDOR, while a tiny checklist asks who else can see it.",
-      "topic": "Data boundaries",
-      "title": "“Protecting data key to” asked who else could read the prompt.",
-      "lesson": "Check which providers receive prompts and how long they keep them."
+      "alt": "A robot shopper compares a suspicious web address with a trusted store sign.",
+      "topic": "AI shopping",
+      "title": "“From fake deals to” found a deal. The URL asked for ID.",
+      "lesson": "Verify the exact domain and seller before entering payment details."
     }
   ],
   "incidents": [
@@ -481,6 +468,19 @@
         {
           "title": "Yahoo Finance · related coverage",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV0NQWU5NdWFiQTl5cHdmNW9YRlpiVy03b0ZDdHhaQWFHMlRSLWFfeWZoYmM0bHVGVDdvTnRmQ203NW1GSEdZXzVDSk42c21ON0hHaVZodU9tY0JYa0hBWEFOWFFqdm9md01LZkM2Vkp0LU5HUjlqZjJsRTdVZG0tTFlrV3ZqdmxvSE9CejBfNU1NSnpqYnNEMWlWZ3ZQZVk?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "SpaceX Sued By Oregon and Virginia Over A.I.-Generated Sexualized Images - The New York Times",
+      "status": "RSS report · Nov 23",
+      "publisher": "The New York Times",
+      "summary": "",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "The New York Times · original report",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYmEzNUJMQjNfazhneTBxQ1dpNmJVOXBHRFRXWWhKelFVaDlNTjFMMDNycGpOTkJuX0lRNEZnSDVycThMZ185Tl9peUFRdWZST29tRTJtQ0ZkaV9NSjJxblNFbnloRnJ0cVpRcDBUVi1NcW9vc0NqdWdxbnZoSjBkLUI0ZDFzYzBpQnQ2eFZ2OA?oc=5"
         }
       ]
     },
@@ -509,19 +509,6 @@
           "url": "https://arxiv.org/abs/2611.26965"
         }
       ]
-    },
-    {
-      "title": "How Much of a Calculation-Error Rate Is Not Arithmetic: Auditing the FinReason Cup 2026 Task 3 Metric with a Deterministic Rule System",
-      "status": "RSS report · Nov 22",
-      "publisher": "arXiv · Computation and Language",
-      "summary": "",
-      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
-      "sources": [
-        {
-          "title": "arXiv · Computation and Language · original report",
-          "url": "https://arxiv.org/abs/2611.27192"
-        }
-      ]
     }
   ],
   "oneIdea": {
@@ -537,42 +524,42 @@
   },
   "takeaways": [
     {
-      "title": "World AI Cooperation Organization: A Timeline | Blogs | Nov 23, 2026 - Information Technology and Innovation Foundation",
-      "summary": "",
-      "sources": [
-        {
-          "title": "Information Technology and Innovation Foundation · original report",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02dlE5YUdzbGF2eHd4SUZzWjV1M0oyLVBTTFlxakdvT1M4ZkxuWFBjUGFMLUF5eDVrTWl6ZmZFNG1nbDJUSXNLQkdTbTN3blU5T0d6R2ctVDBNY1BZRzF2Y3ZsUzNpZkU?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "AI boom drives hiring demand beyond tech sector: report - Taipei Times",
-      "summary": "",
-      "sources": [
-        {
-          "title": "Taipei Times · original report",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBYNVRqbFlWdHA4dmxzeVRIeWFPOWpCVFlINVNicWJMMTZ0c2c4V0N3WWY5UkR5SHQySEVSWHRwRWpMQi12bVBnYjB0NndiWkFqck9uYkJvSDNISE1jWVlTRGdXeVBFUVpxUVNRelBmYTQzekVDdUE?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Australian futurist warns on AI agent payment risks - IT Brief Australia",
-      "summary": "",
-      "sources": [
-        {
-          "title": "IT Brief Australia · original report",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaThoQ2lFa20zQXpvelBCSWRZamlDMUlhSkxVNlFiNjZOcGNkZHJnMjFJZ1RtODgtMGM2ZGIyYXVlcFRZRndlV09pdTZhdnUxREFjbTFmX1d6RkhJeWx2SnhrS1B6UGdXRmxoaXlhMFBYc2ZsV1ZtMG5KYnlwZHVMVV9paW90aEk?oc=5"
-        }
-      ]
-    },
-    {
       "title": "Nvidia Just Built Agent Security Into Its Chips. What Does That Mean for CrowdStrike? - The Motley Fool",
       "summary": "",
       "sources": [
         {
           "title": "The Motley Fool · original report",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbFk4bG1yUkM0dlRob3dERVkwT05aNU5NMTVJdGRSRFJSTnVhMGNReTh1T1kwZjlENXlxdmtLcVI4VDNfYUIwMHB0Qll3VHE5VzgzdXdkaVBSeU93dGdPaElQdzdGaTlnNjdSQmxsVWxxWmItSXljRXNSUDg4c0Z6RlhhZG5raDctclV3cldxLTVpdVJ0bEcxZjlPZTZFS3BIQnhYZnhlSUg3UUVHMjZ2aV92MzIxTXVuX3JoT2d1ZlNmN2dL?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AWS Adds AI Agent Buying and Data Category - Wisevoter",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Wisevoter · original report",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdTd1OFQ1eXk3dWRwZ01PSGYycWZkWWtBSkpIQk1QZC0yVGRyeS1OcFVnaTJtR1QwMkt6UGNqWnprTVRSY2EzZjNiRkdDUkhPd1o5TmkyR1E5Tmt2TWc4cEJ1b0NtQTJPajBCd0RFdnJpSGZrRzZUNXRlWG1peU53TEVwTjBrTVV4aGpjRA?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Sunway Group Accelerates Secure and Sovereign Enterprise-wide Artificial Intelligence With HPE - Yahoo Finance",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Yahoo Finance · original report",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYWxDMkk1RlV6MkI4elVCS0VNMWs0N2IzN2pEdjZVS1owM2VFWm9BWF9EZ2hGVzhBLThUaHZRMXdUaW4tTFdrTUwzTWRqQ3AzeXpnUUUyTE4yRDlhUzhYMkF6SG5OT0Z2X3hoYXM2ZFozOVdOcW9md0RlWHZPcS1zZGZwb1RDbk1Celk2cXlwV2o0a2hLUEhRdUVLUDBWcW1BU2I3d2FfWkc?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Singapore working with US on rerouted AI chips - Le Monde.fr",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Le Monde.fr · original report",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT0JtRTZoV2ZoLXhxdFQyQ3FBYUM2ckdObmp2ZFdtOW5UbXl4VlNjdlVvS2s1R2M5YzdkYXpkQ2VUaUVVOWpKN1pTTVc3TGQ3NFVfZmN4ZGVMVmZUQ3YxV3hCcnpzM19CWmROSzJLcWRhdW1Dd01KR3U1WEJEWTJzSnVJZVJxa1FRUmZYcGUybWZ2aGJ3YkZMQVhLXzlScE1SLUR0UnVWRUI1VTE1Tnd3TUJNSmI?oc=5"
         }
       ]
     }
@@ -608,15 +595,15 @@
     },
     {
       "priority": "Monitor",
-      "title": "Check the source behind: Man arrested after posting fake AI videos of San Jacinto County Sheriff Sam Houston, officials say - ABC13 Houston",
+      "title": "Check the source behind: AI boom drives hiring demand beyond tech sector: report - Taipei Times",
       "context": "",
       "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
       "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
       "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
       "sources": [
         {
-          "title": "ABC13 Houston · original report",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iWUh3bjg3Y2ZMQzBzQUk0Z2VUaDlSVGt4a21INTJmQ29LWVFuaVhIelFIYkt3Njdzc08wOVFkbjJ5cVRVTzVwUnUzdk1qQQ?oc=5"
+          "title": "Taipei Times · original report",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBYNVRqbFlWdHA4dmxzeVRIeWFPOWpCVFlINVNicWJMMTZ0c2c4V0N3WWY5UkR5SHQySEVSWHRwRWpMQi12bVBnYjB0NndiWkFqck9uYkJvSDNISE1jWVlTRGdXeVBFUVpxUVNRelBmYTQzekVDdUE?oc=5"
         }
       ]
     }
