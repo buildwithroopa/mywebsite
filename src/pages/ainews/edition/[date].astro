@@ -14,7 +14,7 @@ const desks = [
   ['Important & critical', edition.critical],
   ['Launchpad', edition.launches],
   ['Research & benchmarks', edition.research],
-  ['Markets, policy & work', edition.signals],
+  ['Infrastructure & engineering', edition.signals],
   ['Briefing wire', edition.briefs],
   ['AI Giggles', edition.giggles],
   ['Incident desk', edition.incidents]
@@ -39,7 +39,6 @@ const desks = [
     <main class="sheet">
       <header class="utility"><a href="/ainews/archive">← All editions</a>{previousEdition && <a href={`/ainews/edition/${previousEdition.editionDate}/`}>← Previous day</a>}<span>AI News · Archive issue</span>{nextEdition && <a href={`/ainews/edition/${nextEdition.editionDate}/`}>Next day →</a>}<a href="/ainews">Latest edition →</a></header>
       <header class="masthead"><div class="flag">Daily issue</div><h1>AI News</h1><p class="subtitle">{dateLabel} · {edition.cutoff} · {edition.timezone}</p></header>
-      <section class="idea"><div class="flag">One idea</div><h2>{edition.oneIdea?.title ?? edition.lead.title}</h2><p>{edition.oneIdea?.summary ?? edition.lead.summary}</p>{edition.oneIdea?.whyNow && <p><strong>Why now:</strong> {edition.oneIdea.whyNow}</p>}</section>
       <section class="desk"><h2>Lead story</h2><article class="story" id={edition.lead.title}><div class="publisher">{edition.lead.status}</div><div><h3>{edition.lead.title}</h3><p>{edition.lead.summary}</p><p><strong>Why it matters:</strong> {edition.lead.whyCare}</p><div class="sources">{edition.lead.sources.map((source) => <a href={source.url}>{source.title} ↗</a>)}</div></div></article></section>
       {desks.map(([name, items]) => <section class="desk"><h2>{name}</h2>{items.map((item) => <article class="story" id={item.title}><div class="publisher">{item.status}{item.publisher ? ` · ${item.publisher}` : ''}</div><div><h3>{item.title}</h3><p>{item.summary}</p>{item.whyCare && <p><strong>Why it matters:</strong> {item.whyCare}</p>}<div class="sources">{item.sources.map((source) => <a href={source.url}>{source.title} ↗</a>)}</div></div></article>)}</section>)}
       <section class="learn"><div class="flag">Understand one thing</div><h2>{edition.learning.title}</h2><p>{edition.learning.body}</p><p><strong>Try this:</strong> {edition.learning.tryThis}</p></section>
