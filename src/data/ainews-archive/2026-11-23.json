@@ -4,58 +4,19 @@
   "cutoff": "Morning edition",
   "editionLabel": "Daily issue · RSS edition",
   "lead": {
-    "title": "US chip curbs won’t impact Malaysia’s China ties, PM says - KFGO",
+    "title": "Europe’s AI chip moment: Can the newcomers beat the old contenders? - Jon Peddie",
     "status": "RSS report · Nov 23",
-    "publisher": "KFGO",
+    "publisher": "Jon Peddie",
     "summary": "",
     "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
     "sources": [
       {
-        "title": "KFGO · original report",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNT3BtWDE3alFDVDllOHRfRnVGLTJUR3RBaHkxOGpJM2NIT3JabDMtVVBUX29mdm1KdmdBYlp3RUpVZXpUSFpJaW9wczhKSlcyc2ozSHVkdUZNZklvWjkwdDVuMkJ1a0RSZG1fb3pCOUVrX3VvdHBxQnJMZk1FVk44blJSYi1BQWZZS2Mw?oc=5"
+        "title": "Jon Peddie · original report",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNGh2RDc2SmF1cy13OG5SaEc1dWRESUYzVDk5M0dKWFB2Q2hWUndlaEFCYXZJLTJvMlpuLTlfUTdIemN3TVg0d3JCTVlKbTR3LUNaSllVYXFOWkxJQzBjTE5pV0drc25HZVhVd3J1RnlxT3JfZlVjWngtbFlzR241ZjlfUVcydzFKYndXQjE1bEFDNG5sZEdLUHNFS0U?oc=5"
       }
     ]
   },
   "critical": [
-    {
-      "title": "PM Wong vows to stop firms ‘exploiting’ Singapore for AI chip re-routing - South China Morning Post",
-      "status": "RSS report · Nov 23",
-      "publisher": "South China Morning Post",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "South China Morning Post · original report",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNWNJODZWZGpoUXlva19kb0dDMlNuMnlmNnUtZEZEck1tOEQtUEJGUFJiam1fLTk0djBXZGZ0MWVIc2dtblJyZmNmcHBqcFRKd3hfZFFlUmZwV1d2cFFoWTFSUkV4dUZ1N1ZtUlFMNE5GbUY4Yk0wLVF2Ty1SSk9aVmpOVlFaS2lJNzIxSmRhTWpCaEJUVEhqX3BiOUR0QzZCcHFLUWZnY2JuZ3h2cEswX1BQaUpuYlFvQ044RWdZdjA4eHfSAcMBQVVfeXFMTWxuQjVGeXRpLVBUMTZmVDVnWUZfU2hXdkc1T1RBWlZ6WHBDSWkzZWxGekJReVR1MkVqVTc4bmwzQzZpRzdiWHQ4QWU4dnhUYy11cjF4Vm93a25odnVWWS1sbHUzRGo1Vk9TTjJFd1RxZmVpTzVBRW9LZmdySUlEY0RPTnFrdDBpZkxYTmY2N1pGcjhUSGcyWGZ6aTRSbFlJczRsX2RrbHVrWTJJcFU2aWVOVEpQQW5NNFB3Mm1VMzdseDhF?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Europe’s AI chip moment: Can the newcomers beat the old contenders? - Jon Peddie",
-      "status": "RSS report · Nov 23",
-      "publisher": "Jon Peddie",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Jon Peddie · original report",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNGh2RDc2SmF1cy13OG5SaEc1dWRESUYzVDk5M0dKWFB2Q2hWUndlaEFCYXZJLTJvMlpuLTlfUTdIemN3TVg0d3JCTVlKbTR3LUNaSllVYXFOWkxJQzBjTE5pV0drc25HZVhVd3J1RnlxT3JfZlVjWngtbFlzR241ZjlfUVcydzFKYndXQjE1bEFDNG5sZEdLUHNFS0U?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Democrats call for chip export and AI limits as Huang returns - Roll Call",
-      "status": "RSS report · Nov 23",
-      "publisher": "Roll Call",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Roll Call · original report",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU2wzWWlFZmp0LWpWcHY0RDNscEdSYWNRWkRMX3hYNlZqREFBSnJzbkZqZ2g0ZU1MMWJtTmp1cjVDZXpvZnNoQVZ1TVQ5RFg3bzRoZ3lnMml6T200NUM5bERMeVRNNUYzX2JQbl80Y1BPdFlPQUNVazJzZlZvZEV4dlJDSU4tNG9NcnlZY3h4end5ckRUQUVqSXhWZ18?oc=5"
-        }
-      ]
-    },
     {
       "title": "AI server buyers face surprise price hikes after signing contracts as chip prices rise - Korea JoongAng Daily",
       "status": "RSS report · Nov 23",
@@ -66,6 +27,45 @@
         {
           "title": "Korea JoongAng Daily · original report",
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYUdMVFdqUWdRYzcyYnVSWUwwczZlMGhSdGpMQzZzMjh1VzhXNW4wWE5GT3BpSkl2T2dVbm5rdERBSld2NmdUMDA1YmE3SVMwc0ZDaFNoYXNVU3JEVmhjanJ5eTN5YVNSUF9wSEExQURZdkw5U0UtVUROUHJDTzNOXzIyZ085OFoteE05WXVxN1RvWFVTak1WQlg3Rmp5b2hjVTRIelhKZTc4aWRtSEJ3UFdoSmtMSGd5bm5EZUtQazZiY2pRVVpuRGRaOWZjbWxMVmU5V2xB?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "status": "RSS report · Nov 23",
+      "publisher": "TechCrunch AI",
+      "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/"
+        }
+      ]
+    },
+    {
+      "title": "'Doesn't answer the big questions': The stock market is still $5 trillion below its AI-fueled peak despite Monday's rally - Fortune",
+      "status": "RSS report · Nov 23",
+      "publisher": "Fortune",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Fortune · original report",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPTjRqejJJeE5MUFNOb09MMTU4RDFxQzVyZFVDOXVZM0hxMkhySC10Y2xXdjZFWTNlTHhEeG5hOFNJLVZxcUZIaEdBQmZSVndpaTJpakFkSkZvakVRZmI2Zmdic1YtMk5kYnVXeS1waDR4emFwMXh4aXBrV05wZVRSTGFLaFk1ZzdvRXF0UzhXNUJOb1h1LTQzZTZycUIxMXVLajRGaXZTc25sRFRiVVNmZk80OVdVVjlBcTJORzVKYWVpVVd1bE9jS196UW5iVXU3T2VLMTByamdfVE5aWFE?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "status": "RSS report · Nov 23",
+      "publisher": "The Verge · AI",
+      "summary": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Verge · AI · original report",
+          "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit"
         }
       ]
     }
@@ -178,6 +178,19 @@
       ]
     },
     {
+      "title": "How Artificial Intelligence Is Transforming Medical Debt, Insurance Disputes, and Financial Recovery After Serious Injuries - Rebellion Research",
+      "status": "RSS report · Nov 23",
+      "publisher": "Rebellion Research",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Rebellion Research · original report",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeGxROTJLWGZhekJ4bXA5WFhiZnlSUGRZYVlqWkhtcHplTjdOZVN3Y1Ywd1l5bm9WSnhqclhGQm5uMmtUVU9xZVRRZ2RNOUNxVVhzNmUtT1VIUkJLNnFJYWhDcFV5NG8wTTZodzl1cmNFQm9hdlRSazcyT2dsU2FoSV85dUFWazJ1aWJ1cnU5R3pGenoySnVlUnRpX3lVSlhOYVF1XzJpaFlfTnZUbU8zQ0wzR0ZhX0VhMzRYRWd5SFN5dXFSOEo5YW5KS3I0M1YzYjRZMW5oUy1PSXVPWGUxUGlTdHY3b29rSE9r?oc=5"
+        }
+      ]
+    },
+    {
       "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
       "status": "RSS report · Nov 23",
       "publisher": "TechCrunch AI",
@@ -201,33 +214,46 @@
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hSmFaemUzUldRaWhTb3diNE4wU2dQb29ab2FXLS16UzcwdFU1a2tjUVh5Y2t0WEJweGREQ1JIMVczYXhmZGRQT3pXa0FUU0xFZWEzVGpnT2Q4MUdhWEVFMWhmRkNyZXVNbkdqa2xpdW03QWFT0gF6QVVfeXFMTjg2VVVOYlVHWHJaNUhWUHZMNjFQQ2Q5MmptU1JiektEbXNWMUN4SzR6OWxRSjVUTFZuakcwSEtHUjU4MUluQi1QUXQtc2xvWnhSY0NXNm9SUXZraElHZ290VTlUMlloSXhBSVRGbEhBcmVRYXZreFdjc2c?oc=5"
         }
       ]
-    },
-    {
-      "title": "Franklin Templeton automates equity research - StartupHub.ai",
-      "status": "RSS report · Nov 23",
-      "publisher": "StartupHub.ai",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "StartupHub.ai · original report",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc3k2aFFGSklZYnN2RG5aUTFGcjdlb0pzSDBoOTlRTXBoWHR6U0VMaV9JajQwVTNITnFYMlBZZ0JVbV9lTmxZLTJaMzdNN05hV29XdTBpZTEzYUhfaTJTcXgydEsxbkgyYkxzY1E5VkdSdUgwNmQxTHM0VXl0LTBLeGNsNU80U2RVNTlqOWEwdmxNQjdqc0FqeWQ5N2x5SDJVRjdiS0lPQ0lVbms?oc=5"
-        }
-      ]
     }
   ],
   "signals": [],
   "briefs": [
     {
-      "title": "UN chief calls for world to agree on AI oversight within a year - Al Jazeera",
+      "title": "OpenAI shares internal AI scores and calls for common limits - The Rundown AI",
       "status": "RSS report · Nov 23",
-      "publisher": "Al Jazeera",
+      "publisher": "The Rundown AI",
       "summary": "",
       "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
       "sources": [
         {
-          "title": "Al Jazeera · original report",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbVNBQl9aRURGZHBIc0xiTVRvOW9pWE0yaWdNVkZrNzJVZUtGb2luUUx2SzhCN1BQUXZzdFJLRDA4Q3FBVTg1WXZ0TkQ0S0EyOENRNi05NW50Y19RNkI5czBYMkQxX0NULW1nZUw1bENaYmk3ZVlGaFNJUUJxMUVjM0VERl90SzVDMm9qRHpzcjR1Q0lVVHZEWDh6c3RoRWs4NkI2eVBkZUXSAa4BQVVfeXFMUFFyTWlPTHRZcnY1QWNBZF85elMyeTRnQTFObnAwYUdDVnFYUDVGSEQyYm9CblpHcUpJMEJ1UmVBOHVqQ201VVFKOVVRNjBXakVValFUWi1DSTUxU294RjlHZ2toQTQ0Wm04Tm1YbFU4WTRlN25LLUQteE5MeFlhbG5PdzB2UWlsSmttRXNpY0hrdmJZaGZ1enNLczQ5d2JkaTFnYzNRV1c3UEgwemVB?oc=5"
+          "title": "The Rundown AI · original report",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yVEJJOENtbU4weE85N3lZbVhENDhDeHpzemZnQmNhNnJXUnNoM2tUSEFvNGlrQmRPemVWQTU3Z2RJZ3h0eE9MelowVndiLWcxM0FsVDR2WnQtTW1kVkl6NTVfZnJPVF9iZ0hVd0RWSWZuWkhaWUhPbnZ3?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Niall Ferguson: Jensen Huang and the Great Man Theory of AI - The Free Press",
+      "status": "RSS report · Nov 23",
+      "publisher": "The Free Press",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Free Press · original report",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRTVPRVJBWGswWU5mY2w1a0hLbG1Teno2bVN2LW5sMG51UjNSWVZueXZpQWd1SlcyaVAzTVZwclVIczRsMXIyNDVYWEw0eWhYYnhyUnFIUFFNRzQ1NDNyVm5kUlpNQXVhSDBjbHZZT3JVVEZrUlpicVJSaXB1ckFybA?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "China leverages AI to accelerate power sector's intelligent transformation - China Daily",
+      "status": "RSS report · Nov 23",
+      "publisher": "China Daily",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "China Daily · original report",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9kdXNRaDF2SWg4djhvLUt3cnRweDQyTndMT1RtRkRyYWdfX1NieFFaQlZZZTBranp5bzNwY1diWlZwejNfd21ad0NraUk2dHJvbnE4UklTRjhoWnZEN3RMaEIwNjdkY3hyWVBMdHUwNEJld1NyNkgxVV9qdjdZdw?oc=5"
         }
       ]
     },
@@ -271,10 +297,6 @@
         {
           "title": "Scripps News · original report",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWU1uODU0UjJTS3ZJZ2x1MWdscEduRHI3MGNfaHYwbzIxQWlHU3h2dlU0bm5iVDladnpQY1oxTVA1eHQxRF9NQU9XUkY2czlWVUxiSG42VkEycmgxSm52N0FVSzNUckZLc0dIT1p2NTk3dE9TWFBkWl85VjNGUDFNc1dqZmJ2N2xIblZsQjNLNVpfQU8wX3QyaE9nUGhTLTVQVUcwam5kZmpVYmlzcTAxdUJWWGRWUHFoQjVjWkc3THJWWk1qUTQ4Ukd1V1E?oc=5"
-        },
-        {
-          "title": "KJRH · related coverage",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcG5oeFVucnpxSnhTRTZDRVFXQmIydzY3WWZUTjhvakhJSXlhWHpZZEYyU09mTkJNV2dhQ241SnRoVHNQbVdIYU9Gay1ORnVBVlNtVVFzel9IMTVMaWFOLVI4N3hHZVBBZkEzN25KVTFSanJZV3NIaHJjWWZ1VzhTcjNiWTZZQjJfNGlaTF9keGdoQ1FESHFzbmY2OXdDT2t2SzBnam5hN1pJTzVMT3lid0dOWFBQbUtneXA5ejZmalJoY3M?oc=5"
         }
       ]
     },
@@ -305,19 +327,6 @@
       ]
     },
     {
-      "title": "US Blacklists Alibaba-Owned Company in Setback to AI Ambitions - Bloomberg.com",
-      "status": "RSS report · Nov 23",
-      "publisher": "Bloomberg.com",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Bloomberg.com · original report",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNc2hMdW1ld1ZLcS1NQk9hNjN3Q3BrMFc2WUZvelRPS2dTMmNUYXVqbFkwOUJoei1URzV5WTNvalhfRUdxQldmcVdsV2F5VzUzdzhZR08wMFVlREVsZV9rcFNTel9SYkNMWk1EbW82ZGlyQjlCbjVOVExWeVJZOXpfckRGMEJTdUE3QkJvWTA0dERBOUVmakRfbzFfNG5tYlJqUnMteUJaWlE5NjA2cFVjejZYcw?oc=5"
-        }
-      ]
-    },
-    {
       "title": "AI Agents Could Make Big Tech Bigger - Countercurrents",
       "status": "RSS report · Nov 23",
       "publisher": "Countercurrents",
@@ -327,44 +336,6 @@
         {
           "title": "Countercurrents · original report",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04S0IxZ24zUlR2ZUdzVTZPTkJjNmt1Y0pfTWVPc0s3ZkZVVVZXdEY3d3Z0ekJoWGI1clRXZm5ZMzlEUFBjY2R1MWtHekJsejhiMkxCdHFZbFhnX3hlY0VPakxFSWZFdE8tUTVmMGE4Ym5fRmxZUGh5Y3V2WGp6UQ?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "UN Secretary-General Antonio Guterres warned Monday that as artificial intelligence becomes \"more powerful and more widespread, the risks are also becoming clearer,\" urging…",
-      "status": "RSS report · Nov 23",
-      "publisher": "Facebook",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "Facebook · original report",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRUFvZGVYWlNITm5iQ1ctTWMxSENwZllkYnU4TDVVa3BYeEswYlhJVmlDMEJoRWNqTUJ0ZWUzS0liUzJleXBKRnFPVzAzOXVPejFJOXZHRW1qeFhrdkpLUlNvWWx1STJLUDVGV2hJd2hsdDd6RmgtbHJlNGpTQlVPd3JFaXcxREhESlNud2ZtbG16Tk1PbUZLUUdEaDNKWDB3SW95Rm9UUzQwTFZINndJemx1WnpmWGlpdGpZOUdYallnV0d5Tk9aeHZ1RFUxMDlYeXhxTlZR?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "Amazon acquires key assets of AI startup Decart for reported $7.5B - SiliconANGLE",
-      "status": "RSS report · Nov 23",
-      "publisher": "SiliconANGLE",
-      "summary": "",
-      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
-      "sources": [
-        {
-          "title": "SiliconANGLE · original report",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaXR5TS11S0V5ZmZCOERDYlI1OG9vWG9UX3ZQZHoyYndOX0VrdExNYmNVbjBFNzBqdGMwY0ZDM0RjdWhxVWJFU0o0eG04N2oyZzNMVGdTbVRVMV9SUFNld3FaSnlOcl9ZSGQ4OGhLNXdYdzJwNFI2Mkh6M3BfLVIwN0hzVkF3Q3diQmxzN3BNUkVxREZsZHBJRmRfalVMTXc5dE55LQ?oc=5"
-        },
-        {
-          "title": "The Business Journals · related coverage",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZDhYQ1Zsa1M0WjlwdTZ0UEF3cmpUZWhYNXJzM0oyN1N4eUt3M2tOZVIwRmVMTDM2a25mNlg4UmpRZ2ZFdXlDSHZxTU5VdVpqdlZvZmhBdGdHRUdybWtqZkJla0R1RDBGV0lMSmU0V3hqRmhQV0g4U3lzdkVkazhYUzJyc0xhOGhPd0ltRkVfSWkxLXEzR3BkSDVJakFGZC1wMG9BNmVrSHc?oc=5"
-        },
-        {
-          "title": "The Times of Israel · related coverage",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbThNX2JfVjNuZlBWU2lQQjhWajJyUlpZZlVTRE1xc1oxZ25jY3pCdGpGOFdmU1dMa1E2elJWY3NNNTdzSUZXY3JsbmUyS2tsbGxNX0VFaXJSZXRiaGl3a281WVBUUjhPQ0VsUlRrQ0xGLVJSS2R0dmk3ZmRwakxfeGZhLUFMcldEOFMxQWc1Ylh3MWgzZVdIRThILVZTOWJocVV1dE1WWVFaenJoSEI5Q0hn0gG3AUFVX3lxTE9fQnA2a2FjVmt3a3FiQ2w5UG1JOW1EaTZBMERZNXpSanZSaGxLSDN2WWxhYzJfcmFVaGpPWUJHeXVXNk9zWWZsaDhGNV9pay1QOE5qMVhNcXA0MGxaQzFmLVpzY3lHMFVudUJMR3Utc2d3VmVfNHJtZFBmZUxTbWs5VnoyUjhLNUo2Ql9BY252TW54SGctX3pxNkkzMXBNdG1lV0RnNHRtMC10bHRQOTk0cks5VkZDZw?oc=5"
-        },
-        {
-          "title": "CTech · related coverage",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ZTGJWcUNFNXRnM0V0R2pheVhHNzJLYTBoZWVLdTdWUVBpMEtQTFMzUVFmMmQ1elAzQzRxUWxTX3Y1RWVQalFfM3RlblgxOG5YVlJ0eXV1TGZ4MDEzakRvNzZ6Nk9oRTQ?oc=5"
         }
       ]
     },
@@ -445,23 +416,36 @@
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVThjUDh1MU9aZGxCd1BwMXRBUEc0WGJySXhDdENRODJzSGRjUjBvYUdtSW9PME80ZWxQUkdSMGw0cGhub252RFRFSVdLQjR6djc0eEg1bHREbDRrQ2FCUlkwUGlHS2xlRG9zVElaMGJhdkFYQ3N3Zzdxb09tWC1UVEpzTC1lejFONXdDeGtUYlXSAZYBQVVfeXFMT0E3WVB4eFh3R3ZOeTJqSkRsa0hZeEF1eTB5Q2NRRDd3aWY3RVZhWXVUUmU3dzRMUUI4R0ZHTE9sTU05cjM1LVpVc2sxN0YxQnUwNlRiRkJNekpFYlFlUGt0c29rZEtfYi1KSWY1MDF4MU9zZGtoZEU3NGd6aFhRRERCejlTdTIyVTdHWUlKU2tkNDlmendR?oc=5"
         }
       ]
+    },
+    {
+      "title": "Inside the AI agent platform that’s saved Deel one million hours over 90 days - SmartCompany",
+      "status": "RSS report · Nov 23",
+      "publisher": "SmartCompany",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "SmartCompany · original report",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQW5sQmszYmt1UXQ2QUZTOVBYZ0hZRHFBT2xsT3MyTnYwSnZzOEswYlZKNHhpQjZUbEE0MUV6WVFvRURQSTRrWTRkQXJ2X3NmajNIWFlvc0VkMHUyRXQ5MFdpUzRNc2w2VkxpWTRFVHl5WHVwN3JlN0twQlE5X3hXMThwWW9oV0ZRYlJuTzF4blYyWnZpUFE2YVJMRVl6bExMUXRZdWNDZk5KSDE3MmlDUUhmZnB5Q3VLLWJWZmJFMzZoT0E?oc=5"
+        }
+      ]
     }
   ],
   "giggles": [],
   "giggleMemes": [
     {
       "image": "/images/ainews-giggle-2026-11-23-1.svg",
-      "alt": "A robot presents a server rack to a very unimpressed electricity meter.",
-      "topic": "Compute costs",
-      "title": "“Singapore working with US” invited the power meter to the meeting.",
-      "lesson": "Track energy and infrastructure alongside model performance."
+      "alt": "A smiling robot sits in front of a laptop surrounded by a few oversized browser tabs.",
+      "topic": "Agent testing",
+      "title": "“Sunway Group Accelerates Secure” looked like one click. The checklist disagreed.",
+      "lesson": "Try a workflow end to end before handing it to an agent."
     },
     {
       "image": "/images/ainews-giggle-2026-11-23-2.svg",
-      "alt": "A robot opens a tiny task card that unfolds into an unexpectedly long checklist.",
-      "topic": "AI workflows",
-      "title": "“Niall Ferguson: Jensen Huang” looked like one click. The checklist disagreed.",
-      "lesson": "Break a broad request into steps you can review."
+      "alt": "A small robot stands beside a comically large server rack and an electricity meter.",
+      "topic": "AI infrastructure",
+      "title": "“Singapore working with US” invited the power meter to the meeting.",
+      "lesson": "Compute plans also depend on power, permits, and financing."
     },
     {
       "image": "/images/ainews-giggle-2026-11-23-3.svg",
@@ -541,17 +525,27 @@
     }
   ],
   "oneIdea": {
-    "title": "Today’s lead: US chip curbs won’t impact Malaysia’s China ties, PM says - KFGO",
+    "title": "Today’s lead: Europe’s AI chip moment: Can the newcomers beat the old contenders? - Jon Peddie",
     "summary": "",
     "whyNow": "This edition is a dated scan of public AI news feeds; this headline is the lead because it appeared among the latest source items.",
     "sources": [
       {
-        "title": "KFGO · original report",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNT3BtWDE3alFDVDllOHRfRnVGLTJUR3RBaHkxOGpJM2NIT3JabDMtVVBUX29mdm1KdmdBYlp3RUpVZXpUSFpJaW9wczhKSlcyc2ozSHVkdUZNZklvWjkwdDVuMkJ1a0RSZG1fb3pCOUVrX3VvdHBxQnJMZk1FVk44blJSYi1BQWZZS2Mw?oc=5"
+        "title": "Jon Peddie · original report",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNGh2RDc2SmF1cy13OG5SaEc1dWRESUYzVDk5M0dKWFB2Q2hWUndlaEFCYXZJLTJvMlpuLTlfUTdIemN3TVg0d3JCTVlKbTR3LUNaSllVYXFOWkxJQzBjTE5pV0drc25HZVhVd3J1RnlxT3JfZlVjWngtbFlzR241ZjlfUVcydzFKYndXQjE1bEFDNG5sZEdLUHNFS0U?oc=5"
       }
     ]
   },
   "takeaways": [
+    {
+      "title": "World AI Cooperation Organization: A Timeline | Blogs | Nov 23, 2026 - Information Technology and Innovation Foundation",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Information Technology and Innovation Foundation · original report",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02dlE5YUdzbGF2eHd4SUZzWjV1M0oyLVBTTFlxakdvT1M4ZkxuWFBjUGFMLUF5eDVrTWl6ZmZFNG1nbDJUSXNLQkdTbTN3blU5T0d6R2ctVDBNY1BZRzF2Y3ZsUzNpZkU?oc=5"
+        }
+      ]
+    },
     {
       "title": "AI boom drives hiring demand beyond tech sector: report - Taipei Times",
       "summary": "",
@@ -559,6 +553,16 @@
         {
           "title": "Taipei Times · original report",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBYNVRqbFlWdHA4dmxzeVRIeWFPOWpCVFlINVNicWJMMTZ0c2c4V0N3WWY5UkR5SHQySEVSWHRwRWpMQi12bVBnYjB0NndiWkFqck9uYkJvSDNISE1jWVlTRGdXeVBFUVpxUVNRelBmYTQzekVDdUE?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Australian futurist warns on AI agent payment risks - IT Brief Australia",
+      "summary": "",
+      "sources": [
+        {
+          "title": "IT Brief Australia · original report",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaThoQ2lFa20zQXpvelBCSWRZamlDMUlhSkxVNlFiNjZOcGNkZHJnMjFJZ1RtODgtMGM2ZGIyYXVlcFRZRndlV09pdTZhdnUxREFjbTFmX1d6RkhJeWx2SnhrS1B6UGdXRmxoaXlhMFBYc2ZsV1ZtMG5KYnlwZHVMVV9paW90aEk?oc=5"
         }
       ]
     },
@@ -571,31 +575,25 @@
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbFk4bG1yUkM0dlRob3dERVkwT05aNU5NMTVJdGRSRFJSTnVhMGNReTh1T1kwZjlENXlxdmtLcVI4VDNfYUIwMHB0Qll3VHE5VzgzdXdkaVBSeU93dGdPaElQdzdGaTlnNjdSQmxsVWxxWmItSXljRXNSUDg4c0Z6RlhhZG5raDctclV3cldxLTVpdVJ0bEcxZjlPZTZFS3BIQnhYZnhlSUg3UUVHMjZ2aV92MzIxTXVuX3JoT2d1ZlNmN2dL?oc=5"
         }
       ]
-    },
-    {
-      "title": "Sunway Group Accelerates Secure and Sovereign Enterprise-wide Artificial Intelligence With HPE - Yahoo Finance",
-      "summary": "",
-      "sources": [
-        {
-          "title": "Yahoo Finance · original report",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYWxDMkk1RlV6MkI4elVCS0VNMWs0N2IzN2pEdjZVS1owM2VFWm9BWF9EZ2hGVzhBLThUaHZRMXdUaW4tTFdrTUwzTWRqQ3AzeXpnUUUyTE4yRDlhUzhYMkF6SG5OT0Z2X3hoYXM2ZFozOVdOcW9md0RlWHZPcS1zZGZwb1RDbk1Celk2cXlwV2o0a2hLUEhRdUVLUDBWcW1BU2I3d2FfWkc?oc=5"
-        }
-      ]
-    },
-    {
-      "title": "OpenAI shares internal AI scores and calls for common limits - The Rundown AI",
-      "summary": "",
-      "sources": [
-        {
-          "title": "The Rundown AI · original report",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yVEJJOENtbU4weE85N3lZbVhENDhDeHpzemZnQmNhNnJXUnNoM2tUSEFvNGlrQmRPemVWQTU3Z2RJZ3h0eE9MelowVndiLWcxM0FsVDR2WnQtTW1kVkl6NTVfZnJPVF9iZ0hVd0RWSWZuWkhaWUhPbnZ3?oc=5"
-        }
-      ]
     }
   ],
   "insights": [
     {
       "priority": "Read today",
+      "title": "Check the source behind: Innodata vs. IonQ: Is the Artificial Intelligence or Quantum Computing Stock the Better Buy for 2027? - The Motley Fool",
+      "context": "",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "The Motley Fool · original report",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNEg3X1ZtaFRzYXlPeGlBVWZ4OV85aUFOQk1yd3BTUEwxbktlZ3A0d18tZlRNLW9VTzdwSk9LcGM1Yl9jYWF0dEJabzh1YnA3Zy1GMnBKMnZfT3NnM0xYSjBiaWNlNGhtMnVqTnBfNVhpY0daZW9jc1BHaDRmV19fUG1QNTFpRkFaTWNmaHBFVkt5QlVkS0FnaUZoZk5teHlLdzBLLWFKU25LNEc1VWpnbm1GNm1MVEU1ampVU2JlUUVfdXZHaWpmMUY5akxEckxVaElVanBrOW9Kb1ZxQ19rSEFZNUNKQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
       "title": "Check the source behind: Asian Stocks to Rally as Huang’s Return Revives AI: Markets Wrap - Bloomberg.com",
       "context": "",
       "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
@@ -619,20 +617,6 @@
         {
           "title": "ABC13 Houston · original report",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iWUh3bjg3Y2ZMQzBzQUk0Z2VUaDlSVGt4a21INTJmQ29LWVFuaVhIelFIYkt3Njdzc08wOVFkbjJ5cVRVTzVwUnUzdk1qQQ?oc=5"
-        }
-      ]
-    },
-    {
-      "priority": "Monitor",
-      "title": "Check the source behind: World AI Cooperation Organization: A Timeline | Blogs | Nov 23, 2026 - Information Technology and Innovation Foundation",
-      "context": "",
-      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
-      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
-      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
-      "sources": [
-        {
-          "title": "Information Technology and Innovation Foundation · original report",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02dlE5YUdzbGF2eHd4SUZzWjV1M0oyLVBTTFlxakdvT1M4ZkxuWFBjUGFMLUF5eDVrTWl6ZmZFNG1nbDJUSXNLQkdTbTN3blU5T0d6R2ctVDBNY1BZRzF2Y3ZsUzNpZkU?oc=5"
         }
       ]
     }
