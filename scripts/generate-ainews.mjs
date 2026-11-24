@@ -263,7 +263,32 @@ const fetched = await Promise.all(feeds.map(async (feed) => {
 }));
 
 const items = [];
-const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0 };
+const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0, political: 0 };
+const headlineNoise = new Set([
+  'the','and','for','from','with','that','this','into','after','over','under','via','its','their','they','how','what','why','who','when','where','are','was','were','be','is','not','but','an','of','on','at','to','in','as','by','a','new','more','less','about','says','said','according','reported','reportedly','report','news','latest','update','updates','release','announces','announced','announcement','first','major','just','artificial','intelligence','ai'
+]);
+const politicalPattern = /\b(politic(?:s|al|ally)?|president|presidential|trump|biden|election|campaign|government|congress|senate|senator|lawmakers|white house|parliament|minister|governor|regulation|regulatory|legislation|bill would|executive order|geopolitic\w*)\b/i;
+function storylineTokens(item) {
+  const headline = item.title.toLowerCase()
+    .replace(/\$?\d+(?:\.\d+)?\s*(?:b|bn|billion)\b/g, ' dealamount ')
+    .replace(/\b(?:buy|buys|buying|bought|purchase|purchases|purchasing|acquire|acquires|acquired|acquisition)\b/g, ' acquire ')
+    .replace(/\bchips\b/g, ' chip ')
+    .replace(/\btechnologies\b/g, ' technology ');
+  const publisherWords = new Set((item.publisher || '').toLowerCase().match(/[a-z0-9]+/g) || []);
+  return new Set((headline.match(/[a-z0-9]+/g) || []).filter((word) =>
+    word.length > 2 && !headlineNoise.has(word) && !publisherWords.has(word)
+  ));
+}
+function sameStoryline(left, right) {
+  const leftTokens = storylineTokens(left);
+  const rightTokens = storylineTokens(right);
+  const shared = [...leftTokens].filter((word) => rightTokens.has(word));
+  const distinctive = shared.filter((word) =>
+    !['acquire','dealamount','technology','company','team','model'].includes(word)
+  );
+  return distinctive.length >= 3 ||
+    (distinctive.length >= 2 && shared.includes('dealamount') && shared.includes('acquire'));
+}
 for (const result of fetched) {
   for (const block of result.blocks) {
     const title = noEmDashes(readTag(block, ['title']));
@@ -277,17 +302,25 @@ for (const result of fetched) {
     if (published.getTime() < windowStart) { skipped.old++; continue; }
     if (previouslyPublishedUrls.has(url)) { skipped.repeated++; continue; }
     const publisher = readTag(block, ['source']) || result.feed.publisher;
+    if (politicalPattern.test(title + ' ' + description + ' ' + publisher)) {
+      skipped.political++;
+      continue;
+    }
     if (/\b(ein presswire|pr newswire|business wire|globe newswire|accesswire|press release)\b/i.test(publisher + ' ' + title)) {
       skipped.promotional++;
       continue;
     }
     const normalizedTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-    if (items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url)) continue;
-    items.push({
+    const candidate = {
       title: shorten(title, 180),
       summary: headlineEcho(title, description) ? '' : shorten(description, 440),
       url, date: published, publisher, normalizedTitle
-    });
+    };
+    if (items.some((item) => item.normalizedTitle === normalizedTitle || item.url === url || sameStoryline(item, candidate))) {
+      skipped.repeated++;
+      continue;
+    }
+    items.push(candidate);
   }
 }
 items.sort((a, b) => b.date - a.date);
@@ -334,13 +367,15 @@ const launchesRaw = takeMatching(patterns.launch, 5);
 const researchRaw = takeMatching(patterns.research, 5);
 const signalsRaw = takeMatching(patterns.signal, 5);
 const gigglesRaw = takeMatching(patterns.giggle, 3);
-const briefsRaw = [...unused].slice(0, 16);
-for (const item of briefsRaw) unused.delete(item);
 
-const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...briefsRaw];
-const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw, ...briefsRaw][0] ?? items[0];
+const insightsRaw = [...unused].slice(0, 3);
+for (const item of insightsRaw) unused.delete(item);
+const takeawaysRaw = [...unused].slice(0, 4);
+for (const item of takeawaysRaw) unused.delete(item);
+const leadRaw = [...signalsRaw, ...launchesRaw, ...researchRaw, ...incidentsRaw][0] ?? items[0];
+
 const usedMemeTitles = new Set(previousMemeTitles);
-const memeCandidates = [leadRaw, ...allChosen.filter((item) => item !== leadRaw)];
+const memeCandidates = [...unused];
 const memeSources = [];
 const memeKinds = new Set();
 for (const item of memeCandidates) {
@@ -354,6 +389,11 @@ for (const item of memeCandidates) {
   if (memeSources.length === 4) break;
   if (!memeSources.includes(item)) memeSources.push(item);
 }
+for (const item of memeSources) unused.delete(item);
+
+const briefsRaw = [...unused].slice(0, 16);
+for (const item of briefsRaw) unused.delete(item);
+const allChosen = [...incidentsRaw, ...launchesRaw, ...researchRaw, ...signalsRaw, ...gigglesRaw, ...insightsRaw, ...takeawaysRaw, ...memeSources, ...briefsRaw];
 const generatedMemes = memeSources.map((item, index) => createDailyMeme(item, index, usedMemeTitles));
 await mkdir('public/images', { recursive: true });
 for (const meme of generatedMemes) {
@@ -390,12 +430,12 @@ const edition = {
     whyNow: 'This edition is a dated scan of public AI news feeds; this headline is the lead because it appeared among the latest source items.',
     sources: leadStory.sources
   },
-  takeaways: [...allChosen].slice(0, 4).map((item) => ({
+  takeaways: takeawaysRaw.map((item) => ({
     title: item.title,
     summary: item.summary,
     sources: [{ title: item.publisher + ' · original report', url: item.url }]
   })),
-  insights: [...allChosen].slice(0, 3).map((item, index) => ({
+  insights: insightsRaw.map((item, index) => ({
     priority: index === 0 ? 'Read today' : 'Monitor',
     title: 'Check the source behind: ' + item.title,
     context: item.summary,
