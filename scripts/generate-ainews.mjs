@@ -475,3 +475,4 @@ if (previous.editionDate !== date) {
 await writeFile(archivePath, JSON.stringify(edition, null, 2) + '\n');
 await writeFile('src/data/ainews-latest.json', JSON.stringify(edition, null, 2) + '\n');
 console.log('Wrote RSS AI News for ' + date + ': ' + allChosen.length + ' distinct, previously unpublished feed items (' + fetched.filter((result) => !result.error).length + '/' + feeds.length + ' feeds reachable).');
+console.log('Filtered and merged feed items: ' + JSON.stringify(skipped) + '.');
