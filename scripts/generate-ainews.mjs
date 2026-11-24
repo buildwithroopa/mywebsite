@@ -263,11 +263,13 @@ const fetched = await Promise.all(feeds.map(async (feed) => {
 }));
 
 const items = [];
-const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0, political: 0 };
+const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0, political: 0, financial: 0 };
+const marketNoisePattern = /\b(stock market|stocks?|share prices?|shares|market wrap|gdp|economic growth|portfolios?|etfs?|investors?|trading|market rally|market crash|housing surge)\b/i;
+const technicalSignalPattern = /\b(chips?|gpus?|semiconductors?|servers?|data cent(?:er|re)s?|models?|llms?|agents?|robots?|neural|compute|research|launch(?:es|ed)?|security|software|apis?|benchmarks?|datasets?|tools?|products?|training|inference|architecture|algorithms?|cloud)\b/i;
 const headlineNoise = new Set([
   'the','and','for','from','with','that','this','into','after','over','under','via','its','their','they','how','what','why','who','when','where','are','was','were','be','is','not','but','an','of','on','at','to','in','as','by','a','new','more','less','about','says','said','according','reported','reportedly','report','news','latest','update','updates','release','announces','announced','announcement','first','major','just','artificial','intelligence','ai'
 ]);
-const politicalPattern = /\b(politic(?:s|al|ally)?|politician|president|presidential|trump|biden|election|campaign|government|congress|senate|senator|lawmakers|white house|parliament|minister|prime minister|governor|mayor|sheriff|attorney general|democrats?|republicans?|party|policy|policies|regulation|regulatory|legislation|bill would|executive order|geopolitic\w*|secretary.general|un chief|united nations|\bun\b|climate talks|common limits|ai limits?|ai oversight|world ai cooperation|pm|xi jinping|narendra modi|emmanuel macron|vladimir putin|volodymyr zelensky|benjamin netanyahu|trade war|export control|chip curbs?|sanctions?|blacklist(?:ed|s)?|tariffs?|gdp)\b/i;
+const politicalPattern = /\b(politic(?:s|al|ally)?|politician|president|presidential|trump|biden|election|campaign|government|federal|congress|senate|senator|lawmakers|white house|parliament|minister|prime minister|governor|mayor|sheriff|attorney general|democrats?|republicans?|party|policy|policies|regulation|regulatory|legislation|bill would|executive order|geopolitic\w*|secretary.general|un chief|united nations|\bun\b|climate talks|common limits|ai limits?|ai oversight|world ai cooperation|pm|van hollen|elon musk|xi jinping|narendra modi|emmanuel macron|vladimir putin|volodymyr zelensky|benjamin netanyahu|trade war|export control|chip curbs?|chip restrictions?|chip controls?|sanctions?|blacklist(?:ed|s)?|tariffs?|gdp|appeals court|court rules?|new ai rule|rerouted ai chips)\b/i;
 function storylineTokens(item) {
   const headline = item.title.toLowerCase()
     .replace(/\$?\d+(?:\.\d+)?\s*(?:b|bn|billion)\b/g, ' dealamount ')
@@ -304,6 +306,10 @@ for (const result of fetched) {
     const publisher = readTag(block, ['source']) || result.feed.publisher;
     if (politicalPattern.test(title + ' ' + description + ' ' + publisher)) {
       skipped.political++;
+      continue;
+    }
+    if (marketNoisePattern.test(title + ' ' + description) && !technicalSignalPattern.test(title + ' ' + description)) {
+      skipped.financial++;
       continue;
     }
     if (/\b(ein presswire|pr newswire|business wire|globe newswire|accesswire|press release)\b/i.test(publisher + ' ' + title)) {
