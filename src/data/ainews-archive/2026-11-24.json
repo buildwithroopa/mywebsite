@@ -1,0 +1,591 @@
+{
+  "editionDate": "2026-11-24",
+  "timezone": "America/Los_Angeles",
+  "cutoff": "Morning edition",
+  "editionLabel": "Daily issue · RSS edition",
+  "lead": {
+    "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+    "status": "RSS report · Nov 24",
+    "publisher": "TechCrunch AI",
+    "summary": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
+    "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+    "sources": [
+      {
+        "title": "TechCrunch AI · original report",
+        "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
+      }
+    ]
+  },
+  "critical": [
+    {
+      "title": "Fact-checking claims tying the FAA ground stop to AI company that donated to Duffy's son-in-law - WRAL",
+      "status": "RSS report · Nov 24",
+      "publisher": "WRAL",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "WRAL · original report",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY0s2cXNrcTV4anNOc3B1cmlySXJRajN3d0VadU1kRU5hU213bzhUY053c3ZuSThGUjB0YkctRGpUY0ItcHFDY0pYMm1ibVBNdGhuT21uOE1OVTV3QWdxMHNEaFR4amRwYWJXLUlpWlJfR2EyV0NiYzRUSENJRWZMOFhkclUyVlRfSHA3cDBQTDVlX1Y2WVdfZ29RTFM?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI could eliminate jobs. These are the ones at risk in Maine. - Bangor Daily News",
+      "status": "RSS report · Nov 24",
+      "publisher": "Bangor Daily News",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Bangor Daily News · original report",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeV9IZ0I4WHRMcEJWdEFybVVWM3BoTTdha2FQVjlzazg1MHBGVVMyRlNSeTRTRzhRdFRySl9RNTZlcVgta2Z5Ym43V2pjNDEzZmQyeHFPOUpWejI2WXJfdl9lV0UwUW9Fa0ZtMERWaHliamc4Qmo3UHFiMUxya0VzUldQRFlEQjdpUlI2U3FWT2NxcTRudUMw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "The global AI data center debate explained: How tech infrastructure is straining electricity and water resources - NBC News",
+      "status": "RSS report · Nov 24",
+      "publisher": "NBC News",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "NBC News · original report",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSFdxbDI3YmxHeTdfV1ExX0ZTakZ0Z3U1Yy1LSDVXSzJkblhIaDdTXzYtcTJubkpIOU9xWG9SM084VjZyZ2stSHpYTVlrOWJOVW1vMW10U2xjZU5FUGh0dm9wUEFENU45cHpKRG5jZHNva3VtUWRCQ1phVXhxS3lJQTZhMmZFOWJIZXNibGlkZFVnbzJPREtIanMwaEwwWHVBbi1zVm1zWVZNNWhUdkhSa2ljUEk?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI for chip design: A creative endeavor worth the hype? - SDxCentral",
+      "status": "RSS report · Nov 24",
+      "publisher": "SDxCentral",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "SDxCentral · original report",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSTM0bTBTWFc1SDV4ZmtvcklJLTZwT0Y5SUhXWEpOQlp4N2F0cWhieWdlRTItb0lsSlpxcS1Pc3AwUDkybnZOYWtSaWdoNk9RX2N3bmRJZXF4dlYzV3BSOVdyY2d4cnNJYWo0NjNoUUlMMWVfSWhCWURNM3J5NzAzZEJibUNkbkpPR2dOTFhaSDh5Nl9m?oc=5"
+        }
+      ]
+    }
+  ],
+  "launches": [
+    {
+      "title": "Havas Miami unveils cultural intelligence AI model for brands - Medical Marketing and Media",
+      "status": "RSS report · Nov 24",
+      "publisher": "Medical Marketing and Media",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Medical Marketing and Media · original report",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXhuei1QZFZGWFI3Vmp5WVFBM0RoUmZydUtJRzY5NUQxdkJqWGN1WTEwcmxfcmc4c19aWnhEdjNwMGRvdmJPZEpWNTRwaTdQTlQtR01tQkJ1RFpmT2txS3lJaDM5NE85d2F1Wlc5aTB3OGg1dmxvdmxxRHZKRzd2VTVUY2JjN0t4Q1RfWWtmV3JGLXFCbmF4cldn?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI and Cisco Releases Shirudo: An Open-Source Linux Runtime Allowing Agents to Defend Systems Without Downtime",
+      "status": "RSS report · Nov 24",
+      "publisher": "MarkTechPost",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "MarkTechPost · original report",
+          "url": "https://www.marktechpost.com/2026/11/24/openai-cisco-shirudo-ebpf-linux-runtime/"
+        },
+        {
+          "title": "MarkTechPost · related coverage",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNblBUSndodVFfOEtKM1lpQ0NKeDdibnh0VFpZc0NiVVJzdTQtTkNGWjVHdzQ4Ry1Idi1wMTRMNE1paEpBemprQVFBcVJkWXZUQUt3NjBqbXVodmhmeWRzc2h0Z0pXT1BtUjFzVGFtYjNwZHhqNGxhVEZJbkRrUW5KZmRNb2tMWEXSAYcBQVVfeXFMTW5QVEp3aHVRXzhLSjNZaUNDSng3Ym54dFRaWXNDYlVSc3U0LU5DRlo1R3c0OEctSHYtcDE0TDRNaWhKQXpqa0FRQXFSZFl2VEFLdzYwam11aHZoZnlkc3NodGdKV09QbVIxc1RhbWIzcGR4ajRsYVRGSW5Ea1FuSmZkTW9rTFhF?oc=5"
+        },
+        {
+          "title": "The Hacker News · related coverage",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tY2NQbVFCa0xnV2gyeGZwMUxyZVFBR0tma1ZnbGlFTGxTaW1TdDVHVVItYi15dXh4dmZneWQ2MFBnZ3JpWUh2TTNKekd5NDNtd3k5dVp3WnVtSGwtZnZtaVRTdEZhUmZSQW8xeWFfdkRja3VqRExVNTk5bXpaM2M?oc=5"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "title": "Even the best AI agents struggle with everyday life",
+      "status": "RSS report · Nov 24",
+      "publisher": "TechCrunch AI",
+      "summary": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/"
+        }
+      ]
+    },
+    {
+      "title": "Arco Supercomputer at INL Offers No-Cost Research Access - ExecutiveGov",
+      "status": "RSS report · Nov 24",
+      "publisher": "ExecutiveGov",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "ExecutiveGov · original report",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTC1YX2M3bHhINVZ4NUdIbm8wLWljWDh6RVdmdTBGRVc2TEdjM3ViSWhRSDlyMDA1Rk5UbmN0Wnk4a1U3WDVmakwxRjQ3M19VV0luTk1yTG83ZEtfYjRBUG9yaTRfSEctYUlJU3k3Mlhpa3JiTXc0MFh4Rmtyc3JDb25BSk4zV2E1alVfbg?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Artificial intelligence has started swearing: researchers have discovered when this happens - UkrMedia News",
+      "status": "RSS report · Nov 24",
+      "publisher": "UkrMedia News",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "UkrMedia News · original report",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeG53YUdBZHBSOGVzdHgtNWVxYjNkTldDc0VHTVVTYjNmdHY1ZDR3TWhCSmtsTDdCN3RxN0gxTFQ4Z2FuWWotTTYtcW1mb0JZUl9EVFdoWUZLVFFRZTZac0dXeWhYV1dCbXI4cmUyaFFGbldjR0N4NHFBWEN2eEVpTnd6aw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Researchers Propose Calibrated Safeguard Framework for Generative Artificial Intelligence in Scientific Writing - Bioengineer.org",
+      "status": "RSS report · Nov 24",
+      "publisher": "Bioengineer.org",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Bioengineer.org · original report",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNT0tDc1AwQ0h3NERsY2NBUlh4N3hfZ01IRXdOREFFSWNRTG50MDdaa215bUt1QjlyeFFjaTZaY2hUOVhDdmhLQ2JRNmlsdmVWVVVybFN2dU41elRTNEhsMzJRSlE3SnlMS3VmNmZBTlM4cVVZVVlqNGlNZW9TOWlpYlNjclVIQ3hraktFUkR5djNxNG5OdmNSeDNTU0dfVzdRaG9uSGFmcmRjWXVId2E3Ni1Qb1FnZjc4M1RncUoyME4zUmkzRDJJVXluM2NOakR4VFE?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "OpenClaw’s ShellBench Is an AI Benchmark I’d Actually Use",
+      "status": "RSS report · Nov 24",
+      "publisher": "The Neuron",
+      "summary": "The same AI model can gain or lose nearly 10 percentage points when you swap the software around it. OpenClaw’s ShellBench puts those differences to the test on the messy, ordinary work people actually hand to agents.",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "The Neuron · original report",
+          "url": "https://www.theneuron.ai/news/openclaw-shellbench-ai-agent-harnesses/"
+        }
+      ]
+    }
+  ],
+  "signals": [],
+  "briefs": [
+    {
+      "title": "AI school: $75,000 Private Schools Replace Teachers with Artificial Intelligence - The Korea Daily",
+      "status": "RSS report · Nov 24",
+      "publisher": "The Korea Daily",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Korea Daily · original report",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVY5QWF6am1lYm5RMDlkc2VnQ19tTExveDFpR3RieHlMQXpwSlVKU296YkQ0Z2ZDUkNIeEFRTVNId2pLUlZONXFfS29Dc0tlNmZta0VUdXZOR3ZpWGl3MXExelJub3AwQ0Z6QTRmQ3Nib1hIbkVfdFZiXzM0bzZ5R0JiZERyMmow?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Has AI Become Too Big to Fail? - U.S. News & World Report",
+      "status": "RSS report · Nov 24",
+      "publisher": "U.S. News & World Report",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "U.S. News & World Report · original report",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWFl4aEV3SndzSXZ2Z04zN29OV0E3YVkwYW9GbU5yd0hMWi1JbDc2OWVrTXdscFRaY1hWZk9VWDdTTnp6STV2dTh1T0VLYzNzUEh3QU44dFA3M0RwUC05bFlCLXdIRjdqNko1Y1pGdXhvNGE4cldOemxsa3NaakNIU1J0ZlBoX2d3aGNic3BlZUpQY1o5am5nODgtX3ZOTG5HSGtJWXViV2NDbHZSWGhubDBZSEh4RkxqX19iM0VXMlRfYVk?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Ambarella Brings Liquid AI Models to Edge Chips for Physical AI - Unite.AI",
+      "status": "RSS report · Nov 24",
+      "publisher": "Unite.AI",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Unite.AI · original report",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdnhlV0ZxZ0ljeXVMcERlQ1R5cEd6QS1UMWVteFdmNDhzNjMtZV8xSTI1aVFoMlB0S2pXNWp3U1ZpUmIyblhzZGdFWTM0a1VDQjFobE9ONFQ4SlJGWmtPU01DcjFIUlZzVnEya2lBVWFYREZobEhpMU1SUl9SeFItNFNZMXp5Ulc5aHNxLW93?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Google says the first autonomous AI cyberattack has happened. Expect a lot more like it. - Mashable",
+      "status": "RSS report · Nov 24",
+      "publisher": "Mashable",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Mashable · original report",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWGxDWWVnZnFZdVIwa0hpYi1hTVNsVEo1eGtmS3cyVVVOanA3N0RvU1ZGcjR1YkxOOE5fdVNjMWhCNWIwSVJEYUk2MUxjTkd3bWdUMjFlT2htZlZwSEhNcFFDblZ0RTZPb1N3NDU4NzRPR2t5U1FUcVVteHBMMDFOZlQ2VGhMTXdnd1E?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "HPE Gives Outlook That Falls Short of the Most Optimistic Estimates - Bloomberg.com",
+      "status": "RSS report · Nov 24",
+      "publisher": "Bloomberg.com",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Bloomberg.com · original report",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWGhhRG56V2NhaHZLNkpFR2lqNElSM213NFpQd3hTNnpEWExyN1VyU1ZvczEwTTdyY1M3dWFnUUNvN2FvSHdFNUtXN3E2M0tCLWVkTkpUY0wwZHpMcUZtOEcwNEQ5RHAtb3lZWlJTZ2dfU1h0SldqdzJYdnRvdzNYamRPR244b21fQmRTUHhxU0thVDBuUkoyVUFlblI5WWhwRnI5UXdoaE0wZHZwMFNTc0J6dUltdw?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "‘The mistake has been corrected’: end of Jensen Huang’s brief walk in the wilderness - The Guardian",
+      "status": "RSS report · Nov 24",
+      "publisher": "The Guardian",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Guardian · original report",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOekRMbHk0bUtGM1FGLXhiaXFPaTFVRGZ2RFBfbHl2aWxiX3V3X0hOSk9jY0tFdDBHZnljNDlkVWg3clNGX0FsbEVBVEZkLVBwUG9WUThyc3N2cmJZOFZobGkzcnA0N1lQdE9vS19seEh3T0FXQ1FLZlpWUmZQbUVsWEJaNmFtUy1TQWQ3YVRQT01nVVFmXzRMemJhX2w3STlZOU5kNHNuOGJZc3NzTkE?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI consumes less water per dollar spent than almond milk or golf, Enverus report says - Reuters",
+      "status": "RSS report · Nov 24",
+      "publisher": "Reuters",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Reuters · original report",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNLXlYaTU4SDlDWXJSNGFNN1FFaGZSZzcxY3NnM0VEd0ZhbThkT1d5UDBsLTRfLXAzSmk5MUxpUGdMY1BrakhsbndpV2pycnpsblZaX0E0V2JpTExxam5VWW0xcUV4RFNabTk3bk51QmwyQjd4bHZEdFI2ZTFMeVpPWmVpc1RFaXFtRHZMWHdPaXNTWE9PQ253S1M5eFFaZHF1UE01SFZJbGtkdGNZWngwUVgxLVpNSGpaQ1JyeExYRlUxc3h3?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic turns Claude Artifacts into standalone desktop apps for macOS and Windows",
+      "status": "RSS report · Nov 24",
+      "publisher": "The Decoder",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Decoder · original report",
+          "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/"
+        }
+      ]
+    },
+    {
+      "title": "Wells Fargo Tells Customers They Are Responsible for AI Agents - PYMNTS.com",
+      "status": "RSS report · Nov 24",
+      "publisher": "PYMNTS.com",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "PYMNTS.com · original report",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUnowMHoyWGNybU5ZR2N5RTFfRVpDZWRuOGUyYjF5QWJHMWxETVRlWmZ3dXpQT1ZZbVNzaVNIWGMtQ3pJREc3eXJiTms1T0N1SEtNdU5tYXFUU0dpSldfYndYcFIwb0ZPaEV0aEZkV3g2T1hJZDVkUGNDUFBZbnZnQnZUX1VfWGRkYzkxZ2dESmd5a24wZ0dWQ2M3eG9TUW00STFYX05QRQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "What are AI chips, and what’s so special about Nvidia’s? - The Conversation",
+      "status": "RSS report · Nov 24",
+      "publisher": "The Conversation",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "The Conversation · original report",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWGZiVHdoQTRzVkdRbS0tZTBjVTdnZnA5RXRYU1lXWVNYbTFaNHlMdWdackFqUW5IZjZpenNBbUpqT0FCanhQYXN6cmFsYkVkdy04TC1CZVRNUFVBcnRaaThOTklhMDZ2QVExRDFNeExQLXJYWndReWR3Zng2WGJzUmFvM1lwcW1YYTNaOGlhVDc?oc=5"
+        },
+        {
+          "title": "Caledonian Record · related coverage",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxONHNBb09PQUpVRU9oZDdVeDlvU2I1QnpiUnJud3NSSWFQRGpfZWpWdW5YU09wSFZhVVJhU3pjb29DNkt6M3lfZ2lSYWtFVF9MemtEWEtqWDE4REpYUHpqeUotTWM2MEhqUHRicWxFcVJ4VFFoeEc0eEZTWTRwRTdsUjlwQXRKOGRVTUtuMl9RaWJpR19MWnpOMEk3UkZFX0I2Ukt3bzhHUjVSSnBHYTdJSjJkWDdoRTNiME5FRTkxSXJVWXlQQWZtTFVZUzBmdUhzVWZFS0sxZldRdUJ0c3NZanVtdGhTNWpMa1pLNktTaw?oc=5"
+        },
+        {
+          "title": "The Conway Daily Sun · related coverage",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPaS1XU3JtM3E3eGZfOWE3bVFLTjJFNHhuRkZWOGdyQkpSUUVkMEVFU2sxckplczhnam1jNG1mS3hZamtLbGRxeFlBTmJ5N1UxYWk5cVFOUjh4b1BnM0M1LTlLN09tNzhpaVVpUFRrd2ZfVjl0d0hXXzdZTjVjd1diMk9NYUhiVFlzT2tvTjNJNmxXdnVDUDk5NFRaWUw3TkNrVkpoQmRXbzg1eXFNYnpPNi1ZdVllUnpva2JtNW9qUTlnRFl4ZU5rSXloRThCSHNfdEF4NV8tbmZyQUxDX2ZHVHFrR3Q?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "U.S. approved licenses for nearly 900,000 advanced AI chips for Chinese companies - Yahoo Finance",
+      "status": "RSS report · Nov 24",
+      "publisher": "Yahoo Finance",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Yahoo Finance · original report",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc05TSFFQNC1VS19OZER5SXdJbWFKel9TTktER0hlbjNvMmhfd3R5VXZLb0ZDMERxQkNTNkNTVnNzdDFidFB5T2FhQld4dUU5ek56UVNaSTVfbWdEaXdlZTZkUS00dk5FM0VXZVdHMWhkSnVsTUg3bXZJbWFXZWtpcXptcUtWQWtHaG9ldmJSQl9tbEtJc1dpN2RR?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence Accurately Detects Breast Arterial Calcification on Routine Mammograms - Bioengineer.org",
+      "status": "RSS report · Nov 24",
+      "publisher": "Bioengineer.org",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Bioengineer.org · original report",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUEM2OFFxMFgzZkpHMDlhRDE2cVY2OHRaMlkxa05ZaXMyOXJ3UVhTUV9aNG5oQkhyQV9ESlRZX3EwRFFOU1NIUXJ3RlNEN0F6QWFBd0RkMWpfS1NJUVR6WkZPSjVxWkRlSFpHREdabHJOUE9nOGwzRGZjeTlmUE13YWxoMlRJU2ZVMURmU0ZpYXBhN1hmRE5XUlNmTFR2SlJHZ3BvOGRhQmFTWlZ3dFFRdVZwRUdpbnlZYW5N?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "AI Agents and Dangerous Pets - Communications of the ACM",
+      "status": "RSS report · Nov 24",
+      "publisher": "Communications of the ACM",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Communications of the ACM · original report",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96QnhKTVpGblRlZ3V3Q2RWUzFrRkVTQXZKaTROWU5EMkxtSjA5eHRYQk8yWkVUTXhmVTg3QUplUDZCMXROMVNRR0tOcS16LUJPakROTGZ1b0lzQmZsNHBWamZyNjllZjZpOVFv?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Signal Moves to Block AI Agents - Electronic Frontier Foundation",
+      "status": "RSS report · Nov 24",
+      "publisher": "Electronic Frontier Foundation",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Electronic Frontier Foundation · original report",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00cE8ydHcyVlZmaS1vbnR1bnl5U1MycnhQb0dfUWgzNHEzNnZqWWFKcUVXOEg5N1VVaF9vckN2aHI3VHAxNHhDWUVxcUltWDNrb3lLRlpxVG9jRUhHRS1tNHZfZEVrQ0o0Rmp4M1A1LVduTmM?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence Outperformed Nephrologists in Recalling Rare Kidney Disease Trial Data - Bioengineer.org",
+      "status": "RSS report · Nov 24",
+      "publisher": "Bioengineer.org",
+      "summary": "",
+      "whyCare": "The feed listed a headline without an added summary. Open the original report for its details.",
+      "sources": [
+        {
+          "title": "Bioengineer.org · original report",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQzI1T3N4V1pnTkdXcS1lWXVVdFFoOEp5VVQ3OGtCWFZjU1BrZTFtdmdtMzFkLTBmS2lNWDc3RXlxTXN0X19jNWtfV01lbFVHSjY5aFZ1dE11cjQzMVNLMzQySDN6X08zNUVsaWkxVlBTOFRlWHp2SjNCR1JTYmNOM0p0UkVfQjEycXRBTmdmZ3Vxa19NeEFudVpOUWJwZ0xXTXpaTWpUX2pFbDdROGlaYXFrY1VFcENKT0Zn?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Agentic system personalizes physical controls to help users “DJ their art”",
+      "status": "RSS report · Nov 24",
+      "publisher": "MIT News · AI",
+      "summary": "“TangiMap” uses an AI agent to reprogram how buttons, knobs, and sliders are used, helping users do things like edit photos and perform music in a more dynamic, tactile way.",
+      "whyCare": "The feed only gives a short excerpt. Open the linked report to check what happened and what the excerpt leaves out.",
+      "sources": [
+        {
+          "title": "MIT News · AI · original report",
+          "url": "https://news.mit.edu/2026/tangimap-agentic-system-personalizes-physical-controls-help-users-dj-their-art-1124"
+        }
+      ]
+    }
+  ],
+  "giggles": [],
+  "giggleMemes": [
+    {
+      "image": "/images/ainews-giggle-2026-11-24-1.svg",
+      "alt": "A robot opens a tiny task card that unfolds into an unexpectedly long checklist.",
+      "topic": "AI workflows",
+      "title": "“Doctors and Patients Differ” looked like one click. The checklist disagreed.",
+      "lesson": "Break a broad request into steps you can review."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-24-2.svg",
+      "alt": "A robot uses a magnifying glass on a wobbly storefront sign and a long web address.",
+      "topic": "Link checking",
+      "title": "“Walmart teams up with” found a deal. The URL asked for ID.",
+      "lesson": "A fluent recommendation is not proof that a retailer is legitimate."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-24-3.svg",
+      "alt": "A small robot stands beside a comically large server rack and an electricity meter.",
+      "topic": "AI infrastructure",
+      "title": "“Dell Ups Annual Sales” invited the power meter to the meeting.",
+      "lesson": "Compute plans also depend on power, permits, and financing."
+    },
+    {
+      "image": "/images/ainews-giggle-2026-11-24-4.svg",
+      "alt": "A robot reaches toward a button while a small approval light stays red.",
+      "topic": "Human review",
+      "title": "“I run my company” reached the button. A human kept the final click.",
+      "lesson": "Give an agent only the access needed for its task."
+    }
+  ],
+  "incidents": [
+    {
+      "title": "Artificial intelligence agents leak confidential data to complete tasks - SC Media",
+      "status": "RSS report · Nov 24",
+      "publisher": "SC Media",
+      "summary": "",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "SC Media · original report",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVWEyNkhEYVlPZE5zOWpoTlVjdXMzNGduMmRtNTE4RTJKZVg4ckNUTGJiOUJJc0liRWdRWng4ZHh2NjB1Q08wN2NLM1RfbVRtUU9oQ3FySF9fN1Q5Y2V6SlZKc3RNWGlsNWxKRkNqb0FZTVEzbzFvemJFU3BEQjRPTThfTllTSU9OUExMdUxwRmlKQkJwbVk5eGpwZEFuV2VHeWhn?oc=5"
+        },
+        {
+          "title": "Cybersecurity Insiders · related coverage",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQX2dzUldRS0V6UHZlbkxtWnhPdDFTNmVqMVdURUlLd3A2LU5hNWhpZ3pTX2EzdllPZE9JZGoydVhkcW85amFrckFIOGllRDM3TDVnLXZnblAzQlRLUk8yRzRCTmNNZGxkMDNZQVIxUWp0V0VqM1d0M1B0eXdsb1UzRk1DZmRqWUY1N0tIMlpBVkN1ZC1hWXl4NGoxWV92YzZURzFPWFA0dHJ3UHpW?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "RAG Makes Guardrails Brittle? Investigating Robustness of Guardrails under RAG-style Contexts",
+      "status": "RSS report · Nov 22",
+      "publisher": "arXiv · Computation and Language",
+      "summary": "arXiv:2510.05310v2 Announce Type: replace Abstract: With the increasing adoption of large language models (LLMs), ensuring the safety of LLM systems has become a pressing concern. External LLM-based guardrail models have emerged as a popular solution to screen unsafe inputs and outputs, but they are themselves fine-tuned or prompt-engineered LLMs vulnerable to data distribution shifts. In this paper, taking Retrieval Augmentation…",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "arXiv · Computation and Language · original report",
+          "url": "https://arxiv.org/abs/2510.05310"
+        }
+      ]
+    },
+    {
+      "title": "A categorical error sensitivity index (ISEC): A preventive ordinal decision-support measure for irrecoverable errors in manual data entry systems",
+      "status": "RSS report · Nov 22",
+      "publisher": "arXiv · Computation and Language",
+      "summary": "",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "arXiv · Computation and Language · original report",
+          "url": "https://arxiv.org/abs/2605.12328"
+        }
+      ]
+    },
+    {
+      "title": "Which papyrus HTR is good enough? Character-error-rate tolerance of four papyrological tasks on Greek texts",
+      "status": "RSS report · Nov 22",
+      "publisher": "arXiv · Computation and Language",
+      "summary": "arXiv:2609.37755v2 Announce Type: replace Abstract: Purpose: Most Greek papyri are unpublished, and handwritten text recognition (HTR) could open them to scholars. How accurate it must be for a given papyrological task is unknown. We measure the character error rate (CER) that four such tasks tolerate, with published editions as ground truth. Methods: From the 63,846 Greek texts of papyri.info we derive an error-free, letters-only…",
+      "whyCare": "The feed reports a possible failure or harm event; check the linked report for confirmed impact and the response.",
+      "sources": [
+        {
+          "title": "arXiv · Computation and Language · original report",
+          "url": "https://arxiv.org/abs/2609.37755"
+        }
+      ]
+    }
+  ],
+  "oneIdea": {
+    "title": "Today’s lead: Maple raises $5.3M to build AI products that protect your data, even from itself",
+    "summary": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
+    "whyNow": "This edition is a dated scan of public AI news feeds; this headline is the lead because it appeared among the latest source items.",
+    "sources": [
+      {
+        "title": "TechCrunch AI · original report",
+        "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
+      }
+    ]
+  },
+  "takeaways": [
+    {
+      "title": "\"We're racing towards huge dangers,\" AI pioneer Yoshua Bengio says - CBS News",
+      "summary": "",
+      "sources": [
+        {
+          "title": "CBS News · original report",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeHppUHFENjRTVWpQN2ZSR2dKbmdHQ2hhaXBuWC1FU05rRkxYSzR1ZXpYZDR5aTJvc0pEUTZDdFBuWkZvR3dUaERXNFZSWV9JTkE5WkJqR2lGaGhqRDY3VjY4d002dFZNV3BaRVVKN2JvSVluVUdGV1FWY0Z1ajVVS292SncyeHVGaExpQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Amazon Spots Apparent Open-Source AI Agent Gaining Unauthorized Access - Gizmodo",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Gizmodo · original report",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc1RXTm1mSU9EYWtpUVBpTWhIemhKVWZral9Xc1p6Q1RmekZFaWxURmEtWkFRN3dNZFBEOFJSRWE4ZGdQZHNYOFUwXzBxR2RZSGRwZTF3c3p4Tmhnb1JLa0F6RVc5VURONXV0OVZQZzhmWWQzLXhfcjRnYlBOdjFjQjRKV2pTZVJDQkpJSThkQUpuZnhrRXowaElEdmNQZ0lfblQ4U21uTQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "Insurance advisory firm Johnson Lambert launches AI governance services - Beinsure",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Beinsure · original report",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQm1YdVp0SlhGZno0aW1UblNITnR3NFM1M0ktR0Vxb2tYek1TNTR3R1NnWTRwaTZQRC1mNThKT1BzcEJTTF9JeG5KeGRCa21TZkhNSUNSUlh3OC03MGYtQ0pkcFhXY2xqbzdwQWJxTVY3Y2FITWNqZnhKMG15U3pjNDl0MU1jTzFKZXhTbjRWS1pwZDNNX3RsSnZjcmozRlk?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "CoreWeave falls 13% as AI debt worries deepen after Huang’s return - Superpower Daily",
+      "summary": "",
+      "sources": [
+        {
+          "title": "Superpower Daily · original report",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPY2xNZXowWTFmV3kxdVhEenBmckE5MjM5T1J6a0ZfcEJVUjZ5ak5MMUVjU0VfOFFmMmsycWQ1YnRSTUdiSHdHSFB2Y1IwUUNwQ2ZSTzdBMmJ1VFhmLVlpR2RoNkFveENJWEtyak5UaXJHY1NRMFVPUThoVlpPTVRWZnVRREV3WEJ4NTFFNU9zdmMtckFhU1JBX1FjNnJzV0hh?oc=5"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "priority": "Read today",
+      "title": "Check the source behind: Syracuse University adds AI review to undergraduate admissions - Higher Ed Dive",
+      "context": "",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "Higher Ed Dive · original report",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSzIxcE5tYlpkUlMzaUFQUHBGYkhKMk1oYklfbzNVcUFWQkdhMXc5clhiWUJmLXFaNTAtckxMQ25HT2Jua05VdlQ3amhyUVpPa0pOUWFxTk13OXJidHFNaTRVTTAwMmtqbzRIZnUzVlpjN0FiV0xUSHVnMDBjUURMRFItemZWQmRJeFhPeUFzZjdmQWNWcUd3WXZtNzF1RWEzNXdrd3FVZw?oc=5"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Check the source behind: Huang's return to Nvidia brings open-weight AI debate to forefront in Washington - Reuters",
+      "context": "",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "Reuters · original report",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcE80eU84aDZfY24tLUhfMURrVFZHdkt3UHZuNjcxOXA3MUdWU0ZXUV9Od0d2QUJUWVFtZEN4X19BekxhdUFzcUNlVFYtZVdiMHgtTEFPQWtxU2xIS2NwUW1HVzJkUjNRS2tiMkJEa1ltcG42enk0czYyQXNjN0xibUd1SFNGU3pzd1diLWxDcFlmUVVqUmRoNVJ5VzVDNUVmMDJNRmxTY2dJSjJ3MGk4UUNhTk9DaGNLQ1E?oc=5"
+        }
+      ]
+    },
+    {
+      "priority": "Monitor",
+      "title": "Check the source behind: Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
+      "context": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
+      "whyItMatters": "The RSS excerpt is a useful signal, but does not establish the full context, evidence, or downstream impact.",
+      "action": "Open the original report, verify its date and key claim, then decide whether it changes a current product, policy, or risk decision.",
+      "watchFor": "A primary-source announcement, follow-up reporting, or an update to the linked story.",
+      "sources": [
+        {
+          "title": "TechCrunch AI · original report",
+          "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/"
+        }
+      ]
+    }
+  ],
+  "learning": {
+    "title": "RSS feeds and source verification",
+    "body": "An RSS feed is a publisher’s machine-readable list of recent articles. It helps collect headlines in one place, but a feed excerpt is not independent verification and may omit important context.",
+    "tryThis": "Pick one item in this edition. Compare its feed excerpt with the linked article, note what context is missing, and look for a primary source before sharing a strong claim."
+  },
+  "notes": [
+    "Compiled from public RSS feeds. Feed excerpts are publisher-supplied and have not been independently verified; open the linked original before relying on a claim.",
+    "This is a curated scan of the feeds listed in the generator, not an exhaustive index of all AI coverage. Items are limited to dated posts from the last 72 hours; links already used in earlier editions are skipped.",
+    "Some configured feeds were unavailable at generation time; coverage may be thinner than usual."
+  ]
+}
