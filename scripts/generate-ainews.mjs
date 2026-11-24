@@ -267,11 +267,11 @@ const skipped = { title: 0, url: 0, date: 0, old: 0, repeated: 0, promotional: 0
 const headlineNoise = new Set([
   'the','and','for','from','with','that','this','into','after','over','under','via','its','their','they','how','what','why','who','when','where','are','was','were','be','is','not','but','an','of','on','at','to','in','as','by','a','new','more','less','about','says','said','according','reported','reportedly','report','news','latest','update','updates','release','announces','announced','announcement','first','major','just','artificial','intelligence','ai'
 ]);
-const politicalPattern = /\b(politic(?:s|al|ally)?|president|presidential|trump|biden|election|campaign|government|congress|senate|senator|lawmakers|white house|parliament|minister|governor|regulation|regulatory|legislation|bill would|executive order|geopolitic\w*)\b/i;
+const politicalPattern = /\b(politic(?:s|al|ally)?|president|presidential|trump|biden|election|campaign|government|congress|senate|senator|lawmakers|white house|parliament|minister|prime minister|governor|democrats?|republicans?|party|regulation|regulatory|legislation|bill would|executive order|geopolitic\w*|secretary.general|un chief|pm|xi jinping|narendra modi|emmanuel macron|vladimir putin|volodymyr zelensky|benjamin netanyahu|trade war|export control|chip curbs?|sanctions?|blacklist(?:ed|s)?|tariffs?)\b/i;
 function storylineTokens(item) {
   const headline = item.title.toLowerCase()
     .replace(/\$?\d+(?:\.\d+)?\s*(?:b|bn|billion)\b/g, ' dealamount ')
-    .replace(/\b(?:buy|buys|buying|bought|purchase|purchases|purchasing|acquire|acquires|acquired|acquisition)\b/g, ' acquire ')
+    .replace(/\b(?:buy|buys|buying|bought|purchase|purchases|purchasing|acquire|acquires|acquired|acquisition|snaps up|snapped up|snap up|takes over|took over)\b/g, ' acquire ')
     .replace(/\bchips\b/g, ' chip ')
     .replace(/\btechnologies\b/g, ' technology ');
   const publisherWords = new Set((item.publisher || '').toLowerCase().match(/[a-z0-9]+/g) || []);
