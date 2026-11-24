@@ -6,6 +6,10 @@ on:
     # The generator skips runs before 6 a.m. and editions already published today.
     - cron: '17 13-17 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate-ainews.mjs'
 
 permissions:
   contents: write
@@ -58,12 +62,12 @@ jobs:
         run: |
           CURRENT_DATE=$(TZ=America/Los_Angeles date +%F)
           PUBLISHED_DATE=$(node -p "require('./src/data/ainews-latest.json').editionDate")
-          echo "Job result: ${{ job.status }}"
+          echo "Job result: \${{ job.status }}"
           echo "Expected edition: $CURRENT_DATE"
           echo "Published edition: $PUBLISHED_DATE"
           {
             echo "### AI News publication check"
-            echo "- Job result: ${{ job.status }}"
+            echo "- Job result: \${{ job.status }}"
             echo "- Expected edition: $CURRENT_DATE"
             echo "- Published edition: $PUBLISHED_DATE"
           } >> "$GITHUB_STEP_SUMMARY"
