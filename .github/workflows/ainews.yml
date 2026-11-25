@@ -4,7 +4,7 @@ on:
   schedule:
     # 6 a.m. Pacific target with off-the-hour retries through the morning, across DST.
     # The generator skips runs before 6 a.m. and editions already published today.
-    - cron: '17 13-17 * * *'
+    - cron: '17 13-16 * * *'
   workflow_dispatch:
 
 permissions:
