@@ -1,0 +1,17 @@
+---
+---
+<html lang="en">
+  <head><title>Sentry test</title><meta name="robots" content="noindex" /></head>
+  <body>
+    <h1>Sentry test</h1>
+    <button id="error-button">Throw test error</button>
+    <script>
+      import * as Sentry from '@sentry/astro';
+      document.querySelector('#error-button')?.addEventListener('click', () => {
+        Sentry.logger.info('Sentry test error button clicked', { action: 'test_error_button_click' });
+        Sentry.metrics.count('test_counter', 1);
+        throw new Error('This is a test error');
+      });
+    </script>
+  </body>
+</html>
