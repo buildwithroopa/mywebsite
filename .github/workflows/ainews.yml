@@ -6,6 +6,10 @@ on:
     # The generator skips runs before 6 a.m. and editions already published today.
     - cron: '17 13-17 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ainews.yml'
 
 permissions:
   contents: write
